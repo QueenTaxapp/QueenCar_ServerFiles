@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Drivers/UI/API/Routes" file="ApiDriverSignup.v1.public.php" realpath="/var/www/html/queencar/app/Containers/Drivers/UI/API/Routes/ApiDriverSignup.v1.public.php" size="3709" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="713d56234cf988c2535c3e75328d2f3fae14b4ac" relative="Drivers/UI/API/Routes/ApiDriverSignup.v1.public.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * @apiGroup           Driver</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * @apiName            DriverSignUp</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * @api                {post} /driver/signup Driver SignUp</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * @apiDescription     Driver SignUp</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * @apiVersion         1.0.0</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * @apiPermission      none</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * @apiHeader          Accept application/json</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     firstname   First Name</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     lastname   Last Name</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     email   Email</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     [password]   password is required when login_method=manual</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     phone  Phone Number</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     type  Car Type</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     car_number</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     car_model</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT"> * @apiParam           {Multipart}     [profile_pic]  Profile Picture</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     device_token  Device Id</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     login_by="android|ios"</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     login_method="manual|facebook|google"</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     [social_unique_id]     social_unique_id is required when login_method=facebook|google</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> * @apiParam           {multipart}     [license]     image</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     [license_name]     license_name is required when license is present</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     [license_date]     license_date is required when license is present ex:2017-10-13</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT"> * @apiParam           {multipart}     [insurance]     image</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     [insurance_name]     insurance_name is required when insurance is present</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     [insurance_date]     insurance_date is required when insurance is present ex:2017-10-13</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT"> * @apiParam           {multipart}     [rcbook]     image</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     [rcbook_name]     rcbook_name is required when rcbook is present</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     [rcbook_date]     rcbook_date is required when rcbook is present ex:2017-10-13</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT"> * @apiParam           {int}        [company]</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     country   example(IN)</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}     country_code    example(+91)</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT"> * @apiSuccessExample  {json}       Success-Response:</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT"> *   HTTP/1.1 200 OK</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT"> *   {</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT"> *          "success": true,</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT"> *          "success_message" : "driver_added",</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT"> *          "driver": {</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT"> *                   "id": 24,</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT"> *                   "firstname": "user",</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT"> *                   "lastname": "test123",</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT"> *                   "email": "testuser@gmail.com",</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT"> *                   "phone": "+917200704057",</token>
+  </line>
+  <line no="51">
+    <token name="T_DOC_COMMENT"> *                   "login_by": "android",</token>
+  </line>
+  <line no="52">
+    <token name="T_DOC_COMMENT"> *                   "login_method": "manual",</token>
+  </line>
+  <line no="53">
+    <token name="T_DOC_COMMENT"> *                   "token" =&gt; "$2y$10$TMWF.x82d2.B8TUFsIqVk.LfYGpJ85EV2P8Ks3vjo6r3F8d047Sni"</token>
+  </line>
+  <line no="54">
+    <token name="T_DOC_COMMENT"> *                   "profile_pic": "",</token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT"> *                   "is_active": 0,</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT"> *                   "is_approve": 0,</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT"> *                   "is_available": 1,</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT"> *                   "car_model":"wry",</token>
+  </line>
+  <line no="59">
+    <token name="T_DOC_COMMENT"> *                   "car_number":"qwe",</token>
+  </line>
+  <line no="60">
+    <token name="T_DOC_COMMENT"> *                   "type_name":"Sedan",</token>
+  </line>
+  <line no="61">
+    <token name="T_DOC_COMMENT"> *                   "type_icon":"http:\/\/192.168.1.18\/platinum\/public\/assets\/img\/uploads\/60758.png"</token>
+  </line>
+  <line no="62">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="63">
+    <token name="T_DOC_COMMENT"> *          }</token>
+  </line>
+  <line no="64">
+    <token name="T_DOC_COMMENT"> *          "sos": [</token>
+  </line>
+  <line no="65">
+    <token name="T_DOC_COMMENT"> *           {</token>
+  </line>
+  <line no="66">
+    <token name="T_DOC_COMMENT"> *              "id": 2,</token>
+  </line>
+  <line no="67">
+    <token name="T_DOC_COMMENT"> *              "name": "customer care",</token>
+  </line>
+  <line no="68">
+    <token name="T_DOC_COMMENT"> *              "number": "+72007040574"</token>
+  </line>
+  <line no="69">
+    <token name="T_DOC_COMMENT"> *           },</token>
+  </line>
+  <line no="70">
+    <token name="T_DOC_COMMENT"> *           {</token>
+  </line>
+  <line no="71">
+    <token name="T_DOC_COMMENT"> *              "id": 3,</token>
+  </line>
+  <line no="72">
+    <token name="T_DOC_COMMENT"> *              "name": "customer care 3",</token>
+  </line>
+  <line no="73">
+    <token name="T_DOC_COMMENT"> *              "number": "+919999999999"</token>
+  </line>
+  <line no="74">
+    <token name="T_DOC_COMMENT"> *           },</token>
+  </line>
+  <line no="75">
+    <token name="T_DOC_COMMENT"> *           {</token>
+  </line>
+  <line no="76">
+    <token name="T_DOC_COMMENT"> *              "id": 7,</token>
+  </line>
+  <line no="77">
+    <token name="T_DOC_COMMENT"> *              "name": "test",</token>
+  </line>
+  <line no="78">
+    <token name="T_DOC_COMMENT"> *              "number": "+740145698725"</token>
+  </line>
+  <line no="79">
+    <token name="T_DOC_COMMENT"> *           }</token>
+  </line>
+  <line no="80">
+    <token name="T_DOC_COMMENT"> *         ]</token>
+  </line>
+  <line no="81">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="82">
+    <token name="T_DOC_COMMENT"> *   }</token>
+  </line>
+  <line no="83">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="84">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="85"/>
+  <line no="86">
+    <token name="T_VARIABLE">$router</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">post</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/driver/signup'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="87">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'as'</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Driver@driver_sign_up'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="88">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'uses'</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Controller@run'</token>
+  </line>
+  <line no="89">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="90"/>
+</source>

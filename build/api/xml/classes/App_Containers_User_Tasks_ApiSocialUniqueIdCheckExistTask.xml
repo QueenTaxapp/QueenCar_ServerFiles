@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\ApiSocialUniqueIdCheckExistTask" namespace="App\Containers\User\Tasks" name="ApiSocialUniqueIdCheckExistTask" abstract="false" final="false" start="19" end="46">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="ApiSocialUniqueIdCheckExistTask.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/ApiSocialUniqueIdCheckExistTask.php" size="1099" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="a162fb105ec7e7b356427297cf40fa78ae6fb7f8" relative="User/Tasks/ApiSocialUniqueIdCheckExistTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="27" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to check if the social unique id is present or not"/>
+      <param type="object" variable="$social_unique_id">
+        <type full="App\Containers\User\Tasks\String" namespace="App\Containers\User\Tasks" name="String"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="social_unique_id" byreference="false" type="{unknown}"/>
+  </method>
+</class>

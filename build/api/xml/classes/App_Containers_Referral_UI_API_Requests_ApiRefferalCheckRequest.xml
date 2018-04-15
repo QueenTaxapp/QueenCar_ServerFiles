@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Referral\UI\API\Requests\ApiRefferalCheckRequest" namespace="App\Containers\Referral\UI\API\Requests" name="ApiRefferalCheckRequest" abstract="false" final="false" start="10" end="33">
+  <file path="/var/www/html/queencar/app/Containers/Referral/UI/API/Requests" file="ApiRefferalCheckRequest.php" realpath="/var/www/html/queencar/app/Containers/Referral/UI/API/Requests/ApiRefferalCheckRequest.php" size="464" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="477edfd06ca1d4ed8cd7cddda88b7128cce0a0f5" relative="Referral/UI/API/Requests/ApiRefferalCheckRequest.php"/>
+  <docblock>
+    <description compact="Class GetMyProfileRequest."/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="16" end="24" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="authorize" start="29" end="32" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\Referral\UI\API\Requests\bool" namespace="App\Containers\Referral\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

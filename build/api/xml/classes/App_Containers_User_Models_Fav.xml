@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Models\Fav" namespace="App\Containers\User\Models" name="Fav" abstract="false" final="false" start="12" end="19">
+  <file path="/var/www/html/queencar/app/Containers/User/Models" file="Fav.php" realpath="/var/www/html/queencar/app/Containers/User/Models/Fav.php" size="244" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="504b597bb5225ab149102a36d264252a0f471431" relative="User/Models/Fav.php"/>
+  <docblock>
+    <description compact="Class Fav"/>
+    <package value="App\Containers\User\Models"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\Model" namespace="App\Ship\Parents\Models" name="Model" unresolved="true"/>
+  <member name="table" default="'fav_plcae'" type="string" visibility="protected" static="false" line="18">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+</class>

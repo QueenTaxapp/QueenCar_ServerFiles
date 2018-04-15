@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Models\DriverPaidModel" namespace="App\Containers\Drivers\Models" name="DriverPaidModel" abstract="false" final="false" start="11" end="14">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/Models" file="DriverPaidModel.php" realpath="/var/www/html/queencar/app/Containers/Drivers/Models/DriverPaidModel.php" size="242" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="48541f3e52134cf28c4f75cc634f26ab84e46f79" relative="Drivers/Models/DriverPaidModel.php"/>
+  <docblock>
+    <description compact="Class DriverModel"/>
+    <package value="App\Containers\Drivers\Models"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="table" default="'DriverPaid'" type="string" visibility="protected" static="false" line="13"/>
+</class>

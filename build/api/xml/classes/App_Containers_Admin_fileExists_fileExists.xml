@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\fileExists\fileExists" namespace="App\Containers\Admin\fileExists" name="fileExists" abstract="false" final="false" start="11" end="73">
+  <file path="/var/www/html/queencar/app/Containers/Admin/fileExists" file="fileExists.php" realpath="/var/www/html/queencar/app/Containers/Admin/fileExists/fileExists.php" size="2508" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="5fe31aed7f2eff5bb74f49d168315a6b9737d11f" relative="Admin/fileExists/fileExists.php"/>
+  <docblock>
+    <description/>
+  </docblock>
+  <method name="fileCreate" start="13" end="71" abstract="false" final="false" static="true" visibility="public"/>
+</class>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\MobileCheckTask" namespace="App\Containers\User\Tasks" name="MobileCheckTask" abstract="false" final="false" start="17" end="57">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="MobileCheckTask.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/MobileCheckTask.php" size="1446" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="38270c933fa387725d6c8745cddf95ea07fe7e11" relative="User/Tasks/MobileCheckTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="25" end="55" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$request"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

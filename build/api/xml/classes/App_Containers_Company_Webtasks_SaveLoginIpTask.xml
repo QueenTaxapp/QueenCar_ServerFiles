@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Company\Webtasks\SaveLoginIpTask" namespace="App\Containers\Company\Webtasks" name="SaveLoginIpTask" abstract="false" final="false" start="12" end="63">
+  <file path="/var/www/html/queencar/app/Containers/Company/Webtasks" file="SaveLoginIpTask.php" realpath="/var/www/html/queencar/app/Containers/Company/Webtasks/SaveLoginIpTask.php" size="1542" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="2cbef28225e4d19cfec56ac1a5f9d11b10ba81d5" relative="Company/Webtasks/SaveLoginIpTask.php"/>
+  <method name="run" start="14" end="62" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="tablename" byreference="false" type="{unknown}"/>
+    <parameter name="columnName" byreference="false" type="{unknown}"/>
+  </method>
+</class>

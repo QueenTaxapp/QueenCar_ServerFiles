@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Request\ApiTask\UserRequestCancelTask" namespace="App\Containers\Request\ApiTask" name="UserRequestCancelTask" abstract="false" final="false" start="29" end="125">
+  <file path="/var/www/html/queencar/app/Containers/Request/ApiTask" file="UserRequestCancelTask.php" realpath="/var/www/html/queencar/app/Containers/Request/ApiTask/UserRequestCancelTask.php" size="3620" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="747f8f697c61a2c89b5bb386e56632b12fd8951d" relative="Request/ApiTask/UserRequestCancelTask.php"/>
+  <docblock>
+    <description compact="Class ApiEta$createrequest=new CreateRequest(); $request = new RequestModel(); $request-&gt;request_id =$createrequest-&gt;generateRequestCode(); $request-&gt;later = 1; $request-&gt;user_id = ; return $data;"/>
+    <package value="App\Containers\eta\ApiTask"/>
+  </docblock>
+  <method name="run" start="31" end="123" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+</class>

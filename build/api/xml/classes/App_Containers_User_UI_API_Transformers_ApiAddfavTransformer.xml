@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Transformers\ApiAddfavTransformer" namespace="App\Containers\User\UI\API\Transformers" name="ApiAddfavTransformer" abstract="false" final="false" start="15" end="43">
+  <file path="/var/www/html/queencar/app/Containers/Promocode/UI/API/Transformers" file="ApiAddfavTransformer.php" realpath="/var/www/html/queencar/app/Containers/Promocode/UI/API/Transformers/ApiAddfavTransformer.php" size="965" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="dbb0abc1a439878e1921edeee5d8d150d50727d8" relative="Promocode/UI/API/Transformers/ApiAddfavTransformer.php"/>
+  <docblock>
+    <description compact="Class ApiAddfavTransformer"/>
+    <package value="App\Containers\User\UI\API\Transformers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="22" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$result"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="result" byreference="false" type="{unknown}"/>
+  </method>
+</class>

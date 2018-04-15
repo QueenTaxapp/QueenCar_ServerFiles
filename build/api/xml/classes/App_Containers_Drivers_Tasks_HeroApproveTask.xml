@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Tasks\HeroApproveTask" namespace="App\Containers\Drivers\Tasks" name="HeroApproveTask" abstract="false" final="false" start="20" end="45">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/Tasks" file="HeroApproveTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/Tasks/HeroApproveTask.php" size="1238" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="82c2dfd6c9c6940a879742bd4f7011dea47a4bf1" relative="Drivers/Tasks/HeroApproveTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="27" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

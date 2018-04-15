@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Common\RequestOutputFormat" namespace="App\Containers\Common" name="RequestOutputFormat" abstract="false" final="false" start="12" end="117">
+  <file path="/var/www/html/queencar/app/Containers/Common" file="RequestOutputFormat.php" realpath="/var/www/html/queencar/app/Containers/Common/RequestOutputFormat.php" size="3019" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="784438b035495903b0b1b6e2c3020b55cde6fcf3" relative="Common/RequestOutputFormat.php"/>
+  <docblock>
+    <description compact="Class RequestOutputFormat."/>
+    <author value="Vignesh R"/>
+  </docblock>
+  <method name="tripStatus" start="19" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$requestDetails" type="object">it is used to find the trip status for single request</param>
+    </docblock>
+    <parameter name="requestDetails" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="isPaid" start="51" end="62" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$requestDetails" type="object">it is used to find the specific request is paid or un paid</param>
+    </docblock>
+    <parameter name="requestDetails" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="paymentType" start="68" end="78" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$requestDetails" type="object">it is used to find the specific request payment type</param>
+    </docblock>
+    <parameter name="requestDetails" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="MethodCallOften" start="87" end="113" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$arrayListOffunction" type="array"/>
+      <param variable="$requestList" type="object">it is used to call the method on this class often using the values in $arrayListOffunction
+and stored with key using $arrayListOffunction as like $requestList</param>
+    </docblock>
+    <parameter name="arrayListOffunction" byreference="false" type="{unknown}"/>
+    <parameter name="requestList" byreference="false" type="{unknown}"/>
+  </method>
+</class>

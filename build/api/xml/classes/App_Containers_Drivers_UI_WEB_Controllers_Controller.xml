@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\UI\WEB\Controllers\Controller" namespace="App\Containers\Drivers\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="58" end="883">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Drivers/UI/WEB/Controllers/Controller.php" size="32034" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="688e03facb5d97191d50b4f76d4688aff61a8924" relative="Drivers/UI/WEB/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="DriverDocumentExpiry" start="61" end="138" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="language_change" line="76"/>
+      <comment value="language_change" line="85"/>
+      <comment value="intimation" line="111"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($driver);die();" line="137"/>
+    </inline>
+  </method>
+  <method name="createDriverAccount" start="140" end="150" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;driver_id);die();" line="142"/>
+    </inline>
+  </method>
+  <method name="saveDriverAccount" start="152" end="241" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="154"/>
+    </inline>
+  </method>
+  <method name="adminDriverDeleteAccount" start="243" end="254" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="viewDriver" start="257" end="314" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$a = SmsModel::select('hint')-&gt;where('id',9)-&gt;first();" line="260"/>
+      <comment value="$b = unserialize($a-&gt;hint);" line="262"/>
+      <comment value="$c['%appName%'] = $b['%applicationName%'];" line="263"/>
+      <comment value="$c['%headOfficeNumber%'] = $b['%helpEmailAddress%'];" line="264"/>
+      <comment value="$c['%helpEmail%'] = $b['%helpNumber%'];" line="265"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="268"/>
+      <comment value="print_r(serialize($c));" line="269"/>
+      <comment value="die();" line="270"/>
+    </inline>
+  </method>
+  <method name="createDriver" start="319" end="364" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($admins);die();" line="339"/>
+    </inline>
+  </method>
+  <method name="saveDriver" start="367" end="420" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Drivers\UI\WEB\Requests\DriverAddRequest" namespace="App\Containers\Drivers\UI\WEB\Requests" name="DriverAddRequest"/>
+    </parameter>
+    <inline>
+      <comment value="email" line="384"/>
+      <comment value="language_change" line="385"/>
+      <comment value="language_change" line="394"/>
+      <comment value="Email Notification" line="408"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($driver);die();" line="412"/>
+    </inline>
+  </method>
+  <method name="editDriver" start="423" end="474" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo Session::get('role').&quot;&lt;br&gt;&quot;;" line="428"/>
+    </inline>
+  </method>
+  <method name="updateDriver" start="477" end="515" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Drivers\UI\WEB\Requests\DriverAddRequest" namespace="App\Containers\Drivers\UI\WEB\Requests" name="DriverAddRequest"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;doc_id);die();" line="479"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($driver);die();" line="505"/>
+    </inline>
+  </method>
+  <method name="deleteDriver" start="520" end="529" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="approveDriver" start="532" end="643" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r( $promo-&gt;state);die();" line="638"/>
+    </inline>
+  </method>
+  <method name="driverIncome" start="645" end="718" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$tableResult = RequestModel::leftjoin('request_bill','request.id','request_bill.request_id')" line="652"/>
+      <comment value="-&gt;leftjoin('DriverPaid','DriverPaid.request_id','request.id')" line="653"/>
+      <comment value="-&gt;leftjoin('DriverAccounts','DriverAccounts.driver_acc_id','request.driver_id')" line="654"/>
+      <comment value="-&gt;leftjoin('payment','payment.user_id','request.user_id')" line="655"/>
+      <comment value="-&gt;leftjoin('Driver_Details','Driver_Details.driver_id','request.driver_id')" line="656"/>
+      <comment value="-&gt;leftjoin('CompanyAccounts','CompanyAccounts.company_id','Driver_Details.company')" line="657"/>
+      <comment value="-&gt;select('request.id','request.request_id as requestId','request.created_at as date','DriverPaid.transfer_id as isPaid','request.user_id','request.driver_id','DriverAccounts.driver_acc_id','payment.customer_id as customer_payment','Driver_Details.company as company_id','CompanyAccounts.company_acc_id')" line="658"/>
+      <comment value="-&gt;where('request.driver_id', $driverId);" line="659"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="663"/>
+      <comment value="print_r($tableResult-&gt;get());" line="664"/>
+      <comment value="die();" line="666"/>
+      <comment value="$date = new Carbon; //  DateTime string will be 2014-04-03 13:57:34" line="668"/>
+      <comment value="or $date-&gt;subDays(7),  2014-03-27 13:58:25" line="670"/>
+    </inline>
+  </method>
+  <method name="driverIncomeValue" start="720" end="727" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="driverIncomePaid" start="729" end="817" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="payment_opt" line="752"/>
+      <comment value="0-card," line="753"/>
+      <comment value="1-cash," line="754"/>
+      <comment value="2-wallet," line="755"/>
+      <comment value="3-wallet/cash" line="756"/>
+    </inline>
+  </method>
+  <method name="driverIncomePaidCash" start="819" end="837" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminSpecificTypes" start="839" end="859" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companySpecificTypes" start="861" end="880" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

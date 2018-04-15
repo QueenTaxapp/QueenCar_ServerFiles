@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Transformers\ApiCreateRequestTransformer" namespace="App\Containers\User\UI\API\Transformers" name="ApiCreateRequestTransformer" abstract="false" final="false" start="15" end="57">
+  <file path="/var/www/html/queencar/app/Containers/Promocode/UI/API/Transformers" file="ApiCreateRequestTransformer.php" realpath="/var/www/html/queencar/app/Containers/Promocode/UI/API/Transformers/ApiCreateRequestTransformer.php" size="2151" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="941aca58faa36d622b574781efbf2ecab29558a5" relative="Promocode/UI/API/Transformers/ApiCreateRequestTransformer.php"/>
+  <docblock>
+    <description compact="Class ApiCreateRequestTransformer"/>
+    <package value="App\Containers\User\UI\API\Transformers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="22" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$result"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="result" byreference="false" type="{unknown}"/>
+  </method>
+</class>

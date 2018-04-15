@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Payment\ApiTask\PaymentDefault" namespace="App\Containers\Payment\ApiTask" name="PaymentDefault" abstract="false" final="false" start="21" end="48">
+  <file path="/var/www/html/queencar/app/Containers/Payment/ApiTask" file="PaymentDefault.php" realpath="/var/www/html/queencar/app/Containers/Payment/ApiTask/PaymentDefault.php" size="1450" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="8a66f274feda76bc7b6ee6b5bf12612b9c446b55" relative="Payment/ApiTask/PaymentDefault.php"/>
+  <docblock>
+    <description compact="Class CheckCode"/>
+    <package value="App\Containers\Referral\ApiTask"/>
+  </docblock>
+  <extends full="App\Containers\Payment\ApiTask\add_card" namespace="App\Containers\Payment\ApiTask" name="add_card"/>
+  <method name="run" start="28" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+  <parent full="App\Containers\Payment\ApiTask\add_card" namespace="App\Containers\Payment\ApiTask" name="add_card">
+    <method name="run" start="32" end="100" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <param variable="$data"/>
+        <param variable="$custom_parameter"/>
+        <return type="mixed"/>
+      </docblock>
+      <parameter name="data" byreference="false" type="{unknown}"/>
+      <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="print_r($result-&gt;errors);die();" line="75"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="if($result)" line="76"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="{" line="77"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$count = Payment::where('user_id',$data['request']-&gt;id)-&gt;where('is_default',1)-&gt;count();" line="78"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment= new Payment();" line="79"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment-&gt;customer_id = $result-&gt;customer-&gt;id;" line="80"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment-&gt;merchant_id = $result-&gt;customer-&gt;merchantId;" line="81"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment-&gt;card_token = 0;" line="82"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment-&gt;card_token = $result-&gt;creditCards[0]-&gt;token;" line="83"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment-&gt;last_number = $data['request']-&gt;last_number;" line="84"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment-&gt;card_type = $data['request']-&gt;card_type?:&quot;VISA&quot;;" line="85"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment-&gt;user_id = $data['request']-&gt;id;" line="86"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment-&gt;is_default=$count == 0?1:0;" line="87"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment-&gt;save();" line="88"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment = Payment::where('user_id',$data['request']-&gt;id)-&gt;get();" line="89"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$payment_data=$this-&gt;make_payment_data($payment);" line="90"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$object = new \stdClass();" line="91"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$object-&gt;message = &quot;Card_Added_Successfully&quot;;" line="92"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$object-&gt;payment = $payment_data;" line="93"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="$data['response']=$object;" line="94"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="return $data;" line="95"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="}" line="96"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="else{" line="97"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="throw (new CommonException())-&gt;setValue('712',trans('localization::errors.712'));" line="98"/>
+        <comment xmlns="http://xml.phpdox.net/src" value="}" line="99"/>
+      </inline>
+    </method>
+    <method name="make_payment_data" start="108" end="121" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="common payment detail for all array"/>
+        <param variable="$payment"/>
+        <return type="array"/>
+      </docblock>
+      <parameter name="payment" byreference="false" type="{unknown}"/>
+    </method>
+  </parent>
+</class>

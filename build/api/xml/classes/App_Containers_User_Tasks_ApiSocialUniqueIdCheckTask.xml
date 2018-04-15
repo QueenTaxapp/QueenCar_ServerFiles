@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\ApiSocialUniqueIdCheckTask" namespace="App\Containers\User\Tasks" name="ApiSocialUniqueIdCheckTask" abstract="false" final="false" start="19" end="43">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="ApiSocialUniqueIdCheckTask.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/ApiSocialUniqueIdCheckTask.php" size="967" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="3c8e83ef7b7a1811679ae8aa6e55165fa4bc6cb4" relative="User/Tasks/ApiSocialUniqueIdCheckTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="27" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to select id using Social unique id"/>
+      <param variable="$email" type="string"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="socialUniqueId" byreference="false" type="{unknown}"/>
+  </method>
+</class>

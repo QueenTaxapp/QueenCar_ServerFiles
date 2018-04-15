@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/User/UI/API/Routes" file="ApiCreateRequest.v1.public.php" realpath="/var/www/html/queencar/app/Containers/User/UI/API/Routes/ApiCreateRequest.v1.public.php" size="2129" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="c05d97424af3c5f8ccacc2d568b74961856bad42" relative="User/UI/API/Routes/ApiCreateRequest.v1.public.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * @apiGroup           Users</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * @apiName            Create New Request</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * @api                {post} /user/createrequest Create New Request</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * @apiDescription     Create New Request</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * @apiVersion         1.0.0</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * @apiPermission      none</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * @apiHeader          Accept application/json</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Integer}     id   user id</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> *@apiParam           {String}     token    user token</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Double}     platitude</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Double}     plongitude</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Double}     dlongitude</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Double}     dlatitude</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Integer}     paymentOpt</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Integer}     type</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT"> *@apiParam           {String}     plocation</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> *@apiParam           {String}     dlocation</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> * @apiSuccessExample  {json}    Success-Response:</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> *   HTTP/1.1 200 OK</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT">*   {</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT">*       "success": true,</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT">*       "success_message": "Create_Request_successfully",</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">*       "request": {</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">*                   "id": 222,</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">*                   "request_id": "RES_40715",</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">*                   "pick_latitude": "11.0147692",</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT">*                   "pick_longitude": "76.980241",</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT">*                   "drop_longitude": "76.980241",</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT">*                   "drop_latitude": "11.001928",</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT">*                   "drop_location": "No: 395, Sarojini Naidu Road, Sidhapudur, Balasundaram Layout, B.K.R Nagar, New Siddhapudur, Coimbatore, Tamil Nadu 641044",</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT">*                   "pick_location": "Sowripalayam Road, Udayampalayam Road, Ganapathypudur, KR Puram, Udayampalayam, Coimbatore, Tamil Nadu 641028"</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT">*       },</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT">*       "user": {</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT">*                   "id": 40,</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT">*                   "firstname": "user",</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT">*                   "lastname": "test",</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT">*                   "email": "usertest1@gmail.com",</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT">*                   "phone_number": "+914321567890",</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT">*                   "profile_pic": "",</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT">*                   "latitude": 0,</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT">*                   "longitude": 0</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT">*       }</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT">*   }</token>
+  </line>
+  <line no="51">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="52">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="53"/>
+  <line no="54">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$router</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">post</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/user/createrequest'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="55">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'as'</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Request@createrequest'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="56">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'uses'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Controller@run'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="57">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'middleware'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="58">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'userTokenCheck.api'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="59">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+  </line>
+  <line no="60">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="61"/>
+  <line no="62"/>
+  <line no="63"/>
+  <line no="64"/>
+</source>

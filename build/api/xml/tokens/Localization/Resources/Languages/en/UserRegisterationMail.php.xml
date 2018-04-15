@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Localization/Resources/Languages/en" file="UserRegisterationMail.php" realpath="/var/www/html/queencar/app/Containers/Localization/Resources/Languages/en/UserRegisterationMail.php" size="135" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="c2c5949e767ea75afbefb0fdd3fbb40778367451" relative="Localization/Resources/Languages/en/UserRegisterationMail.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'app_name'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'911'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="5">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'thanks'</token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Thanks for signing up! Were excited to have you join us.'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="6">
+    <token name="T_WHITESPACE">        </token>
+  </line>
+  <line no="7">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="8"/>
+</source>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Promocode\UI\WEB\Controllers\Controller" namespace="App\Containers\Promocode\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="26" end="236">
+  <file path="/var/www/html/queencar/app/Containers/Promocode/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Promocode/UI/WEB/Controllers/Controller.php" size="7816" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="3717c49697669929015af6aa9c3eb8b2f33a4108" relative="Promocode/UI/WEB/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <package value="App\Containers\Admin\UI\WEB\Controllers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="adminPromoView" start="34" end="79" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="object">
+        <type full="\Illuminate\Contracts\View\Factory|\Illuminate\View\View" namespace="\Illuminate\Contracts\View\Factory|\Illuminate\View" name="View"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="print_r($request-&gt;all());die();" line="36"/>
+      <comment value="$page = GetConfigs::getConfigs('paginate');" line="70"/>
+      <comment value="$promo =PromocodeModel::select('*')-&gt;paginate($page);" line="71"/>
+      <comment value="$promo =(object)$promo;" line="72"/>
+      <comment value="$ =AdminModel::get();" line="75"/>
+    </inline>
+  </method>
+  <method name="adminPromoAdd" start="81" end="109" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$ =AdminModel::get();" line="105"/>
+    </inline>
+  </method>
+  <method name="adminPromoAddSave" start="112" end="137" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="114"/>
+    </inline>
+  </method>
+  <method name="adminPromoEdit" start="140" end="170" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$ =AdminModel::get();" line="166"/>
+    </inline>
+  </method>
+  <method name="adminPromoUpdate" start="172" end="196" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminPromoDelete" start="198" end="208" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminPromoActive" start="210" end="232" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r( $promo-&gt;state);die();" line="227"/>
+    </inline>
+  </method>
+</class>

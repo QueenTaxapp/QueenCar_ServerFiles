@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Request\ApiTask\ApiRiderLaterTask" namespace="App\Containers\Request\ApiTask" name="ApiRiderLaterTask" abstract="false" final="false" start="17" end="56">
+  <file path="/var/www/html/queencar/app/Containers/Request/ApiTask" file="ApiRiderLaterTask.php" realpath="/var/www/html/queencar/app/Containers/Request/ApiTask/ApiRiderLaterTask.php" size="1929" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="7a089689951bec0281566c2dda502acc72cd6ab5" relative="Request/ApiTask/ApiRiderLaterTask.php"/>
+  <method name="run" start="19" end="54" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Tasks\ApiHeroGetRequestTask" namespace="App\Containers\Drivers\Tasks" name="ApiHeroGetRequestTask" abstract="false" final="false" start="16" end="40">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/Tasks" file="ApiHeroGetRequestTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/Tasks/ApiHeroGetRequestTask.php" size="1017" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="330b1025c9e71bf2e3943437c9e42a3516f96051" relative="Drivers/Tasks/ApiHeroGetRequestTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="23" end="38" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo $id;die();" line="27"/>
+      <comment value="print_r($data);die();" line="36"/>
+    </inline>
+  </method>
+</class>

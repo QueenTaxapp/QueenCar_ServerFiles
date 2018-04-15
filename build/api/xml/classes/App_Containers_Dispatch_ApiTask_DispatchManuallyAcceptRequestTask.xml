@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\ApiTask\DispatchManuallyAcceptRequestTask" namespace="App\Containers\Dispatch\ApiTask" name="DispatchManuallyAcceptRequestTask" abstract="false" final="false" start="31" end="115">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/ApiTask" file="DispatchManuallyAcceptRequestTask.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/ApiTask/DispatchManuallyAcceptRequestTask.php" size="3229" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="d57494018f583f870ef459c54e27063da0d438dc" relative="Dispatch/ApiTask/DispatchManuallyAcceptRequestTask.php"/>
+  <method name="run" start="34" end="114" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+</class>

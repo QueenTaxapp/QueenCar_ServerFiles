@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\ApiTask\CreateRequest" namespace="App\Containers\User\ApiTask" name="CreateRequest" abstract="false" final="false" start="39" end="404">
+  <file path="/var/www/html/queencar/app/Containers/User/ApiTask" file="CreateRequest.php" realpath="/var/www/html/queencar/app/Containers/User/ApiTask/CreateRequest.php" size="14991" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="494630680429b287bad1a108b6f6362c319c3a86" relative="User/ApiTask/CreateRequest.php"/>
+  <docblock>
+    <description compact="Class CreateRequest"/>
+    <package value="App\Containers\User\ApiTask"/>
+  </docblock>
+  <method name="run" start="46" end="244" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="$time_out = GetConfigs::getConfigs(&quot;driver_time_out&quot;);" line="149"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$time_out = round(($time_out+$time_out+60)/60);" line="150"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$expiresAt = Carbon::now()-&gt;addMinutes($time_out);" line="151"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Cache::put('request_id_'.$request-&gt;id, $request-&gt;id, $expiresAt);" line="152"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$assign_method = GetConfigs::getConfigs(&quot;assign_method&quot;);" line="153"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$expiresAt = Carbon::now()-&gt;addMinutes(200);" line="154"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Cache::put('request_id_'.$request-&gt;id, array(&quot;assign&quot; =&gt;$assign_method,&quot;drivers&quot; =&gt; $waiting_drivers), $expiresAt);" line="155"/>
+      <comment value="sms" line="207"/>
+      <comment value="email" line="228"/>
+    </inline>
+  </method>
+  <method name="checkUserState" start="248" end="255" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="checkUserAlreadyOnTrip" start="262" end="278" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$UserId" type="int">it is used to check if the user already has request which is not either complete or cancelled</param>
+    </docblock>
+    <parameter name="UserId" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="generateRequestCode" start="280" end="287" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getDrivers" start="290" end="297" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="checkdrivers" start="300" end="336" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="drivers" byreference="false" type="{unknown}"/>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="checkExistsTrip" start="338" end="354" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="checkPaymentOption" start="359" end="378" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="checkwallet" start="380" end="389" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="checkcard" start="391" end="398" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="checkcash" start="400" end="403" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+</class>

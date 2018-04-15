@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Webtasks\ApiInsertImageTask" namespace="App\Containers\User\Webtasks" name="ApiInsertImageTask" abstract="false" final="false" start="9" end="48">
+  <file path="/var/www/html/queencar/app/Containers/User/Webtasks" file="ApiInsertImageTask.php" realpath="/var/www/html/queencar/app/Containers/User/Webtasks/ApiInsertImageTask.php" size="1239" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="1f874c6f5d60f5ce1f0a51e775dca4ab52eb57c0" relative="User/Webtasks/ApiInsertImageTask.php"/>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="21" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="to insert image"/>
+      <param variable="$request"/>
+      <param variable="$id"/>
+      <param variable="$className"/>
+      <param variable="$imageName"/>
+      <param variable="$fieldName"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="className" byreference="false" type="{unknown}"/>
+    <parameter name="imageName" byreference="false" type="{unknown}"/>
+    <parameter name="fieldName" byreference="false" type="{unknown}"/>
+  </method>
+</class>

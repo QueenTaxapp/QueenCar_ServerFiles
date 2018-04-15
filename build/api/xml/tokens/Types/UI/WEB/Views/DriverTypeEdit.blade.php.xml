@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Types/UI/WEB/Views" file="DriverTypeEdit.blade.php" realpath="/var/www/html/queencar/app/Containers/Types/UI/WEB/Views/DriverTypeEdit.blade.php" size="3494" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="3e3f66bd700c99b6970e2959ac05fa0203b91bcd" relative="Types/UI/WEB/Views/DriverTypeEdit.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layout::Layout')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3"/>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;!-- START CONTENT --&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;section id="content"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        &lt;!--start container--&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        &lt;div class="container"&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            &lt;!--card stats start--&gt;</token>
+  </line>
+  <line no="10"/>
+  <line no="11">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">                &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">                    &lt;div id="bordered-table"&gt;</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">                        &lt;h4 class="header"&gt;{{ trans('localization::lang_view.edit_type')}}</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                            &lt;span class="back-button" style="float: right;"&gt;&lt;a class="tooltipped" href="{{  URL::Route('adminDriverTypeView') }}" data-position="left" data-delay="50" data-tooltip="{{ trans('localization::lang_view.click_here_to_go_type_view_page')}}" &gt;{{ trans('localization::lang_view.back')}}&lt;i class="material-icons"&gt;reply&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">                        &lt;/h4&gt;</token>
+  </line>
+  <line no="19"/>
+  <line no="20">
+    <token name="T_INLINE_HTML">                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="21"/>
+  <line no="22">
+    <token name="T_INLINE_HTML">                            &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                                &lt;form action="{{URL::Route('adminDriverTypeUpdate',$type-&gt;id)}}"  method="post" enctype="multipart/form-data" &gt;</token>
+  </line>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_INLINE_HTML">                                    &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">                                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                                                        &lt;input name="typeName" id="name" type="text" value="</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$type</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">name</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">" class="validate" required &gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                                                        &lt;label for="name" class="active"&gt;{{ trans('localization::lang_view.type_name')}} &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                                                    &lt;/div&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                                                        &lt;div class=" col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                                                            &lt;label for="avatar"&gt;{{ trans('localization::lang_view.add_icon')}}&lt;/label&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                                        &lt;/div&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                                                        &lt;div class="input-field col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                                                            &lt;input name="profile_pic" id="avatar input-file-to-destroy" data-default-file="</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$type</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">icon</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">" class="dropify" data-allowed-file-extensions="jpg jpeg" data-show-errors="true"  data-max-height="2000" type="file"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                                                        &lt;/div&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                                                    &lt;/div&gt;</token>
+  </line>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                                    &lt;br&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                                        &lt;button class="btn save-btn cyan waves-effect waves-light right" type="submit" name="action"&gt;{{ trans('localization::lang_view.update_type')}}</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                                            &lt;i class="material-icons right"&gt;send&lt;/i&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                                        &lt;/button&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_INLINE_HTML">                                &lt;/form&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                                &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</token>
+  </line>
+  <line no="53"/>
+  <line no="54">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="55"/>
+  <line no="56">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="60"/>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_INLINE_HTML">            &lt;!--end container--&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">    &lt;/section&gt;</token>
+  </line>
+  <line no="65"/>
+  <line no="66">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

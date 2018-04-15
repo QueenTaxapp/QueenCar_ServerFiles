@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\UI\API\Tests\Functional\ListPermissionsTest" namespace="App\Containers\Authorization\UI\API\Tests\Functional" name="ListPermissionsTest" abstract="false" final="false" start="13" end="37">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional" file="ListPermissionsTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional/ListPermissionsTest.php" size="844" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="d1651dbd8dac1f71c02079f19b01eea4e929282b" relative="Authorization/UI/API/Tests/Functional/ListPermissionsTest.php"/>
+  <docblock>
+    <description compact="Class ListPermissionsTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase"/>
+  <member name="endpoint" default="'get@v1/permissions'" type="string" visibility="protected" static="false" line="16"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="18"/>
+  <method name="testListAllPermissions_" start="23" end="35" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="25"/>
+      <comment value="assert response status is correct" line="28"/>
+      <comment value="convert JSON response string to Object" line="31"/>
+    </inline>
+  </method>
+  <parent full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase">
+    <extends full="App\Ship\Parents\Tests\PhpUnit\TestCase" namespace="App\Ship\Parents\Tests\PhpUnit" name="TestCase" unresolved="true"/>
+  </parent>
+</class>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\GetRandomCode" namespace="App\Containers\User\Tasks" name="GetRandomCode" abstract="false" final="false" start="16" end="36">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="GetRandomCode.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/GetRandomCode.php" size="801" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="8934b36c91d92073d076cae2409c35b824cfc958" relative="User/Tasks/GetRandomCode.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="25" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Random Code"/>
+      <param type="object" variable="$length">
+        <type full="phpDocumentor\Reflection\Types\Integer" namespace="phpDocumentor\Reflection\Types" name="Integer"/>
+      </param>
+      <return type="object">
+        <type full="App\Containers\User\Tasks\String" namespace="App\Containers\User\Tasks" name="String"/>
+      </return>
+    </docblock>
+    <parameter name="length" byreference="false" type="integer" default="5"/>
+  </method>
+</class>

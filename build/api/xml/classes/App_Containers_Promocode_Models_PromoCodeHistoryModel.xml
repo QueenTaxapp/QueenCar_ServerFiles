@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Promocode\Models\PromoCodeHistoryModel" namespace="App\Containers\Promocode\Models" name="PromoCodeHistoryModel" abstract="false" final="false" start="12" end="16">
+  <file path="/var/www/html/queencar/app/Containers/Promocode/Models" file="PromoCodeHistoryModel.php" realpath="/var/www/html/queencar/app/Containers/Promocode/Models/PromoCodeHistoryModel.php" size="319" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="1add27756d4e76f7a5cb3961ad04eb927222f706" relative="Promocode/Models/PromoCodeHistoryModel.php"/>
+  <docblock>
+    <description compact="Class PromoCodeHistoryModel"/>
+    <package value="App\Containers\Promocode\Models"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="table" default="'promo_code_history'" type="string" visibility="protected" static="false" line="15"/>
+</class>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Stripe\Models\StripeAccount" namespace="App\Containers\Stripe\Models" name="StripeAccount" abstract="false" final="false" start="14" end="61">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Models" file="StripeAccount.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Models/StripeAccount.php" size="1092" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="c24912a1a68250664c901f1e276b814047ca9a9a" relative="Stripe/Models/StripeAccount.php"/>
+  <docblock>
+    <description compact="Class StripeAccount."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\Model" namespace="App\Ship\Parents\Models" name="Model" unresolved="true"/>
+  <uses full="Illuminate\Database\Eloquent\SoftDeletes" namespace="Illuminate\Database\Eloquent" name="SoftDeletes" start="16" end="16" unresolved="true"/>
+  <member name="fillable" default="" type="array" visibility="protected" static="false" line="23">
+    <docblock>
+      <description compact="The attributes that are mass assignable."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="dates" default="" type="array" visibility="protected" static="false" line="37">
+    <docblock>
+      <description compact="The dates attributes."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="hidden" default="" type="array" visibility="protected" static="false" line="48">
+    <docblock>
+      <description compact="The attributes excluded from the model's JSON form."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="user" start="57" end="60" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="StripeAccount relationship with User"/>
+      <return type="object">
+        <type full="\Illuminate\Database\Eloquent\Relations\BelongsTo" namespace="\Illuminate\Database\Eloquent\Relations" name="BelongsTo"/>
+      </return>
+    </docblock>
+  </method>
+</class>

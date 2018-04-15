@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sms\Actions\SmsViewAction" namespace="App\Containers\Sms\Actions" name="SmsViewAction" abstract="false" final="false" start="12" end="27">
+  <file path="/var/www/html/queencar/app/Containers/Sms/Actions" file="SmsViewAction.php" realpath="/var/www/html/queencar/app/Containers/Sms/Actions/SmsViewAction.php" size="461" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="ebc4d6eae8f1f4d2929726bdc4c2ff063308b766" relative="Sms/Actions/SmsViewAction.php"/>
+  <docblock>
+    <description compact="Class SmsViewAction"/>
+    <package value="App\Containers\Sms\Actions"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="19" end="26" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to return a data for sms view page"/>
+      <param variable="$request"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

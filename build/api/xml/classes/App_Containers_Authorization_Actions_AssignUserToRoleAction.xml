@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Actions\AssignUserToRoleAction" namespace="App\Containers\Authorization\Actions" name="AssignUserToRoleAction" abstract="false" final="false" start="16" end="39">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Actions" file="AssignUserToRoleAction.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Actions/AssignUserToRoleAction.php" size="1036" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="03d0c162ea6003778cd16c403c496fc965e49e45" relative="Authorization/Actions/AssignUserToRoleAction.php"/>
+  <docblock>
+    <description compact="Class AssignUserToRoleAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="24" end="38" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Ship\Parents\Requests\Request" namespace="\App\Ship\Parents\Requests" name="Request"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="convert roles IDs to array (in case single id passed)" line="28"/>
+    </inline>
+  </method>
+</class>

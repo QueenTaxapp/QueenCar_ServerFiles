@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Eta\UI\API\Transformers\EtaTransform" namespace="App\Containers\Eta\UI\API\Transformers" name="EtaTransform" abstract="false" final="false" start="14" end="53">
+  <file path="/var/www/html/queencar/app/Containers/Eta/UI/API/Transformers" file="EtaTransform.php" realpath="/var/www/html/queencar/app/Containers/Eta/UI/API/Transformers/EtaTransform.php" size="1478" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="4a83ed43c3b49b7b899150999e52c709bedbf63d" relative="Eta/UI/API/Transformers/EtaTransform.php"/>
+  <docblock>
+    <description compact="Class EtaTransform"/>
+    <package value="App\Containers\Wallet\UI\API\Transformers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="21" end="49" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$result"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="result" byreference="false" type="{unknown}"/>
+  </method>
+</class>

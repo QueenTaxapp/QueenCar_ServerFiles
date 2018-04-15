@@ -1,0 +1,39 @@
+{
+  "module": {
+    "referral": {
+      "getreferral": {
+        "title": "get referral",
+        "version": "1.0.0",
+        "description": "Get referral code detail",
+        "module_type": "core",
+        "config_file": "Referral\/modules\/referral_check.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "referral_validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Requests\\emptyRequest"
+          },
+          "get_code": {
+            "id": "task",
+            "namespace": "App\\Containers\\Referral\\ApiTask\\GetCode"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\GetReferral"
+          }
+        }
+      }
+    }
+  },
+"files":
+    {
+      "GetCode.php":"Referral/ApiTask/",
+      "ReferralModel.php":"Referral/Models/",
+      "Controller.php":"Referral/UI/API/Controllers/",
+      "emptyRequest.php":"Referral/UI/API/Requests/",
+      "ApiReferralGetDetail.v1.public.php":"Referral/UI/API/Routes/",
+      "GetReferral.php":"Referral/UI/API/Transformers/",
+      "referral_get.json":"Referral/modules/"
+    }
+}

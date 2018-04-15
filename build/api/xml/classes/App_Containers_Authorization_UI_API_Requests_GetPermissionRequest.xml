@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\UI\API\Requests\GetPermissionRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="GetPermissionRequest" abstract="false" final="false" start="12" end="63">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/UI/API/Requests" file="GetPermissionRequest.php" realpath="/var/www/html/queencar/app/Containers/Authorization/UI/API/Requests/GetPermissionRequest.php" size="1175" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="5dac77da8357285a8f4d852cb509ca5de09c9c54" relative="Authorization/UI/API/Requests/GetPermissionRequest.php"/>
+  <docblock>
+    <description compact="Class ListAllPermissionsRequest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="20">
+    <docblock>
+      <description compact="Define which Roles and/or Permissions has access to this request."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="decode" default="" type="array" visibility="protected" static="false" line="30">
+    <docblock>
+      <description compact="Id's that needs decoding before applying the validation rules."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="urlParameters" default="" type="array" visibility="protected" static="false" line="40">
+    <docblock>
+      <description compact="Defining the URL parameters (`/stores/999/items`) allows applying validation rules on them and allows accessing them like request data."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="rules" start="47" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="authorize" start="57" end="62" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\Authorization\UI\API\Requests\bool" namespace="App\Containers\Authorization\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

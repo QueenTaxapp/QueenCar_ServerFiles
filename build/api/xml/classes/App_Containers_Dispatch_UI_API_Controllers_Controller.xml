@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\UI\API\Controllers\Controller" namespace="App\Containers\Dispatch\UI\API\Controllers" name="Controller" abstract="false" final="false" start="34" end="166">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Controllers/Controller.php" size="4722" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="7138626e146f7a528ad582066f8ab75a9f6247bd" relative="Dispatch/UI/API/Controllers/Controller.php"/>
+  <extends full="App\Ship\Parents\Controllers\ApiController" namespace="App\Ship\Parents\Controllers" name="ApiController" unresolved="true"/>
+  <method name="run" start="42" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="logindriver" start="52" end="65" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\User\UI\API\Requests\RegisterUserRequest" namespace="\App\Containers\User\UI\API\Requests" name="RegisterUserRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Drivers\UI\API\Requests\DriverLoginRequest" namespace="App\Containers\Drivers\UI\API\Requests" name="DriverLoginRequest"/>
+    </parameter>
+  </method>
+  <method name="SignUpdriver" start="72" end="86" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\Drivers\UI\API\Requests\DriverSignupRequest" namespace="App\Containers\Drivers\UI\API\Requests" name="DriverSignupRequest"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Drivers\UI\API\Requests\DriverSignupRequest" namespace="App\Containers\Drivers\UI\API\Requests" name="DriverSignupRequest"/>
+    </parameter>
+  </method>
+  <method name="Forgotpassword" start="92" end="100" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\User\UI\API\Requests\ValidateMobile" namespace="App\Containers\User\UI\API\Requests" name="ValidateMobile"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\User\UI\API\Requests\ValidateMobile" namespace="App\Containers\User\UI\API\Requests" name="ValidateMobile"/>
+    </parameter>
+  </method>
+  <method name="Logout" start="108" end="115" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="updateLocationHero" start="122" end="129" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\Drivers\UI\API\Requests\HeroUpdateLocationRequest" namespace="App\Containers\Drivers\UI\API\Requests" name="HeroUpdateLocationRequest"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Drivers\UI\API\Requests\HeroUpdateLocationRequest" namespace="App\Containers\Drivers\UI\API\Requests" name="HeroUpdateLocationRequest"/>
+    </parameter>
+  </method>
+  <method name="getRequestHero" start="136" end="142" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\Drivers\UI\API\Requests\HeroGetRequest" namespace="App\Containers\Drivers\UI\API\Requests" name="HeroGetRequest"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Drivers\UI\API\Requests\HeroGetRequest" namespace="App\Containers\Drivers\UI\API\Requests" name="HeroGetRequest"/>
+    </parameter>
+  </method>
+  <method name="ResponseHero" start="149" end="164" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\Drivers\UI\API\Requests\HeroResponseRequest" namespace="App\Containers\Drivers\UI\API\Requests" name="HeroResponseRequest"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Drivers\UI\API\Requests\HeroResponseRequest" namespace="App\Containers\Drivers\UI\API\Requests" name="HeroResponseRequest"/>
+    </parameter>
+  </method>
+</class>

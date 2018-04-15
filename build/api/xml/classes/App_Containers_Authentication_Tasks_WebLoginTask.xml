@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Tasks\WebLoginTask" namespace="App\Containers\Authentication\Tasks" name="WebLoginTask" abstract="false" final="false" start="14" end="32">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Tasks" file="WebLoginTask.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Tasks/WebLoginTask.php" size="686" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="2a51a90882dae33f1adc6d436985b599b3d40952" relative="Authentication/Tasks/WebLoginTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="23" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$email"/>
+      <param variable="$password"/>
+      <param type="object" variable="$remember">
+        <type full="App\Containers\Authentication\Tasks\bool|false" namespace="App\Containers\Authentication\Tasks" name="bool|false"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="password" byreference="false" type="{unknown}"/>
+    <parameter name="remember" byreference="false" type="boolean" default="false"/>
+  </method>
+</class>

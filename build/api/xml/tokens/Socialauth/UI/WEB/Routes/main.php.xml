@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/UI/WEB/Routes" file="main.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/UI/WEB/Routes/main.php" size="242" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="ff26a1638c8d00dda69eed24f73ab900f3a0340e" relative="Socialauth/UI/WEB/Routes/main.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_COMMENT">// provider login redirect (WEB)</token>
+  </line>
+  <line no="4">
+    <token name="T_VARIABLE">$router</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'auth/{provider}'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="5">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'uses'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Controller@redirectAll'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="6">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_COMMENT">// provider callback handler</token>
+  </line>
+  <line no="9">
+    <token name="T_VARIABLE">$router</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">any</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'auth/{provider}/callback'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="10">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'uses'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Controller@handleCallbackAll'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="11">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="12"/>
+  <line no="13"/>
+</source>

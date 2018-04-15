@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Types\Tasks\ApiGetTypeFromCache" namespace="App\Containers\Types\Tasks" name="ApiGetTypeFromCache" abstract="false" final="false" start="10" end="23">
+  <file path="/var/www/html/queencar/app/Containers/Types/Tasks" file="ApiGetTypeFromCache.php" realpath="/var/www/html/queencar/app/Containers/Types/Tasks/ApiGetTypeFromCache.php" size="359" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="c59eab1f6a665759d12eadea240cec402224f446" relative="Types/Tasks/ApiGetTypeFromCache.php"/>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="18" end="22" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get From Cache"/>
+      <return type="array"/>
+    </docblock>
+  </method>
+</class>

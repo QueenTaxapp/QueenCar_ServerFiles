@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Middlewares\TableCheck" namespace="App\Containers\Authentication\Middlewares" name="TableCheck" abstract="false" final="false" start="26" end="703">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Middlewares" file="TableCheck.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Middlewares/TableCheck.php" size="39001" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="cd4c1c3db1d9025e2dc956ef1ad7783c70f3c8a9" relative="Authentication/Middlewares/TableCheck.php"/>
+  <docblock>
+    <description compact="Class WebAuthentication"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Middlewares\Middleware" namespace="App\Ship\Parents\Middlewares" name="Middleware" unresolved="true"/>
+  <member name="auth" visibility="protected" static="false" line="34">
+    <docblock>
+      <description compact="The Guard implementation."/>
+      <var type="object">
+        <type full="Illuminate\Contracts\Auth\Guard" namespace="Illuminate\Contracts\Auth" name="Guard"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="handle" start="58" end="702" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Handle an incoming request."/>
+      <param type="object" variable="$request">
+        <type full="\Illuminate\Http\Request" namespace="\Illuminate\Http" name="Request"/>
+      </param>
+      <param type="object" variable="$next">
+        <type full="\Closure" namespace="" name="Closure"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+    <inline>
+      <comment value="if (!Schema::hasTable('Admin'))" line="61"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="62"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('Admin', function (Blueprint $table)" line="63"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="64"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="65"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="66"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('firstname');" line="67"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('lastname');" line="68"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('email');" line="69"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('password');" line="70"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('remember_token')-&gt;nullable();" line="71"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="72"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="73"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="74"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('is_active')-&gt;comment = &quot; if 1 active user or 0 is inactive user&quot;;" line="75"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('role')-&gt;comment = &quot; 1 = super admin , 2 = sub admin&quot;;" line="76"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('profile_pic')-&gt;nullable();" line="77"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="78"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="79"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!Schema::hasTable('Admin_details'))" line="80"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="81"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('Admin_details', function (Blueprint $table)" line="82"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="83"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="84"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="85"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('admin_id')-&gt;unsigned();" line="86"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('address')-&gt;nullable();" line="87"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('city')-&gt;nullable();" line="88"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('country')-&gt;nullable();" line="89"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('postalcode')-&gt;nullable();" line="90"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('last_login_ip_address')-&gt;nullable();" line="91"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('block')-&gt;default(1)-&gt;nullable()-&gt;comment = &quot; 1 = free , 0 = block &quot;;" line="92"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('login_attempt')-&gt;default(0)-&gt;nullable();" line="93"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="94"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at')-&gt;nullable();" line="95"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="96"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;foreign('admin_id')-&gt;references('id')-&gt;on('911_Admin')-&gt;onDelete('cascade');" line="97"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;foreign('photoIDs')-&gt;references('userID')-&gt;on('housePhotos');" line="98"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="99"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::table('Admin_details', function (Blueprint $table)" line="100"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="101"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;foreign('admin_id')-&gt;references('id')-&gt;on('Admin');" line="102"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="103"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo = new AdminModel;" line="104"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo-&gt;firstname ='admin';" line="105"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo-&gt;lastname ='test';" line="106"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo-&gt;email = 'admin@gmail.com';" line="107"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo-&gt;password = '$2y$10$imamWLc8rE.chdi96UJ4du0UMUIiUjJgQjp/QT5aPMAirIZFmwMC2';" line="108"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo-&gt;is_active = '1';" line="109"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo-&gt;role = '1';" line="110"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo-&gt;save();" line="111"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="112"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if (!Schema::hasTable('Drivers'))" line="113"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="114"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('Drivers', function (Blueprint $table)" line="115"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="116"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="117"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="118"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('firstname');" line="119"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('lastname');" line="120"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('email');" line="121"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('password');" line="122"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('phone_number');" line="123"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('is_active')-&gt;comment = &quot; if 1 active user or 0 is inactive user&quot;;" line="124"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('is_approve')-&gt;comment = &quot; if 1 approved user or 0 is declined user&quot;;" line="125"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('is_available')-&gt;comment = &quot; if 1 available user or 0 is busy&quot;;" line="126"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="127"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="128"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="129"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('token')-&gt;nullable();" line="130"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('token_expiry')-&gt;nullable();" line="131"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('device_token')-&gt;nullable();" line="132"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('social_unique_id')-&gt;nullable();" line="133"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('login_method');" line="134"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('login_by');" line="135"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('type');" line="136"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('profile_pic')-&gt;nullable();" line="137"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('car_model')-&gt;nullable();" line="138"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('car_number')-&gt;nullable();" line="139"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="140"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="141"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if (!Schema::hasTable('Driver_Details'))" line="142"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="143"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('Driver_Details', function (Blueprint $table)" line="144"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="145"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="146"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="147"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('driver_id')-&gt;nullable()-&gt;unsigned();" line="148"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;double('latitude',15,8)-&gt;nullable();" line="149"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;double('longitude',15,8)-&gt;nullable();" line="150"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="151"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="152"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="153"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="154"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::table('Driver_Details', function (Blueprint $table)" line="155"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="156"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;foreign('driver_id')-&gt;references('id')-&gt;on('Drivers');" line="157"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="158"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="159"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!Schema::hasTable('DriverDocument'))" line="160"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="161"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('DriverDocument', function (Blueprint $table)" line="162"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="163"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="164"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="165"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('driver_id')-&gt;nullable()-&gt;unsigned();" line="166"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('document_name')-&gt;nullable();" line="167"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('document')-&gt;nullable();" line="168"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;date('document_ex_date')-&gt;nullable();" line="169"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="170"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="171"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="172"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::table('DriverDocument', function (Blueprint $table)" line="173"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="174"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;foreign('driver_id')-&gt;references('id')-&gt;on('Drivers');" line="175"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="176"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="177"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!Schema::hasTable('Types'))" line="178"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="179"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('Types', function (Blueprint $table)" line="180"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="181"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="182"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="183"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('name')-&gt;nullable();" line="184"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('icon')-&gt;nullable();" line="185"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;double('base_price',15,2)-&gt;nullable();" line="186"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;double('price_per_distance',15,2)-&gt;nullable();" line="187"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;double('price_per_time',15,2)-&gt;nullable();" line="188"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('max_size')-&gt;nullable();" line="189"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('base_distance')-&gt;nullable();" line="190"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('is_active')-&gt;comment = &quot; if 1 available Type or 0 is Invisiable Type&quot;;" line="191"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="192"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="193"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="194"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="195"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="196"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if (!Schema::hasTable('User'))" line="197"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="198"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('User', function (Blueprint $table)" line="199"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="200"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="201"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="202"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('firstname');" line="203"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('lastname');" line="204"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('email')-&gt;unique();" line="205"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('phone_number')-&gt;unique();" line="206"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('password');" line="207"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('country')-&gt;nullable();" line="208"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('is_active')-&gt;default(0)-&gt;comment = &quot; if 1 active user or 0 is inactive user&quot;;" line="209"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('profile_pic')-&gt;nullable();" line="210"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('token')-&gt;nullable();" line="211"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('token_expiry')-&gt;nullable();" line="212"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('device_token')-&gt;nullable();" line="213"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('login_by')-&gt;nullable();" line="214"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('login_method')-&gt;nullable();" line="215"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('social_unique_id')-&gt;nullable();" line="216"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="217"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="218"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="219"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="220"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('User_detail', function (Blueprint $table)" line="221"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="222"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="223"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="224"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('user_id')-&gt;unsigned();" line="225"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;double('latitude',15,8);" line="226"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;double('longitude',15,8);" line="227"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('referred_by')-&gt;default(0);" line="228"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('promo_count')-&gt;default(0);" line="229"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="230"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="231"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="232"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="233"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::table('User_detail', function (Blueprint $table)" line="234"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="235"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;foreign('user_id')-&gt;references('id')-&gt;on('User');" line="236"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="237"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="238"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if (!Schema::hasTable('refferal'))" line="239"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="240"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('refferal', function (Blueprint $table)" line="241"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="242"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="243"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="244"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('user_id')-&gt;unsigned();" line="245"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('code');" line="246"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;double('amount_earned',15,2)-&gt;nullable();" line="247"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;double('amount_spent',15,2)-&gt;nullable();" line="248"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="249"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="250"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="251"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="252"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::table('refferal', function (Blueprint $table)" line="253"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="254"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;foreign('user_id')-&gt;references('id')-&gt;on('User');" line="255"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="256"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="257"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if (!Schema::hasTable('Email'))" line="258"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="259"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('Email', function (Blueprint $table)" line="260"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="261"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="262"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="263"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('title');" line="264"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('message');" line="265"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('hint');" line="266"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="267"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="268"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="269"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="270"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="271"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(!Schema::hasTable('Settings'))" line="272"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="273"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('Settings', function (Blueprint $table)" line="274"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="275"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="276"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="277"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('message_id');" line="278"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('title');" line="279"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('value')-&gt;nullable();" line="280"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('type');" line="281"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('method_field');" line="282"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;mediumText('value_default')-&gt;nullable();" line="283"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="284"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="285"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="286"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="287"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$settings = new SettingsModel();" line="288"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$settings-&gt;message_id=&quot;sms_notification_description&quot;;" line="289"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$settings-&gt;title=&quot;sms_notification_title&quot;;" line="290"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$settings-&gt;type=&quot;notification-type&quot;;" line="291"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$settings-&gt;method_field=&quot;text&quot;;" line="292"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$settings-&gt;value_default=&quot;&quot;;" line="293"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$settings-&gt;save();" line="294"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="295"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if (!Schema::hasTable('911_Request'))" line="296"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="297"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('911_Request', function (Blueprint $table)" line="298"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="299"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="300"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="301"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('conformed_hero_id');" line="302"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;double('lat');" line="303"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;double('long');" line="304"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('type');" line="305"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="306"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="307"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="308"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="309"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if (!Schema::hasTable('911_Request_Meta'))" line="310"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="311"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('911_Request_Meta', function (Blueprint $table)" line="312"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="313"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="314"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="315"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('request_id')-&gt;unsigned();" line="316"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('hero_id')-&gt;unsigned();" line="317"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('status')-&gt;nullable()-&gt;comment = &quot; 1 = Waiting for hero , 0 = Pending&quot;;;" line="318"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="319"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at')-&gt;nullable();" line="320"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="321"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="322"/>
+      <comment value="if (!Schema::hasTable('Sms'))" line="357"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="358"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('Sms', function (Blueprint $table)" line="359"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="360"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="361"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="362"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('title');" line="363"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('message');" line="364"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;longText('hint')-&gt;nullable();" line="365"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="366"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="367"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="368"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="369"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo = new SmsModel;" line="370"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo-&gt;title ='sms_otp';" line="371"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo-&gt;message ='your otp is ';" line="372"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo-&gt;hint = 'a:4:{s:8:&quot;%number%&quot;;a:2:{s:4:&quot;name&quot;;s:3:&quot;otp&quot;;s:8:&quot;required&quot;;s:4:&quot;true&quot;;}s:12:&quot;%first_name%&quot;;a:2:{s:4:&quot;name&quot;;s:10:&quot;first_name&quot;;s:8:&quot;required&quot;;s:4:&quot;true&quot;;}s:11:&quot;%last_name%&quot;;a:2:{s:4:&quot;name&quot;;s:9:&quot;last_name&quot;;s:8:&quot;required&quot;;s:5:&quot;false&quot;;}s:11:&quot;%user_name%&quot;;a:2:{s:4:&quot;name&quot;;s:9:&quot;user_name&quot;;s:8:&quot;required&quot;;s:4:&quot;true&quot;;}}';" line="373"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$demo-&gt;save();" line="374"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="375"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if (!Schema::hasTable('tempOtp'))" line="376"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="377"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('tempOtp', function (Blueprint $table)" line="378"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="379"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="380"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="381"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('phone_number')-&gt;nullable();" line="382"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('token');" line="383"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('otp')-&gt;nullable();" line="384"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('otp_time')-&gt;nullable();" line="385"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('status')-&gt;default(0)-&gt;comment = &quot; if 1 otp verified or 0 is unverified&quot;;" line="386"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('verified_numbers')-&gt;nullable();" line="387"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="388"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="389"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="390"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="391"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="392"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if (!Schema::hasTable('country'))" line="393"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="394"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('country', function (Blueprint $table)" line="395"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="396"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="397"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="398"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('code');" line="399"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('name');" line="400"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('d_code');" line="401"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at')-&gt;nullable();" line="402"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at')-&gt;nullable();" line="403"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="404"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="405"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries = [];" line="406"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AF&quot;, &quot;name&quot; =&gt; &quot;Afghanistan&quot;, &quot;d_code&quot; =&gt; &quot;+93&quot;);" line="407"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AL&quot;, &quot;name&quot; =&gt; &quot;Albania&quot;, &quot;d_code&quot; =&gt; &quot;+355&quot;);" line="408"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;DZ&quot;, &quot;name&quot; =&gt; &quot;Algeria&quot;, &quot;d_code&quot; =&gt; &quot;+213&quot;);" line="409"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AS&quot;, &quot;name&quot; =&gt; &quot;American Samoa&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="410"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AD&quot;, &quot;name&quot; =&gt; &quot;Andorra&quot;, &quot;d_code&quot; =&gt; &quot;+376&quot;);" line="411"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AO&quot;, &quot;name&quot; =&gt; &quot;Angola&quot;, &quot;d_code&quot; =&gt; &quot;+244&quot;);" line="412"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AI&quot;, &quot;name&quot; =&gt; &quot;Anguilla&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="413"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AG&quot;, &quot;name&quot; =&gt; &quot;Antigua&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="414"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AR&quot;, &quot;name&quot; =&gt; &quot;Argentina&quot;, &quot;d_code&quot; =&gt; &quot;+54&quot;);" line="415"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AM&quot;, &quot;name&quot; =&gt; &quot;Armenia&quot;, &quot;d_code&quot; =&gt; &quot;+374&quot;);" line="416"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AW&quot;, &quot;name&quot; =&gt; &quot;Aruba&quot;, &quot;d_code&quot; =&gt; &quot;+297&quot;);" line="417"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AU&quot;, &quot;name&quot; =&gt; &quot;Australia&quot;, &quot;d_code&quot; =&gt; &quot;+61&quot;);" line="418"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AT&quot;, &quot;name&quot; =&gt; &quot;Austria&quot;, &quot;d_code&quot; =&gt; &quot;+43&quot;);" line="419"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AZ&quot;, &quot;name&quot; =&gt; &quot;Azerbaijan&quot;, &quot;d_code&quot; =&gt; &quot;+994&quot;);" line="420"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BH&quot;, &quot;name&quot; =&gt; &quot;Bahrain&quot;, &quot;d_code&quot; =&gt; &quot;+973&quot;);" line="421"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BD&quot;, &quot;name&quot; =&gt; &quot;Bangladesh&quot;, &quot;d_code&quot; =&gt; &quot;+880&quot;);" line="422"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BB&quot;, &quot;name&quot; =&gt; &quot;Barbados&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="423"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BY&quot;, &quot;name&quot; =&gt; &quot;Belarus&quot;, &quot;d_code&quot; =&gt; &quot;+375&quot;);" line="424"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BE&quot;, &quot;name&quot; =&gt; &quot;Belgium&quot;, &quot;d_code&quot; =&gt; &quot;+32&quot;);" line="425"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BZ&quot;, &quot;name&quot; =&gt; &quot;Belize&quot;, &quot;d_code&quot; =&gt; &quot;+501&quot;);" line="426"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BJ&quot;, &quot;name&quot; =&gt; &quot;Benin&quot;, &quot;d_code&quot; =&gt; &quot;+229&quot;);" line="427"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BM&quot;, &quot;name&quot; =&gt; &quot;Bermuda&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="428"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BT&quot;, &quot;name&quot; =&gt; &quot;Bhutan&quot;, &quot;d_code&quot; =&gt; &quot;+975&quot;);" line="429"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BO&quot;, &quot;name&quot; =&gt; &quot;Bolivia&quot;, &quot;d_code&quot; =&gt; &quot;+591&quot;);" line="430"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BA&quot;, &quot;name&quot; =&gt; &quot;Bosnia and Herzegovina&quot;, &quot;d_code&quot; =&gt; &quot;+387&quot;);" line="431"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BW&quot;, &quot;name&quot; =&gt; &quot;Botswana&quot;, &quot;d_code&quot; =&gt; &quot;+267&quot;);" line="432"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BR&quot;, &quot;name&quot; =&gt; &quot;Brazil&quot;, &quot;d_code&quot; =&gt; &quot;+55&quot;);" line="433"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;IO&quot;, &quot;name&quot; =&gt; &quot;British Indian Ocean Territory&quot;, &quot;d_code&quot; =&gt; &quot;+246&quot;);" line="434"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;VG&quot;, &quot;name&quot; =&gt; &quot;British Virgin Islands&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="435"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BN&quot;, &quot;name&quot; =&gt; &quot;Brunei&quot;, &quot;d_code&quot; =&gt; &quot;+673&quot;);" line="436"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BG&quot;, &quot;name&quot; =&gt; &quot;Bulgaria&quot;, &quot;d_code&quot; =&gt; &quot;+359&quot;);" line="437"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BF&quot;, &quot;name&quot; =&gt; &quot;Burkina Faso&quot;, &quot;d_code&quot; =&gt; &quot;+226&quot;);" line="438"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MM&quot;, &quot;name&quot; =&gt; &quot;Burma Myanmar&quot;, &quot;d_code&quot; =&gt; &quot;+95&quot;);" line="439"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BI&quot;, &quot;name&quot; =&gt; &quot;Burundi&quot;, &quot;d_code&quot; =&gt; &quot;+257&quot;);" line="440"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;KH&quot;, &quot;name&quot; =&gt; &quot;Cambodia&quot;, &quot;d_code&quot; =&gt; &quot;+855&quot;);" line="441"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CM&quot;, &quot;name&quot; =&gt; &quot;Cameroon&quot;, &quot;d_code&quot; =&gt; &quot;+237&quot;);" line="442"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CA&quot;, &quot;name&quot; =&gt; &quot;Canada&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="443"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CV&quot;, &quot;name&quot; =&gt; &quot;Cape Verde&quot;, &quot;d_code&quot; =&gt; &quot;+238&quot;);" line="444"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;KY&quot;, &quot;name&quot; =&gt; &quot;Cayman Islands&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="445"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CF&quot;, &quot;name&quot; =&gt; &quot;Central African Republic&quot;, &quot;d_code&quot; =&gt; &quot;+236&quot;);" line="446"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TD&quot;, &quot;name&quot; =&gt; &quot;Chad&quot;, &quot;d_code&quot; =&gt; &quot;+235&quot;);" line="447"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CL&quot;, &quot;name&quot; =&gt; &quot;Chile&quot;, &quot;d_code&quot; =&gt; &quot;+56&quot;);" line="448"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CN&quot;, &quot;name&quot; =&gt; &quot;China&quot;, &quot;d_code&quot; =&gt; &quot;+86&quot;);" line="449"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CO&quot;, &quot;name&quot; =&gt; &quot;Colombia&quot;, &quot;d_code&quot; =&gt; &quot;+57&quot;);" line="450"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;KM&quot;, &quot;name&quot; =&gt; &quot;Comoros&quot;, &quot;d_code&quot; =&gt; &quot;+269&quot;);" line="451"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CK&quot;, &quot;name&quot; =&gt; &quot;Cook Islands&quot;, &quot;d_code&quot; =&gt; &quot;+682&quot;);" line="452"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CR&quot;, &quot;name&quot; =&gt; &quot;Costa Rica&quot;, &quot;d_code&quot; =&gt; &quot;+506&quot;);" line="453"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CI&quot;, &quot;name&quot; =&gt; &quot;Côte d'Ivoire&quot;, &quot;d_code&quot; =&gt; &quot;+225&quot;);" line="454"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;HR&quot;, &quot;name&quot; =&gt; &quot;Croatia&quot;, &quot;d_code&quot; =&gt; &quot;+385&quot;);" line="455"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CU&quot;, &quot;name&quot; =&gt; &quot;Cuba&quot;, &quot;d_code&quot; =&gt; &quot;+53&quot;);" line="456"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CY&quot;, &quot;name&quot; =&gt; &quot;Cyprus&quot;, &quot;d_code&quot; =&gt; &quot;+357&quot;);" line="457"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CZ&quot;, &quot;name&quot; =&gt; &quot;Czech Republic&quot;, &quot;d_code&quot; =&gt; &quot;+420&quot;);" line="458"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CD&quot;, &quot;name&quot; =&gt; &quot;Democratic Republic of Congo&quot;, &quot;d_code&quot; =&gt; &quot;+243&quot;);" line="459"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;DK&quot;, &quot;name&quot; =&gt; &quot;Denmark&quot;, &quot;d_code&quot; =&gt; &quot;+45&quot;);" line="460"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;DJ&quot;, &quot;name&quot; =&gt; &quot;Djibouti&quot;, &quot;d_code&quot; =&gt; &quot;+253&quot;);" line="461"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;DM&quot;, &quot;name&quot; =&gt; &quot;Dominica&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="462"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;DO&quot;, &quot;name&quot; =&gt; &quot;Dominican Republic&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="463"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;EC&quot;, &quot;name&quot; =&gt; &quot;Ecuador&quot;, &quot;d_code&quot; =&gt; &quot;+593&quot;);" line="464"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;EG&quot;, &quot;name&quot; =&gt; &quot;Egypt&quot;, &quot;d_code&quot; =&gt; &quot;+20&quot;);" line="465"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SV&quot;, &quot;name&quot; =&gt; &quot;El Salvador&quot;, &quot;d_code&quot; =&gt; &quot;+503&quot;);" line="466"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GQ&quot;, &quot;name&quot; =&gt; &quot;Equatorial Guinea&quot;, &quot;d_code&quot; =&gt; &quot;+240&quot;);" line="467"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;ER&quot;, &quot;name&quot; =&gt; &quot;Eritrea&quot;, &quot;d_code&quot; =&gt; &quot;+291&quot;);" line="468"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;EE&quot;, &quot;name&quot; =&gt; &quot;Estonia&quot;, &quot;d_code&quot; =&gt; &quot;+372&quot;);" line="469"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;ET&quot;, &quot;name&quot; =&gt; &quot;Ethiopia&quot;, &quot;d_code&quot; =&gt; &quot;+251&quot;);" line="470"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;FK&quot;, &quot;name&quot; =&gt; &quot;Falkland Islands&quot;, &quot;d_code&quot; =&gt; &quot;+500&quot;);" line="471"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;FO&quot;, &quot;name&quot; =&gt; &quot;Faroe Islands&quot;, &quot;d_code&quot; =&gt; &quot;+298&quot;);" line="472"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;FM&quot;, &quot;name&quot; =&gt; &quot;Federated States of Micronesia&quot;, &quot;d_code&quot; =&gt; &quot;+691&quot;);" line="473"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;FJ&quot;, &quot;name&quot; =&gt; &quot;Fiji&quot;, &quot;d_code&quot; =&gt; &quot;+679&quot;);" line="474"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;FI&quot;, &quot;name&quot; =&gt; &quot;Finland&quot;, &quot;d_code&quot; =&gt; &quot;+358&quot;);" line="475"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;FR&quot;, &quot;name&quot; =&gt; &quot;France&quot;, &quot;d_code&quot; =&gt; &quot;+33&quot;);" line="476"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GF&quot;, &quot;name&quot; =&gt; &quot;French Guiana&quot;, &quot;d_code&quot; =&gt; &quot;+594&quot;);" line="477"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PF&quot;, &quot;name&quot; =&gt; &quot;French Polynesia&quot;, &quot;d_code&quot; =&gt; &quot;+689&quot;);" line="478"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GA&quot;, &quot;name&quot; =&gt; &quot;Gabon&quot;, &quot;d_code&quot; =&gt; &quot;+241&quot;);" line="479"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GE&quot;, &quot;name&quot; =&gt; &quot;Georgia&quot;, &quot;d_code&quot; =&gt; &quot;+995&quot;);" line="480"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;DE&quot;, &quot;name&quot; =&gt; &quot;Germany&quot;, &quot;d_code&quot; =&gt; &quot;+49&quot;);" line="481"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GH&quot;, &quot;name&quot; =&gt; &quot;Ghana&quot;, &quot;d_code&quot; =&gt; &quot;+233&quot;);" line="482"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GI&quot;, &quot;name&quot; =&gt; &quot;Gibraltar&quot;, &quot;d_code&quot; =&gt; &quot;+350&quot;);" line="483"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GR&quot;, &quot;name&quot; =&gt; &quot;Greece&quot;, &quot;d_code&quot; =&gt; &quot;+30&quot;);" line="484"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GL&quot;, &quot;name&quot; =&gt; &quot;Greenland&quot;, &quot;d_code&quot; =&gt; &quot;+299&quot;);" line="485"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GD&quot;, &quot;name&quot; =&gt; &quot;Grenada&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="486"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GP&quot;, &quot;name&quot; =&gt; &quot;Guadeloupe&quot;, &quot;d_code&quot; =&gt; &quot;+590&quot;);" line="487"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GU&quot;, &quot;name&quot; =&gt; &quot;Guam&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="488"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GT&quot;, &quot;name&quot; =&gt; &quot;Guatemala&quot;, &quot;d_code&quot; =&gt; &quot;+502&quot;);" line="489"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GN&quot;, &quot;name&quot; =&gt; &quot;Guinea&quot;, &quot;d_code&quot; =&gt; &quot;+224&quot;);" line="490"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GW&quot;, &quot;name&quot; =&gt; &quot;Guinea-Bissau&quot;, &quot;d_code&quot; =&gt; &quot;+245&quot;);" line="491"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GY&quot;, &quot;name&quot; =&gt; &quot;Guyana&quot;, &quot;d_code&quot; =&gt; &quot;+592&quot;);" line="492"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;HT&quot;, &quot;name&quot; =&gt; &quot;Haiti&quot;, &quot;d_code&quot; =&gt; &quot;+509&quot;);" line="493"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;HN&quot;, &quot;name&quot; =&gt; &quot;Honduras&quot;, &quot;d_code&quot; =&gt; &quot;+504&quot;);" line="494"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;HK&quot;, &quot;name&quot; =&gt; &quot;Hong Kong&quot;, &quot;d_code&quot; =&gt; &quot;+852&quot;);" line="495"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;HU&quot;, &quot;name&quot; =&gt; &quot;Hungary&quot;, &quot;d_code&quot; =&gt; &quot;+36&quot;);" line="496"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;IS&quot;, &quot;name&quot; =&gt; &quot;Iceland&quot;, &quot;d_code&quot; =&gt; &quot;+354&quot;);" line="497"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;IN&quot;, &quot;name&quot; =&gt; &quot;India&quot;, &quot;d_code&quot; =&gt; &quot;+91&quot;);" line="498"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;ID&quot;, &quot;name&quot; =&gt; &quot;Indonesia&quot;, &quot;d_code&quot; =&gt; &quot;+62&quot;);" line="499"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;IR&quot;, &quot;name&quot; =&gt; &quot;Iran&quot;, &quot;d_code&quot; =&gt; &quot;+98&quot;);" line="500"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;IQ&quot;, &quot;name&quot; =&gt; &quot;Iraq&quot;, &quot;d_code&quot; =&gt; &quot;+964&quot;);" line="501"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;IE&quot;, &quot;name&quot; =&gt; &quot;Ireland&quot;, &quot;d_code&quot; =&gt; &quot;+353&quot;);" line="502"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;IL&quot;, &quot;name&quot; =&gt; &quot;Israel&quot;, &quot;d_code&quot; =&gt; &quot;+972&quot;);" line="503"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;IT&quot;, &quot;name&quot; =&gt; &quot;Italy&quot;, &quot;d_code&quot; =&gt; &quot;+39&quot;);" line="504"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;JM&quot;, &quot;name&quot; =&gt; &quot;Jamaica&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="505"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;JP&quot;, &quot;name&quot; =&gt; &quot;Japan&quot;, &quot;d_code&quot; =&gt; &quot;+81&quot;);" line="506"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;JO&quot;, &quot;name&quot; =&gt; &quot;Jordan&quot;, &quot;d_code&quot; =&gt; &quot;+962&quot;);" line="507"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;KZ&quot;, &quot;name&quot; =&gt; &quot;Kazakhstan&quot;, &quot;d_code&quot; =&gt; &quot;+7&quot;);" line="508"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;KE&quot;, &quot;name&quot; =&gt; &quot;Kenya&quot;, &quot;d_code&quot; =&gt; &quot;+254&quot;);" line="509"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;KI&quot;, &quot;name&quot; =&gt; &quot;Kiribati&quot;, &quot;d_code&quot; =&gt; &quot;+686&quot;);" line="510"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;XK&quot;, &quot;name&quot; =&gt; &quot;Kosovo&quot;, &quot;d_code&quot; =&gt; &quot;+381&quot;);" line="511"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;KW&quot;, &quot;name&quot; =&gt; &quot;Kuwait&quot;, &quot;d_code&quot; =&gt; &quot;+965&quot;);" line="512"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;KG&quot;, &quot;name&quot; =&gt; &quot;Kyrgyzstan&quot;, &quot;d_code&quot; =&gt; &quot;+996&quot;);" line="513"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;LA&quot;, &quot;name&quot; =&gt; &quot;Laos&quot;, &quot;d_code&quot; =&gt; &quot;+856&quot;);" line="514"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;LV&quot;, &quot;name&quot; =&gt; &quot;Latvia&quot;, &quot;d_code&quot; =&gt; &quot;+371&quot;);" line="515"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;LB&quot;, &quot;name&quot; =&gt; &quot;Lebanon&quot;, &quot;d_code&quot; =&gt; &quot;+961&quot;);" line="516"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;LS&quot;, &quot;name&quot; =&gt; &quot;Lesotho&quot;, &quot;d_code&quot; =&gt; &quot;+266&quot;);" line="517"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;LR&quot;, &quot;name&quot; =&gt; &quot;Liberia&quot;, &quot;d_code&quot; =&gt; &quot;+231&quot;);" line="518"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;LY&quot;, &quot;name&quot; =&gt; &quot;Libya&quot;, &quot;d_code&quot; =&gt; &quot;+218&quot;);" line="519"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;LI&quot;, &quot;name&quot; =&gt; &quot;Liechtenstein&quot;, &quot;d_code&quot; =&gt; &quot;+423&quot;);" line="520"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;LT&quot;, &quot;name&quot; =&gt; &quot;Lithuania&quot;, &quot;d_code&quot; =&gt; &quot;+370&quot;);" line="521"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;LU&quot;, &quot;name&quot; =&gt; &quot;Luxembourg&quot;, &quot;d_code&quot; =&gt; &quot;+352&quot;);" line="522"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MO&quot;, &quot;name&quot; =&gt; &quot;Macau&quot;, &quot;d_code&quot; =&gt; &quot;+853&quot;);" line="523"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MK&quot;, &quot;name&quot; =&gt; &quot;Macedonia&quot;, &quot;d_code&quot; =&gt; &quot;+389&quot;);" line="524"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MG&quot;, &quot;name&quot; =&gt; &quot;Madagascar&quot;, &quot;d_code&quot; =&gt; &quot;+261&quot;);" line="525"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MW&quot;, &quot;name&quot; =&gt; &quot;Malawi&quot;, &quot;d_code&quot; =&gt; &quot;+265&quot;);" line="526"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MY&quot;, &quot;name&quot; =&gt; &quot;Malaysia&quot;, &quot;d_code&quot; =&gt; &quot;+60&quot;);" line="527"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MV&quot;, &quot;name&quot; =&gt; &quot;Maldives&quot;, &quot;d_code&quot; =&gt; &quot;+960&quot;);" line="528"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;ML&quot;, &quot;name&quot; =&gt; &quot;Mali&quot;, &quot;d_code&quot; =&gt; &quot;+223&quot;);" line="529"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MT&quot;, &quot;name&quot; =&gt; &quot;Malta&quot;, &quot;d_code&quot; =&gt; &quot;+356&quot;);" line="530"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MH&quot;, &quot;name&quot; =&gt; &quot;Marshall Islands&quot;, &quot;d_code&quot; =&gt; &quot;+692&quot;);" line="531"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MQ&quot;, &quot;name&quot; =&gt; &quot;Martinique&quot;, &quot;d_code&quot; =&gt; &quot;+596&quot;);" line="532"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MR&quot;, &quot;name&quot; =&gt; &quot;Mauritania&quot;, &quot;d_code&quot; =&gt; &quot;+222&quot;);" line="533"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MU&quot;, &quot;name&quot; =&gt; &quot;Mauritius&quot;, &quot;d_code&quot; =&gt; &quot;+230&quot;);" line="534"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;YT&quot;, &quot;name&quot; =&gt; &quot;Mayotte&quot;, &quot;d_code&quot; =&gt; &quot;+262&quot;);" line="535"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MX&quot;, &quot;name&quot; =&gt; &quot;Mexico&quot;, &quot;d_code&quot; =&gt; &quot;+52&quot;);" line="536"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MD&quot;, &quot;name&quot; =&gt; &quot;Moldova&quot;, &quot;d_code&quot; =&gt; &quot;+373&quot;);" line="537"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MC&quot;, &quot;name&quot; =&gt; &quot;Monaco&quot;, &quot;d_code&quot; =&gt; &quot;+377&quot;);" line="538"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MN&quot;, &quot;name&quot; =&gt; &quot;Mongolia&quot;, &quot;d_code&quot; =&gt; &quot;+976&quot;);" line="539"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;ME&quot;, &quot;name&quot; =&gt; &quot;Montenegro&quot;, &quot;d_code&quot; =&gt; &quot;+382&quot;);" line="540"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MS&quot;, &quot;name&quot; =&gt; &quot;Montserrat&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="541"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MA&quot;, &quot;name&quot; =&gt; &quot;Morocco&quot;, &quot;d_code&quot; =&gt; &quot;+212&quot;);" line="542"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MZ&quot;, &quot;name&quot; =&gt; &quot;Mozambique&quot;, &quot;d_code&quot; =&gt; &quot;+258&quot;);" line="543"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NA&quot;, &quot;name&quot; =&gt; &quot;Namibia&quot;, &quot;d_code&quot; =&gt; &quot;+264&quot;);" line="544"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NR&quot;, &quot;name&quot; =&gt; &quot;Nauru&quot;, &quot;d_code&quot; =&gt; &quot;+674&quot;);" line="545"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NP&quot;, &quot;name&quot; =&gt; &quot;Nepal&quot;, &quot;d_code&quot; =&gt; &quot;+977&quot;);" line="546"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NL&quot;, &quot;name&quot; =&gt; &quot;Netherlands&quot;, &quot;d_code&quot; =&gt; &quot;+31&quot;);" line="547"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AN&quot;, &quot;name&quot; =&gt; &quot;Netherlands Antilles&quot;, &quot;d_code&quot; =&gt; &quot;+599&quot;);" line="548"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NC&quot;, &quot;name&quot; =&gt; &quot;New Caledonia&quot;, &quot;d_code&quot; =&gt; &quot;+687&quot;);" line="549"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NZ&quot;, &quot;name&quot; =&gt; &quot;New Zealand&quot;, &quot;d_code&quot; =&gt; &quot;+64&quot;);" line="550"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NI&quot;, &quot;name&quot; =&gt; &quot;Nicaragua&quot;, &quot;d_code&quot; =&gt; &quot;+505&quot;);" line="551"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NE&quot;, &quot;name&quot; =&gt; &quot;Niger&quot;, &quot;d_code&quot; =&gt; &quot;+227&quot;);" line="552"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NG&quot;, &quot;name&quot; =&gt; &quot;Nigeria&quot;, &quot;d_code&quot; =&gt; &quot;+234&quot;);" line="553"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NU&quot;, &quot;name&quot; =&gt; &quot;Niue&quot;, &quot;d_code&quot; =&gt; &quot;+683&quot;);" line="554"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NF&quot;, &quot;name&quot; =&gt; &quot;Norfolk Island&quot;, &quot;d_code&quot; =&gt; &quot;+672&quot;);" line="555"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;KP&quot;, &quot;name&quot; =&gt; &quot;North Korea&quot;, &quot;d_code&quot; =&gt; &quot;+850&quot;);" line="556"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MP&quot;, &quot;name&quot; =&gt; &quot;Northern Mariana Islands&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="557"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;NO&quot;, &quot;name&quot; =&gt; &quot;Norway&quot;, &quot;d_code&quot; =&gt; &quot;+47&quot;);" line="558"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;OM&quot;, &quot;name&quot; =&gt; &quot;Oman&quot;, &quot;d_code&quot; =&gt; &quot;+968&quot;);" line="559"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PK&quot;, &quot;name&quot; =&gt; &quot;Pakistan&quot;, &quot;d_code&quot; =&gt; &quot;+92&quot;);" line="560"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PW&quot;, &quot;name&quot; =&gt; &quot;Palau&quot;, &quot;d_code&quot; =&gt; &quot;+680&quot;);" line="561"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PS&quot;, &quot;name&quot; =&gt; &quot;Palestine&quot;, &quot;d_code&quot; =&gt; &quot;+970&quot;);" line="562"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PA&quot;, &quot;name&quot; =&gt; &quot;Panama&quot;, &quot;d_code&quot; =&gt; &quot;+507&quot;);" line="563"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PG&quot;, &quot;name&quot; =&gt; &quot;Papua New Guinea&quot;, &quot;d_code&quot; =&gt; &quot;+675&quot;);" line="564"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PY&quot;, &quot;name&quot; =&gt; &quot;Paraguay&quot;, &quot;d_code&quot; =&gt; &quot;+595&quot;);" line="565"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PE&quot;, &quot;name&quot; =&gt; &quot;Peru&quot;, &quot;d_code&quot; =&gt; &quot;+51&quot;);" line="566"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PH&quot;, &quot;name&quot; =&gt; &quot;Philippines&quot;, &quot;d_code&quot; =&gt; &quot;+63&quot;);" line="567"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PL&quot;, &quot;name&quot; =&gt; &quot;Poland&quot;, &quot;d_code&quot; =&gt; &quot;+48&quot;);" line="568"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PT&quot;, &quot;name&quot; =&gt; &quot;Portugal&quot;, &quot;d_code&quot; =&gt; &quot;+351&quot;);" line="569"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PR&quot;, &quot;name&quot; =&gt; &quot;Puerto Rico&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="570"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;QA&quot;, &quot;name&quot; =&gt; &quot;Qatar&quot;, &quot;d_code&quot; =&gt; &quot;+974&quot;);" line="571"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CG&quot;, &quot;name&quot; =&gt; &quot;Republic of the Congo&quot;, &quot;d_code&quot; =&gt; &quot;+242&quot;);" line="572"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;RE&quot;, &quot;name&quot; =&gt; &quot;Réunion&quot;, &quot;d_code&quot; =&gt; &quot;+262&quot;);" line="573"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;RO&quot;, &quot;name&quot; =&gt; &quot;Romania&quot;, &quot;d_code&quot; =&gt; &quot;+40&quot;);" line="574"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;RU&quot;, &quot;name&quot; =&gt; &quot;Russia&quot;, &quot;d_code&quot; =&gt; &quot;+7&quot;);" line="575"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;RW&quot;, &quot;name&quot; =&gt; &quot;Rwanda&quot;, &quot;d_code&quot; =&gt; &quot;+250&quot;);" line="576"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BL&quot;, &quot;name&quot; =&gt; &quot;Saint Barthélemy&quot;, &quot;d_code&quot; =&gt; &quot;+590&quot;);" line="577"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SH&quot;, &quot;name&quot; =&gt; &quot;Saint Helena&quot;, &quot;d_code&quot; =&gt; &quot;+290&quot;);" line="578"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;KN&quot;, &quot;name&quot; =&gt; &quot;Saint Kitts and Nevis&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="579"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;MF&quot;, &quot;name&quot; =&gt; &quot;Saint Martin&quot;, &quot;d_code&quot; =&gt; &quot;+590&quot;);" line="580"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;PM&quot;, &quot;name&quot; =&gt; &quot;Saint Pierre and Miquelon&quot;, &quot;d_code&quot; =&gt; &quot;+508&quot;);" line="581"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;VC&quot;, &quot;name&quot; =&gt; &quot;Saint Vincent and the Grenadines&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="582"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;WS&quot;, &quot;name&quot; =&gt; &quot;Samoa&quot;, &quot;d_code&quot; =&gt; &quot;+685&quot;);" line="583"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SM&quot;, &quot;name&quot; =&gt; &quot;San Marino&quot;, &quot;d_code&quot; =&gt; &quot;+378&quot;);" line="584"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;ST&quot;, &quot;name&quot; =&gt; &quot;São Tomé and Príncipe&quot;, &quot;d_code&quot; =&gt; &quot;+239&quot;);" line="585"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SA&quot;, &quot;name&quot; =&gt; &quot;Saudi Arabia&quot;, &quot;d_code&quot; =&gt; &quot;+966&quot;);" line="586"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SN&quot;, &quot;name&quot; =&gt; &quot;Senegal&quot;, &quot;d_code&quot; =&gt; &quot;+221&quot;);" line="587"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;RS&quot;, &quot;name&quot; =&gt; &quot;Serbia&quot;, &quot;d_code&quot; =&gt; &quot;+381&quot;);" line="588"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SC&quot;, &quot;name&quot; =&gt; &quot;Seychelles&quot;, &quot;d_code&quot; =&gt; &quot;+248&quot;);" line="589"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SL&quot;, &quot;name&quot; =&gt; &quot;Sierra Leone&quot;, &quot;d_code&quot; =&gt; &quot;+232&quot;);" line="590"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SG&quot;, &quot;name&quot; =&gt; &quot;Singapore&quot;, &quot;d_code&quot; =&gt; &quot;+65&quot;);" line="591"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SK&quot;, &quot;name&quot; =&gt; &quot;Slovakia&quot;, &quot;d_code&quot; =&gt; &quot;+421&quot;);" line="592"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SI&quot;, &quot;name&quot; =&gt; &quot;Slovenia&quot;, &quot;d_code&quot; =&gt; &quot;+386&quot;);" line="593"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SB&quot;, &quot;name&quot; =&gt; &quot;Solomon Islands&quot;, &quot;d_code&quot; =&gt; &quot;+677&quot;);" line="594"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SO&quot;, &quot;name&quot; =&gt; &quot;Somalia&quot;, &quot;d_code&quot; =&gt; &quot;+252&quot;);" line="595"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;ZA&quot;, &quot;name&quot; =&gt; &quot;South Africa&quot;, &quot;d_code&quot; =&gt; &quot;+27&quot;);" line="596"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;KR&quot;, &quot;name&quot; =&gt; &quot;South Korea&quot;, &quot;d_code&quot; =&gt; &quot;+82&quot;);" line="597"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;ES&quot;, &quot;name&quot; =&gt; &quot;Spain&quot;, &quot;d_code&quot; =&gt; &quot;+34&quot;);" line="598"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;LK&quot;, &quot;name&quot; =&gt; &quot;Sri Lanka&quot;, &quot;d_code&quot; =&gt; &quot;+94&quot;);" line="599"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;LC&quot;, &quot;name&quot; =&gt; &quot;St. Lucia&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="600"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SD&quot;, &quot;name&quot; =&gt; &quot;Sudan&quot;, &quot;d_code&quot; =&gt; &quot;+249&quot;);" line="601"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SR&quot;, &quot;name&quot; =&gt; &quot;Suriname&quot;, &quot;d_code&quot; =&gt; &quot;+597&quot;);" line="602"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SZ&quot;, &quot;name&quot; =&gt; &quot;Swaziland&quot;, &quot;d_code&quot; =&gt; &quot;+268&quot;);" line="603"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SE&quot;, &quot;name&quot; =&gt; &quot;Sweden&quot;, &quot;d_code&quot; =&gt; &quot;+46&quot;);" line="604"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;CH&quot;, &quot;name&quot; =&gt; &quot;Switzerland&quot;, &quot;d_code&quot; =&gt; &quot;+41&quot;);" line="605"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;SY&quot;, &quot;name&quot; =&gt; &quot;Syria&quot;, &quot;d_code&quot; =&gt; &quot;+963&quot;);" line="606"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TW&quot;, &quot;name&quot; =&gt; &quot;Taiwan&quot;, &quot;d_code&quot; =&gt; &quot;+886&quot;);" line="607"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TJ&quot;, &quot;name&quot; =&gt; &quot;Tajikistan&quot;, &quot;d_code&quot; =&gt; &quot;+992&quot;);" line="608"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TZ&quot;, &quot;name&quot; =&gt; &quot;Tanzania&quot;, &quot;d_code&quot; =&gt; &quot;+255&quot;);" line="609"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TH&quot;, &quot;name&quot; =&gt; &quot;Thailand&quot;, &quot;d_code&quot; =&gt; &quot;+66&quot;);" line="610"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;BS&quot;, &quot;name&quot; =&gt; &quot;The Bahamas&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="611"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GM&quot;, &quot;name&quot; =&gt; &quot;The Gambia&quot;, &quot;d_code&quot; =&gt; &quot;+220&quot;);" line="612"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TL&quot;, &quot;name&quot; =&gt; &quot;Timor-Leste&quot;, &quot;d_code&quot; =&gt; &quot;+670&quot;);" line="613"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TG&quot;, &quot;name&quot; =&gt; &quot;Togo&quot;, &quot;d_code&quot; =&gt; &quot;+228&quot;);" line="614"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TK&quot;, &quot;name&quot; =&gt; &quot;Tokelau&quot;, &quot;d_code&quot; =&gt; &quot;+690&quot;);" line="615"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TO&quot;, &quot;name&quot; =&gt; &quot;Tonga&quot;, &quot;d_code&quot; =&gt; &quot;+676&quot;);" line="616"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TT&quot;, &quot;name&quot; =&gt; &quot;Trinidad and Tobago&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="617"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TN&quot;, &quot;name&quot; =&gt; &quot;Tunisia&quot;, &quot;d_code&quot; =&gt; &quot;+216&quot;);" line="618"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TR&quot;, &quot;name&quot; =&gt; &quot;Turkey&quot;, &quot;d_code&quot; =&gt; &quot;+90&quot;);" line="619"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TM&quot;, &quot;name&quot; =&gt; &quot;Turkmenistan&quot;, &quot;d_code&quot; =&gt; &quot;+993&quot;);" line="620"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TC&quot;, &quot;name&quot; =&gt; &quot;Turks and Caicos Islands&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="621"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;TV&quot;, &quot;name&quot; =&gt; &quot;Tuvalu&quot;, &quot;d_code&quot; =&gt; &quot;+688&quot;);" line="622"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;UG&quot;, &quot;name&quot; =&gt; &quot;Uganda&quot;, &quot;d_code&quot; =&gt; &quot;+256&quot;);" line="623"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;UA&quot;, &quot;name&quot; =&gt; &quot;Ukraine&quot;, &quot;d_code&quot; =&gt; &quot;+380&quot;);" line="624"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;AE&quot;, &quot;name&quot; =&gt; &quot;United Arab Emirates&quot;, &quot;d_code&quot; =&gt; &quot;+971&quot;);" line="625"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;GB&quot;, &quot;name&quot; =&gt; &quot;United Kingdom&quot;, &quot;d_code&quot; =&gt; &quot;+44&quot;);" line="626"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;US&quot;, &quot;name&quot; =&gt; &quot;United States&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="627"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;UY&quot;, &quot;name&quot; =&gt; &quot;Uruguay&quot;, &quot;d_code&quot; =&gt; &quot;+598&quot;);" line="628"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;VI&quot;, &quot;name&quot; =&gt; &quot;US Virgin Islands&quot;, &quot;d_code&quot; =&gt; &quot;+1&quot;);" line="629"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;UZ&quot;, &quot;name&quot; =&gt; &quot;Uzbekistan&quot;, &quot;d_code&quot; =&gt; &quot;+998&quot;);" line="630"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;VU&quot;, &quot;name&quot; =&gt; &quot;Vanuatu&quot;, &quot;d_code&quot; =&gt; &quot;+678&quot;);" line="631"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;VA&quot;, &quot;name&quot; =&gt; &quot;Vatican City&quot;, &quot;d_code&quot; =&gt; &quot;+39&quot;);" line="632"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;VE&quot;, &quot;name&quot; =&gt; &quot;Venezuela&quot;, &quot;d_code&quot; =&gt; &quot;+58&quot;);" line="633"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;VN&quot;, &quot;name&quot; =&gt; &quot;Vietnam&quot;, &quot;d_code&quot; =&gt; &quot;+84&quot;);" line="634"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;WF&quot;, &quot;name&quot; =&gt; &quot;Wallis and Futuna&quot;, &quot;d_code&quot; =&gt; &quot;+681&quot;);" line="635"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;YE&quot;, &quot;name&quot; =&gt; &quot;Yemen&quot;, &quot;d_code&quot; =&gt; &quot;+967&quot;);" line="636"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;ZM&quot;, &quot;name&quot; =&gt; &quot;Zambia&quot;, &quot;d_code&quot; =&gt; &quot;+260&quot;);" line="637"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$countries[] = array(&quot;code&quot; =&gt; &quot;ZW&quot;, &quot;name&quot; =&gt; &quot;Zimbabwe&quot;, &quot;d_code&quot; =&gt; &quot;+263&quot;);" line="638"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="DB::table('country')-&gt;insert($countries);" line="639"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="640"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if (!Schema::hasTable('Company'))" line="641"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="642"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('Company', function (Blueprint $table)" line="643"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="644"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="645"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="646"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('company_name');" line="647"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('company_url');" line="648"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('email');" line="649"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('password');" line="650"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;integer('status')-&gt;default(0)-&gt;comment = &quot; if 1 inactive or 0 active&quot;;" line="651"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('address');" line="652"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('phone_number');" line="653"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('state');" line="654"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('country');" line="655"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('zipcode');" line="656"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('remember_token')-&gt;nullable();" line="657"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="658"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="659"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('deleted_at')-&gt;nullable();" line="660"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="661"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="662"/>
+      <comment value="if (!Schema::hasTable('911_Path_Details'))" line="675"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="676"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Schema::create('911_Path_Details', function (Blueprint $table)" line="677"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="678"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;engine = 'InnoDB';" line="679"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;increments('id');" line="680"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('hero_id');" line="681"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('lat');" line="682"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('long');" line="683"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('old_lat');" line="684"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;string('old_long');" line="685"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('created_at');" line="686"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;dateTime('updated_at');" line="687"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="688"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="689"/>
+      <comment value="Schema::table('911_Request_Meta', function (Blueprint $table)" line="694"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="695"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$table-&gt;foreign('request_id')-&gt;references('id')-&gt;on('911_Request');" line="696"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="});" line="697"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="698"/>
+    </inline>
+  </method>
+</class>

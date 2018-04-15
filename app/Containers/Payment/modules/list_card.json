@@ -1,0 +1,40 @@
+{
+  "module": {
+    "payment": {
+      "list_card": {
+        "title": "Get List of card",
+        "version": "1.0.0",
+        "description": "Get All Card from user",
+        "module_type": "core",
+        "config_file": "Payment\/modules\/list_card.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Requests\\emptyRequest"
+          },
+          "list_card": {
+            "id": "task",
+            "namespace": "App\\Containers\\Payment\\ApiTask\\Listcard"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Transformers\\AddCard"
+          }
+        }
+      }
+    }
+  },
+"files":
+    {
+      "add_card.php":"Payment/ApiTask/",
+      "Listcard.php":"Payment/ApiTask/",
+      "Payment.php":"Payment/Models/",
+      "Controller.php":"Payment/UI/API/Controllers/",
+      "emptyRequest.php":"Payment/UI/API/Requests/",
+      "GetCardList.v1.public.php":"Payment/UI/API/Routes/",
+      "AddCard.php":"Payment/UI/API/Transformers/",
+      "list_card.json":"Payment/modules/"
+    }
+}

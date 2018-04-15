@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\ApiTask\DriverSignUpTask" namespace="App\Containers\Drivers\ApiTask" name="DriverSignUpTask" abstract="false" final="false" start="17" end="173">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/ApiTask" file="DriverSignUpTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/ApiTask/DriverSignUpTask.php" size="4954" time="2018-04-06T07:48:27+00:00" unixtime="1523000907" sha1="70f246d42ce68cbd3152294012894a50c7728375" relative="Drivers/ApiTask/DriverSignUpTask.php"/>
+  <method name="run" start="26" end="172" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="email" line="125"/>
+      <comment value="email" line="147"/>
+    </inline>
+  </method>
+</class>

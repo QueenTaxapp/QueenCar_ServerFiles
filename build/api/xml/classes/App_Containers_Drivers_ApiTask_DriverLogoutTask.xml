@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\ApiTask\DriverLogoutTask" namespace="App\Containers\Drivers\ApiTask" name="DriverLogoutTask" abstract="false" final="false" start="11" end="56">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/ApiTask" file="DriverLogoutTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/ApiTask/DriverLogoutTask.php" size="1245" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="491b8246f76d178df0ffb3bb0e70c7c1ba81558e" relative="Drivers/ApiTask/DriverLogoutTask.php"/>
+  <docblock>
+    <description compact="Class DriverLogoutTask"/>
+    <package value="App\Containers\Drivers\ApiTask"/>
+  </docblock>
+  <method name="run" start="20" end="55" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="$update = $tableNameSpace::where('id',$id)" line="41"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="-&gt;update(['is_active'=&gt;0,'token'=&gt; 0,'token_expiry'=&gt; '1900-12-12 00:00:00']);" line="42"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Tasks\GetPermissionTask" namespace="App\Containers\Authorization\Tasks" name="GetPermissionTask" abstract="false" final="false" start="14" end="29">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Tasks" file="GetPermissionTask.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Tasks/GetPermissionTask.php" size="657" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="564c7a4ca420dc6bfcf0df4cfda8c67676c0588d" relative="Authorization/Tasks/GetPermissionTask.php"/>
+  <docblock>
+    <description compact="Class GetPermissionTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="22" end="27" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$permissionNameOrId"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="permissionNameOrId" byreference="false" type="{unknown}"/>
+  </method>
+</class>

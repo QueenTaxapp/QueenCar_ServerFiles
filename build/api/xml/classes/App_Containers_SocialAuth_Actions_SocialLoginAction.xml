@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\SocialAuth\Actions\SocialLoginAction" namespace="App\Containers\SocialAuth\Actions" name="SocialLoginAction" abstract="false" final="false" start="17" end="83">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/Actions" file="SocialLoginAction.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/Actions/SocialLoginAction.php" size="3132" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="cb9e6ed3339be7f37e31f3e4a6a37d71f3e0aadb" relative="Socialauth/Actions/SocialLoginAction.php"/>
+  <docblock>
+    <description compact="Class SocialLoginAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="31" end="81" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="----- if has social profile --------- [A] update his social profile info ----- if has no social profile --------- [C] create new record"/>
+      <param variable="$request"/>
+      <param variable="$provider"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <parameter name="provider" byreference="false" type="{unknown}"/>
+    <inline>
+      <todo value="needs refactoring so bad :D" line="33"/>
+      <comment value="fetch the user data from facebook" line="35"/>
+      <comment value="checking if some data are available in the response" line="37"/>
+      <comment value="(these lines are written to make this function compatible with multiple providers)" line="38"/>
+      <comment value="check if the social ID exist on any of our users, and get that user in case it was found" line="44"/>
+    </inline>
+  </method>
+</class>

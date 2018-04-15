@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Middlewares\DispatchAuthentication" namespace="App\Containers\Authentication\Middlewares" name="DispatchAuthentication" abstract="false" final="false" start="21" end="74">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Middlewares" file="DispatchAuthentication.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Middlewares/DispatchAuthentication.php" size="1877" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="5aa9238ff5901411956e46f223fb594492221f26" relative="Authentication/Middlewares/DispatchAuthentication.php"/>
+  <docblock>
+    <description compact="Class WebAuthentication"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Middlewares\Middleware" namespace="App\Ship\Parents\Middlewares" name="Middleware" unresolved="true"/>
+  <method name="handle" start="23" end="71" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+    <inline>
+      <comment value="$CurrentOtpDate = date(&quot;Y-m-d h:i:s&quot;);" line="61"/>
+      <comment value="if(strtotime($CurrentOtpDate) &gt; strtotime($userToken-&gt;token_expiry))" line="63"/>
+      <comment value="{" line="64"/>
+      <comment value="throw (new CommonException())-&gt;setValue('609',trans('localization::errors.609'));" line="65"/>
+      <comment value="}" line="66"/>
+    </inline>
+  </method>
+</class>

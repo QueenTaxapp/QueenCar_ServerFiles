@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Settings\Actions\ListSettingsAction" namespace="App\Containers\Settings\Actions" name="ListSettingsAction" abstract="false" final="false" start="9" end="21">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Actions" file="ListSettingsAction.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Actions/ListSettingsAction.php" size="448" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="688ae61046c434de6d18f800097b10a325850b7a" relative="Settings/Actions/ListSettingsAction.php"/>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="15" end="20" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request"/>
+    </parameter>
+  </method>
+</class>

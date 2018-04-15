@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Tests\Functional\UpdateUserTest" namespace="App\Containers\User\UI\API\Tests\Functional" name="UpdateUserTest" abstract="false" final="false" start="12" end="100">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional" file="UpdateUserTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional/UpdateUserTest.php" size="2524" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="c592ba88075092116ede0072852b25740c3fa58b" relative="User/UI/API/Tests/Functional/UpdateUserTest.php"/>
+  <docblock>
+    <description compact="Class UpdateUserTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\User\Tests\TestCase" namespace="App\Containers\User\Tests" name="TestCase" unresolved="true"/>
+  <member name="endpoint" default="'put@v1/users/{id}'" type="string" visibility="protected" static="false" line="15"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="17"/>
+  <method name="testUpdateExistingUser_" start="22" end="46" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="31"/>
+      <comment value="assert response status is correct" line="34"/>
+      <comment value="assert returned user is the updated one" line="37"/>
+      <comment value="assert data was updated in the database" line="44"/>
+    </inline>
+  </method>
+  <method name="testUpdateNonExistingUser_" start="48" end="65" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="56"/>
+      <comment value="assert response status is correct" line="59"/>
+    </inline>
+  </method>
+  <method name="testUpdateExistingUserWithoutData_" start="67" end="78" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="69"/>
+      <comment value="assert response status is correct" line="72"/>
+    </inline>
+  </method>
+  <method name="testUpdateExistingUserWithEmptyValues" start="80" end="99" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="87"/>
+      <comment value="assert response status is correct" line="90"/>
+    </inline>
+  </method>
+</class>

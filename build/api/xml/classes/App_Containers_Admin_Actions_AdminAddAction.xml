@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Actions\AdminAddAction" namespace="App\Containers\Admin\Actions" name="AdminAddAction" abstract="false" final="false" start="15" end="32">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Actions" file="AdminAddAction.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Actions/AdminAddAction.php" size="634" time="2017-09-18T07:52:02+02:00" unixtime="1505713922" sha1="4696680ab37fa186334d511d77d73f3ead32c92a" relative="Admin/Actions/AdminAddAction.php"/>
+  <docblock>
+    <description compact="Class WebAdminLoginAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="24" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Ship\Parents\Requests\Request" namespace="\App\Ship\Parents\Requests" name="Request"/>
+      </param>
+      <return type="mixed"/>
+      <throws type="object">
+        <type full="\App\Containers\Authorization\Exceptions\UserNotAdminException" namespace="\App\Containers\Authorization\Exceptions" name="UserNotAdminException"/>
+      </throws>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+</class>

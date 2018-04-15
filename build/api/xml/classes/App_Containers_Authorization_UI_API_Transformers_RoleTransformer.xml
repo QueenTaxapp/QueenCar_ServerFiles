@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\UI\API\Transformers\RoleTransformer" namespace="App\Containers\Authorization\UI\API\Transformers" name="RoleTransformer" abstract="false" final="false" start="13" end="50">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/UI/API/Transformers" file="RoleTransformer.php" realpath="/var/www/html/queencar/app/Containers/Authorization/UI/API/Transformers/RoleTransformer.php" size="1155" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="ae6c3af467606e2ea05eb6664e87b07b511ddf42" relative="Authorization/UI/API/Transformers/RoleTransformer.php"/>
+  <docblock>
+    <description compact="Class RoleTransformer."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <member name="availableIncludes" default="" type="array" visibility="protected" static="false" line="16"/>
+  <member name="defaultIncludes" default="" type="array" visibility="protected" static="false" line="20"/>
+  <method name="transform" start="29" end="38" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$role">
+        <type full="\App\Containers\Authorization\Models\Role" namespace="\App\Containers\Authorization\Models" name="Role"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="role" byreference="false" type="object">
+      <type full="App\Containers\Authorization\Models\Role" namespace="App\Containers\Authorization\Models" name="Role"/>
+    </parameter>
+  </method>
+  <method name="includePermissions" start="45" end="48" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$role">
+        <type full="\App\Containers\Authorization\Models\Role" namespace="\App\Containers\Authorization\Models" name="Role"/>
+      </param>
+      <return type="object">
+        <type full="\League\Fractal\Resource\Collection" namespace="\League\Fractal\Resource" name="Collection"/>
+      </return>
+    </docblock>
+    <parameter name="role" byreference="false" type="object">
+      <type full="App\Containers\Authorization\Models\Role" namespace="App\Containers\Authorization\Models" name="Role"/>
+    </parameter>
+  </method>
+</class>

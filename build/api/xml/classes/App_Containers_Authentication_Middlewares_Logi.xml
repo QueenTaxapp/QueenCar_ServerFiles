@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Middlewares\Logi" namespace="App\Containers\Authentication\Middlewares" name="Logi" abstract="false" final="false" start="17" end="144">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Middlewares" file="Logi.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Middlewares/Logi.php" size="3447" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="3cde1186d3b7a8fb4481eaeb75907c1b76727f4f" relative="Authentication/Middlewares/Logi.php"/>
+  <docblock>
+    <description compact="Class WebAuthentication"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Middlewares\Middleware" namespace="App\Ship\Parents\Middlewares" name="Middleware" unresolved="true"/>
+  <member name="auth" visibility="protected" static="false" line="25">
+    <docblock>
+      <description compact="The Guard implementation."/>
+      <var type="object">
+        <type full="Illuminate\Contracts\Auth\Guard" namespace="Illuminate\Contracts\Auth" name="Guard"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="handle" start="49" end="75" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Handle an incoming request."/>
+      <param type="object" variable="$request">
+        <type full="\Illuminate\Http\Request" namespace="\Illuminate\Http" name="Request"/>
+      </param>
+      <param type="object" variable="$next">
+        <type full="\Closure" namespace="" name="Closure"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;test&quot;;" line="53"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="54"/>
+      <comment value="print_r($request-&gt;all());" line="55"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="61"/>
+      <comment value="print_r($request);" line="62"/>
+      <comment value="die();" line="63"/>
+      <comment value="print_r($request);" line="64"/>
+      <comment value="echo &quot;&lt;brs&gt;&quot;;" line="65"/>
+      <comment value="echo $request-&gt;email;" line="66"/>
+      <comment value="echo json_encode($request);" line="67"/>
+      <comment value="if (Auth::attempt(array('email' =&gt; $request-&gt;email, 'password' =&gt; $request-&gt;password)))" line="69"/>
+      <comment value="{" line="70"/>
+      <comment value="// return Redirect::intended('dashboard');" line="71"/>
+      <comment value="}" line="72"/>
+    </inline>
+  </method>
+  <method name="htmlSpecialChars" start="83" end="115" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="input" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="MysqlEscapeString" start="122" end="143" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="input" byreference="false" type="{unknown}"/>
+  </method>
+</class>

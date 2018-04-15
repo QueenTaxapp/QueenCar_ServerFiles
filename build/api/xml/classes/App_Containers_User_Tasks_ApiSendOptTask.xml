@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\ApiSendOptTask" namespace="App\Containers\User\Tasks" name="ApiSendOptTask" abstract="false" final="false" start="22" end="92">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="ApiSendOptTask.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/ApiSendOptTask.php" size="2086" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="28dd51e840eb6d9cd867791232fe7d11a2bd434f" relative="User/Tasks/ApiSendOptTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="30" end="90" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to check if the email address is present or not"/>
+      <param variable="$email" type="string"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="to" byreference="false" type="{unknown}"/>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="$accountSid = &quot;ACcefd35c49910c81951a203c68d3b82c4&quot;;" line="49"/>
+      <comment value="$authToken = &quot;edbbd58aa24dc9e6a55a2adca29ca062&quot;;" line="50"/>
+      <comment value="$twilioNumber = &quot;+1 385-282-6487&quot;;" line="51"/>
+      <comment value="$client = new Client($accountSid, $authToken);" line="57"/>
+      <comment value="$people = array(" line="60"/>
+      <comment value="$to =&gt; $message," line="61"/>
+      <comment value=");" line="62"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="64"/>
+      <comment value="print_r($people);" line="65"/>
+      <comment value="die();" line="67"/>
+      <comment value="foreach ($people as $number =&gt; $otp)" line="69"/>
+      <comment value="{" line="70"/>
+      <comment value="$sms = $client-&gt;account-&gt;messages-&gt;create(" line="72"/>
+      <comment value="$number," line="74"/>
+      <comment value="array(" line="76"/>
+      <comment value="'from' =&gt; &quot;$twilioNumber&quot;," line="77"/>
+      <comment value="'body' =&gt; $otp," line="79"/>
+      <comment value=")" line="80"/>
+      <comment value=");" line="81"/>
+      <comment value="}" line="82"/>
+      <comment value="if(!$sms)" line="84"/>
+      <comment value="{" line="85"/>
+      <comment value="throw (new CommonException())-&gt;setValue('605',trans('localization::errors.605'));" line="86"/>
+      <comment value="}" line="87"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\UI\WEB\Controllers\Controller" namespace="App\Containers\Admin\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="56" end="996">
+  <file path="/var/www/html/queencar/app/Containers/Admin/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Admin/UI/WEB/Controllers/Controller.php" size="28606" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="34dae3bde5256ec4ce70d781db5dc774da60bc5c" relative="Admin/UI/WEB/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <package value="App\Containers\Admin\UI\WEB\Controllers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="admintest" start="60" end="74" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminLoginPage" start="77" end="82" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminLockscreenPage" start="85" end="103" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminLoginValidation" start="106" end="166" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="dragdrop" start="170" end="191" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="dashboard" start="198" end="325" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="215"/>
+      <comment value="print_r($all);" line="216"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="218"/>
+      <comment value="print_r($selected);" line="219"/>
+      <comment value="die();" line="221"/>
+      <comment value="$path = asset('privileges/dashboardMain.json');" line="270"/>
+      <comment value="$all = $this-&gt;call(FileDecodeAction::class, [$path]);" line="272"/>
+      <comment value="$path = asset('privileges/type'.Session::get('role').'.json');" line="274"/>
+      <comment value="$selected = $this-&gt;call(FileDecodeAction::class, [$path]);" line="276"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="286"/>
+      <comment value="print_r($all);" line="287"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="288"/>
+      <comment value="print_r($selected);" line="289"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="290"/>
+      <comment value="print_r($unselected);die();" line="291"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="316"/>
+      <comment value="print_r($json);" line="317"/>
+      <comment value="$json = 1;" line="318"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="321"/>
+      <comment value="print_r($result);die();" line="322"/>
+    </inline>
+  </method>
+  <method name="adminViewPage" start="331" end="380" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="object">
+        <type full="\Illuminate\Contracts\View\Factory|\Illuminate\View\View" namespace="\Illuminate\Contracts\View\Factory|\Illuminate\View" name="View"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$ =AdminModel::get();" line="376"/>
+    </inline>
+  </method>
+  <method name="adminAddPage" start="382" end="401" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminAddSave" start="404" end="415" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Admin\UI\WEB\Requests\AdminAddRequest" namespace="App\Containers\Admin\UI\WEB\Requests" name="AdminAddRequest"/>
+    </parameter>
+  </method>
+  <method name="adminEdit" start="419" end="432" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;id);die();" line="421"/>
+    </inline>
+  </method>
+  <method name="adminEditProfile" start="434" end="453" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;id);die();" line="436"/>
+    </inline>
+  </method>
+  <method name="adminProfileUpdate" start="456" end="483" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Admin\UI\WEB\Requests\AdminProfileUpdateRequest" namespace="App\Containers\Admin\UI\WEB\Requests" name="AdminProfileUpdateRequest"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="459"/>
+    </inline>
+  </method>
+  <method name="adminUpdate" start="484" end="515" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Admin\UI\WEB\Requests\AdminAddRequest" namespace="App\Containers\Admin\UI\WEB\Requests" name="AdminAddRequest"/>
+    </parameter>
+  </method>
+  <method name="adminPasswordChange" start="517" end="525" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminPasswordUpdate" start="527" end="542" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;id);print_r($request-&gt;all());die();" line="529"/>
+    </inline>
+  </method>
+  <method name="adminDelete" start="544" end="555" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$user = $this-&gt;call(AdminUpdateTask::class,[$request]);" line="548"/>
+    </inline>
+  </method>
+  <method name="adminActive" start="557" end="569" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminInactive" start="571" end="583" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminUserPrivilegesEdit" start="585" end="609" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;id);die();" line="587"/>
+    </inline>
+  </method>
+  <method name="adminUserPrivilegesUpdate" start="612" end="649" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo&quot;&lt;pre&gt;&quot;; print_r($type_privilege);die();" line="616"/>
+      <comment value="echo&quot;&lt;pre&gt;&quot;; print_r(json_encode($result));die();" line="636"/>
+    </inline>
+  </method>
+  <method name="adminTypesView" start="652" end="682" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$role = Session::get('role');" line="658"/>
+      <comment value="$result =DB::table('AdminTypes')-&gt;paginate($page);" line="660"/>
+    </inline>
+  </method>
+  <method name="adminTypesAdd" start="687" end="706" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminTypesSave" start="711" end="740" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Admin\UI\WEB\Requests\AdminPrivilegeNameEditRequest" namespace="App\Containers\Admin\UI\WEB\Requests" name="AdminPrivilegeNameEditRequest"/>
+    </parameter>
+    <inline>
+      <comment value="echo $request-&gt;type_name;" line="713"/>
+    </inline>
+  </method>
+  <method name="adminTypesNameEdit" start="743" end="754" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="print_r($result-&gt;types); die(&quot; name_change&quot;);" line="749"/>
+    </inline>
+  </method>
+  <method name="adminTypesNameSave" start="757" end="792" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Admin\UI\WEB\Requests\AdminPrivilegeNameEditRequest" namespace="App\Containers\Admin\UI\WEB\Requests" name="AdminPrivilegeNameEditRequest"/>
+    </parameter>
+    <inline>
+      <comment value="echo&quot;&lt;pre&gt;&quot;;print_r($result);die();" line="762"/>
+      <comment value="$result =DB::table('AdminTypes')-&gt;where('id',$request-&gt;id)-&gt;update(array('types' =&gt; $request-&gt;type_name));" line="782"/>
+      <comment value=",['request' =&gt; $request],['result' =&gt; $result,'title'=&gt;$title ]);" line="791"/>
+    </inline>
+  </method>
+  <method name="adminTypePrivilegesEdit" start="796" end="819" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminTypePrivilegesSave" start="824" end="859" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo&quot;&lt;pre&gt;&quot;;print_r($result);die();" line="850"/>
+      <comment value="echo&quot;&lt;pre&gt;&quot;; print_r(json_encode($result));die();" line="853"/>
+      <comment value=",['request' =&gt; $request],['result' =&gt; $result,'title'=&gt;$title ]);" line="858"/>
+    </inline>
+  </method>
+  <method name="mapView" start="862" end="873" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($adminDetails);die();" line="866"/>
+    </inline>
+  </method>
+  <method name="mapView2" start="875" end="885" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="mapAjax" start="888" end="918" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="mapAjax2" start="919" end="925" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="dynamicLocalization" start="927" end="965" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="fputcsv($handle, array('id','name', 'email'));" line="946"/>
+    </inline>
+  </method>
+  <method name="excelToArray" start="968" end="982" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="reterive_key_change" start="983" end="995" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

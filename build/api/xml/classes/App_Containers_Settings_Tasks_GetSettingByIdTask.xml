@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Settings\Tasks\GetSettingByIdTask" namespace="App\Containers\Settings\Tasks" name="GetSettingByIdTask" abstract="false" final="false" start="9" end="37">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Tasks" file="GetSettingByIdTask.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Tasks/GetSettingByIdTask.php" size="752" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="83b46c5564d2c15d55cd379e5edb304c1d217428" relative="Settings/Tasks/GetSettingByIdTask.php"/>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <member name="repository" visibility="private" static="false" line="15">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\Containers\Settings\Data\Repositories\SettingRepository" namespace="App\Containers\Settings\Data\Repositories" name="SettingRepository"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="22" end="25" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="GetSettingByIdTask constructor."/>
+      <param type="object" variable="$repository">
+        <type full="App\Containers\Settings\Data\Repositories\SettingRepository" namespace="App\Containers\Settings\Data\Repositories" name="SettingRepository"/>
+      </param>
+    </docblock>
+    <parameter name="repository" byreference="false" type="object">
+      <type full="App\Containers\Settings\Data\Repositories\SettingRepository" namespace="App\Containers\Settings\Data\Repositories" name="SettingRepository"/>
+    </parameter>
+  </constructor>
+  <method name="run" start="27" end="36" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+</class>

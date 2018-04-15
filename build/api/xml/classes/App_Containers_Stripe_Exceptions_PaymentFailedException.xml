@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Stripe\Exceptions\PaymentFailedException" namespace="App\Containers\Stripe\Exceptions" name="PaymentFailedException" abstract="false" final="false" start="13" end="18">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Exceptions" file="PaymentFailedException.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Exceptions/PaymentFailedException.php" size="411" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="be86ea0eff778bf80edf928e7527554fc8c44b73" relative="Stripe/Exceptions/PaymentFailedException.php"/>
+  <docblock>
+    <description compact="Class PaymentFailedException."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Exceptions\Exception" namespace="App\Ship\Parents\Exceptions" name="Exception" unresolved="true"/>
+  <member name="httpStatusCode" default="" type="{unknown}" constant="SymfonyResponse::HTTP_PAYMENT_REQUIRED" visibility="public" static="false" line="15"/>
+  <member name="message" default="'Payment failed!'" type="string" visibility="public" static="false" line="17"/>
+</class>

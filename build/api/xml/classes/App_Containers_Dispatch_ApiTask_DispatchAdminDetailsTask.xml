@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\ApiTask\DispatchAdminDetailsTask" namespace="App\Containers\Dispatch\ApiTask" name="DispatchAdminDetailsTask" abstract="false" final="false" start="27" end="83">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/ApiTask" file="DispatchAdminDetailsTask.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/ApiTask/DispatchAdminDetailsTask.php" size="2198" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="99ab943ed8a5aea94b439b4d2cfe62054bb848a5" relative="Dispatch/ApiTask/DispatchAdminDetailsTask.php"/>
+  <method name="run" start="30" end="82" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="success transformer message" line="58"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\SocialAuth\Extra\SocialProvider" namespace="App\Containers\SocialAuth\Extra" name="SocialProvider" abstract="false" final="false" start="10" end="16">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/Extra" file="SocialProvider.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/Extra/SocialProvider.php" size="250" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="ed212bed1790567ee337e1a2c921ee424ffd3555" relative="Socialauth/Extra/SocialProvider.php"/>
+  <docblock>
+    <description compact="Class SocialProvider."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <constant type="string" name="FACEBOOK" value="'facebook'"/>
+  <constant type="string" name="TWITTER" value="'twitter'"/>
+</class>

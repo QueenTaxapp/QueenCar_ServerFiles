@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Debugger\Middlewares\RequestsMonitorMiddleware" namespace="App\Containers\Debugger\Middlewares" name="RequestsMonitorMiddleware" abstract="false" final="false" start="16" end="57">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Debugger/Middlewares" file="RequestsMonitorMiddleware.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Debugger/Middlewares/RequestsMonitorMiddleware.php" size="1317" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="2505d0c647a4a1c3e61b637f2facc00772f1a48d" relative="Debugger/Middlewares/RequestsMonitorMiddleware.php"/>
+  <docblock>
+    <description compact="Class RequestsMonitorMiddleware"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Middlewares\Middleware" namespace="App\Ship\Parents\Middlewares" name="Middleware" unresolved="true"/>
+  <method name="handle" start="25" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\Illuminate\Http\Request" namespace="\Illuminate\Http" name="Request"/>
+      </param>
+      <param type="object" variable="$next">
+        <type full="\Closure" namespace="" name="Closure"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+  </method>
+</class>

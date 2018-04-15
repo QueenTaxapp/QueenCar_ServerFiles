@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Tests\Functional\ListAllAdminsTest" namespace="App\Containers\User\UI\API\Tests\Functional" name="ListAllAdminsTest" abstract="false" final="false" start="13" end="64">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional" file="ListAllAdminsTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional/ListAllAdminsTest.php" size="1642" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="d10f17bdca38bcc4db009eccfcc98394543f66fd" relative="User/UI/API/Tests/Functional/ListAllAdminsTest.php"/>
+  <docblock>
+    <description compact="Class ListAllUsersTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\User\Tests\TestCase" namespace="App\Containers\User\Tests" name="TestCase" unresolved="true"/>
+  <member name="endpoint" default="'get@v1/admins'" type="string" visibility="protected" static="false" line="16"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="18"/>
+  <method name="testListAllAdmins_" start="23" end="43" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="create some non-admin users" line="25"/>
+      <comment value="should not be returned" line="28"/>
+      <comment value="send the HTTP request" line="31"/>
+      <comment value="assert response status is correct" line="34"/>
+      <comment value="convert JSON response string to Object" line="37"/>
+      <comment value="assert the returned data size is correct" line="40"/>
+      <comment value="2 (fake in this test) + 1 (that is logged in) + 1 (seeded super admin)" line="42"/>
+    </inline>
+  </method>
+  <method name="testListAllAdminsByNonAdmin_" start="45" end="62" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="create some fake users" line="49"/>
+      <comment value="send the HTTP request" line="52"/>
+      <comment value="assert response status is correct" line="55"/>
+    </inline>
+  </method>
+</class>

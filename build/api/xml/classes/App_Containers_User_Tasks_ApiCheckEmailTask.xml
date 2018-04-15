@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\ApiCheckEmailTask" namespace="App\Containers\User\Tasks" name="ApiCheckEmailTask" abstract="false" final="false" start="15" end="41">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="ApiCheckEmailTask.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/ApiCheckEmailTask.php" size="945" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="82876e074844fb9283c26e89b2131c71351ce318" relative="User/Tasks/ApiCheckEmailTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="24" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to check if the email address/username is present or not"/>
+      <param type="string" variable="$email"/>
+      <return type="array"/>
+      <throw value="CommonException ('email address not found')"/>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="tableName" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sos\UI\API\Transformers\UserSosTransformer" namespace="App\Containers\Sos\UI\API\Transformers" name="UserSosTransformer" abstract="false" final="false" start="13" end="35">
+  <file path="/var/www/html/queencar/app/Containers/Sos/UI/API/Transformers" file="UserSosTransformer.php" realpath="/var/www/html/queencar/app/Containers/Sos/UI/API/Transformers/UserSosTransformer.php" size="637" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="6242f0698fa9209e82a68b822d248aed3b387498" relative="Sos/UI/API/Transformers/UserSosTransformer.php"/>
+  <docblock>
+    <description compact="Class ToogleStatusTransformer"/>
+    <package value="App\Containers\Drivers\UI\API\Transformers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="20" end="32" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$request"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request);die();" line="23"/>
+    </inline>
+  </method>
+</class>

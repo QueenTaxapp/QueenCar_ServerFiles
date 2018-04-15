@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Promocode\ApiTask\UserPromoCodeCheckTask" namespace="App\Containers\Promocode\ApiTask" name="UserPromoCodeCheckTask" abstract="false" final="false" start="15" end="104">
+  <file path="/var/www/html/queencar/app/Containers/Promocode/ApiTask" file="UserPromoCodeCheckTask.php" realpath="/var/www/html/queencar/app/Containers/Promocode/ApiTask/UserPromoCodeCheckTask.php" size="2807" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="2198d933c513c9e749fe1a9e0355898835c57e81" relative="Promocode/ApiTask/UserPromoCodeCheckTask.php"/>
+  <method name="run" start="18" end="103" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="check promocode exist" line="44"/>
+      <comment value="check promo code active or in active" line="51"/>
+      <comment value="promo code valid or invalid" line="60"/>
+      <comment value="no of user used (offer reached max limit or not)" line="72"/>
+    </inline>
+  </method>
+</class>

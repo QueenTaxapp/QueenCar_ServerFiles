@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Webtasks\Message" namespace="App\Containers\Admin\Webtasks" name="Message" abstract="false" final="false" start="9" end="37">
+  <file path="/var/www/html/queencar/app/Containers/Admin/Webtasks" file="Message.php" realpath="/var/www/html/queencar/app/Containers/Admin/Webtasks/Message.php" size="615" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="cdedafd317ec0c3b41fc8cb535c0dbe62aa705fd" relative="Admin/Webtasks/Message.php"/>
+  <implements full="Illuminate\Contracts\Validation\Validator" namespace="Illuminate\Contracts\Validation" name="Validator" unresolved="true"/>
+  <method name="failed" start="12" end="15" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <todo value="Implement failed() method." line="14"/>
+    </inline>
+  </method>
+  <method name="fails" start="17" end="20" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <todo value="Implement fails() method." line="19"/>
+    </inline>
+  </method>
+  <method name="after" start="22" end="25" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="callback" byreference="false" type="{unknown}"/>
+    <inline>
+      <todo value="Implement after() method." line="24"/>
+    </inline>
+  </method>
+  <method name="sometimes" start="27" end="30" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="attribute" byreference="false" type="{unknown}"/>
+    <parameter name="rules" byreference="false" type="{unknown}"/>
+    <parameter name="callback" byreference="false" type="callable"/>
+    <inline>
+      <todo value="Implement sometimes() method." line="29"/>
+    </inline>
+  </method>
+  <method name="getMessageBag" start="32" end="35" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <todo value="Implement getMessageBag() method." line="34"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Report\Webtasks\DriverRatingReportDownloadTask" namespace="App\Containers\Report\Webtasks" name="DriverRatingReportDownloadTask" abstract="false" final="false" start="16" end="224">
+  <file path="/var/www/html/queencar/app/Containers/Report/Webtasks" file="DriverRatingReportDownloadTask.php" realpath="/var/www/html/queencar/app/Containers/Report/Webtasks/DriverRatingReportDownloadTask.php" size="7970" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="3876a9e8c7578f3bf76e8522002d52c158facfa5" relative="Report/Webtasks/DriverRatingReportDownloadTask.php"/>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="19" end="222" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="throw new ValidationException((new Message()),redirect()-&gt;to('admin/add')" line="201"/>
+      <comment value="-&gt;withErrors([trans('localization::errors.details_could_not_saved_in')].$details, 'default'));" line="202"/>
+      <comment value="return array('success'=&gt;&quot;TRUE&quot;,'message'=&gt;trans('localization::errors.admin_added_successfully'));" line="204"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Zone/UI/WEB/Views" file="Heatmap.blade.php" realpath="/var/www/html/queencar/app/Containers/Zone/UI/WEB/Views/Heatmap.blade.php" size="1861" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="2602dd25aee1bb295aaed36611da582368433465" relative="Zone/UI/WEB/Views/Heatmap.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layout::Layout')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="5">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">//echo"&lt;pre&gt;";print_r($request_zone);die();</token>
+  </line>
+  <line no="6">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;style type="text/css"&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        #map {</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            height: 500px;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">            width: 98%;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            left: 10px;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">        html, body {</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">            padding: 0;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            margin: 0;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">            height: 100%;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="20"/>
+  <line no="21"/>
+  <line no="22">
+    <token name="T_INLINE_HTML">&lt;section id=""&gt;</token>
+  </line>
+  <line no="23"/>
+  <line no="24">
+    <token name="T_INLINE_HTML">  &lt;div class="container"&gt;</token>
+  </line>
+  <line no="25"/>
+  <line no="26">
+    <token name="T_INLINE_HTML">        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">            &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                &lt;h4 class="header"&gt;{{ trans('localization::lang_view.heat_map')}}&lt;/h4&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_INLINE_HTML">            &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                &lt;div id="map" class="col l12 left"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_INLINE_HTML">      &lt;/div&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">&lt;/section&gt;</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAgkO8chMIq3JSKLXwTTRuP7ByhkL3Wzxk&amp;sensor=false&amp;libraries=visualization"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="40"/>
+  <line no="41">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="42"/>
+  <line no="43">
+    <token name="T_INLINE_HTML">        var result=[];</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">        var all_overlays ={};</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_INLINE_HTML">        all_overlays = </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_OBJECT_CAST">(object)</token>
+    <token name="T_VARIABLE">$request_zone</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">;</token>
+  </line>
+  <line no="47"/>
+  <line no="48">
+    <token name="T_INLINE_HTML">        var myLatlng = new google.maps.LatLng(all_overlays[0].pick_latitude, all_overlays[0].pick_longitude);</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">        // map options,</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">        var myOptions = {</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">            zoom: 11,</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">            center: myLatlng</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="54"/>
+  <line no="55"/>
+  <line no="56"/>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_INLINE_HTML">        // standard map</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">        var map = new google.maps.Map(document.getElementById("map"), myOptions);</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">        // heatmap layer</token>
+  </line>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_INLINE_HTML">        var heatmap = new google.maps.visualization.HeatmapLayer({</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">            data: getPoints(),</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">            map: map</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="66"/>
+  <line no="67">
+    <token name="T_INLINE_HTML">        function getPoints() {</token>
+  </line>
+  <line no="68"/>
+  <line no="69"/>
+  <line no="70">
+    <token name="T_INLINE_HTML">            for (var item in all_overlays) {</token>
+  </line>
+  <line no="71"/>
+  <line no="72">
+    <token name="T_INLINE_HTML">                result.push(new google.maps.LatLng(all_overlays[item].pick_latitude, all_overlays[item].pick_longitude));</token>
+  </line>
+  <line no="73"/>
+  <line no="74">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">           // console.log(result);</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">            return result;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="78"/>
+  <line no="79"/>
+  <line no="80">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="81"/>
+  <line no="82"/>
+  <line no="83"/>
+  <line no="84">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

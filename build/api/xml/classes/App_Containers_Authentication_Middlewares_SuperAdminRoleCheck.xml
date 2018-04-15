@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Middlewares\SuperAdminRoleCheck" namespace="App\Containers\Authentication\Middlewares" name="SuperAdminRoleCheck" abstract="false" final="false" start="21" end="44">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Middlewares" file="SuperAdminRoleCheck.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Middlewares/SuperAdminRoleCheck.php" size="935" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="46720a7f57d31ed508b97efd1a6ea7f3e735c9df" relative="Authentication/Middlewares/SuperAdminRoleCheck.php"/>
+  <extends full="App\Ship\Parents\Middlewares\Middleware" namespace="App\Ship\Parents\Middlewares" name="Middleware" unresolved="true"/>
+  <method name="handle" start="23" end="41" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+  </method>
+</class>

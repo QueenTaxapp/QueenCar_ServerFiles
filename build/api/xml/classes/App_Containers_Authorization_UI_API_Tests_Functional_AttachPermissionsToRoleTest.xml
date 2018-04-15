@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\UI\API\Tests\Functional\AttachPermissionsToRoleTest" namespace="App\Containers\Authorization\UI\API\Tests\Functional" name="AttachPermissionsToRoleTest" abstract="false" final="false" start="14" end="76">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional" file="AttachPermissionsToRoleTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional/AttachPermissionsToRoleTest.php" size="2123" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="89d3a2517bf1a28185eb5935d29b7d2aa0f64b71" relative="Authorization/UI/API/Tests/Functional/AttachPermissionsToRoleTest.php"/>
+  <docblock>
+    <description compact="Class AttachPermissionsToRoleTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase"/>
+  <member name="endpoint" default="'post@v1/permissions/attach'" type="string" visibility="protected" static="false" line="17"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="19"/>
+  <method name="testAttachSinglePermissionToRole_" start="24" end="48" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="34"/>
+      <comment value="assert response status is correct" line="37"/>
+    </inline>
+  </method>
+  <method name="testAttachMultiplePermissionToRole_" start="50" end="74" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="62"/>
+      <comment value="assert response status is correct" line="65"/>
+    </inline>
+  </method>
+  <parent full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase">
+    <extends full="App\Ship\Parents\Tests\PhpUnit\TestCase" namespace="App\Ship\Parents\Tests\PhpUnit" name="TestCase" unresolved="true"/>
+  </parent>
+</class>

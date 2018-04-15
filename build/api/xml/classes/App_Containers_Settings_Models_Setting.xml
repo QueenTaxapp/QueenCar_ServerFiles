@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Settings\Models\Setting" namespace="App\Containers\Settings\Models" name="Setting" abstract="false" final="false" start="12" end="46">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Models" file="Setting.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Models/Setting.php" size="673" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="27c55837c821bd71e2b9da74914650cf150c0a63" relative="Settings/Models/Setting.php"/>
+  <docblock>
+    <description compact="Class Setting"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\Model" namespace="App\Ship\Parents\Models" name="Model" unresolved="true"/>
+  <member name="table" default="'settings'" type="string" visibility="protected" static="false" line="20">
+    <docblock>
+      <description compact="The database table used by the model."/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="timestamps" default="false" type="boolean" visibility="public" static="false" line="25">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\Containers\Settings\Models\bool" namespace="App\Containers\Settings\Models" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="fillable" default="" type="array" visibility="protected" static="false" line="32">
+    <docblock>
+      <description compact="The attributes that are mass assignable."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="hidden" default="" type="array" visibility="protected" static="false" line="42">
+    <docblock>
+      <description compact="The attributes excluded from the model's JSON form."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+</class>

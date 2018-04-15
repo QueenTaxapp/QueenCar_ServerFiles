@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\ApiTask\ListFav" namespace="App\Containers\User\ApiTask" name="ListFav" abstract="false" final="false" start="20" end="55">
+  <file path="/var/www/html/queencar/app/Containers/User/ApiTask" file="ListFav.php" realpath="/var/www/html/queencar/app/Containers/User/ApiTask/ListFav.php" size="1322" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="2c66ce00fb799625707a67c42b56e22ef290c8a2" relative="User/ApiTask/ListFav.php"/>
+  <docblock>
+    <description compact="Class CheckCode"/>
+    <package value="App\Containers\Referral\ApiTask"/>
+  </docblock>
+  <method name="run" start="27" end="54" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+</class>

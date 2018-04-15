@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\ApiTask\DispatchDriverAvailableTask" namespace="App\Containers\Dispatch\ApiTask" name="DispatchDriverAvailableTask" abstract="false" final="false" start="25" end="105">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/ApiTask" file="DispatchDriverAvailableTask.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/ApiTask/DispatchDriverAvailableTask.php" size="2739" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="077cb1b47e569509e87be56d55831015ea58d221" relative="Dispatch/ApiTask/DispatchDriverAvailableTask.php"/>
+  <docblock>
+    <description compact="Class UserDetailTask"/>
+    <package value="App\Containers\Promocode\ApiTask"/>
+  </docblock>
+  <method name="run" start="33" end="104" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="success transformer message" line="64"/>
+      <comment value="$response-&gt;driver =$tempArray;" line="94"/>
+    </inline>
+  </method>
+</class>

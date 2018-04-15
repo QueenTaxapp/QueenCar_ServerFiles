@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Company\Webtasks\CompanyLoginEmailValidationTask" namespace="App\Containers\Company\Webtasks" name="CompanyLoginEmailValidationTask" abstract="false" final="false" start="18" end="88">
+  <file path="/var/www/html/queencar/app/Containers/Company/Webtasks" file="CompanyLoginEmailValidationTask.php" realpath="/var/www/html/queencar/app/Containers/Company/Webtasks/CompanyLoginEmailValidationTask.php" size="2833" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="45188acbe6540e2932049ad3acdfe53fde02d27b" relative="Company/Webtasks/CompanyLoginEmailValidationTask.php"/>
+  <uses full="Apiato\Core\Traits\CallableTrait" namespace="Apiato\Core\Traits" name="CallableTrait" start="20" end="20" unresolved="true"/>
+  <method name="run" start="22" end="87" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="emailAddress" byreference="false" type="{unknown}"/>
+    <parameter name="password" byreference="false" type="{unknown}"/>
+    <parameter name="remember" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($adminDetails);die();" line="28"/>
+    </inline>
+  </method>
+</class>

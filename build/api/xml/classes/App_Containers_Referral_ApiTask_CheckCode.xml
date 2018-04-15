@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Referral\ApiTask\CheckCode" namespace="App\Containers\Referral\ApiTask" name="CheckCode" abstract="false" final="false" start="19" end="72">
+  <file path="/var/www/html/queencar/app/Containers/Referral/ApiTask" file="CheckCode.php" realpath="/var/www/html/queencar/app/Containers/Referral/ApiTask/CheckCode.php" size="1964" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="466dd5557cce436834bf8a0c8eaae8356ec05501" relative="Referral/ApiTask/CheckCode.php"/>
+  <docblock>
+    <description compact="Class CheckCode"/>
+    <package value="App\Containers\Referral\ApiTask"/>
+  </docblock>
+  <method name="run" start="26" end="71" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+</class>

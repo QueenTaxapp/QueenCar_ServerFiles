@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Request\Models\RequestMetaModel" namespace="App\Containers\Request\Models" name="RequestMetaModel" abstract="false" final="false" start="11" end="15">
+  <file path="/var/www/html/queencar/app/Containers/Request/Models" file="RequestMetaModel.php" realpath="/var/www/html/queencar/app/Containers/Request/Models/RequestMetaModel.php" size="236" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="84ef01674129ffa295b2feb8759d781822aeb806" relative="Request/Models/RequestMetaModel.php"/>
+  <docblock>
+    <description compact="Class SmsModel"/>
+    <package value="App\Containers\Sms\Models"/>
+  </docblock>
+  <extends full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model" unresolved="true"/>
+  <member name="table" default="'request_meta'" type="string" visibility="protected" static="false" line="14"/>
+</class>

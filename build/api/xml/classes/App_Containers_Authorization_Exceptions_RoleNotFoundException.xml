@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Exceptions\RoleNotFoundException" namespace="App\Containers\Authorization\Exceptions" name="RoleNotFoundException" abstract="false" final="false" start="13" end="19">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Exceptions" file="RoleNotFoundException.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Exceptions/RoleNotFoundException.php" size="384" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="abbffafbd0baf9cba1b7078e363b57beeb5a46c8" relative="Authorization/Exceptions/RoleNotFoundException.php"/>
+  <docblock>
+    <description compact="Class RoleNotFoundException"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Exceptions\Exception" namespace="App\Ship\Parents\Exceptions" name="Exception" unresolved="true"/>
+  <member name="httpStatusCode" default="" type="{unknown}" constant="Response::HTTP_NOT_FOUND" visibility="public" static="false" line="16"/>
+  <member name="message" default="'Role Not Found.'" type="string" visibility="public" static="false" line="18"/>
+</class>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\UI\API\Tests\Functional\AssignUserToRoleTest" namespace="App\Containers\Authorization\UI\API\Tests\Functional" name="AssignUserToRoleTest" abstract="false" final="false" start="14" end="105">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional" file="AssignUserToRoleTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional/AssignUserToRoleTest.php" size="2938" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="6976b7b84e1c4d5abbbddeefdab1bcc974ef7daa" relative="Authorization/UI/API/Tests/Functional/AssignUserToRoleTest.php"/>
+  <docblock>
+    <description compact="Class AssignUserToRoleTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase"/>
+  <member name="endpoint" default="'post@v1/roles/assign?include=roles'" type="string" visibility="protected" static="false" line="17"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="19"/>
+  <method name="testAssignUserToRole_" start="24" end="46" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="35"/>
+      <comment value="assert response status is correct" line="38"/>
+    </inline>
+  </method>
+  <method name="testAssignUserToRoleWithRealId_" start="48" end="73" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="59"/>
+      <comment value="assert response status is correct. Note: this will return 200 if `HASH_ID=false` in the .env" line="62"/>
+    </inline>
+  </method>
+  <method name="testAssignUserToManyRoles_" start="75" end="103" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="90"/>
+      <comment value="assert response status is correct" line="93"/>
+    </inline>
+  </method>
+  <parent full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase">
+    <extends full="App\Ship\Parents\Tests\PhpUnit\TestCase" namespace="App\Ship\Parents\Tests\PhpUnit" name="TestCase" unresolved="true"/>
+  </parent>
+</class>

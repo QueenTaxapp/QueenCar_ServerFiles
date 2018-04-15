@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Payment/UI/API/Routes" file="SetDefault.v1.public.php" realpath="/var/www/html/queencar/app/Containers/Payment/UI/API/Routes/SetDefault.v1.public.php" size="1046" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="d3a9390587f35576d11afa69113e248138616bc5" relative="Payment/UI/API/Routes/SetDefault.v1.public.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * @apiGroup           Payment</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * @apiName            Change Default Card</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * @api                {post} /user/carddefault Change Default Card</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * @apiDescription     Change Default Card</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * @apiVersion         1.0.0</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * @apiPermission      none</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * @apiHeader          Accept application/json</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> * @apiParam           {Integer}     id   user id</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      token   user token</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      card_id</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * @apiSuccessExample  {json}    Success-Response:</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> * {</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> *  "success": true,</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT"> *  "success_message": "default_changed",</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> *  "payment": [</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> *      {</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> *      "card_id": 1,</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> *      "last_number": "12",</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> *      "card_type": "VISA",</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> *      "is_default": false</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> *      },</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT"> *      {</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT"> *      "card_id": 2,</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT"> *      "last_number": "12",</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT"> *      "card_type": "VISA",</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT"> *      "is_default": true</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT"> *      }</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT"> *  ]</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT"> * }</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="39"/>
+  <line no="40">
+    <token name="T_VARIABLE">$router</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">post</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/user/carddefault'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="41">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'as'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'payment@change_default'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="42">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'uses'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Controller@run'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="43">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'middleware'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="44">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'userTokenCheck.api'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="45">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+  </line>
+  <line no="46">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="47"/>
+  <line no="48"/>
+  <line no="49"/>
+  <line no="50"/>
+</source>

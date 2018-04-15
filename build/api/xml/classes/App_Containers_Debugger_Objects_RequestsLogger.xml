@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Debugger\Objects\RequestsLogger" namespace="App\Containers\Debugger\Objects" name="RequestsLogger" abstract="false" final="false" start="18" end="71">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Debugger/Objects" file="RequestsLogger.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Debugger/Objects/RequestsLogger.php" size="1509" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="fa84b93f9b48a1482a7e447419e7c34810eab050" relative="Debugger/Objects/RequestsLogger.php"/>
+  <docblock>
+    <description compact="Class RequestsLogger"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <constant type="string" name="TESTING_ENV" value="'testing'"/>
+  <member name="debuggingEnabled" visibility="protected" static="false" line="23"/>
+  <member name="environment" visibility="protected" static="false" line="25"/>
+  <member name="logger" visibility="protected" static="false" line="27"/>
+  <member name="logFile" visibility="protected" static="false" line="29"/>
+  <constructor name="__construct" start="34" end="38" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="RequestsLogger constructor."/>
+    </docblock>
+  </constructor>
+  <method name="releaseOutput" start="43" end="48" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$output">
+        <type full="\App\Containers\Debugger\Objects\Output" namespace="\App\Containers\Debugger\Objects" name="Output"/>
+      </param>
+    </docblock>
+    <parameter name="output" byreference="false" type="object">
+      <type full="App\Containers\Debugger\Objects\Output" namespace="App\Containers\Debugger\Objects" name="Output"/>
+    </parameter>
+  </method>
+  <method name="prepareConfigs" start="53" end="58" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <void/>
+    </docblock>
+  </method>
+  <method name="prepareLogger" start="63" end="70" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <void/>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\ApiTask\DriverHistoryListTask" namespace="App\Containers\Drivers\ApiTask" name="DriverHistoryListTask" abstract="false" final="false" start="12" end="127">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/ApiTask" file="DriverHistoryListTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/ApiTask/DriverHistoryListTask.php" size="4572" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="2a01fe476c09cdfbe068d838f743182653b3d7d6" relative="Drivers/ApiTask/DriverHistoryListTask.php"/>
+  <docblock>
+    <description compact="Class DriverResponseRequestTask"/>
+    <package value="App\Containers\Drivers\ApiTask"/>
+  </docblock>
+  <method name="run" start="19" end="126" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo&quot;&lt;pre&gt;&quot;;print_r($data['request']-&gt;all());die();" line="21"/>
+      <comment value="echo&quot;&lt;pre&gt;&quot;;print_r($history);die();" line="77"/>
+      <comment value="echo&quot;&lt;pre&gt;&quot;;print_r($data['response']);die();" line="125"/>
+    </inline>
+  </method>
+</class>

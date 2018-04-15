@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Models\UserTableModel" namespace="App\Containers\User\Models" name="UserTableModel" abstract="false" final="false" start="8" end="17">
+  <file path="/var/www/html/queencar/app/Containers/User/Models" file="UserTableModel.php" realpath="/var/www/html/queencar/app/Containers/User/Models/UserTableModel.php" size="330" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="f2635f45e1c3214d9923100371c5c4eadb731f72" relative="User/Models/UserTableModel.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="dates" default="" type="array" visibility="protected" static="false" line="10"/>
+  <member name="table" default="'User'" type="string" visibility="protected" static="false" line="11"/>
+  <method name="user_detail" start="13" end="16" abstract="false" final="false" static="false" visibility="public"/>
+</class>

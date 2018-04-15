@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Settings\Data\Repositories\SettingRepository" namespace="App\Containers\Settings\Data\Repositories" name="SettingRepository" abstract="false" final="false" start="13" end="36">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Data/Repositories" file="SettingRepository.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Data/Repositories/SettingRepository.php" size="618" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="4e3cf959dc798f9fd6adb049ea3f823db4cf2bc6" relative="Settings/Data/Repositories/SettingRepository.php"/>
+  <docblock>
+    <description compact="Class SettingsRepository"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Repositories\Repository" namespace="App\Ship\Parents\Repositories" name="Repository" unresolved="true"/>
+  <member name="fieldSearchable" default="" type="array" visibility="protected" static="false" line="18">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="boot" start="23" end="27" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="probably do some stuff here ..." line="26"/>
+    </inline>
+  </method>
+  <method name="model" start="32" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+</class>

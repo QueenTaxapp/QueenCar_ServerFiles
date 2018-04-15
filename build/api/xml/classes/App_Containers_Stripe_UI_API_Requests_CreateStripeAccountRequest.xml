@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Stripe\UI\API\Requests\CreateStripeAccountRequest" namespace="App\Containers\Stripe\UI\API\Requests" name="CreateStripeAccountRequest" abstract="false" final="false" start="12" end="68">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/UI/API/Requests" file="CreateStripeAccountRequest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/UI/API/Requests/CreateStripeAccountRequest.php" size="1314" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="f0dead801e15d401c5b9099d51ce0dfea57c10e2" relative="Stripe/UI/API/Requests/CreateStripeAccountRequest.php"/>
+  <docblock>
+    <description compact="Class CreateStripeAccountRequest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="20">
+    <docblock>
+      <description compact="Define which Roles and/or Permissions has access to this request."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="decode" default="" type="array" visibility="protected" static="false" line="30">
+    <docblock>
+      <description compact="Id's that needs decoding before applying the validation rules."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="urlParameters" default="" type="array" visibility="protected" static="false" line="40">
+    <docblock>
+      <description compact="Defining the URL parameters (`/stores/999/items`) allows applying validation rules on them and allows accessing them like request data."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="rules" start="49" end="55" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the validation rules that apply to the request."/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="authorize" start="62" end="67" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Determine if the user is authorized to make this request."/>
+      <return type="object">
+        <type full="App\Containers\Stripe\UI\API\Requests\bool" namespace="App\Containers\Stripe\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

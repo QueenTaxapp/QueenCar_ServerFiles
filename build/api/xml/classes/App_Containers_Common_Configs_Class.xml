@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Common\Configs_Class" namespace="App\Containers\Common" name="Configs_Class" abstract="false" final="false" start="10" end="96">
+  <file path="/var/www/html/queencar/app/Containers/Common" file="Configs_Class.php" realpath="/var/www/html/queencar/app/Containers/Common/Configs_Class.php" size="2000" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e365d8fe7aa2920575c253e104ddbc98ad2c704f" relative="Common/Configs_Class.php"/>
+  <docblock>
+    <description compact="Configs_Class"/>
+  </docblock>
+  <member name="custom_helper" visibility="private" static="true" line="17">
+    <docblock>
+      <description/>
+    </docblock>
+  </member>
+  <method name="getInstance" start="19" end="22" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="helper" start="24" end="32" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="getValue" start="39" end="58" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description/>
+    </docblock>
+  </method>
+  <method name="getCurrency" start="61" end="94" abstract="false" final="false" static="true" visibility="public">
+    <inline>
+      <comment value="initialize CURL:" line="70"/>
+      <comment value="get the (still encoded) JSON data:" line="74"/>
+      <comment value="Decode JSON response:" line="78"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r();die();" line="81"/>
+    </inline>
+  </method>
+</class>

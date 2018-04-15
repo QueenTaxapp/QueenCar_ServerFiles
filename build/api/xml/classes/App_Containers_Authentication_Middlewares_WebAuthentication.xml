@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Middlewares\WebAuthentication" namespace="App\Containers\Authentication\Middlewares" name="WebAuthentication" abstract="false" final="false" start="25" end="263">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Middlewares" file="WebAuthentication.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Middlewares/WebAuthentication.php" size="6761" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="c5451b937c61e418463e7f43286ef538f0a774cd" relative="Authentication/Middlewares/WebAuthentication.php"/>
+  <docblock>
+    <description compact="Class WebAuthentication"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Middlewares\Middleware" namespace="App\Ship\Parents\Middlewares" name="Middleware" unresolved="true"/>
+  <member name="auth" visibility="protected" static="false" line="33">
+    <docblock>
+      <description compact="The Guard implementation."/>
+      <var type="object">
+        <type full="Illuminate\Contracts\Auth\Guard" namespace="Illuminate\Contracts\Auth" name="Guard"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="41" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="WebAuthentication constructor."/>
+      <param type="object" variable="$auth">
+        <type full="\Illuminate\Contracts\Auth\Guard" namespace="\Illuminate\Contracts\Auth" name="Guard"/>
+      </param>
+    </docblock>
+    <parameter name="auth" byreference="false" type="object">
+      <type full="Illuminate\Contracts\Auth\Guard" namespace="Illuminate\Contracts\Auth" name="Guard"/>
+    </parameter>
+  </constructor>
+  <method name="handle" start="54" end="262" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Handle an incoming request."/>
+      <param type="object" variable="$request">
+        <type full="\Illuminate\Http\Request" namespace="\Illuminate\Http" name="Request"/>
+      </param>
+      <param type="object" variable="$next">
+        <type full="\Closure" namespace="" name="Closure"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+    <inline>
+      <comment value="set language" line="119"/>
+      <comment value="if(!session::has('isActive') || !session::has('isBlock'))" line="123"/>
+      <comment value="{" line="124"/>
+      <comment value=";  }" line="171"/>
+      <comment value="else" line="172"/>
+      <comment value="{" line="173"/>
+      <comment value="$isActive = session::get('isActive');" line="174"/>
+      <comment value="$isBlock =  session::get('isBlock');" line="175"/>
+      <comment value="$rememberToken = session::get('rememberToken');" line="176"/>
+      <comment value="}" line="177"/>
+    </inline>
+  </method>
+</class>

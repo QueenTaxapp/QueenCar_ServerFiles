@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Models\DriversModel" namespace="App\Containers\Admin\Models" name="DriversModel" abstract="false" final="false" start="9" end="13">
+  <file path="/var/www/html/queencar/app/Containers/Admin/Models" file="DriversModel.php" realpath="/var/www/html/queencar/app/Containers/Admin/Models/DriversModel.php" size="251" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="eccd5bb2e38b95a3be34b245967f7ba5273d738e" relative="Admin/Models/DriversModel.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="dates" default="" type="array" visibility="protected" static="false" line="11"/>
+  <member name="table" default="'Drivers'" type="string" visibility="protected" static="false" line="12"/>
+</class>

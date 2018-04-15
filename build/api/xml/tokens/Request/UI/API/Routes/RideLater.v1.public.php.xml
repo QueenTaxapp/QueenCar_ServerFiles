@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Request/UI/API/Routes" file="RideLater.v1.public.php" realpath="/var/www/html/queencar/app/Containers/Request/UI/API/Routes/RideLater.v1.public.php" size="1140" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="edad0b249d211e5a7f1bd8ba4bd7ec445d1363f0" relative="Request/UI/API/Routes/RideLater.v1.public.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * @apiGroup           Request</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * @apiName            Ride Later</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * @api                {post} /user/ridelater Ride Later</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * @apiDescription     Ride Later</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * @apiVersion         1.0.0</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * @apiPermission      none</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * @apiHeader          Accept application/json</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> * @apiParam           {Integer}     id</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      token</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      platitude</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      plongitude</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      dlongitude</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      dlatitude</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      plocation</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      dlocation</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      paymentOpt</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      type</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      timezone</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      datetime</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> * @apiSuccessExample  {json}    Success-Response:</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> *{</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT"> *  "success": true,</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT"> *  "success_message": "Trip_registered_successfully",</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT"> *}</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_VARIABLE">$router</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">post</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/user/ridelater'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="36">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'as'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Request@ridelater'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="37">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'uses'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Controller@run'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="38">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'middleware'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="39">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'userTokenCheck.api'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="40">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+  </line>
+  <line no="41">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="42"/>
+  <line no="43"/>
+  <line no="44"/>
+  <line no="45"/>
+</source>

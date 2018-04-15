@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Tasks\DeleteRoleTask" namespace="App\Containers\Authorization\Tasks" name="DeleteRoleTask" abstract="false" final="false" start="15" end="31">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Tasks" file="DeleteRoleTask.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Tasks/DeleteRoleTask.php" size="667" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="01c3378e94ab01a282acd4027f20b23a4329e2b4" relative="Authorization/Tasks/DeleteRoleTask.php"/>
+  <docblock>
+    <description compact="Class DeleteRoleTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="22" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$role">
+        <type full="App\Containers\Authorization\Tasks\Integer|Role" namespace="App\Containers\Authorization\Tasks" name="Integer|Role"/>
+      </param>
+      <return type="object">
+        <type full="App\Containers\Authorization\Tasks\bool" namespace="App\Containers\Authorization\Tasks" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="role" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="delete the record from the roles table." line="28"/>
+    </inline>
+  </method>
+</class>

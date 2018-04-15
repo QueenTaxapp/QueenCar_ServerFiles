@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Actions\ApiDriverLoginAction" namespace="App\Containers\Drivers\Actions" name="ApiDriverLoginAction" abstract="false" final="false" start="30" end="48">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/Actions" file="ApiDriverLoginAction.php" realpath="/var/www/html/queencar/app/Containers/Drivers/Actions/ApiDriverLoginAction.php" size="1060" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="513a50f805c7c8b6cc2e43d90bfa6b7d1b6f4343" relative="Drivers/Actions/ApiDriverLoginAction.php"/>
+  <docblock>
+    <description compact="Class LoginValidationAction"/>
+    <author value="vicky"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="39" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <method value="run used to validate if the user is Valid or invalid or blocked"/>
+      <param type="object" variable="$request">
+        <type full="\App\Ship\Parents\Requests\Request" namespace="\App\Ship\Parents\Requests" name="Request"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Webtasks\AdminViewTask" namespace="App\Containers\Admin\Webtasks" name="AdminViewTask" abstract="false" final="false" start="22" end="86">
+  <file path="/var/www/html/queencar/app/Containers/Admin/Webtasks" file="AdminViewTask.php" realpath="/var/www/html/queencar/app/Containers/Admin/Webtasks/AdminViewTask.php" size="2082" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="29d1ab9114918ea5fd6cb46269cb706e76ce02c5" relative="Admin/Webtasks/AdminViewTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="29" end="84" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <inline>
+      <comment value="if(!session::has('role'))" line="50"/>
+      <comment value="{" line="51"/>
+      <comment value="$id = Session::get('id');" line="52"/>
+      <comment value="$allDetails = Cache::get(&quot;adminDetails$id&quot;);" line="53"/>
+      <comment value="$role = $allDetails['role'];" line="54"/>
+      <comment value="}" line="56"/>
+      <comment value="else" line="57"/>
+      <comment value="{" line="58"/>
+      <comment value="$role = Session::get('role');" line="59"/>
+      <comment value="}" line="61"/>
+      <comment value="if($role != '0')" line="63"/>
+      <comment value="{" line="64"/>
+      <comment value="$adminKey = Session::get('admin_key');" line="65"/>
+      <comment value="$data = $data-&gt;where('admin_reference',$adminKey)-&gt;orWhere('admin_key',$adminKey);" line="68"/>
+      <comment value="}" line="71"/>
+    </inline>
+  </method>
+</class>

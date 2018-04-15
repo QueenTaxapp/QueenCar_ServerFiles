@@ -1,0 +1,1134 @@
+{
+  "module": {
+
+    "Dispatch":{
+
+      "user_detail": {
+        "title": "Get User Detail",
+        "version": "1.0.0",
+        "description": "",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Promocode\\UI\\API\\Requests\\ApiUserPromoCodeCheckRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Promocode\\ApiTask\\UserPromoCodeCheckTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      }
+
+    },
+
+    "PromoCode": {
+      "check_promo_code": {
+        "title": "Check Promo Code",
+        "version": "1.0.0",
+        "description": "Check promo code if valueable",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Promocode\\UI\\API\\Requests\\ApiUserPromoCodeCheckRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Promocode\\ApiTask\\UserPromoCodeCheckTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      }
+    },
+    "Review": {
+      "user_review": {
+        "title": "Review User",
+        "version": "1.0.0",
+        "description": "to review user by the driver",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Review\\UI\\API\\Requests\\UserReviewRequest"
+          },
+          "generate_eta": {
+            "id": "task",
+            "namespace": "App\\Containers\\Review\\ApiTask\\UserReviewTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      },
+      "driver_review": {
+        "title": "Review Driver",
+        "version": "1.0.0",
+        "description": "to review Driver by the user",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Review\\UI\\API\\Requests\\UserReviewRequest"
+          },
+          "generate_eta": {
+            "id": "task",
+            "namespace": "App\\Containers\\Review\\ApiTask\\DriverReviewTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      }
+    },
+    "Compliant": {
+      "compliant_list": {
+        "title": "Compliant List",
+        "version": "1.0.0",
+        "description": "Compliant List",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Compliant\\UI\\API\\Requests\\CompliantTypeRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Compliant\\ApiTask\\CompliantListTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Compliant\\UI\\API\\Transformers\\CompanyListTransformer"
+          }
+        }
+      },
+      "driver_compliants": {
+        "title": "Driver Compliants",
+        "version": "1.0.0",
+        "description": "Driver Compliants",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Compliant\\UI\\API\\Requests\\CompliantsRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Compliant\\ApiTask\\CompliantsTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      },
+      "user_compliants": {
+        "title": "User Compliants",
+        "version": "1.0.0",
+        "description": "User Compliants",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Compliant\\UI\\API\\Requests\\CompliantsRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Compliant\\ApiTask\\UserCompliantsTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      }
+
+    },
+    "Driver": {
+      "driver_login": {
+        "title": "Driver Login",
+        "version": "1.0.0",
+        "description": "Driver Login",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Requests\\DriverLoginRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverLoginTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Transformers\\NewDriverLoginTransformer"
+          }
+        }
+      },
+      "driver_sign_up": {
+        "title": "Driver Sign Up",
+        "version": "1.0.0",
+        "description": "Driver Sign Up",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Requests\\DriverSignupRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverSignUpTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Transformers\\NewDriverLoginTransformer"
+          }
+        }
+      },
+      "driver_request_inProgress": {
+        "title": "driver request inProgress",
+        "version": "1.0.0",
+        "description": "Driver Request Status",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Ganesh",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Requests\\HeroGetRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverRequestInprogressTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Transformers\\DriverRequestInprogressTransformer"
+          }
+        }
+      },
+      "response_for_request": {
+        "title": "Response for request",
+        "version": "1.0.0",
+        "description": "Response for request",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Requests\\DriverResponseRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverResponseRequestTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Transformers\\ApiResponseTransformer",
+
+            "reject": "App\\Containers\\Drivers\\UI\\API\\Transformers\\DriverSimpleSuccessResponse"
+          }
+        }
+      },
+      "toogle_status": {
+        "title": "Driver Toogle Status",
+        "version": "1.0.0",
+        "description": "Driver Toogle Status",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\ApiTokenValidateRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverToogleStatusTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Transformers\\ToogleStatusTransformer"
+          }
+        }
+      },
+      "driver_status": {
+        "title": "Driver  Status",
+        "version": "1.0.0",
+        "description": "Driver Status",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\ApiTokenValidateRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverToogleStatusTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Transformers\\ToogleStatusTransformer"
+          }
+        }
+      },
+      "driver_logout": {
+        "title": "Driver Logout",
+        "version": "1.0.0",
+        "description": "Driver Logout",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\ApiTokenValidateRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverLogoutTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      },
+      "driver_arrived": {
+        "title": "Driver Arrived",
+        "version": "1.0.0",
+        "description": " to registered Driver Arrived status",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Requests\\DriverArrivedRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverArrivedTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      },
+      "driver_trip_started": {
+        "title": "Trip started",
+        "version": "1.0.0",
+        "description": " to register Trip started by the driver",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Requests\\DriverArrivedRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverTripStartedTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      },
+      "driver_trip_cancel": {
+        "title": "Trip cancel",
+        "version": "1.0.0",
+        "description": " to register Trip cancel by the driver",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Requests\\TripCancelledRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverTripCancelledTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      },
+      "driver_list_history": {
+        "title": "driver history list",
+        "version": "1.0.0",
+        "description": "driver history details",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Ganesh",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\UserHistoryRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverHistoryListTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\UserHistoryListTransformer"
+          }
+        }
+      },
+      "driver_single_history": {
+        "title": "driver history single",
+        "version": "1.0.0",
+        "description": "driver history details",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Ganesh",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\UserHistorySingleRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverHistorySingleTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\UserHistorySingleTransformer"
+          }
+        }
+      }
+    },
+    "user": {
+      "user_logout": {
+        "title": "User Logout",
+        "version": "1.0.0",
+        "description": "User Logout",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\ApiTokenValidateRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\User\\ApiTask\\UserLogoutTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      },
+      "user_login": {
+        "title": "User Login",
+        "version": "1.0.0",
+        "description": "User Login",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\ApiLoginRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\User\\ApiTask\\UserLoginTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\NewUserLoginTransformer"
+          }
+        }
+      },
+      "user_signup": {
+        "title": "User SignUp",
+        "version": "1.0.0",
+        "description": "User SignUp",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\ApiSignupRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\User\\ApiTask\\UserSignUpTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\NewUserLoginTransformer"
+          }
+        }
+
+      },
+      "user_request_inProgress": {
+        "title": "user request inProgress",
+        "version": "1.0.0",
+        "description": "User Request Status",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Ganesh",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Requests\\HeroGetRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\User\\ApiTask\\UserRequestInprogressTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\UserRequestInprogressTransformer"
+          }
+        }
+      },
+      "user_list_history": {
+        "title": "user history list",
+        "version": "1.0.0",
+        "description": "user history details",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Ganesh",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\UserHistoryRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\User\\ApiTask\\UserHistoryListTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\UserHistoryListTransformer"
+          }
+        }
+      },
+      "user_single_history": {
+        "title": "user history single",
+        "version": "1.0.0",
+        "description": "user history details",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Ganesh",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\UserHistorySingleRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\User\\ApiTask\\UserHistorySingleTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\UserHistorySingleTransformer"
+          }
+        }
+      }
+    },
+    "Profile": {
+      "driver_profile": {
+        "title": "Driver Profile",
+        "version": "1.0.0",
+        "description": "update driver profile details",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Requests\\DriverProfileUpdateRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Drivers\\ApiTask\\DriverProfileUpdateTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Transformers\\NewDriverLoginTransformer"
+          }
+        }
+      },
+      "user_profile": {
+        "title": "User Profile",
+        "version": "1.0.0",
+        "description": "update user profile details",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Requests\\DriverProfileUpdateRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\User\\ApiTask\\UserProfileUpdateTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\NewUserLoginTransformer"
+          }
+        }
+      }
+
+    },
+    "Company": {
+      "company_list": {
+        "title": "Company List",
+        "version": "1.0.0",
+        "description": "companies list",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Vignesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Requests\\emptyRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Company\\ApiTask\\CompanyListTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Company\\UI\\API\\Transformers\\CompanyListTransformer"
+          }
+        }
+      }
+    },
+
+    "Request": {
+      "createrequest": {
+        "title": "Create Request",
+        "version": "1.0.0",
+        "description": "Create Request Near by drivers",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\ApiCreateRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\User\\ApiTask\\CreateRequest"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\ApiCreateRequestTransformer"
+          }
+        }
+
+      },
+      "user_cancel_request": {
+        "title": "User Cancel",
+        "version": "1.0.0",
+        "description": "User cancel trip",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Request\\UI\\API\\Requests\\UserCancel"
+          },
+          "cancel": {
+            "id": "task",
+            "namespace": "App\\Containers\\Request\\ApiTask\\UserRequestCancelTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Transformers\\DriverSimpleSuccessResponse"
+          }
+        }
+      },
+      "ridelater": {
+        "title": "Ride Later",
+        "version": "1.0.0",
+        "description": "User Trip Schedule",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Request\\UI\\API\\Requests\\RideLaterRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Request\\ApiTask\\ApiRiderLaterTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Request\\UI\\API\\Transformers\\RideLaterTransform"
+          }
+        }
+      },
+      "ridelater_cancel": {
+        "title": "Ride Later",
+        "version": "1.0.0",
+        "description": "Ride Later Cancel",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Request\\UI\\API\\Requests\\RideLaterCancelRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Request\\ApiTask\\ApiRiderLaterCancelTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Drivers\\UI\\API\\Transformers\\DriverSimpleSuccessResponse"
+          }
+        }
+      },
+      "request_bill": {
+        "title": "Request Bill",
+        "version": "1.0.0",
+        "description": "Request Bill for user",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Ganesh",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Request\\UI\\API\\Requests\\BillRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Request\\ApiTask\\RequestBillShowTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Request\\UI\\API\\Transformers\\BillShowTransformer"
+          }
+        }
+      }
+    },
+    "FavoritePlace": {
+      "addFav": {
+        "title": "Add Favorite place in list",
+        "version": "1.0.0",
+        "description": "Add Favorite place in list",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\User\\UI\\API\\Requests\\ApiFavPlaceRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\User\\ApiTask\\AddFav"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\ApiAddfavTransformer"
+          }
+        }
+      },
+      "listFav": {
+        "title": "Favorite Place List",
+        "version": "1.0.0",
+        "description": "Favorite Place List",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Requests\\emptyRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\User\\ApiTask\\ListFav"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\ApiListfavTransformer"
+          }
+        }
+      },
+      "deleteFav": {
+        "title": "Favorite Delete Place",
+        "version": "1.0.0",
+        "description": "Favorite Delete Place",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Requests\\emptyRequest"
+          },
+          "Delete_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\User\\ApiTask\\DeleteFav"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\User\\UI\\API\\Transformers\\ApideletefavTransformer"
+          }
+        }
+      }
+    },
+
+    "eta": {
+      "get_eta": {
+        "title": "Generate Eta",
+        "version": "1.0.0",
+        "description": "Generate Eta of user location",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Eta\\UI\\API\\Requests\\EtaRequest"
+          },
+          "generate_eta": {
+            "id": "task",
+            "namespace": "App\\Containers\\Eta\\ApiTask\\ApiEta"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Eta\\UI\\API\\Transformers\\EtaTransform"
+          }
+        }
+      }
+    },
+    "payment": {
+      "client_token": {
+        "title": "Generate Client Token App",
+        "version": "1.0.0",
+        "description": "Generate Client Token App",
+        "module_type": "core",
+        "config_file": "Payment\/modules\/client_token.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Requests\\emptyRequest"
+          },
+          "generate_clientToken": {
+            "id": "task",
+            "namespace": "App\\Containers\\Payment\\ApiTask\\client_token"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Transformers\\ClientToken"
+          }
+        }
+      },
+      "list_card": {
+        "title": "Get List of card",
+        "version": "1.0.0",
+        "description": "Get All Card from user",
+        "module_type": "core",
+        "config_file": "Payment\/modules\/list_card.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Requests\\emptyRequest"
+          },
+          "list_card": {
+            "id": "task",
+            "namespace": "App\\Containers\\Payment\\ApiTask\\Listcard"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Transformers\\AddCard"
+          }
+        }
+      },
+      "add_card": {
+        "title": "Add credit card",
+        "version": "1.0.0",
+        "description": "Add credit card to client account in braintree",
+        "module_type": "core",
+        "config_file": "Payment\/modules\/add_card.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Requests\\PaymentToken"
+          },
+          "save_card": {
+            "id": "task",
+            "namespace": "App\\Containers\\Payment\\ApiTask\\add_card"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Transformers\\AddCard"
+          }
+        }
+      },
+      "change_default": {
+        "title": "Change Default Card",
+        "version": "1.0.0",
+        "description": "Change Your Default Card for Payment",
+        "module_type": "core",
+        "config_file": "Payment\/modules\/default_card.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Requests\\PaymentDefaultRequest"
+          },
+          "change_default_card": {
+            "id": "task",
+            "namespace": "App\\Containers\\Payment\\ApiTask\\PaymentDefault"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Transformers\\AddCard"
+          }
+        }
+      },
+      "delete_card": {
+        "title": "Delete Card",
+        "version": "1.0.0",
+        "description": "Delete card from database",
+        "module_type": "core",
+        "config_file": "Payment\/modules\/delete_card.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Requests\\PaymentDefaultRequest"
+          },
+          "delete_card": {
+            "id": "task",
+            "namespace": "App\\Containers\\Payment\\ApiTask\\DeleteCard"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Transformers\\AddCard"
+          }
+        }
+      }
+    },
+    "referral": {
+      "getreferral": {
+        "title": "get referral",
+        "version": "1.0.0",
+        "description": "Get referral code detail",
+        "module_type": "core",
+        "config_file": "Referral\/modules\/referral_check.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "referral_validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Requests\\emptyRequest"
+          },
+          "get_code": {
+            "id": "task",
+            "namespace": "App\\Containers\\Referral\\ApiTask\\GetCode"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\GetReferral"
+          }
+        }
+      },
+      "referral_check": {
+        "title": "check referral",
+        "version": "1.0.0",
+        "description": "check referral code and add amount to user",
+        "module_type": "core",
+        "config_file": "Referral\/modules\/referral_check.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "referral_validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Requests\\ApiRefferalCheckRequest"
+          },
+          "check_code": {
+            "id": "task",
+            "namespace": "App\\Containers\\Referral\\ApiTask\\CheckCode"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      }
+    },
+
+    "wallet": {
+      "add_wallet": {
+        "title": "Add Wallet",
+        "version": "1.0.0",
+        "description": "Add user amount to wallet",
+        "module_type": "core",
+        "config_file": "Wallet\/modules\/add_wallet.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Wallet\\UI\\API\\Requests\\WalletAddRequest"
+          },
+          "Add_Amount": {
+            "id": "task",
+            "namespace": "App\\Containers\\Wallet\\ApiTask\\ApiAddWallet"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Wallet\\UI\\API\\Transformers\\WalletTransform"
+          }
+        }
+      },
+      "get_wallet_amount": {
+        "title": "Get wallet Amount",
+        "version": "1.0.0",
+        "description": "Get Wallet Amount from user",
+        "module_type": "core",
+        "config_file": "Wallet\/modules\/get_wallet.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Wallet\\UI\\API\\Requests\\emptyRequest"
+          },
+          "Add_Amount": {
+            "id": "task",
+            "namespace": "App\\Containers\\Wallet\\ApiTask\\ApiGetWalletAmount"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Wallet\\UI\\API\\Transformers\\WalletTransform"
+          }
+        }
+      }
+    },
+
+    "UserSos": {
+      "user_sos": {
+        "title": "User Sos",
+        "version": "1.0.0",
+        "description": "store user sos information",
+        "module_type": "core",
+        "config_file": "eta\/modules\/client_token.json",
+        "author": "Ganesh R",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Sos\\UI\\API\\Requests\\UserSOSRequest"
+          },
+          "Add_fav": {
+            "id": "task",
+            "namespace": "App\\Containers\\Sos\\ApiTask\\UserSosSaveTask"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Sos\\UI\\API\\Transformers\\UserSosTransformer"
+          }
+        }
+      }
+    }
+
+  },
+
+  "Custom_module": {
+
+  }
+}

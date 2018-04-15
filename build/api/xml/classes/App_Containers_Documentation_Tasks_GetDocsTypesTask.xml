@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Documentation\Tasks\GetDocsTypesTask" namespace="App\Containers\Documentation\Tasks" name="GetDocsTypesTask" abstract="false" final="false" start="14" end="35">
+  <file path="/var/www/html/queencar/app/Containers/Documentation/Tasks" file="GetDocsTypesTask.php" realpath="/var/www/html/queencar/app/Containers/Documentation/Tasks/GetDocsTypesTask.php" size="839" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="3c2cfe293303d293ec1f391906e00620df8eaf5f" relative="Documentation/Tasks/GetDocsTypesTask.php"/>
+  <docblock>
+    <description compact="Class GetDocsTypesTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="21" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+      <throws type="object">
+        <type full="\App\Containers\Documentation\Exceptions\NoDocTypesFoundException" namespace="\App\Containers\Documentation\Exceptions" name="NoDocTypesFoundException"/>
+      </throws>
+    </docblock>
+    <inline>
+      <comment value="NOTE: type names must be the same as in the objects property (`public static $type = 'private';`)" line="32"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Promocode\Webtasks\PromoSearchTask" namespace="App\Containers\Promocode\Webtasks" name="PromoSearchTask" abstract="false" final="false" start="15" end="86">
+  <file path="/var/www/html/queencar/app/Containers/Promocode/Webtasks" file="PromoSearchTask.php" realpath="/var/www/html/queencar/app/Containers/Promocode/Webtasks/PromoSearchTask.php" size="2009" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="c32e6cd7004d33c6d9de2f6a228afb2446908d8d" relative="Promocode/Webtasks/PromoSearchTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="22" end="84" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="print_r($request-&gt;all());die();" line="24"/>
+      <comment value="print_r($request-&gt;all());die();" line="32"/>
+      <comment value="if($type==&quot;type&quot;){" line="33"/>
+      <comment value="$request-&gt;session()-&gt;put('filter_value', $value);" line="34"/>
+      <comment value="}" line="35"/>
+      <comment value="$query=AdminModel::select('Admin.*');" line="45"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Email\Models\EmailSettingsModel" namespace="App\Containers\Email\Models" name="EmailSettingsModel" abstract="false" final="false" start="12" end="16">
+  <file path="/var/www/html/queencar/app/Containers/Email/Models" file="EmailSettingsModel.php" realpath="/var/www/html/queencar/app/Containers/Email/Models/EmailSettingsModel.php" size="284" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="c083d799648bde0ac9dba7e5411ad5f247dde432" relative="Email/Models/EmailSettingsModel.php"/>
+  <docblock>
+    <description compact="Class EmailSettingsModel"/>
+    <package value="App\Containers\Email\Models"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="dates" default="" type="array" visibility="protected" static="false" line="14"/>
+  <member name="table" default="'Email'" type="string" visibility="protected" static="false" line="15"/>
+</class>

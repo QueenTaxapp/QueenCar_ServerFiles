@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Welcome\Actions\GetMessageForApiRootVisitorAction" namespace="App\Containers\Welcome\Actions" name="GetMessageForApiRootVisitorAction" abstract="false" final="false" start="13" end="23">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Welcome/Actions" file="GetMessageForApiRootVisitorAction.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Welcome/Actions/GetMessageForApiRootVisitorAction.php" size="391" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="4659730b95f88fcf4df287f36328df532e7736a7" relative="Welcome/Actions/GetMessageForApiRootVisitorAction.php"/>
+  <docblock>
+    <description compact="Class WelcomeApiRootVisitorAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="19" end="22" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+  </method>
+</class>

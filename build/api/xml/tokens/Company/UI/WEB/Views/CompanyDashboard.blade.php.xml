@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Company/UI/WEB/Views" file="CompanyDashboard.blade.php" realpath="/var/www/html/queencar/app/Containers/Company/UI/WEB/Views/CompanyDashboard.blade.php" size="3438" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="a92fe8b6aa497f48e458d9d889776d88e5ba6718" relative="Company/UI/WEB/Views/CompanyDashboard.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('company::CompanyLayout')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3"/>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="6">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$colorArray</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'card gradient-45deg-light-blue-cyan gradient-shadow min-height-100 white-text'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'card gradient-45deg-red-pink gradient-shadow min-height-100 white-text'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'card gradient-45deg-amber-amber gradient-shadow min-height-100 white-text'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'card gradient-45deg-green-teal gradient-shadow min-height-100 white-text'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="7">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_INLINE_HTML">    &lt;section id="content"&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">        &lt;!--start container--&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">        &lt;div class="container"&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            &lt;!--card stats start--&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            &lt;div id="card-stats"&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_INLINE_HTML">                    &lt;div class="col s12 m6 l3"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                        &lt;div style="min-height: 150px !important;color:#fff;" class="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOUBLE_QUOTES">"</token>
+    <token name="T_VARIABLE">$colorArray</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_NUM_STRING">0</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_DOUBLE_QUOTES">"</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">;"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                            &lt;div class="padding-4"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                                &lt;div class="col s7 m7 l7"&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                                    &lt;i class="material-icons background-round mt-5"&gt;account_box&lt;/i&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                                    &lt;p&gt;{{ trans('localization::lang_view.total_drivers')}}&lt;/p&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                                &lt;div class="col s5 m5 l5 right-align"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                                    &lt;h5 class="mb-0"&gt;{{$result['totalDriver']}}&lt;/h5&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                                    {{--&lt;p class="no-margin"&gt;{{ trans('localization::new_lang_view.new')}}&lt;/p&gt;--}}</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                     &lt;/div&gt;</token>
+  </line>
+  <line no="31"/>
+  <line no="32">
+    <token name="T_INLINE_HTML">                    &lt;div class="col s12 m6 l3"&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                        &lt;div style="min-height: 150px !important;color:#fff;" class="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOUBLE_QUOTES">"</token>
+    <token name="T_VARIABLE">$colorArray</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_NUM_STRING">1</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_DOUBLE_QUOTES">"</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">;"&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                            &lt;div class="padding-4"&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                                &lt;div class="col s7 m7 l7"&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                    &lt;i class="material-icons background-round mt-5"&gt;account_box&lt;/i&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                                    &lt;p&gt;{{ trans('localization::lang_view.completed_requests')}}&lt;/p&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                                &lt;div class="col s5 m5 l5 right-align"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                                    &lt;h5 class="mb-0"&gt;{{$result['completed']}}&lt;/h5&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                                    {{--&lt;p class="no-margin"&gt;{{ trans('localization::lang_view.new')}}&lt;/p&gt;--}}</token>
+  </line>
+  <line no="42"/>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                     &lt;/div&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                    &lt;div class="col s12 m6 l3"&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                        &lt;div style="min-height: 150px !important;color:#fff;" class="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOUBLE_QUOTES">"</token>
+    <token name="T_VARIABLE">$colorArray</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_NUM_STRING">2</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_DOUBLE_QUOTES">"</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">;"&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                            &lt;div class="padding-4"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                                &lt;div class="col s7 m7 l7"&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                                    &lt;i class="material-icons background-round mt-5"&gt;account_box&lt;/i&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                                    &lt;p&gt;{{ trans('localization::lang_view.cancelled_requests')}}&lt;/p&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                                &lt;div class="col s5 m5 l5 right-align"&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                    &lt;h5 class="mb-0"&gt;{{$result['cancelled']}}&lt;/h5&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                    {{--&lt;p class="no-margin"&gt;{{ trans('localization::lang_view.new')}}&lt;/p&gt;--}}</token>
+  </line>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                     &lt;/div&gt;</token>
+  </line>
+  <line no="62"/>
+  <line no="63">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="64"/>
+  <line no="65"/>
+  <line no="66">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">    &lt;/section&gt;</token>
+  </line>
+  <line no="69"/>
+  <line no="70">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Company\Webtasks\UploadDocumentTask" namespace="App\Containers\Company\Webtasks" name="UploadDocumentTask" abstract="false" final="false" start="9" end="38">
+  <file path="/var/www/html/queencar/app/Containers/Company/Webtasks" file="UploadDocumentTask.php" realpath="/var/www/html/queencar/app/Containers/Company/Webtasks/UploadDocumentTask.php" size="1202" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="4c3a37702c608712e863c7d0777f3bbaad0f63eb" relative="Company/Webtasks/UploadDocumentTask.php"/>
+  <method name="run" start="12" end="37" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <parameter name="docName" byreference="false" type="{unknown}"/>
+    <parameter name="tableName" byreference="false" type="{unknown}"/>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="uploadColumnName" byreference="false" type="{unknown}"/>
+    <parameter name="redirectPath" byreference="false" type="{unknown}"/>
+  </method>
+</class>

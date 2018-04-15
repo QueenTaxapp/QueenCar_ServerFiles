@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Tasks\Message" namespace="App\Containers\Admin\Tasks" name="Message" abstract="false" final="false" start="12" end="40">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="Message.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/Message.php" size="686" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="4e5f1a25d5f1fa6920d9e899e585dfe04b5f595f" relative="User/Tasks/Message.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <implements full="Illuminate\Contracts\Validation\Validator" namespace="Illuminate\Contracts\Validation" name="Validator" unresolved="true"/>
+  <method name="failed" start="15" end="18" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <todo value="Implement failed() method." line="17"/>
+    </inline>
+  </method>
+  <method name="fails" start="20" end="23" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <todo value="Implement fails() method." line="22"/>
+    </inline>
+  </method>
+  <method name="after" start="25" end="28" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="callback" byreference="false" type="{unknown}"/>
+    <inline>
+      <todo value="Implement after() method." line="27"/>
+    </inline>
+  </method>
+  <method name="sometimes" start="30" end="33" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="attribute" byreference="false" type="{unknown}"/>
+    <parameter name="rules" byreference="false" type="{unknown}"/>
+    <parameter name="callback" byreference="false" type="callable"/>
+    <inline>
+      <todo value="Implement sometimes() method." line="32"/>
+    </inline>
+  </method>
+  <method name="getMessageBag" start="35" end="38" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <todo value="Implement getMessageBag() method." line="37"/>
+    </inline>
+  </method>
+</class>

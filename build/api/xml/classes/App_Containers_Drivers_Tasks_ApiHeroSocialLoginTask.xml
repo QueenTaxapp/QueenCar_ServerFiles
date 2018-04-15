@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Tasks\ApiHeroSocialLoginTask" namespace="App\Containers\Drivers\Tasks" name="ApiHeroSocialLoginTask" abstract="false" final="false" start="19" end="75">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/Tasks" file="ApiHeroSocialLoginTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/Tasks/ApiHeroSocialLoginTask.php" size="2341" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="ecb0cb2f1e679c6c4242ffdc46554ea705e62fc9" relative="Drivers/Tasks/ApiHeroSocialLoginTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="26" end="73" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

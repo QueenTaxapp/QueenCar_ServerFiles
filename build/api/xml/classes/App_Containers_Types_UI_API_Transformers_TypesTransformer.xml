@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Types\UI\API\Transformers\TypesTransformer" namespace="App\Containers\Types\UI\API\Transformers" name="TypesTransformer" abstract="false" final="false" start="15" end="38">
+  <file path="/var/www/html/queencar/app/Containers/Types/UI/API/Transformers" file="TypesTransformer.php" realpath="/var/www/html/queencar/app/Containers/Types/UI/API/Transformers/TypesTransformer.php" size="563" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="a8e9b934729b6a741761df63199a4696e78a6058" relative="Types/UI/API/Transformers/TypesTransformer.php"/>
+  <docblock>
+    <description compact="Class UserTransformer."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="22" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="Token">
+        <type full="App\Containers\Types\UI\API\Transformers\String" namespace="App\Containers\Types\UI\API\Transformers" name="String"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="result" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Email\Actions\UpdateEmailAction" namespace="App\Containers\Email\Actions" name="UpdateEmailAction" abstract="false" final="false" start="18" end="36">
+  <file path="/var/www/html/queencar/app/Containers/Email/Actions" file="UpdateEmailAction.php" realpath="/var/www/html/queencar/app/Containers/Email/Actions/UpdateEmailAction.php" size="667" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="5a96a364c33e3b3b1622386098b8f61e471a4796" relative="Email/Actions/UpdateEmailAction.php"/>
+  <docblock>
+    <description compact="Class WebAdminLoginAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="28" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="UpdateEmailAction"/>
+      <param type="string" variable="$id"/>
+      <param type="object" variable="$request"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

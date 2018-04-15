@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\UI\API\Tests\Functional\CreateRoleTest" namespace="App\Containers\Authorization\UI\API\Tests\Functional" name="CreateRoleTest" abstract="false" final="false" start="12" end="58">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional" file="CreateRoleTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional/CreateRoleTest.php" size="1328" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="34388c52190b3c8654eaeba55e2a5a036ca7854b" relative="Authorization/UI/API/Tests/Functional/CreateRoleTest.php"/>
+  <docblock>
+    <description compact="Class CreateRoleTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase"/>
+  <member name="endpoint" default="'post@v1/roles'" type="string" visibility="protected" static="false" line="15"/>
+  <member name="auth" default="true" type="boolean" visibility="protected" static="false" line="17"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="19"/>
+  <method name="testCreateRole_" start="24" end="41" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="32"/>
+      <comment value="assert response status is correct" line="35"/>
+    </inline>
+  </method>
+  <method name="testCreateRoleWithWrongName_" start="43" end="56" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="51"/>
+      <comment value="assert response status is correct" line="54"/>
+    </inline>
+  </method>
+  <parent full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase">
+    <extends full="App\Ship\Parents\Tests\PhpUnit\TestCase" namespace="App\Ship\Parents\Tests\PhpUnit" name="TestCase" unresolved="true"/>
+  </parent>
+</class>

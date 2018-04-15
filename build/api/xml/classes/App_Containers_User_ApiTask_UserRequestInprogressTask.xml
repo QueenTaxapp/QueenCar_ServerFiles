@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\ApiTask\UserRequestInprogressTask" namespace="App\Containers\User\ApiTask" name="UserRequestInprogressTask" abstract="false" final="false" start="13" end="135">
+  <file path="/var/www/html/queencar/app/Containers/User/ApiTask" file="UserRequestInprogressTask.php" realpath="/var/www/html/queencar/app/Containers/User/ApiTask/UserRequestInprogressTask.php" size="6617" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="3da02cbeda2c0ef65da76f0088ed8f4b08be7e46" relative="User/ApiTask/UserRequestInprogressTask.php"/>
+  <docblock>
+    <description compact="Class DriverResponseRequestTask"/>
+    <package value="App\Containers\Drivers\ApiTask"/>
+  </docblock>
+  <method name="run" start="20" end="134" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo&quot;&lt;pre&gt;&quot;;print_r($onTrip);die();" line="43"/>
+      <comment value="$sos = SosModel::select('id','name','number')-&gt;get();" line="54"/>
+      <comment value="echo&quot;&lt;pre&gt;&quot;;print_r($data['response']);die();" line="133"/>
+    </inline>
+  </method>
+</class>

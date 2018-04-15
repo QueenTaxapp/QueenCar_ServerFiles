@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Tests\WebTestCase" namespace="App\Containers\Authentication\Tests" name="WebTestCase" abstract="false" final="false" start="14" end="34">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Tests" file="WebTestCase.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Tests/WebTestCase.php" size="770" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="3e9ffa7abcdd06cd96d9001f3013f308f0c9cb67" relative="Authentication/Tests/WebTestCase.php"/>
+  <docblock>
+    <description compact="Class WebTestCase">Container Web TestCase class. Use this class to put your Web container specific tests helper functions.</description>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tests\PhpUnit\TestCase" namespace="App\Ship\Parents\Tests\PhpUnit" name="TestCase" unresolved="true"/>
+  <member name="subDomain" default="'admin'" type="string" visibility="protected" static="false" line="17"/>
+  <method name="setUp" start="19" end="25" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="change the API_PREFIX for web tests" line="21"/>
+    </inline>
+  </method>
+  <method name="tearDown" start="27" end="33" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="revert the API_PREFIX variable to null to avoid effects on other test" line="29"/>
+    </inline>
+  </method>
+</class>

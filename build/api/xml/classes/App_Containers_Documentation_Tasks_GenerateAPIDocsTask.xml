@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Documentation\Tasks\GenerateAPIDocsTask" namespace="App\Containers\Documentation\Tasks" name="GenerateAPIDocsTask" abstract="false" final="false" start="15" end="53">
+  <file path="/var/www/html/queencar/app/Containers/Documentation/Tasks" file="GenerateAPIDocsTask.php" realpath="/var/www/html/queencar/app/Containers/Documentation/Tasks/GenerateAPIDocsTask.php" size="1461" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="eb687006acc30100346c2cca5e3d2f4e7ae0ccac" relative="Documentation/Tasks/GenerateAPIDocsTask.php"/>
+  <docblock>
+    <description compact="Class GenerateAPIDocsTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <uses full="App\Containers\Documentation\Traits\DocsGeneratorTrait" namespace="App\Containers\Documentation\Traits" name="DocsGeneratorTrait" start="17" end="17"/>
+  <method name="run" start="27" end="51" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$type"/>
+      <return type="mixed"/>
+      <throws type="object">
+        <type full="\Symfony\Component\Process\Exception\RuntimeException" namespace="\Symfony\Component\Process\Exception" name="RuntimeException"/>
+      </throws>
+      <throws type="object">
+        <type full="\Symfony\Component\Process\Exception\LogicException" namespace="\Symfony\Component\Process\Exception" name="LogicException"/>
+      </throws>
+      <throws type="object">
+        <type full="\Symfony\Component\Process\Exception\ProcessFailedException" namespace="\Symfony\Component\Process\Exception" name="ProcessFailedException"/>
+      </throws>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <parameter name="console" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="the actual command that needs to be executed:" line="33"/>
+      <comment value="execute the command" line="38"/>
+      <comment value="echo the output" line="45"/>
+      <comment value="return the past to that generated documentation" line="49"/>
+    </inline>
+  </method>
+  <trait full="App\Containers\Documentation\Traits\DocsGeneratorTrait" namespace="App\Containers\Documentation\Traits" name="DocsGeneratorTrait"/>
+</class>

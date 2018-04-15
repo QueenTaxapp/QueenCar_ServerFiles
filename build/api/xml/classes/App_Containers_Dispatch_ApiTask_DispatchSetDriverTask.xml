@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\ApiTask\DispatchSetDriverTask" namespace="App\Containers\Dispatch\ApiTask" name="DispatchSetDriverTask" abstract="false" final="false" start="33" end="69">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/ApiTask" file="DispatchSetDriverTask.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/ApiTask/DispatchSetDriverTask.php" size="2391" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="78f8b27987e260799e4cd460e22ff597a7c3970c" relative="Dispatch/ApiTask/DispatchSetDriverTask.php"/>
+  <docblock>
+    <description compact="Class DispatchSetDriverTask"/>
+    <package value="App\Containers\Dispatch\ApiTask"/>
+  </docblock>
+  <method name="run" start="39" end="68" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+</class>

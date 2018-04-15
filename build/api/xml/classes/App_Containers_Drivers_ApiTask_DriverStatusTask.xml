@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\ApiTask\DriverStatusTask" namespace="App\Containers\Drivers\ApiTask" name="DriverStatusTask" abstract="false" final="false" start="9" end="44">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/ApiTask" file="DriverStatusTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/ApiTask/DriverStatusTask.php" size="1025" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="0799648e1a71d6ad49da58fb4933577fc9f085d3" relative="Drivers/ApiTask/DriverStatusTask.php"/>
+  <method name="run" start="13" end="43" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+</class>

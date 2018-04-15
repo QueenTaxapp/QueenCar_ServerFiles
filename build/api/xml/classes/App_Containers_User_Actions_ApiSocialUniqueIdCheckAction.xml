@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Actions\ApiSocialUniqueIdCheckAction" namespace="App\Containers\User\Actions" name="ApiSocialUniqueIdCheckAction" abstract="false" final="false" start="29" end="47">
+  <file path="/var/www/html/queencar/app/Containers/User/Actions" file="ApiSocialUniqueIdCheckAction.php" realpath="/var/www/html/queencar/app/Containers/User/Actions/ApiSocialUniqueIdCheckAction.php" size="1268" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="965e4902b20f26efa64efc75a52dbb3aee73d9e4" relative="User/Actions/ApiSocialUniqueIdCheckAction.php"/>
+  <docblock>
+    <description compact="Class WebAdminLoginAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="38" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="to check if the social unique id is present or not"/>
+      <param type="object" variable="$request"/>
+      <return description="$result" type="object"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,1580 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/tabgo/app/Containers/Admin/UI/WEB/Views" file="Layout.blade.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Admin/UI/WEB/Views/Layout.blade.php" size="21767" time="2017-10-03T11:42:56+02:00" unixtime="1507023776" sha1="b31ba1cf20fda8c83b1e6117f6435668114c581e" relative="Admin/UI/WEB/Views/Layout.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!doctype html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;meta charset="utf-8" /&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;link rel="apple-touch-icon" sizes="76x76" href="{{asset('assets/img/apple-icon.png')}}" /&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;link rel="icon" type="image/png" href="{{asset('assets/img/favicon.png')}}" /&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">    &lt;title&gt;911&lt;/title&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">    &lt;meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' /&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">    &lt;meta name="viewport" content="width=device-width" /&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">    &lt;!-- Canonical SEO --&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">    &lt;link rel="canonical" href="https://www.creative-tim.com/product/material-dashboard-pro" /&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;!--  Social tags      --&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    &lt;meta name="keywords" content="material dashboard, bootstrap material admin, bootstrap material dashboard, material design admin, material design, creative tim, html dashboard, html css dashboard, web dashboard, freebie, free bootstrap dashboard, css3 dashboard, bootstrap admin, bootstrap dashboard, frontend, responsive bootstrap dashboard, premiu material design admin"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">    &lt;meta name="description" content="Material Dashboard PRO is a Premium Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design."&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">    &lt;!-- Schema.org markup for Google+ --&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">    &lt;meta itemprop="name" content="Material Dashboard PRO by Creative Tim | Premium Bootstrap Admin Template"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">    &lt;meta itemprop="description" content="Material Dashboard PRO is a Premium Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design."&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">    &lt;meta itemprop="image" content="http://s3.amazonaws.com/creativetim_bucket/products/51/opt_mdp_thumbnail.jpg"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">    &lt;!-- Twitter Card data --&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">    &lt;meta name="twitter:card" content="summary_large_image"&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">    &lt;meta name="twitter:site" content="@creativetim"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">    &lt;meta name="twitter:title" content="Material Dashboard PRO by Creative Tim | Premium Bootstrap Admin Template"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">    &lt;meta name="twitter:description" content="Material Dashboard PRO is a Premium Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design."&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">    &lt;meta name="twitter:creator" content="@creativetim"&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">    &lt;meta name="twitter:image" content="http://s3.amazonaws.com/creativetim_bucket/products/51/opt_mdp_thumbnail.jpg"&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">    &lt;!-- Open Graph data --&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">    &lt;meta property="fb:app_id" content="655968634437471"&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">    &lt;meta property="og:title" content="Material Dashboard PRO by Creative Tim | Premium Bootstrap Admin Template" /&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">    &lt;meta property="og:type" content="article" /&gt;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">    &lt;meta property="og:url" content="http://www.creative-tim.com/product/material-dashboard-pro" /&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">    &lt;meta property="og:image" content="http://s3.amazonaws.com/creativetim_bucket/products/51/opt_mdp_thumbnail.jpg" /&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">    &lt;meta property="og:description" content="Material Dashboard PRO is a Premium Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design." /&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">    &lt;meta property="og:site_name" content="Creative Tim" /&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">    &lt;!-- Bootstrap core CSS     --&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">    &lt;link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" /&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">    &lt;!--  Material Dashboard CSS    --&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">    &lt;link href="{{asset('assets/css/material-dashboard.css')}}" rel="stylesheet" /&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">    &lt;!--  CSS for Demo Purpose, don't include it in your project     --&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">    &lt;link href="{{asset('assets/css/demo.css')}}" rel="stylesheet" /&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">    &lt;!--     Fonts and icons     --&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">    &lt;link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" /&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="46"/>
+  <line no="47">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="48"/>
+  <line no="49">
+    <token name="T_INLINE_HTML">&lt;div class="wrapper"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">    &lt;div class="sidebar" data-active-color="rose" data-background-color="black" data-image="{{asset('assets/img/sidebar-1.jpg')}}"&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">        &lt;!--</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">    Tip 1: You can change the color of active element of the sidebar using: data-active-color="purple | blue | green | orange | red | rose"</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">    Tip 2: you can also add an image using data-image tag</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">    Tip 3: you can change the color of the sidebar with data-background-color="white | black"</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">--&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">        &lt;div class="logo"&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">            &lt;a href="http://www.creative-tim.com" class="simple-text"&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                911</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">            &lt;/a&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">        &lt;div class="logo logo-mini"&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">            &lt;a href="http://www.creative-tim.com" class="simple-text"&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                911</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">            &lt;/a&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">        &lt;div class="sidebar-wrapper"&gt;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">            &lt;div class="user"&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                &lt;div class="photo"&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                    &lt;img src="{{asset('assets/img/new_logo.png')}}" /&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                &lt;div class="info"&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                    &lt;a data-toggle="collapse" href="#collapseExample" class="collapsed"&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                      911</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                        &lt;b class="caret"&gt;&lt;/b&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                    &lt;div class="collapse" id="collapseExample"&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                        &lt;ul class="nav"&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                                &lt;a href="#"&gt;My Profile&lt;/a&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                                &lt;a href="#"&gt;Edit Profile&lt;/a&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                                &lt;a href="#"&gt;Settings&lt;/a&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                        &lt;/ul&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">            &lt;ul class="nav"&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                &lt;li class="active"&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                    &lt;a href="./dashboard.html"&gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons"&gt;dashboard&lt;/i&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                        &lt;p&gt;Dashboard&lt;/p&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                &lt;li &gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                    &lt;a href="{{URL::Route('email')}}"&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                  </token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons"&gt;email&lt;/i&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">                        &lt;p&gt;Emails&lt;/p&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                &lt;li&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                    &lt;a data-toggle="collapse" href="#pagesExamples"&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons"&gt;image&lt;/i&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                        &lt;p&gt;Pages</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                            &lt;b class="caret"&gt;&lt;/b&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                        &lt;/p&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                    &lt;div class="collapse" id="pagesExamples"&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                        &lt;ul class="nav"&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                                &lt;a href="./pages/pricing.html"&gt;Pricing&lt;/a&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                                &lt;a href="./pages/timeline.html"&gt;Timeline&lt;/a&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                                &lt;a href="./login"&gt;Login Page&lt;/a&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                                &lt;a href="./add"&gt;Register Page&lt;/a&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                                &lt;a href="./pages/lock.html"&gt;Lock Screen Page&lt;/a&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                                &lt;a href="./view"&gt;User Profile&lt;/a&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                        &lt;/ul&gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">                &lt;li&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">                    &lt;a data-toggle="collapse" href="#componentsExamples"&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons"&gt;apps&lt;/i&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                        &lt;p&gt;Components</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                            &lt;b class="caret"&gt;&lt;/b&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                        &lt;/p&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">                    &lt;div class="collapse" id="componentsExamples"&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">                        &lt;ul class="nav"&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                                &lt;a href="./components/buttons.html"&gt;Buttons&lt;/a&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">                                &lt;a href="./components/grid.html"&gt;Grid System&lt;/a&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                                &lt;a href="./components/panels.html"&gt;Panels&lt;/a&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">                                &lt;a href="./components/sweet-alert.html"&gt;Sweet Alert&lt;/a&gt;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">                                &lt;a href="./components/notifications.html"&gt;Notifications&lt;/a&gt;</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">                                &lt;a href="./components/icons.html"&gt;Icons&lt;/a&gt;</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">                                &lt;a href="./components/typography.html"&gt;Typography&lt;/a&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">                        &lt;/ul&gt;</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">                &lt;li&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">                    &lt;a data-toggle="collapse" href="#formsExamples"&gt;</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons"&gt;content_paste&lt;/i&gt;</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">                        &lt;p&gt;Forms</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">                            &lt;b class="caret"&gt;&lt;/b&gt;</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">                        &lt;/p&gt;</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">                    &lt;div class="collapse" id="formsExamples"&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">                        &lt;ul class="nav"&gt;</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                                &lt;a href="./forms/regular.html"&gt;Regular Forms&lt;/a&gt;</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                                &lt;a href="./forms/extended.html"&gt;Extended Forms&lt;/a&gt;</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                                &lt;a href="./forms/validation.html"&gt;Validation Forms&lt;/a&gt;</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                                &lt;a href="./forms/wizard.html"&gt;Wizard&lt;/a&gt;</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">                        &lt;/ul&gt;</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">                &lt;li&gt;</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">                    &lt;a data-toggle="collapse" href="#tablesExamples"&gt;</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons"&gt;grid_on&lt;/i&gt;</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">                        &lt;p&gt;Tables</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">                            &lt;b class="caret"&gt;&lt;/b&gt;</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">                        &lt;/p&gt;</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">                    &lt;div class="collapse" id="tablesExamples"&gt;</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">                        &lt;ul class="nav"&gt;</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">                                &lt;a href="./tables/regular.html"&gt;Regular Tables&lt;/a&gt;</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">                                &lt;a href="./tables/extended.html"&gt;Extended Tables&lt;/a&gt;</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">                                &lt;a href="./tables/datatables.net.html"&gt;DataTables.net&lt;/a&gt;</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">                        &lt;/ul&gt;</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">                &lt;li&gt;</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">                    &lt;a data-toggle="collapse" href="#mapsExamples"&gt;</token>
+  </line>
+  <line no="215">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons"&gt;place&lt;/i&gt;</token>
+  </line>
+  <line no="216">
+    <token name="T_INLINE_HTML">                        &lt;p&gt;Maps</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">                            &lt;b class="caret"&gt;&lt;/b&gt;</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">                        &lt;/p&gt;</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="220">
+    <token name="T_INLINE_HTML">                    &lt;div class="collapse" id="mapsExamples"&gt;</token>
+  </line>
+  <line no="221">
+    <token name="T_INLINE_HTML">                        &lt;ul class="nav"&gt;</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">                                &lt;a href="./maps/google.html"&gt;Google Maps&lt;/a&gt;</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="226">
+    <token name="T_INLINE_HTML">                                &lt;a href="./maps/fullscreen.html"&gt;Full Screen Map&lt;/a&gt;</token>
+  </line>
+  <line no="227">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">                            &lt;li&gt;</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">                                &lt;a href="./maps/vector.html"&gt;Vector Map&lt;/a&gt;</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">                        &lt;/ul&gt;</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">                &lt;li&gt;</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">                    &lt;a href="./widgets.html"&gt;</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons"&gt;widgets&lt;/i&gt;</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">                        &lt;p&gt;Widgets&lt;/p&gt;</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">                &lt;li&gt;</token>
+  </line>
+  <line no="241">
+    <token name="T_INLINE_HTML">                    &lt;a href="./charts.html"&gt;</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons"&gt;timeline&lt;/i&gt;</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">                        &lt;p&gt;Charts&lt;/p&gt;</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="245">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">                &lt;li&gt;</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">                    &lt;a href="./calendar.html"&gt;</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons"&gt;date_range&lt;/i&gt;</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">                        &lt;p&gt;Calendar&lt;/p&gt;</token>
+  </line>
+  <line no="250">
+    <token name="T_INLINE_HTML">                    &lt;/a&gt;</token>
+  </line>
+  <line no="251">
+    <token name="T_INLINE_HTML">                &lt;/li&gt;</token>
+  </line>
+  <line no="252">
+    <token name="T_INLINE_HTML">            &lt;/ul&gt;</token>
+  </line>
+  <line no="253">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="254">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="255">
+    <token name="T_INLINE_HTML">    &lt;div class="main-panel"&gt;</token>
+  </line>
+  <line no="256">
+    <token name="T_INLINE_HTML">        &lt;nav class="navbar navbar-transparent navbar-absolute"&gt;</token>
+  </line>
+  <line no="257">
+    <token name="T_INLINE_HTML">            &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="258">
+    <token name="T_INLINE_HTML">                &lt;div class="navbar-minimize"&gt;</token>
+  </line>
+  <line no="259">
+    <token name="T_INLINE_HTML">                    &lt;button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon"&gt;</token>
+  </line>
+  <line no="260">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons visible-on-sidebar-regular"&gt;more_vert&lt;/i&gt;</token>
+  </line>
+  <line no="261">
+    <token name="T_INLINE_HTML">                        &lt;i class="material-icons visible-on-sidebar-mini"&gt;view_list&lt;/i&gt;</token>
+  </line>
+  <line no="262">
+    <token name="T_INLINE_HTML">                    &lt;/button&gt;</token>
+  </line>
+  <line no="263">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="264">
+    <token name="T_INLINE_HTML">                &lt;div class="navbar-header"&gt;</token>
+  </line>
+  <line no="265">
+    <token name="T_INLINE_HTML">                    &lt;button type="button" class="navbar-toggle" data-toggle="collapse"&gt;</token>
+  </line>
+  <line no="266">
+    <token name="T_INLINE_HTML">                        &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;</token>
+  </line>
+  <line no="267">
+    <token name="T_INLINE_HTML">                        &lt;span class="icon-bar"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="268">
+    <token name="T_INLINE_HTML">                        &lt;span class="icon-bar"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="269">
+    <token name="T_INLINE_HTML">                        &lt;span class="icon-bar"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="270">
+    <token name="T_INLINE_HTML">                    &lt;/button&gt;</token>
+  </line>
+  <line no="271">
+    <token name="T_INLINE_HTML">                    &lt;a class="navbar-brand" href="#"&gt;{{ $title}}&lt;/a&gt;</token>
+  </line>
+  <line no="272">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="273">
+    <token name="T_INLINE_HTML">                &lt;div class="collapse navbar-collapse"&gt;</token>
+  </line>
+  <line no="274">
+    <token name="T_INLINE_HTML">                    &lt;ul class="nav navbar-nav navbar-right"&gt;</token>
+  </line>
+  <line no="275"/>
+  <line no="276">
+    <token name="T_INLINE_HTML">                        &lt;li class="dropdown"&gt;</token>
+  </line>
+  <line no="277">
+    <token name="T_INLINE_HTML">                            &lt;a href="#" class="dropdown-toggle" data-toggle="dropdown"&gt;</token>
+  </line>
+  <line no="278">
+    <token name="T_INLINE_HTML">                                &lt;i class="material-icons"&gt;person&lt;/i&gt;</token>
+  </line>
+  <line no="279">
+    <token name="T_INLINE_HTML">                                &lt;p class="hidden-lg hidden-md"&gt;</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">                                    Notifications</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">                                    &lt;b class="caret"&gt;&lt;/b&gt;</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">                                &lt;/p&gt;</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">                            &lt;/a&gt;</token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">                            &lt;ul class="dropdown-menu"&gt;</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">                                &lt;li&gt;</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">                                    &lt;a href="#"&gt;My profile&lt;/a&gt;</token>
+  </line>
+  <line no="287">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="288">
+    <token name="T_INLINE_HTML">                                &lt;li&gt;</token>
+  </line>
+  <line no="289">
+    <token name="T_INLINE_HTML">                                    &lt;a href="{{ URL::Route('logout')}}"&gt;{{ trans('localization::lang_view.logout')}}&lt;/a&gt;</token>
+  </line>
+  <line no="290">
+    <token name="T_INLINE_HTML">                                &lt;/li&gt;</token>
+  </line>
+  <line no="291">
+    <token name="T_INLINE_HTML">        </token>
+  </line>
+  <line no="292">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="293"/>
+  <line no="294">
+    <token name="T_INLINE_HTML">                            &lt;/ul&gt;</token>
+  </line>
+  <line no="295">
+    <token name="T_INLINE_HTML">                        &lt;/li&gt;</token>
+  </line>
+  <line no="296"/>
+  <line no="297">
+    <token name="T_INLINE_HTML">                        &lt;li class="separator hidden-lg hidden-md"&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="298">
+    <token name="T_INLINE_HTML">                    &lt;/ul&gt;</token>
+  </line>
+  <line no="299"/>
+  <line no="300">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="301">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="302">
+    <token name="T_INLINE_HTML">        &lt;/nav&gt;</token>
+  </line>
+  <line no="303">
+    <token name="T_INLINE_HTML">        &lt;div class="content"&gt;</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">            &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="305">
+    <token name="T_INLINE_HTML">                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="306">
+    <token name="T_INLINE_HTML">                    @yield('content')</token>
+  </line>
+  <line no="307">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="308">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="309">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="310">
+    <token name="T_INLINE_HTML">    &lt;/div&gt; {{--main panel end  --}}</token>
+  </line>
+  <line no="311"/>
+  <line no="312">
+    <token name="T_INLINE_HTML">&lt;/div&gt; {{--wrapper end  --}}</token>
+  </line>
+  <line no="313"/>
+  <line no="314">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="315">
+    <token name="T_INLINE_HTML">&lt;!--   Core JS Files   --&gt;</token>
+  </line>
+  <line no="316">
+    <token name="T_INLINE_HTML">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="317">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/jquery-3.1.1.min.js')}}" type="text/javascript"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/jquery-ui.min.js')}}" type="text/javascript"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/bootstrap.min.js')}}" type="text/javascript"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="320">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/material.min.js')}}" type="text/javascript"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="321">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/perfect-scrollbar.jquery.min.js')}}" type="text/javascript"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="322">
+    <token name="T_INLINE_HTML">&lt;!-- Forms Validations Plugin --&gt;</token>
+  </line>
+  <line no="323">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/jquery.validate.min.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="324">
+    <token name="T_INLINE_HTML">&lt;!--  Plugin for Date Time Picker and Full Calendar Plugin--&gt;</token>
+  </line>
+  <line no="325">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/moment.min.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="326">
+    <token name="T_INLINE_HTML">&lt;!--  Charts Plugin --&gt;</token>
+  </line>
+  <line no="327">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/chartist.min.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="328">
+    <token name="T_INLINE_HTML">&lt;!--  Plugin for the Wizard --&gt;</token>
+  </line>
+  <line no="329">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/jquery.bootstrap-wizard.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">&lt;!--  Notifications Plugin    --&gt;</token>
+  </line>
+  <line no="331">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/bootstrap-notify.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="332">
+    <token name="T_INLINE_HTML">&lt;!--   Sharrre Library    --&gt;</token>
+  </line>
+  <line no="333">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/jquery.sharrre.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="334">
+    <token name="T_INLINE_HTML">&lt;!-- DateTimePicker Plugin --&gt;</token>
+  </line>
+  <line no="335">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/bootstrap-datetimepicker.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="336">
+    <token name="T_INLINE_HTML">&lt;!-- Vector Map plugin --&gt;</token>
+  </line>
+  <line no="337">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/jquery-jvectormap.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="338">
+    <token name="T_INLINE_HTML">&lt;!-- Sliders Plugin --&gt;</token>
+  </line>
+  <line no="339">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/nouislider.min.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="340">
+    <token name="T_INLINE_HTML">&lt;!--  Google Maps Plugin    --&gt;</token>
+  </line>
+  <line no="341">
+    <token name="T_INLINE_HTML">&lt;script src="https://maps.googleapis.com/maps/api/js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="342">
+    <token name="T_INLINE_HTML">&lt;!-- Select Plugin --&gt;</token>
+  </line>
+  <line no="343">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/jquery.select-bootstrap.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="344">
+    <token name="T_INLINE_HTML">&lt;!--  DataTables.net Plugin    --&gt;</token>
+  </line>
+  <line no="345">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/jquery.datatables.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="346">
+    <token name="T_INLINE_HTML">&lt;!-- Sweet Alert 2 plugin --&gt;</token>
+  </line>
+  <line no="347">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/sweetalert2.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="348">
+    <token name="T_INLINE_HTML">&lt;!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput --&gt;</token>
+  </line>
+  <line no="349">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/jasny-bootstrap.min.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="350">
+    <token name="T_INLINE_HTML">&lt;!--  Full Calendar Plugin    --&gt;</token>
+  </line>
+  <line no="351">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/fullcalendar.min.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="352">
+    <token name="T_INLINE_HTML">&lt;!-- TagsInput Plugin --&gt;</token>
+  </line>
+  <line no="353">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/jquery.tagsinput.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="354">
+    <token name="T_INLINE_HTML">&lt;!-- Material Dashboard javascript methods --&gt;</token>
+  </line>
+  <line no="355">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/material-dashboard.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="356">
+    <token name="T_INLINE_HTML">&lt;!-- Material Dashboard DEMO methods, don't include it in your project! --&gt;</token>
+  </line>
+  <line no="357">
+    <token name="T_INLINE_HTML">&lt;script src="{{asset('assets/js/demo.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="358">
+    <token name="T_INLINE_HTML">&lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="359">
+    <token name="T_INLINE_HTML">    $(document).ready(function() {</token>
+  </line>
+  <line no="360"/>
+  <line no="361">
+    <token name="T_INLINE_HTML">        // Javascript method's body can be found in assets/js/demos.js</token>
+  </line>
+  <line no="362">
+    <token name="T_INLINE_HTML">        demo.initDashboardPageCharts();</token>
+  </line>
+  <line no="363"/>
+  <line no="364">
+    <token name="T_INLINE_HTML">        demo.initVectorMap();</token>
+  </line>
+  <line no="365"/>
+  <line no="366">
+    <token name="T_INLINE_HTML">    });</token>
+  </line>
+  <line no="367">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="368">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="369"/>
+  <line no="370">
+    <token name="T_INLINE_HTML">    function setFormValidation(id) {</token>
+  </line>
+  <line no="371">
+    <token name="T_INLINE_HTML">        $(id).validate({</token>
+  </line>
+  <line no="372">
+    <token name="T_INLINE_HTML">            errorPlacement: function(error, element) {</token>
+  </line>
+  <line no="373">
+    <token name="T_INLINE_HTML">                $(element).parent('div').addClass('has-error');</token>
+  </line>
+  <line no="374">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="375">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="376">
+    <token name="T_INLINE_HTML">    }</token>
+  </line>
+  <line no="377"/>
+  <line no="378">
+    <token name="T_INLINE_HTML">    $(document).ready(function() {</token>
+  </line>
+  <line no="379">
+    <token name="T_INLINE_HTML">        setFormValidation('#RegisterValidation');</token>
+  </line>
+  <line no="380">
+    <token name="T_INLINE_HTML">    });</token>
+  </line>
+  <line no="381"/>
+  <line no="382">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="383">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="384">
+    <token name="T_INLINE_HTML">    function Validate() {</token>
+  </line>
+  <line no="385">
+    <token name="T_INLINE_HTML">        var password = document.getElementById("pass_id").value;</token>
+  </line>
+  <line no="386">
+    <token name="T_INLINE_HTML">        var confirmPassword = document.getElementById("registerPasswordConfirmation").value;</token>
+  </line>
+  <line no="387">
+    <token name="T_INLINE_HTML">        if (password != confirmPassword) {</token>
+  </line>
+  <line no="388"/>
+  <line no="389">
+    <token name="T_INLINE_HTML">            demo.showNotification('top','center','danger','warning', 'Passwords do not match');</token>
+  </line>
+  <line no="390"/>
+  <line no="391">
+    <token name="T_INLINE_HTML">            /* alert("Passwords do not match.");*/</token>
+  </line>
+  <line no="392">
+    <token name="T_INLINE_HTML">            return false;</token>
+  </line>
+  <line no="393">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="394">
+    <token name="T_INLINE_HTML">        return true;</token>
+  </line>
+  <line no="395">
+    <token name="T_INLINE_HTML">    }</token>
+  </line>
+  <line no="396"/>
+  <line no="397">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="398"/>
+  <line no="399">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="400"/>
+  <line no="401">
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_ISSET">isset</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="402">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="403"/>
+  <line no="404">
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">has</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'errors'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="405">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="406"/>
+  <line no="407">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="408">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="409">
+    <token name="T_INLINE_HTML">    console.log('1');</token>
+  </line>
+  <line no="410">
+    <token name="T_INLINE_HTML">    demo.showNotification('top','center','danger','warning', '</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'errors'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">all</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">');</token>
+  </line>
+  <line no="411">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="412">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="413">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="414"/>
+  <line no="415">
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">has</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'success'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="416">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="417">
+    <token name="T_COMMENT">//    print_r($request-&gt;session()-&gt;has('success'));</token>
+  </line>
+  <line no="418">
+    <token name="T_COMMENT">//die('success');</token>
+  </line>
+  <line no="419">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="420">
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_VARIABLE">$error</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'success'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"message"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="421">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="422">
+    <token name="T_INLINE_HTML">    demo.showNotification('top','center','success','done', '</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'success'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"message"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">');</token>
+  </line>
+  <line no="423">
+    <token name="T_INLINE_HTML">    console.log('3');</token>
+  </line>
+  <line no="424">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="425">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="426">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="427"/>
+  <line no="428">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="429">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="430"/>
+  <line no="431">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="432">
+    <token name="T_INLINE_HTML">    var button;</token>
+  </line>
+  <line no="433">
+    <token name="T_INLINE_HTML">    $('.decline').click(function(e){</token>
+  </line>
+  <line no="434">
+    <token name="T_INLINE_HTML">        button=$(this);</token>
+  </line>
+  <line no="435">
+    <token name="T_INLINE_HTML">        e.preventDefault();</token>
+  </line>
+  <line no="436">
+    <token name="T_INLINE_HTML">        swal({</token>
+  </line>
+  <line no="437">
+    <token name="T_INLINE_HTML">            title: '{{ trans('localization::errors.are_you_sure')}}',</token>
+  </line>
+  <line no="438">
+    <token name="T_INLINE_HTML">            text: '',</token>
+  </line>
+  <line no="439">
+    <token name="T_INLINE_HTML">            type: 'warning',</token>
+  </line>
+  <line no="440">
+    <token name="T_INLINE_HTML">            showCancelButton: true,</token>
+  </line>
+  <line no="441">
+    <token name="T_INLINE_HTML">            confirmButtonText: '{{ trans('localization::errors.yes_decline_it')}}',</token>
+  </line>
+  <line no="442">
+    <token name="T_INLINE_HTML">            cancelButtonText: '{{ trans('localization::errors.no_keep_it')}}',</token>
+  </line>
+  <line no="443">
+    <token name="T_INLINE_HTML">            confirmButtonClass: "btn btn-success",</token>
+  </line>
+  <line no="444">
+    <token name="T_INLINE_HTML">            cancelButtonClass: "btn btn-danger",</token>
+  </line>
+  <line no="445">
+    <token name="T_INLINE_HTML">            buttonsStyling: false</token>
+  </line>
+  <line no="446">
+    <token name="T_INLINE_HTML">        }).then(function() {</token>
+  </line>
+  <line no="447">
+    <token name="T_INLINE_HTML">            button.unbind();</token>
+  </line>
+  <line no="448">
+    <token name="T_INLINE_HTML">            button[0].click();</token>
+  </line>
+  <line no="449">
+    <token name="T_INLINE_HTML">        }, function(dismiss) {</token>
+  </line>
+  <line no="450"/>
+  <line no="451">
+    <token name="T_INLINE_HTML">        })</token>
+  </line>
+  <line no="452">
+    <token name="T_INLINE_HTML">    });</token>
+  </line>
+  <line no="453">
+    <token name="T_INLINE_HTML">    $('.delete').click(function(e){</token>
+  </line>
+  <line no="454">
+    <token name="T_INLINE_HTML">        button=$(this);</token>
+  </line>
+  <line no="455">
+    <token name="T_INLINE_HTML">        e.preventDefault();</token>
+  </line>
+  <line no="456">
+    <token name="T_INLINE_HTML">        swal({</token>
+  </line>
+  <line no="457">
+    <token name="T_INLINE_HTML">            title: '{{ trans('localization::errors.are_you_sure')}}',</token>
+  </line>
+  <line no="458">
+    <token name="T_INLINE_HTML">            text: '',</token>
+  </line>
+  <line no="459">
+    <token name="T_INLINE_HTML">            type: 'warning',</token>
+  </line>
+  <line no="460">
+    <token name="T_INLINE_HTML">            showCancelButton: true,</token>
+  </line>
+  <line no="461">
+    <token name="T_INLINE_HTML">            confirmButtonText: '{{ trans('localization::errors.yes_delete_it')}}',</token>
+  </line>
+  <line no="462">
+    <token name="T_INLINE_HTML">            cancelButtonText: '{{ trans('localization::errors.no_keep_it')}}',</token>
+  </line>
+  <line no="463">
+    <token name="T_INLINE_HTML">            confirmButtonClass: "btn btn-success",</token>
+  </line>
+  <line no="464">
+    <token name="T_INLINE_HTML">            cancelButtonClass: "btn btn-danger",</token>
+  </line>
+  <line no="465">
+    <token name="T_INLINE_HTML">            buttonsStyling: false</token>
+  </line>
+  <line no="466">
+    <token name="T_INLINE_HTML">        }).then(function() {</token>
+  </line>
+  <line no="467">
+    <token name="T_INLINE_HTML">            button.unbind();</token>
+  </line>
+  <line no="468">
+    <token name="T_INLINE_HTML">            button[0].click();</token>
+  </line>
+  <line no="469">
+    <token name="T_INLINE_HTML">        }, function(dismiss) {</token>
+  </line>
+  <line no="470"/>
+  <line no="471">
+    <token name="T_INLINE_HTML">        })</token>
+  </line>
+  <line no="472">
+    <token name="T_INLINE_HTML">    });</token>
+  </line>
+  <line no="473">
+    <token name="T_INLINE_HTML">    $('.approve').click(function(e){</token>
+  </line>
+  <line no="474">
+    <token name="T_INLINE_HTML">        button=$(this);</token>
+  </line>
+  <line no="475">
+    <token name="T_INLINE_HTML">        e.preventDefault();</token>
+  </line>
+  <line no="476">
+    <token name="T_INLINE_HTML">        swal({</token>
+  </line>
+  <line no="477">
+    <token name="T_INLINE_HTML">            title: '{{ trans('localization::errors.are_you_sure')}}',</token>
+  </line>
+  <line no="478">
+    <token name="T_INLINE_HTML">            text: '',</token>
+  </line>
+  <line no="479">
+    <token name="T_INLINE_HTML">            type: 'warning',</token>
+  </line>
+  <line no="480">
+    <token name="T_INLINE_HTML">            showCancelButton: true,</token>
+  </line>
+  <line no="481">
+    <token name="T_INLINE_HTML">            confirmButtonText: '{{ trans('localization::errors.Yes_approve_it')}}',</token>
+  </line>
+  <line no="482">
+    <token name="T_INLINE_HTML">            cancelButtonText: '{{ trans('localization::errors.no_keep_it')}}',</token>
+  </line>
+  <line no="483">
+    <token name="T_INLINE_HTML">            confirmButtonClass: "btn btn-success",</token>
+  </line>
+  <line no="484">
+    <token name="T_INLINE_HTML">            cancelButtonClass: "btn btn-danger",</token>
+  </line>
+  <line no="485">
+    <token name="T_INLINE_HTML">            buttonsStyling: false</token>
+  </line>
+  <line no="486">
+    <token name="T_INLINE_HTML">        }).then(function() {</token>
+  </line>
+  <line no="487">
+    <token name="T_INLINE_HTML">            button.unbind();</token>
+  </line>
+  <line no="488">
+    <token name="T_INLINE_HTML">            button[0].click();</token>
+  </line>
+  <line no="489">
+    <token name="T_INLINE_HTML">        }, function(dismiss) {</token>
+  </line>
+  <line no="490"/>
+  <line no="491">
+    <token name="T_INLINE_HTML">        })</token>
+  </line>
+  <line no="492">
+    <token name="T_INLINE_HTML">    });</token>
+  </line>
+  <line no="493">
+    <token name="T_INLINE_HTML">    $('.unblock').click(function(e){</token>
+  </line>
+  <line no="494">
+    <token name="T_INLINE_HTML">        button=$(this);</token>
+  </line>
+  <line no="495">
+    <token name="T_INLINE_HTML">        e.preventDefault();</token>
+  </line>
+  <line no="496">
+    <token name="T_INLINE_HTML">        swal({</token>
+  </line>
+  <line no="497">
+    <token name="T_INLINE_HTML">            title: '{{ trans('localization::errors.are_you_sure')}}',</token>
+  </line>
+  <line no="498">
+    <token name="T_INLINE_HTML">            text: '',</token>
+  </line>
+  <line no="499">
+    <token name="T_INLINE_HTML">            type: 'warning',</token>
+  </line>
+  <line no="500">
+    <token name="T_INLINE_HTML">            showCancelButton: true,</token>
+  </line>
+  <line no="501">
+    <token name="T_INLINE_HTML">            confirmButtonText: '{{ trans('localization::errors.Yes_approve_it')}}',</token>
+  </line>
+  <line no="502">
+    <token name="T_INLINE_HTML">            cancelButtonText: '{{ trans('localization::errors.no_keep_it')}}',</token>
+  </line>
+  <line no="503">
+    <token name="T_INLINE_HTML">            confirmButtonClass: "btn btn-success",</token>
+  </line>
+  <line no="504">
+    <token name="T_INLINE_HTML">            cancelButtonClass: "btn btn-danger",</token>
+  </line>
+  <line no="505">
+    <token name="T_INLINE_HTML">            buttonsStyling: false</token>
+  </line>
+  <line no="506">
+    <token name="T_INLINE_HTML">        }).then(function() {</token>
+  </line>
+  <line no="507">
+    <token name="T_INLINE_HTML">            button.unbind();</token>
+  </line>
+  <line no="508">
+    <token name="T_INLINE_HTML">            button[0].click();</token>
+  </line>
+  <line no="509">
+    <token name="T_INLINE_HTML">        }, function(dismiss) {</token>
+  </line>
+  <line no="510"/>
+  <line no="511">
+    <token name="T_INLINE_HTML">        })</token>
+  </line>
+  <line no="512">
+    <token name="T_INLINE_HTML">    });</token>
+  </line>
+  <line no="513">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="514">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

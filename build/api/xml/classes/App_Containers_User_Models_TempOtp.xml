@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Models\TempOtp" namespace="App\Containers\User\Models" name="TempOtp" abstract="false" final="false" start="9" end="13">
+  <file path="/var/www/html/queencar/app/Containers/User/Models" file="TempOtp.php" realpath="/var/www/html/queencar/app/Containers/User/Models/TempOtp.php" size="242" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="283062bdcd58baed1d76ce80ff246accc716f81c" relative="User/Models/TempOtp.php"/>
+  <extends full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model" unresolved="true"/>
+  <member name="table" default="'tempOtp'" type="string" visibility="protected" static="false" line="12"/>
+</class>

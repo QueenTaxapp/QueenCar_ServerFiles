@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\UI\API\Requests\DispatchRequestDriver" namespace="App\Containers\Dispatch\UI\API\Requests" name="DispatchRequestDriver" abstract="false" final="false" start="9" end="34">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Requests" file="DispatchRequestDriver.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Requests/DispatchRequestDriver.php" size="544" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="7ee224599e4873fc2348a0e5edcc03fa8f666f30" relative="Dispatch/UI/API/Requests/DispatchRequestDriver.php"/>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="15" end="25" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="30" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\Dispatch\UI\API\Requests\bool" namespace="App\Containers\Dispatch\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

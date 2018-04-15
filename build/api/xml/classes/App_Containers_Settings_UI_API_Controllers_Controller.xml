@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Settings\UI\API\Controllers\Controller" namespace="App\Containers\Settings\UI\API\Controllers" name="Controller" abstract="false" final="false" start="16" end="73">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Settings/UI/API/Controllers" file="Controller.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Settings/UI/API/Controllers/Controller.php" size="2099" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="e6ece86322c0b02654efe7b69775519d890d6935" relative="Settings/UI/API/Controllers/Controller.php"/>
+  <extends full="App\Ship\Parents\Controllers\ApiController" namespace="App\Ship\Parents\Controllers" name="ApiController" unresolved="true"/>
+  <method name="listAllSettings" start="25" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="List all application settings"/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\Settings\UI\API\Requests\ListAllSettingsRequest" namespace="App\Containers\Settings\UI\API\Requests" name="ListAllSettingsRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Settings\UI\API\Requests\ListAllSettingsRequest" namespace="App\Containers\Settings\UI\API\Requests" name="ListAllSettingsRequest"/>
+    </parameter>
+  </method>
+  <method name="createSetting" start="39" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="create a new setting"/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\Settings\UI\API\Requests\CreateSettingRequest" namespace="App\Containers\Settings\UI\API\Requests" name="CreateSettingRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Settings\UI\API\Requests\CreateSettingRequest" namespace="App\Containers\Settings\UI\API\Requests" name="CreateSettingRequest"/>
+    </parameter>
+  </method>
+  <method name="updateSetting" start="53" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Updates an existing setting"/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\Settings\UI\API\Requests\UpdateSettingRequest" namespace="App\Containers\Settings\UI\API\Requests" name="UpdateSettingRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Settings\UI\API\Requests\UpdateSettingRequest" namespace="App\Containers\Settings\UI\API\Requests" name="UpdateSettingRequest"/>
+    </parameter>
+  </method>
+  <method name="deleteSetting" start="67" end="72" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Removes a setting"/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\Settings\UI\API\Requests\DeleteSettingRequest" namespace="App\Containers\Settings\UI\API\Requests" name="DeleteSettingRequest"/>
+      </param>
+      <return type="object">
+        <type full="\Illuminate\Http\JsonResponse" namespace="\Illuminate\Http" name="JsonResponse"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Settings\UI\API\Requests\DeleteSettingRequest" namespace="App\Containers\Settings\UI\API\Requests" name="DeleteSettingRequest"/>
+    </parameter>
+  </method>
+</class>

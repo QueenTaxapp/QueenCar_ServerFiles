@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\ApiTask\UserProfileUpdateTask" namespace="App\Containers\User\ApiTask" name="UserProfileUpdateTask" abstract="false" final="false" start="11" end="92">
+  <file path="/var/www/html/queencar/app/Containers/User/ApiTask" file="UserProfileUpdateTask.php" realpath="/var/www/html/queencar/app/Containers/User/ApiTask/UserProfileUpdateTask.php" size="2154" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="b1ff138745ecbe6efb2b1c3a3b0036c36f0ffea9" relative="User/ApiTask/UserProfileUpdateTask.php"/>
+  <method name="run" start="15" end="91" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="$driver = $tableNameSpace::select('password','profile_pic')-&gt;where('id',$id)-&gt;first();" line="25"/>
+    </inline>
+  </method>
+</class>

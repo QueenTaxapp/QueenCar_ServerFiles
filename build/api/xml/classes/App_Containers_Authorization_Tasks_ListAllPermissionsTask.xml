@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Tasks\ListAllPermissionsTask" namespace="App\Containers\Authorization\Tasks" name="ListAllPermissionsTask" abstract="false" final="false" start="14" end="39">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Tasks" file="ListAllPermissionsTask.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Tasks/ListAllPermissionsTask.php" size="755" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="999c55e4ffb1ced641cccd22c505171dc62a629d" relative="Authorization/Tasks/ListAllPermissionsTask.php"/>
+  <docblock>
+    <description compact="Class ListAllPermissionsTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <member name="repository" visibility="private" static="false" line="19">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\Containers\Authorization\Data\Repositories\PermissionRepository" namespace="App\Containers\Authorization\Data\Repositories" name="PermissionRepository"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="26" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="ListAllPermissionsTask constructor."/>
+      <param type="object" variable="$repository">
+        <type full="App\Containers\Authorization\Data\Repositories\PermissionRepository" namespace="App\Containers\Authorization\Data\Repositories" name="PermissionRepository"/>
+      </param>
+    </docblock>
+    <parameter name="repository" byreference="false" type="object">
+      <type full="App\Containers\Authorization\Data\Repositories\PermissionRepository" namespace="App\Containers\Authorization\Data\Repositories" name="PermissionRepository"/>
+    </parameter>
+  </constructor>
+  <method name="run" start="34" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+</class>

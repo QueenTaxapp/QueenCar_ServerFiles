@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\ValidateEmailTask" namespace="App\Containers\User\Tasks" name="ValidateEmailTask" abstract="false" final="false" start="18" end="49">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="ValidateEmailTask.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/ValidateEmailTask.php" size="1183" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="70e9cea33e19b8c591b254215b9c87c173307b77" relative="User/Tasks/ValidateEmailTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="26" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to check if the email address is present or not"/>
+      <param variable="$email" type="string"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

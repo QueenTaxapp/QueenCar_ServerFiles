@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\UI\API\Tests\Functional\ListRolesTest" namespace="App\Containers\Authorization\UI\API\Tests\Functional" name="ListRolesTest" abstract="false" final="false" start="13" end="39">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional" file="ListRolesTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional/ListRolesTest.php" size="854" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="93993a5994feac189cd2bd258ac7d8960927e855" relative="Authorization/UI/API/Tests/Functional/ListRolesTest.php"/>
+  <docblock>
+    <description compact="Class ListRolesTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase"/>
+  <member name="endpoint" default="'get@v1/roles'" type="string" visibility="protected" static="false" line="16"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="18"/>
+  <method name="testListAllRoles_" start="23" end="37" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="27"/>
+      <comment value="assert response status is correct" line="30"/>
+      <comment value="convert JSON response string to Object" line="33"/>
+    </inline>
+  </method>
+  <parent full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase">
+    <extends full="App\Ship\Parents\Tests\PhpUnit\TestCase" namespace="App\Ship\Parents\Tests\PhpUnit" name="TestCase" unresolved="true"/>
+  </parent>
+</class>

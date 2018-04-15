@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Company\Webtasks\ToggleStatusTask" namespace="App\Containers\Company\Webtasks" name="ToggleStatusTask" abstract="false" final="false" start="9" end="44">
+  <file path="/var/www/html/queencar/app/Containers/Company/Webtasks" file="ToggleStatusTask.php" realpath="/var/www/html/queencar/app/Containers/Company/Webtasks/ToggleStatusTask.php" size="844" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="7473bc11097a6fb0fe515cba9adec1a1bcbbf56f" relative="Company/Webtasks/ToggleStatusTask.php"/>
+  <method name="run" start="12" end="43" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="tableName" byreference="false" type="{unknown}"/>
+    <parameter name="columnName" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="company" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+</class>

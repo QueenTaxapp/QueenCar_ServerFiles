@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Actions\ListAllPermissionsAction" namespace="App\Containers\Authorization\Actions" name="ListAllPermissionsAction" abstract="false" final="false" start="13" end="23">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Actions" file="ListAllPermissionsAction.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Actions/ListAllPermissionsAction.php" size="431" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="fbe394134ddf0898ca1a8192714cbf3daecef876" relative="Authorization/Actions/ListAllPermissionsAction.php"/>
+  <docblock>
+    <description compact="Class ListAllPermissionsAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="18" end="21" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+</class>

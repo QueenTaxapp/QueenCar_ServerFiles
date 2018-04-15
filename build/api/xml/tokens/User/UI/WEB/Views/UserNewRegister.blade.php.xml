@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/User/UI/WEB/Views" file="UserNewRegister.blade.php" realpath="/var/www/html/queencar/app/Containers/User/UI/WEB/Views/UserNewRegister.blade.php" size="0" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="da39a3ee5e6b4b0d3255bfef95601890afd80709" relative="User/UI/WEB/Views/UserNewRegister.blade.php"/>
+  <line no="1"/>
+</source>

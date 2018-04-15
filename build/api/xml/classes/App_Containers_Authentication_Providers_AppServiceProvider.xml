@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Providers\AppServiceProvider" namespace="App\Containers\Authentication\Providers" name="AppServiceProvider" abstract="false" final="false" start="8" end="36">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Providers" file="AppServiceProvider.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Providers/AppServiceProvider.php" size="659" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="f884f7d3b440087c7db3b7048de9d402a53b73dd" relative="Authentication/Providers/AppServiceProvider.php"/>
+  <extends full="Illuminate\Support\ServiceProvider" namespace="Illuminate\Support" name="ServiceProvider" unresolved="true"/>
+  <method name="boot" start="16" end="24" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Bootstrap any application services."/>
+      <return type="object">
+        <type full="App\Containers\Authentication\Providers\void" namespace="App\Containers\Authentication\Providers" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="register" start="31" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Register the service provider."/>
+      <return type="object">
+        <type full="App\Containers\Authentication\Providers\void" namespace="App\Containers\Authentication\Providers" name="void"/>
+      </return>
+    </docblock>
+  </method>
+</class>

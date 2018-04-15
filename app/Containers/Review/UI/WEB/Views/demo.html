@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>Demo</title>
+	<script type="text/javascript" src="jquery-2.1.1.js"></script>
+	<script type="text/javascript" src="jquery-rating.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery-rating.css">
+</head>
+<body>
+	<!-- div group -->
+	<div class="group1">
+
+		<div   class="jr-ratenode jr-nomal"></div>
+		<div   class="jr-ratenode jr-nomal "></div>
+		<div   class="jr-ratenode jr-nomal "></div>
+		<div   class="jr-ratenode jr-nomal "></div>
+		<div   class="jr-ratenode jr-nomal "></div>
+	</div>
+	<div >
+		<p id="info" >0</p>
+	</div>
+
+	<div class="group2">
+		<div class="jr-ratenode jr-nomal"></div>
+		<div class="jr-ratenode jr-nomal "></div>
+		<div class="jr-ratenode jr-nomal "></div>
+		<div class="jr-ratenode jr-nomal "></div>
+		<div class="jr-ratenode jr-nomal "></div>
+	</div>
+	<div >
+		<p id="info2" >0</p>
+	</div>
+	<input id="see" type="button" value="getCurrentRating">
+
+
+</body>
+<script type="text/javascript">
+	$('.group1').start(function(cur){
+		console.log(cur);
+		 $('#info').text(cur);
+	});
+
+	$('.group2').start(2,function(cur){
+	   console.log(cur);
+	   $('#info2').text(cur);
+	});
+
+	$("#see").on('click',function(){
+		alert($('.group1').getCurrentRating() + "--" + $('.group2').getCurrentRating());
+	});
+
+</script>
+
+</html>

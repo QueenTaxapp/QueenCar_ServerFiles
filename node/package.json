@@ -1,0 +1,7 @@
+{ "name": "Taxi Project",
+  "description": "Taxi app node dev",
+  "version": "1.0.0",
+  "devDependencies": {
+    "coffee-script": "2.1.0"
+  }
+}

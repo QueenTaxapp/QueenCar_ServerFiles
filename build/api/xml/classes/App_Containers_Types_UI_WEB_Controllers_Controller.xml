@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Types\UI\WEB\Controllers\Controller" namespace="App\Containers\Types\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="20" end="154">
+  <file path="/var/www/html/queencar/app/Containers/Types/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Types/UI/WEB/Controllers/Controller.php" size="4299" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="df4d2185a91aab18fa200dd1bb726b198f5f55a5" relative="Types/UI/WEB/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <package value="App\Containers\Admin\UI\WEB\Controllers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="adminDriverTypeViewPage" start="23" end="42" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminDriverTypeAdd" start="45" end="63" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminDriverTypeSave" start="66" end="73" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminDriverTypeEdit" start="76" end="96" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminDriverTypeUpdate" start="99" end="107" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminDriverTypeDelete" start="110" end="120" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminDriverTypeStatusToggle" start="123" end="150" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

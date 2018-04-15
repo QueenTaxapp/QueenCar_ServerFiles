@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sos\UI\WEB\Controllers\Controller" namespace="App\Containers\Sos\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="18" end="164">
+  <file path="/var/www/html/queencar/app/Containers/Sos/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Sos/UI/WEB/Controllers/Controller.php" size="4571" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="b8498c2fa1af823d9030a10f4705cd1a999db3dd" relative="Sos/UI/WEB/Controllers/Controller.php"/>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <uses full="Illuminate\Database\Eloquent\SoftDeletes" namespace="Illuminate\Database\Eloquent" name="SoftDeletes" start="20" end="20" unresolved="true"/>
+  <method name="adminSosView" start="21" end="55" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$user = SosModel::select('id','name','number','status','');" line="31"/>
+    </inline>
+  </method>
+  <method name="adminSosAdd" start="57" end="74" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="registerAdminSos" start="77" end="95" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Sos\UI\WEB\Requests\AddSosRequest" namespace="App\Containers\Sos\UI\WEB\Requests" name="AddSosRequest"/>
+    </parameter>
+  </method>
+  <method name="adminEditSos" start="97" end="111" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="modifyAdminSos" start="113" end="130" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Sos\UI\WEB\Requests\AddSosRequest" namespace="App\Containers\Sos\UI\WEB\Requests" name="AddSosRequest"/>
+    </parameter>
+  </method>
+  <method name="sosDelete" start="131" end="141" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="sosDecline" start="144" end="153" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="sosAccept" start="154" end="163" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

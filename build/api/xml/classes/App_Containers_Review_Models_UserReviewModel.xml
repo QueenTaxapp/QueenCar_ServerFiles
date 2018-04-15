@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Review\Models\UserReviewModel" namespace="App\Containers\Review\Models" name="UserReviewModel" abstract="false" final="false" start="7" end="11">
+  <file path="/var/www/html/queencar/app/Containers/Review/Models" file="UserReviewModel.php" realpath="/var/www/html/queencar/app/Containers/Review/Models/UserReviewModel.php" size="257" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="1d406e5bae5966d6e8734094aa44f04f0f54367e" relative="Review/Models/UserReviewModel.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="dates" default="" type="array" visibility="protected" static="false" line="9"/>
+  <member name="table" default="'User_Review'" type="string" visibility="protected" static="false" line="10"/>
+</class>

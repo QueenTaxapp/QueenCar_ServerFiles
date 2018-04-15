@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\UI\API\Transformers\DriverRequestInprogressTransformer" namespace="App\Containers\Drivers\UI\API\Transformers" name="DriverRequestInprogressTransformer" abstract="false" final="false" start="8" end="34">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/UI/API/Transformers" file="DriverRequestInprogressTransformer.php" realpath="/var/www/html/queencar/app/Containers/Drivers/UI/API/Transformers/DriverRequestInprogressTransformer.php" size="615" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="7de9b1b4daee75a8e6c426446742285cd0ba0a98" relative="Drivers/UI/API/Transformers/DriverRequestInprogressTransformer.php"/>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="15" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$request"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request);die();" line="17"/>
+    </inline>
+  </method>
+</class>

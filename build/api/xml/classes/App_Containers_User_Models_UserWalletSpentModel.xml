@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Models\UserWalletSpentModel" namespace="App\Containers\User\Models" name="UserWalletSpentModel" abstract="false" final="false" start="8" end="12">
+  <file path="/var/www/html/queencar/app/Containers/User/Models" file="UserWalletSpentModel.php" realpath="/var/www/html/queencar/app/Containers/User/Models/UserWalletSpentModel.php" size="190" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="a0a3f13a3652a86e2deb6a813e37e24b015d23cf" relative="User/Models/UserWalletSpentModel.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="table" default="'wallet_user_history_spent'" type="string" visibility="protected" static="false" line="11"/>
+</class>

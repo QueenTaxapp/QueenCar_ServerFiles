@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Report\Webtasks\FinancialReportDownloadTask" namespace="App\Containers\Report\Webtasks" name="FinancialReportDownloadTask" abstract="false" final="false" start="17" end="233">
+  <file path="/var/www/html/queencar/app/Containers/Report/Webtasks" file="FinancialReportDownloadTask.php" realpath="/var/www/html/queencar/app/Containers/Report/Webtasks/FinancialReportDownloadTask.php" size="11688" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e620d02071928c229e9a53782dcc0c4919fe063c" relative="Report/Webtasks/FinancialReportDownloadTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="24" end="229" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="26"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($user_query);die();" line="135"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($zone_query);die();" line="182"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($querytwo);die();" line="204"/>
+      <comment value="print_r($array);die();" line="212"/>
+      <comment value="throw new ValidationException((new Message()),redirect()-&gt;to('admin/add')" line="225"/>
+      <comment value="-&gt;withErrors([trans('localization::errors.details_could_not_saved_in')].$details, 'default'));" line="226"/>
+      <comment value="return array('success'=&gt;&quot;TRUE&quot;,'message'=&gt;trans('localization::errors.admin_added_successfully'));" line="228"/>
+    </inline>
+  </method>
+</class>

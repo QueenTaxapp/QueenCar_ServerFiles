@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Request\UI\WEB\Controllers\Controller" namespace="App\Containers\Request\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="21" end="379">
+  <file path="/var/www/html/queencar/app/Containers/Request/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Request/UI/WEB/Controllers/Controller.php" size="14003" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="33e6c8470a19cba5a3177ef635b36ca1c14e596c" relative="Request/UI/WEB/Controllers/Controller.php"/>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <uses full="Illuminate\Database\Eloquent\SoftDeletes" namespace="Illuminate\Database\Eloquent" name="SoftDeletes" start="23" end="23" unresolved="true"/>
+  <method name="adminRequest" start="25" end="95" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminAllRequest" start="99" end="290" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminSchedule" start="292" end="368" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="adminScheduleCancel" start="371" end="376" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

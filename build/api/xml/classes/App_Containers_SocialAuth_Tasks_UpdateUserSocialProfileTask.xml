@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\SocialAuth\Tasks\UpdateUserSocialProfileTask" namespace="App\Containers\SocialAuth\Tasks" name="UpdateUserSocialProfileTask" abstract="false" final="false" start="14" end="121">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/Tasks" file="UpdateUserSocialProfileTask.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/Tasks/UpdateUserSocialProfileTask.php" size="2809" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="95d055bfaf94d5400b18bacc798d1615f99c66dc" relative="Socialauth/Tasks/UpdateUserSocialProfileTask.php"/>
+  <docblock>
+    <description compact="Class UpdateUserSocialProfileTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <member name="userRepository" visibility="private" static="false" line="20">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="\App\Containers\User\Contracts\UserRepositoryInterface" namespace="\App\Containers\User\Contracts" name="UserRepositoryInterface"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="27" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="UpdateUserAction constructor."/>
+      <param type="object" variable="$userRepository">
+        <type full="\App\Containers\User\Contracts\UserRepositoryInterface" namespace="\App\Containers\User\Contracts" name="UserRepositoryInterface"/>
+      </param>
+    </docblock>
+    <parameter name="userRepository" byreference="false" type="object">
+      <type full="App\Containers\User\Contracts\UserRepositoryInterface" namespace="App\Containers\User\Contracts" name="UserRepositoryInterface"/>
+    </parameter>
+  </constructor>
+  <method name="run" start="49" end="118" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$userId"/>
+      <param type="null" variable="$token"/>
+      <param type="null" variable="$expiresIn"/>
+      <param type="null" variable="$refreshToken"/>
+      <param type="null" variable="$tokenSecret"/>
+      <param type="null" variable="$provider"/>
+      <param type="null" variable="$avatar"/>
+      <param type="null" variable="$avatar_original"/>
+      <param type="null" variable="$socialId"/>
+      <param type="null" variable="$nickname"/>
+      <param type="null" variable="$name"/>
+      <param type="null" variable="$email"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="userId" byreference="false" type="{unknown}"/>
+    <parameter name="token" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="expiresIn" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="refreshToken" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="tokenSecret" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="avatar" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="avatar_original" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="provider" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="socialId" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="nickname" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="name" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="email" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="check if data is empty" line="109"/>
+      <comment value="updating the attributes" line="114"/>
+    </inline>
+  </method>
+</class>

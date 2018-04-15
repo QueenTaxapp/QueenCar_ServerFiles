@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\ApiTask\DispatchSpecificAdminRequestList" namespace="App\Containers\Dispatch\ApiTask" name="DispatchSpecificAdminRequestList" abstract="false" final="false" start="15" end="433">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/ApiTask" file="DispatchSpecificAdminRequestList.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/ApiTask/DispatchSpecificAdminRequestList.php" size="12785" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="423fdd9f76874af72515601f82354a33f6fdf3e8" relative="Dispatch/ApiTask/DispatchSpecificAdminRequestList.php"/>
+  <docblock>
+    <description compact="Class DispatchSpecificAdminRequestList"/>
+    <author value="Vignesh R"/>
+  </docblock>
+  <method name="run" start="23" end="97" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data">it is used to get the request list for specific admin
+with is paid , payment option , trip status message</param>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="DispatchAdminRequestList" start="109" end="163" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$dispatchId" type="int"/>
+      <param variable="$selectArray" type="object">
+        <type full="App\Containers\Dispatch\ApiTask\array|null" namespace="App\Containers\Dispatch\ApiTask" name="array|null"/>
+      </param>
+      <param variable="$rideLater" type="object">
+        <type full="App\Containers\Dispatch\ApiTask\int|null" namespace="App\Containers\Dispatch\ApiTask" name="int|null"/>
+      </param>
+      <param variable="$skip" type="object">
+        <type full="App\Containers\Dispatch\ApiTask\int|null" namespace="App\Containers\Dispatch\ApiTask" name="int|null"/>
+      </param>
+      <param variable="$take" type="object">it is used to get the request list for specific admin<type full="App\Containers\Dispatch\ApiTask\int|null" namespace="App\Containers\Dispatch\ApiTask" name="int|null"/></param>
+    </docblock>
+    <parameter name="dispatchId" byreference="false" type="{unknown}"/>
+    <parameter name="selectArray" byreference="false" type="{unknown}"/>
+    <parameter name="rideLater" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="skip" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="take" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="wantToSearch" byreference="false" type="boolean" default="false"/>
+    <parameter name="inputRequest" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="wantToSearch" start="165" end="195" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="inputRequest" byreference="false" type="{unknown}"/>
+    <parameter name="specificDispatchAdminRequestList" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="callGoToSearchIfSearchValueNotNull" start="197" end="228" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="searchKey" byreference="false" type="{unknown}"/>
+    <parameter name="searchValue" byreference="false" type="{unknown}"/>
+    <parameter name="specificDispatchAdminRequestList" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="goToSearch" start="230" end="285" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="searchKey" byreference="false" type="{unknown}"/>
+    <parameter name="searchValue" byreference="false" type="{unknown}"/>
+    <parameter name="specificDispatchAdminRequestList" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="nameSearch" start="287" end="296" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="columnKeyName" byreference="false" type="{unknown}"/>
+    <parameter name="searchName" byreference="false" type="{unknown}"/>
+    <parameter name="eloquentObject" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="betweenDate" start="298" end="307" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="columnKey" byreference="false" type="{unknown}"/>
+    <parameter name="fromDate" byreference="false" type="{unknown}"/>
+    <parameter name="toDate" byreference="false" type="{unknown}"/>
+    <parameter name="eloquentObject" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="search" start="309" end="315" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="searchKey" byreference="false" type="{unknown}"/>
+    <parameter name="searchValue" byreference="false" type="{unknown}"/>
+    <parameter name="eloquentObject" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="tripStatusSearch" start="327" end="359" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param description="in:1 , 2, 3, 4" variable="$searchKey" type="int"/>
+      <param variable="$eloquentObject" type="object"/>
+      <return type="object">1 : Trip Not Yet Started
+2 : On Going Trip
+3 : Trip Completed
+4 : Trip Cancelled</return>
+    </docblock>
+    <parameter name="searchValue" byreference="false" type="{unknown}"/>
+    <parameter name="eloquentObject" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="DispatchAdminRequestCount" start="370" end="406" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$dispatchId" type="int"/>
+      <param variable="$selectArray" type="object">
+        <type full="App\Containers\Dispatch\ApiTask\array|null" namespace="App\Containers\Dispatch\ApiTask" name="array|null"/>
+      </param>
+      <param variable="$rideLater" type="object">
+        <type full="App\Containers\Dispatch\ApiTask\int|null" namespace="App\Containers\Dispatch\ApiTask" name="int|null"/>
+      </param>
+      <param variable="$skip" type="object">
+        <type full="App\Containers\Dispatch\ApiTask\int|null" namespace="App\Containers\Dispatch\ApiTask" name="int|null"/>
+      </param>
+      <param variable="$take" type="object">it is used to get the count of request list for specific admin<type full="App\Containers\Dispatch\ApiTask\int|null" namespace="App\Containers\Dispatch\ApiTask" name="int|null"/></param>
+    </docblock>
+    <parameter name="dispatchId" byreference="false" type="{unknown}"/>
+    <parameter name="selectArray" byreference="false" type="{unknown}"/>
+    <parameter name="rideLater" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="skip" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="take" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="wantToSearch" byreference="false" type="boolean" default="false"/>
+    <parameter name="inputRequest" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="RequestOutputFormat" start="416" end="431" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$specificDispatchAdminRequestList" type="object">it is used to validate the trip status , is paid, payment type
+using the App\Containers\Common\RequestOutputFormat class</param>
+    </docblock>
+    <parameter name="specificDispatchAdminRequestList" byreference="false" type="{unknown}"/>
+  </method>
+</class>

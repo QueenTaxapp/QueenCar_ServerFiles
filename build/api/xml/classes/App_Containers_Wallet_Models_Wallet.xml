@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Wallet\Models\Wallet" namespace="App\Containers\Wallet\Models" name="Wallet" abstract="false" final="false" start="12" end="17">
+  <file path="/var/www/html/queencar/app/Containers/Wallet/Models" file="Wallet.php" realpath="/var/www/html/queencar/app/Containers/Wallet/Models/Wallet.php" size="272" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="4a11e317e8d690f874c8a405ffef0ea838c1788a" relative="Wallet/Models/Wallet.php"/>
+  <docblock>
+    <description compact="Class Payment"/>
+    <package value="App\Containers\Types\Models"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="table" default="'wallet'" type="string" visibility="protected" static="false" line="16"/>
+</class>

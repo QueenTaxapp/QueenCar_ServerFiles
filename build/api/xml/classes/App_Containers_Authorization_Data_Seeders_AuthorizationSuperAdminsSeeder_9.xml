@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Data\Seeders\AuthorizationSuperAdminsSeeder_9" namespace="App\Containers\Authorization\Data\Seeders" name="AuthorizationSuperAdminsSeeder_9" abstract="false" final="false" start="16" end="38">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/Data/Seeders" file="AuthorizationSuperAdminsSeeder_9.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/Data/Seeders/AuthorizationSuperAdminsSeeder_9.php" size="892" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="1f05a34e391b4d3bbee1e8d6994c707ea5fc34d6" relative="Authorization/Data/Seeders/AuthorizationSuperAdminsSeeder_9.php"/>
+  <docblock>
+    <description compact="Class AuthorizationSuperAdminsSeeder_9"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Seeders\Seeder" namespace="App\Ship\Parents\Seeders" name="Seeder" unresolved="true"/>
+  <method name="run" start="24" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Run the database seeds."/>
+      <return type="object">
+        <type full="App\Containers\Authorization\Data\Seeders\void" namespace="App\Containers\Authorization\Data\Seeders" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Default Users ----------------------------------------------------------------" line="26"/>
+      <comment value="..." line="35"/>
+    </inline>
+  </method>
+</class>

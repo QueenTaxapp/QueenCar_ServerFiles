@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Zone/UI/WEB/Views" file="ZoneView.blade.php" realpath="/var/www/html/queencar/app/Containers/Zone/UI/WEB/Views/ZoneView.blade.php" size="9416" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="555b8362b416946c704229b4ef2778ebcf060926" relative="Zone/UI/WEB/Views/ZoneView.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layout::Layout')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_INLINE_HTML">&lt;style&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    th{</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">        text-align: center;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    }</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    td{</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">        text-align: center;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">    }</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">    .pagination li.active {</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">        width: 30px;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">    }</token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_INLINE_HTML">&lt;/style&gt;</token>
+  </line>
+  <line no="16"/>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">    &lt;!-- START CONTENT --&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">        &lt;section id="content"&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">            &lt;!--start container--&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">            &lt;div class="container"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                &lt;!--card stats start--&gt;</token>
+  </line>
+  <line no="23"/>
+  <line no="24">
+    <token name="T_INLINE_HTML">                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                        &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                            &lt;div id="bordered-table"&gt;</token>
+  </line>
+  <line no="27"/>
+  <line no="28">
+    <token name="T_INLINE_HTML">                                &lt;h4 class="header"&gt;{{$title}}&lt;/h4&gt;</token>
+  </line>
+  <line no="29"/>
+  <line no="30">
+    <token name="T_INLINE_HTML">                                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="31"/>
+  <line no="32">
+    <token name="T_INLINE_HTML">                                    &lt;div id="tab1" class="tap-target" data-activates="menu1"&gt;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">                                            &lt;div class="tap-target-content"&gt;</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">                                                &lt;h5&gt;Actions&lt;/h5&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                                                &lt;p&gt;This is used to provide the actions for data&lt;/p&gt;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                                        &lt;div style="" class="col s6 m3 l3 right"&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                                            &lt;a href="{{ URL::Route('zoneAdd') }}" class="add-btn waves-effect waves-light btn right tooltipped" data-position="top" data-delay="50" data-tooltip="{{trans('localization::lang_view.add_zone')}}" &gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                                                &lt;i class="material-icons left"&gt;add&lt;/i&gt;{{ trans('localization::lang_view.add')}}</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                            &lt;/a&gt;</token>
+  </line>
+  <line no="44"/>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="47"/>
+  <line no="48">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                                        &lt;div class="card" style="overflow: auto"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                                            &lt;br&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                                        &lt;table id="table" class="bordered "&gt;</token>
+  </line>
+  <line no="52"/>
+  <line no="53">
+    <token name="T_INLINE_HTML">                                            &lt;thead&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                                            &lt;tr&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                                &lt;th&gt;{{ trans('localization::lang_view.s.no')}}&lt;/th&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                                &lt;th&gt;{{ trans('localization::lang_view.zone_name')}}&lt;/th&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                                &lt;th&gt;{{ trans('localization::lang_view.status')}}&lt;/th&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                                                &lt;th&gt;&lt;a class="tooltipped" onclick="help('menu1','tab1')" data-position="top" data-delay="50" data-tooltip="{{trans('localization::errors.click_me_help')}}" &gt;{{ trans('localization::lang_view.actions')}}&lt;/a&gt;&lt;/th&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                                            &lt;/tr&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                                            &lt;/thead&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                                            &lt;tbody&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                                            </token>
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="63">
+    <token name="T_WHITESPACE">                                                </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">count</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                                    &lt;td class="no-result" colspan="11"&gt;{{ trans('localization::lang_view.no_result_found')}}&lt;/td&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                             </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="66">
+    <token name="T_WHITESPACE">                                            </token>
+    <token name="T_VARIABLE">$s_no</token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="67">
+    <token name="T_WHITESPACE">                                            </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$key</token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                            &lt;tr&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                                &lt;td&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$s_no</token>
+    <token name="T_PHPDOX_PLUS">+</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">input</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'page'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_QUESTION_MARK">?</token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_COLON">:</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">input</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'page'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_MINUS">-</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_MULT">*</token>
+    <token name="T_STRING">App</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Containers</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Common</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">GetConfigs</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">getConfigs</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'paginate'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/td&gt;</token>
+  </line>
+  <line no="70"/>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                                &lt;td&gt;</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'name'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/td&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                                &lt;td&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">is_active</token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="73">
+    <token name="T_WHITESPACE">                                                    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="74">
+    <token name="T_WHITESPACE">                                                    </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                                                    &lt;span class="status-green"&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">trans</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'localization::lang_view.active'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/span&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                                                    </token>
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="77">
+    <token name="T_WHITESPACE">                                                    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_ELSEIF">elseif</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">is_active</token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="78">
+    <token name="T_WHITESPACE">                                                    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="79">
+    <token name="T_WHITESPACE">                                                    </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                                                    &lt;span class="status-red"&gt;</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">trans</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'localization::lang_view.inactive'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/span&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                                                    </token>
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="82">
+    <token name="T_WHITESPACE">                                                    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                                                &lt;/td&gt;</token>
+  </line>
+  <line no="84"/>
+  <line no="85">
+    <token name="T_INLINE_HTML">                                                &lt;td&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="container"&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                                                        &lt;a class="btn dropdown-settings waves-effect waves-light breadcrumbs-btn gradient-45deg-light-blue-cyan gradient-shadow" data-activates="dropdown</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$s_no</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">" style=""&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="material-icons hide-on-med-and-up"&gt;settings&lt;/i&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                                                            &lt;span class="hide-on-small-onl"&gt; {{ trans('localization::lang_view.actions')}}&lt;/span&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                                                            &lt;i class="material-icons right"&gt;arrow_drop_down&lt;/i&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                                                        &lt;/a&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                                                        &lt;ul id="dropdown</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$s_no</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">" class="drop dropdown-content " style="white-space: nowrap; opacity: 1;width: 140px; top: 130px; display: none;"&gt;</token>
+  </line>
+  <line no="93"/>
+  <line no="94">
+    <token name="T_INLINE_HTML">                                                            {{-- &lt;li&gt;&lt;a class="grey-text text-darken-2" href=""&gt;{{ trans('localization::lang_view.edit')}}&lt;/a&gt;&lt;/li&gt;--}}</token>
+  </line>
+  <line no="95"/>
+  <line no="96">
+    <token name="T_INLINE_HTML">                                                            &lt;li&gt;&lt;a class="grey-text text-darken-2" href="{{ URL::Route('zoneMapView',$value-&gt;id) }}"&gt;{{ trans('localization::lang_view.map_view')}}&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="97"/>
+  <line no="98">
+    <token name="T_INLINE_HTML">                                                            &lt;li&gt;&lt;a class="grey-text text-darken-2" href="{{ URL::Route('zoneTypeView',$value-&gt;id) }}"&gt;{{ trans('localization::lang_view.type_view')}}&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="99"/>
+  <line no="100">
+    <token name="T_INLINE_HTML">                                                            &lt;li&gt;&lt;a class="grey-text text-darken-2" href="{{ URL::Route('zoneSurge',$value-&gt;id) }}"&gt;{{ trans('localization::lang_view.surge_price')}}&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="101"/>
+  <line no="102">
+    <token name="T_INLINE_HTML">                                                            &lt;li&gt;&lt;a class="grey-text text-darken-2" href="{{ URL::Route('zoneCurrencyEdit',$value-&gt;id) }}"&gt;{{ trans('localization::lang_view.zone_settings')}}&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="103"/>
+  <line no="104">
+    <token name="T_INLINE_HTML">                                                            &lt;li&gt;&lt;a onclick="" class="</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">is_active</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"sweet-active"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_ELSE">else</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"sweet-inactive"</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML"> grey-text text-darken-2" href="{{ URL::Route('zoneStatusToggle',$value-&gt;id) }}"&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                                                                    </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_IF">if</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">is_active</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                                                                    {{ trans('localization::lang_view.active')}}</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                                                                    </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_ELSE">else</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                                                                    {{ trans('localization::lang_view.inactive')}}</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                                                                    </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                                                                &lt;/a&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                                                            &lt;/li&gt;</token>
+  </line>
+  <line no="112"/>
+  <line no="113">
+    <token name="T_INLINE_HTML">                                                            &lt;li&gt;&lt;a class="sweet-delete grey-text text-darken-2" href="{{ URL::Route('zoneDelete',$value-&gt;id) }}"&gt;{{ trans('localization::lang_view.delete')}}&lt;/a&gt;&lt;/li&gt;</token>
+  </line>
+  <line no="114"/>
+  <line no="115"/>
+  <line no="116">
+    <token name="T_INLINE_HTML">                                                        &lt;/ul&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                                                    &lt;/div&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                                                &lt;/td&gt;</token>
+  </line>
+  <line no="119"/>
+  <line no="120">
+    <token name="T_INLINE_HTML">                                            &lt;/tr&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                                          </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_VARIABLE">$s_no</token>
+    <token name="T_INC">++</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                                            &lt;/tbody&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                                        &lt;/table&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</token>
+  </line>
+  <line no="124"/>
+  <line no="125">
+    <token name="T_INLINE_HTML">                                        &lt;div class="pagination" align="left" id="paglink"&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                                            </token>
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="127"/>
+  <line no="128">
+    <token name="T_WHITESPACE">                                            </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">appends</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_ARRAY">array</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">links</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="129">
+    <token name="T_WHITESPACE">                                            </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</token>
+  </line>
+  <line no="131"/>
+  <line no="132">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="138"/>
+  <line no="139"/>
+  <line no="140">
+    <token name="T_INLINE_HTML">                &lt;!--end container--&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">        &lt;/section&gt;</token>
+  </line>
+  <line no="143"/>
+  <line no="144">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="145"/>
+  <line no="146">
+    <token name="T_INLINE_HTML">    document.addEventListener("DOMContentLoaded", function() {</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">        var window_size = $(window).width();</token>
+  </line>
+  <line no="148"/>
+  <line no="149">
+    <token name="T_INLINE_HTML">        $(window).resize(function() {</token>
+  </line>
+  <line no="150"/>
+  <line no="151">
+    <token name="T_INLINE_HTML">            window_size = $(window).width();</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">            WidthChange();</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="154"/>
+  <line no="155"/>
+  <line no="156">
+    <token name="T_INLINE_HTML">        if($(window).width() &lt;=340){</token>
+  </line>
+  <line no="157"/>
+  <line no="158">
+    <token name="T_INLINE_HTML">            var width = document.getElementById("table").offsetWidth;</token>
+  </line>
+  <line no="159"/>
+  <line no="160">
+    <token name="T_INLINE_HTML">            $("&lt;style/&gt;", {text: ".drop {left: "+(width-130)+"px !important;}"}).appendTo('head');</token>
+  </line>
+  <line no="161"/>
+  <line no="162">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="163"/>
+  <line no="164">
+    <token name="T_INLINE_HTML">    });</token>
+  </line>
+  <line no="165"/>
+  <line no="166">
+    <token name="T_INLINE_HTML">    function WidthChange(){</token>
+  </line>
+  <line no="167"/>
+  <line no="168">
+    <token name="T_INLINE_HTML">        if($(window).width() &lt;=340){</token>
+  </line>
+  <line no="169"/>
+  <line no="170">
+    <token name="T_INLINE_HTML">            var width = document.getElementById("table").offsetWidth;</token>
+  </line>
+  <line no="171"/>
+  <line no="172">
+    <token name="T_INLINE_HTML">            $("&lt;style/&gt;", {text: ".drop {left: "+(width-130)+"px !important;}"}).appendTo('head');</token>
+  </line>
+  <line no="173"/>
+  <line no="174">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="175"/>
+  <line no="176">
+    <token name="T_INLINE_HTML">    }</token>
+  </line>
+  <line no="177"/>
+  <line no="178">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="179"/>
+  <line no="180"/>
+  <line no="181">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

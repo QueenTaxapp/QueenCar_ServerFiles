@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\UI\API\Requests\AdminRequest" namespace="App\Containers\UI\API\Requests" name="AdminRequest" abstract="false" final="false" start="9" end="28">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Login/UI/WEB/Requests" file="AdminRequest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Login/UI/WEB/Requests/AdminRequest.php" size="480" time="2017-09-13T12:01:58+02:00" unixtime="1505296918" sha1="15617bff38f87c72a980ed891d9ff801a3e460d9" relative="Login/UI/WEB/Requests/AdminRequest.php"/>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="13" end="20" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="authorize" start="22" end="27" abstract="false" final="false" static="false" visibility="public"/>
+</class>

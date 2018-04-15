@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\ReturnFieldTaskaaaa" namespace="App\Containers\User\Tasks" name="ReturnFieldTaskaaaa" abstract="false" final="false" start="20" end="60">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="ReturnFieldTasssssk.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/ReturnFieldTasssssk.php" size="1236" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="023784e51551a71cd5e1799bca9936afc11bd93a" relative="User/Tasks/ReturnFieldTasssssk.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="27" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to generate OTP with expire time of 15 minutes"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="fieldName" byreference="false" type="{unknown}"/>
+    <parameter name="tableName" byreference="false" type="{unknown}"/>
+  </method>
+</class>

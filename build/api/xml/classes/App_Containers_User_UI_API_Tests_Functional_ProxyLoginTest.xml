@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Tests\Functional\ProxyLoginTest" namespace="App\Containers\User\UI\API\Tests\Functional" name="ProxyLoginTest" abstract="false" final="false" start="13" end="114">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Authentication/UI/API/Tests/Functional" file="ProxyLoginTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Authentication/UI/API/Tests/Functional/ProxyLoginTest.php" size="3440" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="37fce0a7120cfb937cf5aa72e50a619bc08acf67" relative="Authentication/UI/API/Tests/Functional/ProxyLoginTest.php"/>
+  <docblock>
+    <description compact="Class ProxyLoginTest"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\Authentication\Tests\TestCase" namespace="App\Containers\Authentication\Tests" name="TestCase"/>
+  <member name="endpoint" visibility="protected" static="false" line="16"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="18"/>
+  <method name="testClientWebAdminProxyLogin_" start="23" end="67" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="create data to be used for creating the testing user and to be sent with the post request" line="27"/>
+      <comment value="create client" line="39"/>
+      <comment value="make the clients credentials available as env variables" line="52"/>
+    </inline>
+  </method>
+  <method name="testClientWebAdminProxyUnconfirmedLogin_" start="69" end="112" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="create data to be used for creating the testing user and to be sent with the post request" line="73"/>
+      <comment value="create client" line="87"/>
+      <comment value="make the clients credentials available as env variables" line="100"/>
+    </inline>
+  </method>
+  <parent full="App\Containers\Authentication\Tests\TestCase" namespace="App\Containers\Authentication\Tests" name="TestCase">
+    <extends full="App\Ship\Parents\Tests\PhpUnit\TestCase" namespace="App\Ship\Parents\Tests\PhpUnit" name="TestCase" unresolved="true"/>
+  </parent>
+</class>

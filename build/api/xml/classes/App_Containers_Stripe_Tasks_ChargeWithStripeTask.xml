@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Stripe\Tasks\ChargeWithStripeTask" namespace="App\Containers\Stripe\Tasks" name="ChargeWithStripeTask" abstract="false" final="false" start="19" end="80">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Tasks" file="ChargeWithStripeTask.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Tasks/ChargeWithStripeTask.php" size="2366" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="c147157fb68ef37aaa89dab99b2a8c2f32de9c74" relative="Stripe/Tasks/ChargeWithStripeTask.php"/>
+  <docblock>
+    <description compact="Class ChargeWithStripeTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <member name="stripe" visibility="public" static="false" line="22"/>
+  <constructor name="__construct" start="29" end="32" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="StripeApi constructor."/>
+      <param type="object" variable="$stripe">
+        <type full="\Cartalyst\Stripe\Stripe" namespace="\Cartalyst\Stripe" name="Stripe"/>
+      </param>
+    </docblock>
+    <parameter name="stripe" byreference="false" type="object">
+      <type full="Cartalyst\Stripe\Stripe" namespace="Cartalyst\Stripe" name="Stripe"/>
+    </parameter>
+  </constructor>
+  <method name="run" start="41" end="78" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$user">
+        <type full="\App\Containers\User\Models\User" namespace="\App\Containers\User\Models" name="User"/>
+      </param>
+      <param variable="$amount"/>
+      <param type="string" variable="$currency"/>
+      <return type="object">
+        <type full="App\Containers\Stripe\Tasks\array|null" namespace="App\Containers\Stripe\Tasks" name="array|null"/>
+      </return>
+    </docblock>
+    <parameter name="user" byreference="false" type="object">
+      <type full="App\Containers\User\Models\User" namespace="App\Containers\User\Models" name="User"/>
+    </parameter>
+    <parameter name="amount" byreference="false" type="{unknown}"/>
+    <parameter name="currency" byreference="false" type="string" default="'USD'"/>
+    <inline>
+      <comment value="this data will be stored on the pivot table (user credits)" line="73"/>
+    </inline>
+  </method>
+</class>

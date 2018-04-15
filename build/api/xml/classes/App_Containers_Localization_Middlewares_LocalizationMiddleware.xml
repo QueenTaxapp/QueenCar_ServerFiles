@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Localization\Middlewares\LocalizationMiddleware" namespace="App\Containers\Localization\Middlewares" name="LocalizationMiddleware" abstract="false" final="false" start="16" end="85">
+  <file path="/var/www/html/queencar/app/Containers/Localization/Middlewares" file="LocalizationMiddleware.php" realpath="/var/www/html/queencar/app/Containers/Localization/Middlewares/LocalizationMiddleware.php" size="1892" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="eb67d847f1458ec42b5b9597b0d532c9979177ff" relative="Localization/Middlewares/LocalizationMiddleware.php"/>
+  <docblock>
+    <description compact="Class LocalizationMiddleware"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Middlewares\Middleware" namespace="App\Ship\Parents\Middlewares" name="Middleware" unresolved="true"/>
+  <method name="handle" start="25" end="48" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\Illuminate\Http\Request" namespace="\Illuminate\Http" name="Request"/>
+      </param>
+      <param type="object" variable="$next">
+        <type full="\Closure" namespace="" name="Closure"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+    <inline>
+      <comment value="find and validate the lang on that request" line="27"/>
+      <comment value="set the local language" line="35"/>
+      <comment value="get the response after the request is done" line="38"/>
+      <comment value="set Content Languages header in the response" line="42"/>
+      <comment value="return the response" line="45"/>
+    </inline>
+  </method>
+  <method name="validateLanguage" start="55" end="64" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param variable="$lang"/>
+      <return type="object">
+        <type full="App\Containers\Localization\Middlewares\string|Exception" namespace="App\Containers\Localization\Middlewares" name="string|Exception"/>
+      </return>
+    </docblock>
+    <parameter name="lang" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="check the languages defined is supported" line="57"/>
+    </inline>
+  </method>
+  <method name="findLanguage" start="71" end="75" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param variable="$request"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="read the language from the request header, if the header is missed, take the default local language" line="73"/>
+    </inline>
+  </method>
+  <method name="getSupportedLanguages" start="80" end="83" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+  </method>
+</class>

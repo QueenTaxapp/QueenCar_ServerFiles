@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Eta\UI\API\Requests\EtaRequest" namespace="App\Containers\Eta\UI\API\Requests" name="EtaRequest" abstract="false" final="false" start="10" end="35">
+  <file path="/var/www/html/queencar/app/Containers/Eta/UI/API/Requests" file="EtaRequest.php" realpath="/var/www/html/queencar/app/Containers/Eta/UI/API/Requests/EtaRequest.php" size="552" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="bbfcc4b3e446aa7916d70677a12594628da1f23b" relative="Eta/UI/API/Requests/EtaRequest.php"/>
+  <docblock>
+    <description compact="Class GetMyProfileRequest."/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="16" end="26" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="authorize" start="31" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\Eta\UI\API\Requests\bool" namespace="App\Containers\Eta\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

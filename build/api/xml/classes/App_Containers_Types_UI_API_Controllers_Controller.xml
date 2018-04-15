@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Types\UI\API\Controllers\Controller" namespace="App\Containers\Types\UI\API\Controllers" name="Controller" abstract="false" final="false" start="15" end="35">
+  <file path="/var/www/html/queencar/app/Containers/Types/UI/API/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Types/UI/API/Controllers/Controller.php" size="732" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="c3cf1a5469d9c00e26175849443892f7edf535c5" relative="Types/UI/API/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\ApiController" namespace="App\Ship\Parents\Controllers" name="ApiController" unresolved="true"/>
+  <method name="getTypes" start="21" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\Types\UI\API\Controllers\json" namespace="App\Containers\Types\UI\API\Controllers" name="json"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

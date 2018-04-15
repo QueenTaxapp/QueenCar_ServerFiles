@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Review\Webtasks\ReviewTask" namespace="App\Containers\Review\Webtasks" name="ReviewTask" abstract="false" final="false" start="25" end="151">
+  <file path="/var/www/html/queencar/app/Containers/Review/Webtasks" file="ReviewTask.php" realpath="/var/www/html/queencar/app/Containers/Review/Webtasks/ReviewTask.php" size="5308" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="b8bb842823cdf60517669ccd427426c9a3d28a8f" relative="Review/Webtasks/ReviewTask.php"/>
+  <docblock>
+    <description compact="Class ReviewTask"/>
+    <package value="App\Containers\Review\Webtasks"/>
+  </docblock>
+  <method name="run" start="33" end="149" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$tableName"/>
+      <param variable="$request"/>
+      <param variable="$title"/>
+      <return type="object">
+        <type full="App\Containers\Review\Webtasks\object|string" namespace="App\Containers\Review\Webtasks" name="object|string"/>
+      </return>
+    </docblock>
+    <parameter name="tableName" byreference="false" type="{unknown}"/>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <parameter name="title" byreference="false" type="{unknown}"/>
+  </method>
+</class>

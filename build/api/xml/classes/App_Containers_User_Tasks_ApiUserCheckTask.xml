@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\ApiUserCheckTask" namespace="App\Containers\User\Tasks" name="ApiUserCheckTask" abstract="false" final="false" start="15" end="36">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="ApiUserCheckTask.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/ApiUserCheckTask.php" size="762" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="22219dff89e8f23b7893859cdb5b25c79c9df082" relative="User/Tasks/ApiUserCheckTask.php"/>
+  <docblock>
+    <description compact="Class ApiUserCheckTask"/>
+    <package value="App\Containers\User\Tasks"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="23" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$request"/>
+      <return type="object">
+        <type full="\Illuminate\Database\Eloquent\Model|null|static" namespace="\Illuminate\Database\Eloquent" name="Model|null|static"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

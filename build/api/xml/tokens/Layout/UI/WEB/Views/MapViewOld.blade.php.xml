@@ -1,0 +1,676 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Layout/UI/WEB/Views" file="MapViewOld.blade.php" realpath="/var/www/html/queencar/app/Containers/Layout/UI/WEB/Views/MapViewOld.blade.php" size="8406" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="b09cb9ca1d9d2ded31c34980c9ac59d65704e3e9" relative="Layout/UI/WEB/Views/MapViewOld.blade.php"/>
+  <line no="1"/>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;style type="text/css"&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        #map {</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">            height: 400px;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            width: 80%;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            left: 10px;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">        #panel {</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            width: 200px;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            font-family: Arial, sans-serif;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            font-size: 13px;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">            float: right;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">            margin: 10px;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">        #color-palette {</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">            clear: both;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="21"/>
+  <line no="22">
+    <token name="T_INLINE_HTML">        .color-button {</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">            width: 14px;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">            height: 14px;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">            font-size: 0;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">            margin: 2px;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">            float: left;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">            cursor: pointer;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_INLINE_HTML">        #delete-button {</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">            margin-top: 5px;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">    &lt;section&gt;</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_INLINE_HTML">        &lt;h3&gt;My Google Maps Demo&lt;/h3&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">        &lt;div id="panel"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">            &lt;div id="color-palette"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">            &lt;div&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                &lt;button id="delete-button"&gt;Delete Selected Shape&lt;/button&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                &lt;button id="delete-all-button"&gt;Delete All Shapes&lt;/button&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">        &lt;div id="map"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="46"/>
+  <line no="47">
+    <token name="T_INLINE_HTML">    &lt;/section&gt;</token>
+  </line>
+  <line no="48"/>
+  <line no="49"/>
+  <line no="50">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;libraries=drawing"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="51"/>
+  <line no="52">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">        var drawingManager;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">        var all_overlays = [];</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">        var selectedShape;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">        var colors = ['#1E90FF', '#FF1493', '#32CD32', '#FF8C00', '#4B0082'];</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">        var selectedColor;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">        var colorButtons = {};</token>
+  </line>
+  <line no="59"/>
+  <line no="60">
+    <token name="T_INLINE_HTML">        function clearSelection() {</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">            if (selectedShape) {</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                selectedShape.setEditable(false);</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                selectedShape = null;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="66"/>
+  <line no="67">
+    <token name="T_INLINE_HTML">        function setSelection(shape) {</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">            clearSelection();</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">            selectedShape = shape;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">            shape.setEditable(true);</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">            selectColor(shape.get('fillColor') || shape.get('strokeColor'));</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="73"/>
+  <line no="74">
+    <token name="T_INLINE_HTML">        function deleteSelectedShape() {</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">            if (selectedShape) {</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                selectedShape.setMap(null);</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="79"/>
+  <line no="80">
+    <token name="T_INLINE_HTML">        function deleteAllShape() {</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">            for (var i=0; i &lt; all_overlays.length; i++)</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">            {</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                all_overlays[i].overlay.setMap(null);</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">            all_overlays = [];</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="87"/>
+  <line no="88">
+    <token name="T_INLINE_HTML">        function selectColor(color) {</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">            selectedColor = color;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">            for (var i = 0; i &lt; colors.length; ++i) {</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                var currColor = colors[i];</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                colorButtons[currColor].style.border = currColor == color ? '2px solid #789' : '2px solid #fff';</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="94"/>
+  <line no="95">
+    <token name="T_INLINE_HTML">            // Retrieves the current options from the drawing manager and replaces the</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">            // stroke or fill color as appropriate.</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">            var polylineOptions = drawingManager.get('polylineOptions');</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">            polylineOptions.strokeColor = color;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">            drawingManager.set('polylineOptions', polylineOptions);</token>
+  </line>
+  <line no="100"/>
+  <line no="101">
+    <token name="T_INLINE_HTML">            var rectangleOptions = drawingManager.get('rectangleOptions');</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">            rectangleOptions.fillColor = color;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">            drawingManager.set('rectangleOptions', rectangleOptions);</token>
+  </line>
+  <line no="104"/>
+  <line no="105">
+    <token name="T_INLINE_HTML">            var circleOptions = drawingManager.get('circleOptions');</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">            circleOptions.fillColor = color;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">            drawingManager.set('circleOptions', circleOptions);</token>
+  </line>
+  <line no="108"/>
+  <line no="109">
+    <token name="T_INLINE_HTML">            var polygonOptions = drawingManager.get('polygonOptions');</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">            polygonOptions.fillColor = color;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">            drawingManager.set('polygonOptions', polygonOptions);</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="113"/>
+  <line no="114">
+    <token name="T_INLINE_HTML">        function setSelectedShapeColor(color) {</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">            if (selectedShape) {</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                if (selectedShape.type == google.maps.drawing.OverlayType.POLYLINE) {</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                    selectedShape.set('strokeColor', color);</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                    selectedShape.set('fillColor', color);</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="123"/>
+  <line no="124">
+    <token name="T_INLINE_HTML">        function makeColorButton(color) {</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">            var button = document.createElement('span');</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">            button.className = 'color-button';</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">            button.style.backgroundColor = color;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">            google.maps.event.addDomListener(button, 'click', function() {</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                selectColor(color);</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                setSelectedShapeColor(color);</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="132"/>
+  <line no="133">
+    <token name="T_INLINE_HTML">            return button;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="135"/>
+  <line no="136">
+    <token name="T_INLINE_HTML">        function buildColorPalette() {</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">            var colorPalette = document.getElementById('color-palette');</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">            for (var i = 0; i &lt; colors.length; ++i) {</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                var currColor = colors[i];</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                var colorButton = makeColorButton(currColor);</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">                colorPalette.appendChild(colorButton);</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">                colorButtons[currColor] = colorButton;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">            selectColor(colors[0]);</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="146"/>
+  <line no="147">
+    <token name="T_INLINE_HTML">        function initialize() {</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">            var map = new google.maps.Map(document.getElementById('map'), {</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                zoom: 10,</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                center: new google.maps.LatLng(22.344, 114.048),</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                mapTypeId:  google.maps.MapTypeId.ROADMAP,</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">                disableDefaultUI: true,</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">                zoomControl: true</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="155"/>
+  <line no="156">
+    <token name="T_INLINE_HTML">            var polyOptions = {</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">                strokeWeight: 0,</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">                fillOpacity: 0.45,</token>
+  </line>
+  <line no="159">
+    <token name="T_INLINE_HTML">                editable: true</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">            };</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">            // Creates a drawing manager attached to the map that allows the user to draw</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">            // markers, lines, and shapes.</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">            drawingManager = new google.maps.drawing.DrawingManager({</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                drawingMode: google.maps.drawing.OverlayType.POLYGON,</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">                markerOptions: {</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">                    draggable: true</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                },</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">                polylineOptions: {</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">                    editable: true</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">                },</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">                rectangleOptions: polyOptions,</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">                circleOptions: polyOptions,</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">                polygonOptions: polyOptions,</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">                map: map</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="176"/>
+  <line no="177">
+    <token name="T_INLINE_HTML">            google.maps.event.addListener(drawingManager, 'overlaycomplete', function(e) {</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                all_overlays.push(e);</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                if (e.type != google.maps.drawing.OverlayType.MARKER) {</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">                    // Switch back to non-drawing mode after drawing a shape.</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                    drawingManager.setDrawingMode(null);</token>
+  </line>
+  <line no="182"/>
+  <line no="183">
+    <token name="T_INLINE_HTML">                    // Add an event listener that selects the newly-drawn shape when the user</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                    // mouses down on it.</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                    var newShape = e.overlay;</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                    newShape.type = e.type;</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                    google.maps.event.addListener(newShape, 'click', function() {</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                        setSelection(newShape);</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">                    setSelection(newShape);</token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="193"/>
+  <line no="194">
+    <token name="T_INLINE_HTML">            // Clear the current selection when the drawing mode is changed, or when the</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">            // map is clicked.</token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">            google.maps.event.addListener(drawingManager, 'drawingmode_changed', clearSelection);</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">            google.maps.event.addListener(map, 'click', clearSelection);</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">            google.maps.event.addDomListener(document.getElementById('delete-button'), 'click', deleteSelectedShape);</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">            google.maps.event.addDomListener(document.getElementById('delete-all-button'), 'click', deleteAllShape);</token>
+  </line>
+  <line no="200"/>
+  <line no="201">
+    <token name="T_INLINE_HTML">            buildColorPalette();</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">        google.maps.event.addDomListener(window, 'load', initialize);</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="205"/>
+  <line no="206">
+    <token name="T_INLINE_HTML">    &lt;script src="http://www.google-analytics.com/urchin.js" type="text/javascript"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="207"/>
+  <line no="208">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript"&gt;</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">        _uacct = "UA-162157-1";</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">        urchinTracker();</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="212"/>
+  <line no="213"/>
+  <line no="214"/>
+  <line no="215"/>
+  <line no="216"/>
+  <line no="217"/>
+  <line no="218">
+    <token name="T_INLINE_HTML">    {{--  &lt;script&gt;</token>
+  </line>
+  <line no="219">
+    <token name="T_INLINE_HTML">          function initMap() {</token>
+  </line>
+  <line no="220">
+    <token name="T_INLINE_HTML">              var uluru = {lat: 30.000, lng: -50.000};</token>
+  </line>
+  <line no="221"/>
+  <line no="222">
+    <token name="T_INLINE_HTML">              var map = new google.maps.Map(document.getElementById('map'), {</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">                  zoom: 4,</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">                  center: uluru</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">              });</token>
+  </line>
+  <line no="226"/>
+  <line no="227">
+    <token name="T_INLINE_HTML">              var blueCoords = [</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">                  {lat: 20.000, lng: -60.000},</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">                  {lat: 20.000, lng: -40.000},</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">                  {lat: 40.000, lng: -40.000},</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">                  {lat: 40.000, lng: -60.000}</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">              ];</token>
+  </line>
+  <line no="233"/>
+  <line no="234">
+    <token name="T_INLINE_HTML">              new google.maps.Polygon({</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">                  map: map,</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">                  paths: blueCoords,</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">                  strokeColor: '#0000FF',</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">                  strokeOpacity: 0.8,</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">                  strokeWeight: 2,</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">                  fillColor: '#0000FF',</token>
+  </line>
+  <line no="241">
+    <token name="T_INLINE_HTML">                  fillOpacity: 0.35,</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">                  draggable: true,</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">                  geodesic: false</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">              });</token>
+  </line>
+  <line no="245">
+    <token name="T_INLINE_HTML">          }</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">      &lt;/script&gt;--}}</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">    &lt;script async defer</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgkO8chMIq3JSKLXwTTRuP7ByhkL3Wzxk"&gt;</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="250"/>
+  <line no="251">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="252"/>
+  <line no="253"/>
+  <line no="254"/>
+</source>

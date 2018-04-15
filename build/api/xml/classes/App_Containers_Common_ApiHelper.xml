@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Common\ApiHelper" namespace="App\Containers\Common" name="ApiHelper" abstract="false" final="false" start="40" end="896">
+  <file path="/var/www/html/queencar/app/Containers/Common" file="ApiHelper.php" realpath="/var/www/html/queencar/app/Containers/Common/ApiHelper.php" size="24539" time="2018-04-06T06:23:01+00:00" unixtime="1522995781" sha1="98fdba3e54e831cc49fc8374594d07afc2ef5d14" relative="Common/ApiHelper.php"/>
+  <docblock>
+    <description compact="Class ApiHelper"/>
+    <package value="App\Containers\Common"/>
+  </docblock>
+  <method name="find_zone" start="51" end="61" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to get distance matrix response"/>
+      <param variable="$olat" type="object">
+        <type full="App\Containers\Common\double" namespace="App\Containers\Common" name="double"/>
+      </param>
+      <param variable="$olng" type="object">
+        <type full="App\Containers\Common\double" namespace="App\Containers\Common" name="double"/>
+      </param>
+      <param variable="$dlat" type="object">
+        <type full="App\Containers\Common\double" namespace="App\Containers\Common" name="double"/>
+      </param>
+      <param variable="$dlng" type="object">
+        <type full="App\Containers\Common\double" namespace="App\Containers\Common" name="double"/>
+      </param>
+    </docblock>
+    <parameter name="lat" byreference="false" type="{unknown}"/>
+    <parameter name="lng" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_distance_matrix" start="64" end="75" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="olat" byreference="false" type="{unknown}"/>
+    <parameter name="olng" byreference="false" type="{unknown}"/>
+    <parameter name="dlat" byreference="false" type="{unknown}"/>
+    <parameter name="dlng" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="buttonColor" start="78" end="98" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="buttonName" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="CurrencyGet" start="101" end="117" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="currency_code" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="insertImagePath" start="120" end="137" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <parameter name="imageName" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="renaming image" line="126"/>
+    </inline>
+  </method>
+  <method name="passwordCheck" start="140" end="154" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="plainText" byreference="false" type="{unknown}"/>
+    <parameter name="hashedPassword" byreference="false" type="{unknown}"/>
+    <parameter name="message" byreference="false" type="string" default="'601'"/>
+  </method>
+  <method name="send_push" start="157" end="182" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="message" byreference="false" type="{unknown}"/>
+    <parameter name="title" byreference="false" type="{unknown}"/>
+    <parameter name="device_token" byreference="false" type="{unknown}"/>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <parameter name="user_type" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="php_to_node" start="185" end="190" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="variableName" byreference="false" type="{unknown}"/>
+    <parameter name="values" byreference="false" type="{unknown}"/>
+    <parameter name="portNumber" byreference="false" type="integer" default="3002"/>
+  </method>
+  <method name="php_to_node_structure" start="192" end="201" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+    <parameter name="event" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="return json_encode($structure);" line="200"/>
+    </inline>
+  </method>
+  <method name="Constant_email_data" start="203" end="217" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="email" start="219" end="271" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="lang" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="sms" start="273" end="317" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="sms_value_reterive" start="319" end="338" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="title" byreference="false" type="{unknown}"/>
+    <parameter name="lang" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="api_user_language" start="340" end="367" abstract="false" final="false" static="true" visibility="public">
+    <inline>
+      <comment value="if(request()-&gt;has()-&gt;header('content-language'))" line="345"/>
+      <comment value="{" line="346"/>
+      <comment value="$lang = request()-&gt;header('content-language');" line="347"/>
+      <comment value="}" line="348"/>
+    </inline>
+  </method>
+  <method name="user_email_number" start="368" end="372" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="driver_email_number" start="373" end="378" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="request_user_driver" start="379" end="393" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="user_compliant" start="395" end="409" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="driver_compliant" start="410" end="424" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="brainTree" start="426" end="464" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="toAccId" byreference="false" type="{unknown}"/>
+    <parameter name="amount" byreference="false" type="{unknown}"/>
+    <parameter name="service_fee_amount" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="('sandbox');" line="428"/>
+      <comment value="('dzyrm5nc7h9jr3nr');" line="429"/>
+      <comment value="('3cxryqwyg9cyq7mq');" line="430"/>
+      <comment value="('ece77cd5774720d9e1b5d758c779af3b');" line="431"/>
+    </inline>
+  </method>
+  <method name="dates" start="468" end="500" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="current month" line="490"/>
+    </inline>
+  </method>
+  <method name="SortDate" start="502" end="630" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="report" byreference="false" type="{unknown}"/>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="$request-&gt;date_option = 'current_year';" line="511"/>
+    </inline>
+  </method>
+  <method name="basicFilter" start="632" end="665" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="report" byreference="false" type="{unknown}"/>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="reterive_key" start="666" end="682" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="to_admin_key" start="684" end="689" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="tableName" byreference="false" type="{unknown}"/>
+    <parameter name="column" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_area_name" start="693" end="706" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="put_area_name" start="708" end="743" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="putAreaName" start="746" end="776" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="get_header_area_name" start="778" end="793" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="put_header_area_name" start="795" end="821" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="set_language" start="823" end="850" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="lang" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="get_language" start="852" end="859" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="convert_to_currency" start="862" end="882" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="kilometer_to_miles" start="884" end="887" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="km" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="miles_to_km" start="889" end="892" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="miles" byreference="false" type="{unknown}"/>
+  </method>
+</class>

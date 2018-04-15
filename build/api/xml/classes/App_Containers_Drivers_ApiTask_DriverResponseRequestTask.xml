@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\ApiTask\DriverResponseRequestTask" namespace="App\Containers\Drivers\ApiTask" name="DriverResponseRequestTask" abstract="false" final="false" start="24" end="343">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/ApiTask" file="DriverResponseRequestTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/ApiTask/DriverResponseRequestTask.php" size="13105" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e6c2e34336a3a4bf2325f301603575fb0f7dcd47" relative="Drivers/ApiTask/DriverResponseRequestTask.php"/>
+  <docblock>
+    <description compact="Class DriverResponseRequestTask"/>
+    <package value="App\Containers\Drivers\ApiTask"/>
+  </docblock>
+  <member name="request" visibility="private" static="false" line="27"/>
+  <method name="run" start="34" end="120" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="requestAcceptSms" start="122" end="170" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="details" byreference="false" type="{unknown}"/>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="changeToNextPerson" start="171" end="219" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="saveCancelMessage" start="221" end="228" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="deleteSingleMeta" start="231" end="234" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="SaveDriver" start="237" end="247" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="GetRequestDetail" start="252" end="262" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="deleteMeta" start="264" end="267" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setResponse" start="269" end="299" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setPushResponse" start="301" end="335" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="driver" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="availableUpdate" start="337" end="341" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+</class>

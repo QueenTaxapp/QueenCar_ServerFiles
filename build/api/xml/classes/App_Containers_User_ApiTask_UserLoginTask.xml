@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\ApiTask\UserLoginTask" namespace="App\Containers\User\ApiTask" name="UserLoginTask" abstract="false" final="false" start="11" end="94">
+  <file path="/var/www/html/queencar/app/Containers/User/ApiTask" file="UserLoginTask.php" realpath="/var/www/html/queencar/app/Containers/User/ApiTask/UserLoginTask.php" size="2156" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="1bfa6b90be2c5e899f605179b7e832953c1635cc" relative="User/ApiTask/UserLoginTask.php"/>
+  <method name="run" start="14" end="93" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="common tasks" line="46"/>
+      <comment value="$sos = SosModel::select('id','name','number')-&gt;get();" line="79"/>
+    </inline>
+  </method>
+</class>

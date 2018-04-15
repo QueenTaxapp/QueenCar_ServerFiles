@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Webtasks\AdminProfileUpdateTask" namespace="App\Containers\Admin\Webtasks" name="AdminProfileUpdateTask" abstract="false" final="false" start="20" end="102">
+  <file path="/var/www/html/queencar/app/Containers/Admin/Webtasks" file="AdminProfileUpdateTask.php" realpath="/var/www/html/queencar/app/Containers/Admin/Webtasks/AdminProfileUpdateTask.php" size="3419" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="4acb9aaaee841e8b3e9a5ee11362c86f015fd51a" relative="Admin/Webtasks/AdminProfileUpdateTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="27" end="100" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

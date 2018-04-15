@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\WEB\Controllers\Controller" namespace="App\Containers\User\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="42" end="327">
+  <file path="/var/www/html/queencar/app/Containers/User/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/User/UI/WEB/Controllers/Controller.php" size="9725" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="729f58ac46ba3eacc57472373bb6bfae64018cae" relative="User/UI/WEB/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="viewUser" start="45" end="87" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="createUser" start="96" end="111" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="createuser"/>
+      <param type="object" variable="$request"/>
+      <return description="User::AddUser" type="object">
+        <type full="App\Containers\User\UI\WEB\Controllers\view" namespace="App\Containers\User\UI\WEB\Controllers" name="view"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="saveUser" start="118" end="200" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="saveUser"/>
+      <param type="object" variable="$request"/>
+      <return type="object">
+        <type full="App\Containers\User\UI\WEB\Controllers\viewUser" namespace="App\Containers\User\UI\WEB\Controllers" name="viewUser"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\User\UI\WEB\Requests\UserAddRequest" namespace="App\Containers\User\UI\WEB\Requests" name="UserAddRequest"/>
+    </parameter>
+    <inline>
+      <comment value="refferal Code" line="134"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="*" line="135"/>
+      <comment value="language_change" line="176"/>
+      <comment value="language_change" line="185"/>
+    </inline>
+  </method>
+  <method name="editUser" start="202" end="215" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="updateUser" start="217" end="248" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\User\UI\WEB\Requests\UserAddRequest" namespace="App\Containers\User\UI\WEB\Requests" name="UserAddRequest"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="219"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($user);die();" line="244"/>
+    </inline>
+  </method>
+  <method name="deleteUser" start="250" end="260" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="activeUser" start="263" end="287" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r( $promo-&gt;state);die();" line="282"/>
+    </inline>
+  </method>
+  <method name="walletUser" start="290" end="306" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r( $request-" line="292"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r( $promo-&gt;state);die();" line="302"/>
+    </inline>
+  </method>
+  <method name="walletSpentUser" start="308" end="324" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r( $request-" line="310"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r( $promo-&gt;state);die();" line="320"/>
+    </inline>
+  </method>
+</class>

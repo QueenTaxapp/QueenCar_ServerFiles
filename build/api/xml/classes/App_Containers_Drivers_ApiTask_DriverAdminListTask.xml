@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\ApiTask\DriverAdminListTask" namespace="App\Containers\Drivers\ApiTask" name="DriverAdminListTask" abstract="false" final="false" start="12" end="45">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/ApiTask" file="DriverAdminListTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/ApiTask/DriverAdminListTask.php" size="1253" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="76fa83df4401c3435a20a90841eb5b4bcb4f9463" relative="Drivers/ApiTask/DriverAdminListTask.php"/>
+  <method name="run" start="15" end="42" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="print_r($admins);die();" line="24"/>
+      <comment value="if(count($request) == 0)" line="25"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="26"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="throw(new CommonException())-&gt;setValue(&quot;803&quot;, trans('localization::errors.803'));" line="27"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="28"/>
+      <comment value="$structure = Configs_Class::helper()-&gt;php_to_node_structure($request-&gt;user_id,'user',$message,'trip_status');" line="29"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Configs_Class::helper()-&gt;php_to_node('transfer_msg',$structure);" line="30"/>
+    </inline>
+  </method>
+</class>

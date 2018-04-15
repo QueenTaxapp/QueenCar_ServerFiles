@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\UI\API\Transformers\ApiDispatchSetDriverTransformer" namespace="App\Containers\Dispatch\UI\API\Transformers" name="ApiDispatchSetDriverTransformer" abstract="false" final="false" start="12" end="31">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Transformers" file="ApiDispatchSetDriverTransformer.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Transformers/ApiDispatchSetDriverTransformer.php" size="546" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="d081d129fbe8bb1b1336284fd945d4922266b726" relative="Dispatch/UI/API/Transformers/ApiDispatchSetDriverTransformer.php"/>
+  <docblock>
+    <description compact="Class ApiDispatchSetDriverTransformer"/>
+    <package value="App\Containers\Dispatch\UI\API\Transformers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="18" end="28" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$request"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Request\Models\RequestModel" namespace="App\Containers\Request\Models" name="RequestModel" abstract="false" final="false" start="14" end="18">
+  <file path="/var/www/html/queencar/app/Containers/Request/Models" file="RequestModel.php" realpath="/var/www/html/queencar/app/Containers/Request/Models/RequestModel.php" size="271" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="72dffb4a1afc858d736afded42ade3a3bcb65767" relative="Request/Models/RequestModel.php"/>
+  <docblock>
+    <description compact="Class RequestModel"/>
+    <package value="App\Containers\Request\Models"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\Model" namespace="App\Ship\Parents\Models" name="Model" unresolved="true"/>
+  <member name="table" default="'request'" type="string" visibility="protected" static="false" line="17"/>
+</class>

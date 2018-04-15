@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\UI\API\Requests\DispatchRideLaterRequest" namespace="App\Containers\Dispatch\UI\API\Requests" name="DispatchRideLaterRequest" abstract="false" final="false" start="14" end="69">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Requests" file="DispatchRideLaterRequest.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Requests/DispatchRideLaterRequest.php" size="1607" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="5fa335e2ec2a2742c822b0cb8f3b0863b984326c" relative="Dispatch/UI/API/Requests/DispatchRideLaterRequest.php"/>
+  <docblock>
+    <description/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="20" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="55" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\Dispatch\UI\API\Requests\bool" namespace="App\Containers\Dispatch\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="messages" start="60" end="67" abstract="false" final="false" static="false" visibility="public"/>
+</class>

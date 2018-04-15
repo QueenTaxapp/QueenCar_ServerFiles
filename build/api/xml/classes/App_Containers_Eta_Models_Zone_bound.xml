@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Eta\Models\Zone_bound" namespace="App\Containers\Eta\Models" name="Zone_bound" abstract="false" final="false" start="12" end="20">
+  <file path="/var/www/html/queencar/app/Containers/Eta/Models" file="Zone_bound.php" realpath="/var/www/html/queencar/app/Containers/Eta/Models/Zone_bound.php" size="313" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e83cf015ae18312cc35416122da7a8fb214dcfa9" relative="Eta/Models/Zone_bound.php"/>
+  <docblock>
+    <description compact="Class Zone_bound"/>
+    <package value="App\Containers\Eta\Models"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="table" default="'zone_bound'" type="string" visibility="protected" static="false" line="19">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+</class>

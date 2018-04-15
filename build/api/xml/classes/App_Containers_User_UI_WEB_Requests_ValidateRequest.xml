@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\WEB\Requests\ValidateRequest" namespace="App\Containers\User\UI\WEB\Requests" name="ValidateRequest" abstract="false" final="false" start="9" end="30">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/WEB/Requests" file="ValidateRequest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/WEB/Requests/ValidateRequest.php" size="825" time="2017-10-05T08:16:28+02:00" unixtime="1507184188" sha1="adefafa55c86bd85bd6eb0eefa7df976339ba300" relative="User/UI/WEB/Requests/ValidateRequest.php"/>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="12" end="24" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="26" end="29" abstract="false" final="false" static="false" visibility="public"/>
+</class>

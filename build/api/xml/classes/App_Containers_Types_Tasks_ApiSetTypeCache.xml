@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Types\Tasks\ApiSetTypeCache" namespace="App\Containers\Types\Tasks" name="ApiSetTypeCache" abstract="false" final="false" start="9" end="27">
+  <file path="/var/www/html/queencar/app/Containers/Types/Tasks" file="ApiSetTypeCache.php" realpath="/var/www/html/queencar/app/Containers/Types/Tasks/ApiSetTypeCache.php" size="484" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="5b5b9e148269cdf794d5c37e224bf2dc41c9b1bb" relative="Types/Tasks/ApiSetTypeCache.php"/>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="19" end="26" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Format data in cache"/>
+      <param type="object" variable="$type">
+        <type full="App\Containers\Types\Tasks\Object" namespace="App\Containers\Types\Tasks" name="Object"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+  </method>
+</class>

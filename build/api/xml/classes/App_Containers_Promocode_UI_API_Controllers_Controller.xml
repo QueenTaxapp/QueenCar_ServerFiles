@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Promocode\UI\API\Controllers\Controller" namespace="App\Containers\Promocode\UI\API\Controllers" name="Controller" abstract="false" final="false" start="34" end="203">
+  <file path="/var/www/html/queencar/app/Containers/Promocode/UI/API/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Promocode/UI/API/Controllers/Controller.php" size="5493" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="9a2d4f09c428c8a1f07d9206a988a663f234408f" relative="Promocode/UI/API/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <package value="App\Containers\User\UI\API\Controllers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\ApiController" namespace="App\Ship\Parents\Controllers" name="ApiController" unresolved="true"/>
+  <method name="run" start="39" end="43" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="SendTempKey" start="51" end="60" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="SendOtpTemp" start="67" end="87" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\User\UI\API\Requests\ValidateMobile" namespace="App\Containers\User\UI\API\Requests" name="ValidateMobile"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\User\UI\API\Requests\ValidateMobile" namespace="App\Containers\User\UI\API\Requests" name="ValidateMobile"/>
+    </parameter>
+  </method>
+  <method name="userLogin" start="94" end="101" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\User\UI\API\Requests\ApiLoginRequest" namespace="App\Containers\User\UI\API\Requests" name="ApiLoginRequest"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\User\UI\API\Requests\ApiLoginRequest" namespace="App\Containers\User\UI\API\Requests" name="ApiLoginRequest"/>
+    </parameter>
+  </method>
+  <method name="userSignup" start="108" end="115" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\User\UI\API\Requests\ApiSignupRequest" namespace="App\Containers\User\UI\API\Requests" name="ApiSignupRequest"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\User\UI\API\Requests\ApiSignupRequest" namespace="App\Containers\User\UI\API\Requests" name="ApiSignupRequest"/>
+    </parameter>
+  </method>
+  <method name="userOtpValidate" start="122" end="131" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="userSocialCheck" start="138" end="145" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\User\UI\API\Requests\ApiSocialUniqueIdRequest" namespace="App\Containers\User\UI\API\Requests" name="ApiSocialUniqueIdRequest"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\User\UI\API\Requests\ApiSocialUniqueIdRequest" namespace="App\Containers\User\UI\API\Requests" name="ApiSocialUniqueIdRequest"/>
+    </parameter>
+  </method>
+  <method name="userResendOtp" start="152" end="159" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="forgotPassword" start="166" end="173" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\User\UI\API\Requests\ValidateMobile" namespace="App\Containers\User\UI\API\Requests" name="ValidateMobile"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\User\UI\API\Requests\ValidateMobile" namespace="App\Containers\User\UI\API\Requests" name="ValidateMobile"/>
+    </parameter>
+  </method>
+  <method name="Logout" start="180" end="188" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="RefreshToken" start="195" end="201" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

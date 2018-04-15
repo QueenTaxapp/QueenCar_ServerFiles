@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Payment\ApiTask\client_token" namespace="App\Containers\Payment\ApiTask" name="client_token" abstract="false" final="false" start="20" end="43">
+  <file path="/var/www/html/queencar/app/Containers/Payment/ApiTask" file="client_token.php" realpath="/var/www/html/queencar/app/Containers/Payment/ApiTask/client_token.php" size="1115" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="da6c417e89f601e2833c4dc7c6aec797e6a42e83" relative="Payment/ApiTask/client_token.php"/>
+  <docblock>
+    <description compact="Class CheckCode"/>
+    <package value="App\Containers\Referral\ApiTask"/>
+  </docblock>
+  <method name="run" start="27" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Stripe\Exceptions\StripeAccountNotFoundException" namespace="App\Containers\Stripe\Exceptions" name="StripeAccountNotFoundException" abstract="false" final="false" start="13" end="18">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Exceptions" file="StripeAccountNotFoundException.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Exceptions/StripeAccountNotFoundException.php" size="439" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="9851e028932e0aebd182d16c50a2637ce8815efa" relative="Stripe/Exceptions/StripeAccountNotFoundException.php"/>
+  <docblock>
+    <description compact="Class StripeAccountNotFoundException."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Exceptions\Exception" namespace="App\Ship\Parents\Exceptions" name="Exception" unresolved="true"/>
+  <member name="httpStatusCode" default="" type="{unknown}" constant="SymfonyResponse::HTTP_EXPECTATION_FAILED" visibility="public" static="false" line="15"/>
+  <member name="message" default="'Stripe Account not found.'" type="string" visibility="public" static="false" line="17"/>
+</class>

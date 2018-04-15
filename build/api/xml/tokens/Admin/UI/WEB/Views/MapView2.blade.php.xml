@@ -1,0 +1,1079 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Admin/UI/WEB/Views" file="MapView2.blade.php" realpath="/var/www/html/queencar/app/Containers/Admin/UI/WEB/Views/MapView2.blade.php" size="9328" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="156474c417fc08db99822c8eb9039b068021f6f7" relative="Admin/UI/WEB/Views/MapView2.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layout::Layout')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="5">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$path</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_STRING">asset</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/admin/map/view'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">//print_r($path);</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$lat</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'App\Containers\Common\GetConfigs'</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">getconfigs</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'latitude'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="10">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$longt</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'App\Containers\Common\GetConfigs'</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">getconfigs</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'longitude'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="11">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$apk</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'App\Containers\Common\GetConfigs'</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">getconfigs</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'google_browser_key'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="12">
+    <token name="T_WHITESPACE">     </token>
+    <token name="T_COMMENT">//echo "&lt;pre&gt;";print_r($value[0]-&gt;firstname);die();</token>
+  </line>
+  <line no="13">
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_COMMENT">// print_r('AIzaSyAgkO8chMIq3JSKLXwTTRuP7ByhkL3Wzxk');echo "&lt;pre&gt;";</token>
+  </line>
+  <line no="14">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">//print_r($apk);echo "&lt;pre&gt;";die();</token>
+  </line>
+  <line no="15">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">    &lt;style&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">      /* Always set the map height explicitly to define the size of the div</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">       * element that contains the map. */</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">      #map {</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">        height: 100%;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">      /* Optional: Makes the sample page fill the window. */</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">      html, body {</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">        height: 100%;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">        margin: 0;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">        padding: 0;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">      #description {</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">        font-family: Roboto;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">        font-size: 15px;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">        font-weight: 300;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_INLINE_HTML">      #infowindow-content .title {</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">        font-weight: bold;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">      #infowindow-content {</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">        display: none;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="42"/>
+  <line no="43">
+    <token name="T_INLINE_HTML">      #map #infowindow-content {</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">        display: inline;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="46"/>
+  <line no="47">
+    <token name="T_INLINE_HTML">      .pac-card {</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">        margin: 10px 10px 0 0;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">        border-radius: 2px 0 0 2px;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">        box-sizing: border-box;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">        -moz-box-sizing: border-box;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">        outline: none;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">        background-color: #0e0503;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">        font-family: Roboto;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_INLINE_HTML">      #pac-container {</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">        padding-bottom: 12px;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">        margin-right: 12px;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="62"/>
+  <line no="63">
+    <token name="T_INLINE_HTML">      .pac-controls {</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">        display: inline-block;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">        padding: 5px 11px;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="67"/>
+  <line no="68">
+    <token name="T_INLINE_HTML">      .pac-controls label {</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">        font-family: Roboto;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">        font-size: 13px;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">        font-weight: 300;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="73"/>
+  <line no="74">
+    <token name="T_INLINE_HTML">      #pac-input {</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">        background-color: #ffffff;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">        color: #0e0503;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">        font-family: Roboto;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">        font-size: 15px;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">        font-weight: 300;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">        margin-left: 12px;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">        padding: 0 11px 0 13px;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">        /*text-overflow: ellipsis;*/</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">        width: 95%;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="85"/>
+  <line no="86"/>
+  <line no="87">
+    <token name="T_INLINE_HTML">      #pac-input:focus {</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">        border-color: #4d90fe;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="90"/>
+  <line no="91">
+    <token name="T_INLINE_HTML">      #title {</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">        color: ;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">        background-color: #4d90fe;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">        font-size: 25px;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">        font-weight: 500;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">        padding: 6px 12px;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">      #target {</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">        width: 345px;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="101"/>
+  <line no="102"/>
+  <line no="103">
+    <token name="T_INLINE_HTML">:-webkit-input-placeholder { /* WebKit, Blink, Edge */</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">    color:    #909;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">:-moz-placeholder { /* Mozilla Firefox 4 to 18 */</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">   color:    #909;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">   opacity:  1;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">::-moz-placeholder { /* Mozilla Firefox 19+ */</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">   color:    #909;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">   opacity:  1;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">:-ms-input-placeholder { /* Internet Explorer 10-11 */</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">   color:    #909;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">::-ms-input-placeholder { /* Microsoft Edge */</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">   color:    #909;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="121"/>
+  <line no="122">
+    <token name="T_INLINE_HTML">       &lt;section id="content"&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">            &lt;!--start container--&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">            &lt;div class="container"&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                &lt;!--card stats start--&gt;</token>
+  </line>
+  <line no="126"/>
+  <line no="127">
+    <token name="T_INLINE_HTML">                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="128"/>
+  <line no="129">
+    <token name="T_INLINE_HTML">                        &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="130"/>
+  <line no="131">
+    <token name="T_INLINE_HTML">                            &lt;div id="bordered-table"&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                            &lt;!--&lt;h4 class="header"&gt;title&lt;/h4&gt;&lt;br&gt;--&gt;</token>
+  </line>
+  <line no="133"/>
+  <line no="134">
+    <token name="T_INLINE_HTML">           </token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">&lt;div class="col s12 m8 l12"&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">	&lt;h4 class="header"&gt;{{ $title}}&lt;/h4&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                                              &lt;!--&lt;input id="pac-input"  type="text" &gt;--&gt;</token>
+  </line>
+  <line no="138"/>
+  <line no="139">
+    <token name="T_INLINE_HTML">                    &lt;input id="pac-input" class="controls" type="text" placeholder="{{trans('localization::lang_view.search')}}"&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                    &lt;label for="pac-input"&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">                  </token>
+  </line>
+  <line no="142"/>
+  <line no="143">
+    <token name="T_INLINE_HTML">		&lt;div id="profile-card" &gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">      &lt;div class="card-image waves-effect waves-block waves-light"&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">          &lt;div id="map" style="position: relative;width: 100%;height:100%;"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">      &lt;/div&gt; </token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">&lt;/div&gt;                    </token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="152"/>
+  <line no="153"/>
+  <line no="154">
+    <token name="T_INLINE_HTML">                &lt;!--end container--&gt;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="156">
+    <token name="T_INLINE_HTML">        &lt;/section&gt;</token>
+  </line>
+  <line no="157">
+    <token name="T_INLINE_HTML">     &lt;script&gt;</token>
+  </line>
+  <line no="158"/>
+  <line no="159">
+    <token name="T_INLINE_HTML">      var i = 0;</token>
+  </line>
+  <line no="160"/>
+  <line no="161">
+    <token name="T_INLINE_HTML">   </token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">      function initAutocomplete() </token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">      {</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">        if(i == 0)</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">        {</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">          var map = new google.maps.Map(document.getElementById('map'), </token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">          {</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">          center: {lat: {{ $lat }}, lng: {{ $longt }} },</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">          zoom: 3,</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">          mapTypeId: 'roadmap'</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">          });</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">        else</token>
+  </line>
+  <line no="174">
+    <token name="T_INLINE_HTML">        {</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">          alert('working');</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">          var map = window.map2;</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="178"/>
+  <line no="179">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="180"/>
+  <line no="181">
+    <token name="T_INLINE_HTML">          </token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">        // Create the search box and link it to the UI element.</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">        var input = document.getElementById('pac-input');</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">        var searchBox = new google.maps.places.SearchBox(input);</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">       // map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);</token>
+  </line>
+  <line no="186"/>
+  <line no="187">
+    <token name="T_INLINE_HTML">        // Bias the SearchBox results towards current map's viewport.</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">        map.addListener('bounds_changed', function() {</token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">          searchBox.setBounds(map.getBounds());</token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">     </token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">        </token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML">         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';</token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">        var driverIcon = 'http://localhost/map/driver-70.png';</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">        </token>
+  </line>
+  <line no="196">
+    <token name="T_INLINE_HTML">        var driverOnTrip = 'http://localhost/map/driver_on_trip.png';</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">        var icons = {</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">          1: {</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">            icon: driverIcon </token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">          },</token>
+  </line>
+  <line no="201">
+    <token name="T_INLINE_HTML">          library: {</token>
+  </line>
+  <line no="202">
+    <token name="T_INLINE_HTML">            icon: iconBase + 'library_maps.png'</token>
+  </line>
+  <line no="203">
+    <token name="T_INLINE_HTML">          },</token>
+  </line>
+  <line no="204">
+    <token name="T_INLINE_HTML">          0: {</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">            icon: driverOnTrip</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">          }</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">        };</token>
+  </line>
+  <line no="208"/>
+  <line no="209"/>
+  <line no="210">
+    <token name="T_INLINE_HTML">        var markers = [];</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">        // Listen for the event fired when the user selects a prediction and retrieve</token>
+  </line>
+  <line no="212">
+    <token name="T_INLINE_HTML">        // more details for that place.</token>
+  </line>
+  <line no="213">
+    <token name="T_INLINE_HTML">        searchBox.addListener('places_changed', function() {</token>
+  </line>
+  <line no="214">
+    <token name="T_INLINE_HTML">          var places = searchBox.getPlaces();</token>
+  </line>
+  <line no="215"/>
+  <line no="216">
+    <token name="T_INLINE_HTML">          if (places.length == 0) {</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">            return;</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">          }</token>
+  </line>
+  <line no="219"/>
+  <line no="220">
+    <token name="T_INLINE_HTML">          // Clear out the old markers.</token>
+  </line>
+  <line no="221">
+    <token name="T_INLINE_HTML">          markers.forEach(function(marker) {</token>
+  </line>
+  <line no="222">
+    <token name="T_INLINE_HTML">            marker.setMap(null);</token>
+  </line>
+  <line no="223">
+    <token name="T_INLINE_HTML">          });</token>
+  </line>
+  <line no="224">
+    <token name="T_INLINE_HTML">          markers = [];</token>
+  </line>
+  <line no="225">
+    <token name="T_INLINE_HTML">          </token>
+  </line>
+  <line no="226"/>
+  <line no="227"/>
+  <line no="228">
+    <token name="T_INLINE_HTML">          // For each place, get the icon, name and location.</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">          var bounds = new google.maps.LatLngBounds();</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">          places.forEach(function(place) {</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">            if (!place.geometry) {</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">              // console.log("Returned place contains no geometry");</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">              return;</token>
+  </line>
+  <line no="234">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="235">
+    <token name="T_INLINE_HTML">            var icon = {</token>
+  </line>
+  <line no="236">
+    <token name="T_INLINE_HTML">              url: place.icon,</token>
+  </line>
+  <line no="237">
+    <token name="T_INLINE_HTML">              size: new google.maps.Size(71, 71),</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">              origin: new google.maps.Point(0, 0),</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">              anchor: new google.maps.Point(17, 34),</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">              scaledSize: new google.maps.Size(25, 25)</token>
+  </line>
+  <line no="241">
+    <token name="T_INLINE_HTML">            };</token>
+  </line>
+  <line no="242"/>
+  <line no="243">
+    <token name="T_INLINE_HTML">            // Create a marker for each place.</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">            markers.push(new google.maps.Marker({</token>
+  </line>
+  <line no="245">
+    <token name="T_INLINE_HTML">             // map: map,</token>
+  </line>
+  <line no="246">
+    <token name="T_INLINE_HTML">              icon: icon,</token>
+  </line>
+  <line no="247">
+    <token name="T_INLINE_HTML">              title: place.name,</token>
+  </line>
+  <line no="248">
+    <token name="T_INLINE_HTML">              position: place.geometry.location</token>
+  </line>
+  <line no="249">
+    <token name="T_INLINE_HTML">            }));</token>
+  </line>
+  <line no="250"/>
+  <line no="251">
+    <token name="T_INLINE_HTML">            if (place.geometry.viewport) {</token>
+  </line>
+  <line no="252">
+    <token name="T_INLINE_HTML">              // Only geocodes have viewport.</token>
+  </line>
+  <line no="253">
+    <token name="T_INLINE_HTML">              bounds.union(place.geometry.viewport);</token>
+  </line>
+  <line no="254">
+    <token name="T_INLINE_HTML">            } else {</token>
+  </line>
+  <line no="255">
+    <token name="T_INLINE_HTML">              bounds.extend(place.geometry.location);</token>
+  </line>
+  <line no="256">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="257">
+    <token name="T_INLINE_HTML">          });</token>
+  </line>
+  <line no="258">
+    <token name="T_INLINE_HTML">          map.fitBounds(bounds);</token>
+  </line>
+  <line no="259">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="260"/>
+  <line no="261">
+    <token name="T_INLINE_HTML">        if(i == 0)</token>
+  </line>
+  <line no="262">
+    <token name="T_INLINE_HTML">        {</token>
+  </line>
+  <line no="263">
+    <token name="T_INLINE_HTML">          var features = [];</token>
+  </line>
+  <line no="264">
+    <token name="T_INLINE_HTML">          </token>
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="265"/>
+  <line no="266">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$val</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="267">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="268">
+    <token name="T_WHITESPACE">              </token>
+  </line>
+  <line no="269">
+    <token name="T_WHITESPACE">          </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">                                                                                                                                          </token>
+  </line>
+  <line no="270">
+    <token name="T_INLINE_HTML">              var person = {lat:</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$val</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">latitude</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML"> , longt:</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$val</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">longitude</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">, type:</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$val</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">is_available</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML"> };</token>
+  </line>
+  <line no="271">
+    <token name="T_INLINE_HTML">              //var person = {lat:</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$val</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">latitude</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML"> , longt:</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$val</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">longitude</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">, type:'info'};</token>
+  </line>
+  <line no="272">
+    <token name="T_INLINE_HTML">              </token>
+  </line>
+  <line no="273">
+    <token name="T_INLINE_HTML">              features.push(person);</token>
+  </line>
+  <line no="274">
+    <token name="T_INLINE_HTML">          </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_WHITESPACE">  </token>
+  </line>
+  <line no="275">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="276">
+    <token name="T_WHITESPACE">          </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="277">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="278">
+    <token name="T_INLINE_HTML">        else</token>
+  </line>
+  <line no="279">
+    <token name="T_INLINE_HTML">        {</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">          var features = [];</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">           window.fea.forEach(function(fea) </token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">           {</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">            </token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">            var person = {lat: fea.latitude, longt:fea.longitude, type:fea.is_available };</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">            features.push(person);</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">           });</token>
+  </line>
+  <line no="287">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="288"/>
+  <line no="289">
+    <token name="T_INLINE_HTML">        console.log(features);</token>
+  </line>
+  <line no="290"/>
+  <line no="291">
+    <token name="T_INLINE_HTML">        features.forEach(function(feature) {</token>
+  </line>
+  <line no="292">
+    <token name="T_INLINE_HTML">            </token>
+  </line>
+  <line no="293">
+    <token name="T_INLINE_HTML">            // alert(feature.name);</token>
+  </line>
+  <line no="294">
+    <token name="T_INLINE_HTML">          var marker = new google.maps.Marker({</token>
+  </line>
+  <line no="295">
+    <token name="T_INLINE_HTML">            position: new google.maps.LatLng(feature.lat, feature.longt),</token>
+  </line>
+  <line no="296">
+    <token name="T_INLINE_HTML">            icon: icons[feature.type].icon,</token>
+  </line>
+  <line no="297">
+    <token name="T_INLINE_HTML">            map: map</token>
+  </line>
+  <line no="298">
+    <token name="T_INLINE_HTML">            </token>
+  </line>
+  <line no="299">
+    <token name="T_INLINE_HTML">          });</token>
+  </line>
+  <line no="300"/>
+  <line no="301">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="302">
+    <token name="T_INLINE_HTML">        </token>
+  </line>
+  <line no="303">
+    <token name="T_INLINE_HTML">      i = i+1;</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">      window.map2 =  map;</token>
+  </line>
+  <line no="305"/>
+  <line no="306">
+    <token name="T_INLINE_HTML">      </token>
+  </line>
+  <line no="307">
+    <token name="T_INLINE_HTML">      }</token>
+  </line>
+  <line no="308"/>
+  <line no="309">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="310">
+    <token name="T_INLINE_HTML">    &lt;script src="https://maps.googleapis.com/maps/api/js?key={{ $apk }}&amp;libraries=places&amp;callback=initAutocomplete"</token>
+  </line>
+  <line no="311">
+    <token name="T_INLINE_HTML">         async defer&gt;</token>
+  </line>
+  <line no="312">
+    <token name="T_INLINE_HTML">    &lt;/script&gt; </token>
+  </line>
+  <line no="313">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="314">
+    <token name="T_INLINE_HTML">  </token>
+  </line>
+  <line no="315"/>
+  <line no="316"/>
+  <line no="317">
+    <token name="T_INLINE_HTML">    setInterval(function() </token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">    {</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">    // 10 sec</token>
+  </line>
+  <line no="320">
+    <token name="T_INLINE_HTML">      var ajaxPath = 'http://localhost/tapgo/public/admin/map/ajax';</token>
+  </line>
+  <line no="321">
+    <token name="T_INLINE_HTML">      //alert (ajaxPath);</token>
+  </line>
+  <line no="322">
+    <token name="T_INLINE_HTML">    $.ajax({</token>
+  </line>
+  <line no="323">
+    <token name="T_INLINE_HTML">    method: 'Get', // Type of response and matches what we said in the route</token>
+  </line>
+  <line no="324">
+    <token name="T_INLINE_HTML">    url:ajaxPath , // This is the url we gave in the route</token>
+  </line>
+  <line no="325">
+    <token name="T_INLINE_HTML">    // a JSON object to send back</token>
+  </line>
+  <line no="326">
+    <token name="T_INLINE_HTML">    success: function(response)</token>
+  </line>
+  <line no="327">
+    <token name="T_INLINE_HTML">    { // What to do if we succeed</token>
+  </line>
+  <line no="328"/>
+  <line no="329">
+    <token name="T_INLINE_HTML">    //console.log('response');</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">    //console.log(response);</token>
+  </line>
+  <line no="331">
+    <token name="T_INLINE_HTML">      window.fea = response;</token>
+  </line>
+  <line no="332">
+    <token name="T_INLINE_HTML">      document.cookie = "myJavascriptVar = " + response ;</token>
+  </line>
+  <line no="333">
+    <token name="T_INLINE_HTML">     // console.log('cookie');</token>
+  </line>
+  <line no="334">
+    <token name="T_INLINE_HTML">     // console.log(document.cookie);</token>
+  </line>
+  <line no="335">
+    <token name="T_INLINE_HTML">    },</token>
+  </line>
+  <line no="336">
+    <token name="T_INLINE_HTML">    error: function(jqXHR, textStatus, errorThrown) {</token>
+  </line>
+  <line no="337">
+    <token name="T_INLINE_HTML">      //alert('error'); // What to do if we fail</token>
+  </line>
+  <line no="338">
+    <token name="T_INLINE_HTML">        //console.log(JSON.stringify(jqXHR));</token>
+  </line>
+  <line no="339">
+    <token name="T_INLINE_HTML">        //console.log("AJAX error: " + textStatus + ' : ' + errorThrown);</token>
+  </line>
+  <line no="340">
+    <token name="T_INLINE_HTML">    }</token>
+  </line>
+  <line no="341">
+    <token name="T_INLINE_HTML">});</token>
+  </line>
+  <line no="342"/>
+  <line no="343">
+    <token name="T_INLINE_HTML">     </token>
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="344">
+    <token name="T_WHITESPACE">     </token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$_COOKIE</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'myJavascriptVar'</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="345"/>
+  <line no="346">
+    <token name="T_WHITESPACE">     </token>
+  </line>
+  <line no="347">
+    <token name="T_WHITESPACE">     </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="348">
+    <token name="T_INLINE_HTML">     initAutocomplete();</token>
+  </line>
+  <line no="349">
+    <token name="T_INLINE_HTML">    }, 10000); </token>
+  </line>
+  <line no="350">
+    <token name="T_INLINE_HTML">   </token>
+  </line>
+  <line no="351">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;       </token>
+  </line>
+  <line no="352">
+    <token name="T_INLINE_HTML">    </token>
+  </line>
+  <line no="353">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+  <line no="354"/>
+  <line no="355"/>
+  <line no="356"/>
+</source>

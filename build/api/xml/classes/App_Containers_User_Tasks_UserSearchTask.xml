@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\UserSearchTask" namespace="App\Containers\User\Tasks" name="UserSearchTask" abstract="false" final="false" start="14" end="40">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="UserSearchTask.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/UserSearchTask.php" size="741" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="fe7648f7c27b35c974218eb1ad4867860a82d6d0" relative="User/Tasks/UserSearchTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="21" end="38" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="object"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

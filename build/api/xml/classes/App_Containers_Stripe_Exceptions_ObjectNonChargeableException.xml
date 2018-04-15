@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Stripe\Exceptions\ObjectNonChargeableException" namespace="App\Containers\Stripe\Exceptions" name="ObjectNonChargeableException" abstract="false" final="false" start="13" end="18">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Exceptions" file="ObjectNonChargeableException.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Exceptions/ObjectNonChargeableException.php" size="428" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="56f53444c16531258c73a2f476828ae13da0368d" relative="Stripe/Exceptions/ObjectNonChargeableException.php"/>
+  <docblock>
+    <description compact="Class ObjectNonChargeableException."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Exceptions\Exception" namespace="App\Ship\Parents\Exceptions" name="Exception" unresolved="true"/>
+  <member name="httpStatusCode" default="" type="{unknown}" constant="SymfonyResponse::HTTP_INTERNAL_SERVER_ERROR" visibility="public" static="false" line="15"/>
+  <member name="message" default="'Internal Error.'" type="string" visibility="public" static="false" line="17"/>
+</class>

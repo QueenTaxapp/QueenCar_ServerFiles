@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User911\UI\WEB\Requests\UserAddRequest" namespace="App\Containers\User911\UI\WEB\Requests" name="UserAddRequest" abstract="false" final="false" start="14" end="37">
+  <file path="/var/www/html/queencar/app/Containers/Email/UI/WEB/Requests" file="UserAddRequest.php" realpath="/var/www/html/queencar/app/Containers/Email/UI/WEB/Requests/UserAddRequest.php" size="849" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="87aec6e67eba5db9009da9709439429691dbeb4a" relative="Email/UI/WEB/Requests/UserAddRequest.php"/>
+  <docblock>
+    <description compact="Class UserAddRequest"/>
+    <package value="App\Containers\User911\UI\WEB\Requests"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="17" end="31" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="33" end="36" abstract="false" final="false" static="false" visibility="public"/>
+</class>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\ApiTask\DriverArrivedTask" namespace="App\Containers\Drivers\ApiTask" name="DriverArrivedTask" abstract="false" final="false" start="15" end="144">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/ApiTask" file="DriverArrivedTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/ApiTask/DriverArrivedTask.php" size="5270" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="3ab8274a0be31fa703400fcb83fedb01cba3b8a9" relative="Drivers/ApiTask/DriverArrivedTask.php"/>
+  <method name="run" start="18" end="88" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="requestFullDetails" start="92" end="111" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="requestId" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="requestFullDetailsStructure" start="113" end="143" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="result" byreference="false" type="{unknown}"/>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+  </method>
+</class>

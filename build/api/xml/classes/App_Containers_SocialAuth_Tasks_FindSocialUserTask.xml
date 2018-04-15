@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\SocialAuth\Tasks\FindSocialUserTask" namespace="App\Containers\SocialAuth\Tasks" name="FindSocialUserTask" abstract="false" final="false" start="14" end="46">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/Tasks" file="FindSocialUserTask.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/Tasks/FindSocialUserTask.php" size="994" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="b6e88cc72427dbefae583d754581d6d7246c6d84" relative="Socialauth/Tasks/FindSocialUserTask.php"/>
+  <docblock>
+    <description compact="Class FindSocialUserTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <member name="userRepository" visibility="private" static="false" line="20">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="\App\Containers\User\Contracts\UserRepositoryInterface" namespace="\App\Containers\User\Contracts" name="UserRepositoryInterface"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="27" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="FindSocialUserTask constructor."/>
+      <param type="object" variable="$userRepository">
+        <type full="\App\Containers\User\Contracts\UserRepositoryInterface" namespace="\App\Containers\User\Contracts" name="UserRepositoryInterface"/>
+      </param>
+    </docblock>
+    <parameter name="userRepository" byreference="false" type="object">
+      <type full="App\Containers\User\Contracts\UserRepositoryInterface" namespace="App\Containers\User\Contracts" name="UserRepositoryInterface"/>
+    </parameter>
+  </constructor>
+  <method name="run" start="38" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$socialProvider"/>
+      <param variable="$socialId"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="socialProvider" byreference="false" type="{unknown}"/>
+    <parameter name="socialId" byreference="false" type="{unknown}"/>
+  </method>
+</class>

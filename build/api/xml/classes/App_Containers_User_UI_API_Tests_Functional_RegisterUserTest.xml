@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Tests\Functional\RegisterUserTest" namespace="App\Containers\User\UI\API\Tests\Functional" name="RegisterUserTest" abstract="false" final="false" start="12" end="173">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional" file="RegisterUserTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional/RegisterUserTest.php" size="4508" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="2e3351c6331919e1c1d7dfc8d9f90a9147eb9b68" relative="User/UI/API/Tests/Functional/RegisterUserTest.php"/>
+  <docblock>
+    <description compact="Class RegisterUserTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\User\Tests\TestCase" namespace="App\Containers\User\Tests" name="TestCase" unresolved="true"/>
+  <member name="endpoint" default="'post@v1/register'" type="string" visibility="protected" static="false" line="15"/>
+  <member name="auth" default="false" type="boolean" visibility="protected" static="false" line="17"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="19"/>
+  <method name="testRegisterNewUserWithCredentials_" start="24" end="49" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="32"/>
+      <comment value="assert response status is correct" line="35"/>
+      <comment value="assert the data is stored in the database" line="47"/>
+    </inline>
+  </method>
+  <method name="testRegisterNewUserUsingGetVerb" start="51" end="68" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="59"/>
+      <comment value="assert response status is correct" line="62"/>
+    </inline>
+  </method>
+  <method name="testRegisterExistingUser" start="70" end="96" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="get the logged in user (create one if no one is logged in)" line="78"/>
+      <comment value="send the HTTP request" line="87"/>
+      <comment value="assert response status is correct" line="90"/>
+    </inline>
+  </method>
+  <method name="testRegisterNewUserWithoutEmail" start="98" end="115" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="105"/>
+      <comment value="assert response status is correct" line="108"/>
+      <comment value="assert response contain the correct message" line="111"/>
+    </inline>
+  </method>
+  <method name="testRegisterNewUserWithoutName" start="117" end="134" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="124"/>
+      <comment value="assert response status is correct" line="127"/>
+      <comment value="assert response contain the correct message" line="130"/>
+    </inline>
+  </method>
+  <method name="testRegisterNewUserWithoutPassword" start="136" end="152" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="assert response status is correct" line="145"/>
+      <comment value="assert response contain the correct message" line="148"/>
+    </inline>
+  </method>
+  <method name="testRegisterNewUserWithInvalidEmail" start="154" end="172" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="162"/>
+      <comment value="assert response status is correct" line="165"/>
+      <comment value="assert response contain the correct message" line="168"/>
+    </inline>
+  </method>
+</class>

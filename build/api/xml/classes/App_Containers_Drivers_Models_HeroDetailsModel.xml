@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Models\HeroDetailsModel" namespace="App\Containers\Drivers\Models" name="HeroDetailsModel" abstract="false" final="false" start="8" end="12">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Drivers/Models" file="HeroDetailsModel.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Drivers/Models/HeroDetailsModel.php" size="226" time="2017-10-09T12:07:21+02:00" unixtime="1507543641" sha1="998e36bcb6dad76206153765638648a8240965ee" relative="Drivers/Models/HeroDetailsModel.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="table" default="'911_Hero_Details'" type="string" visibility="protected" static="false" line="10"/>
+</class>

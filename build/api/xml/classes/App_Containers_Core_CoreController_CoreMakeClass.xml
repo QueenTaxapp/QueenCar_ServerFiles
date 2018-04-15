@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Core\CoreController\CoreMakeClass" namespace="App\Containers\Core\CoreController" name="CoreMakeClass" abstract="false" final="false" start="24" end="378">
+  <file path="/var/www/html/queencar/app/Containers/Core/CoreController" file="CoreMakeClass.php" realpath="/var/www/html/queencar/app/Containers/Core/CoreController/CoreMakeClass.php" size="12403" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="55c19618cfbf65d26758c337823f18ce5fed2558" relative="Core/CoreController/CoreMakeClass.php"/>
+  <docblock>
+    <description compact="Make Core Json Class CoreMakeClass"/>
+    <package value="App\Containers\Core\CoreController"/>
+  </docblock>
+  <extends full="App\Containers\Core\CoreController\CoreClass" namespace="App\Containers\Core\CoreController" name="CoreClass"/>
+  <method name="Make_file" start="27" end="53" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="webinstall" start="56" end="59" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="zip_extractor" start="69" end="258" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="unistaller" start="261" end="325" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="make_module" start="328" end="356" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="active_module" start="358" end="377" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+  <parent full="App\Containers\Core\CoreController\CoreClass" namespace="App\Containers\Core\CoreController" name="CoreClass">
+    <uses full="Apiato\Core\Traits\CallableTrait" namespace="Apiato\Core\Traits" name="CallableTrait" unresolved="true"/>
+    <constructor name="__construct" start="26" end="29" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="CoreClass constructor."/>
+      </docblock>
+    </constructor>
+    <method name="get_core_file" start="35" end="52" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="request" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="checkKey" start="54" end="61" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="item" byreference="false" type="{unknown}"/>
+      <parameter name="property" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="executejob" start="63" end="68" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="item" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="return  (new $item-&gt;namespace())-&gt;run($this-&gt;data,$item-&gt;custom_parameter);" line="67"/>
+      </inline>
+    </method>
+    <method name="validator" start="70" end="76" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="item" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="print_r($item-&gt;namespace);die();" line="73"/>
+      </inline>
+    </method>
+    <method name="mergedata" start="78" end="88" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="temp" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="getResponse" start="90" end="102" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="item" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="extractjob" start="104" end="133" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="job" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="getRouteName" start="138" end="142" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description/>
+        <return type="mixed"/>
+      </docblock>
+    </method>
+    <method name="getmodule" start="150" end="180" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="check the module in object"/>
+        <param variable="$object"/>
+        <return type="mixed"/>
+      </docblock>
+      <parameter name="object" byreference="false" type="{unknown}"/>
+    </method>
+  </parent>
+</class>

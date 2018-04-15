@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sos\Models\SosModel" namespace="App\Containers\Sos\Models" name="SosModel" abstract="false" final="false" start="7" end="11">
+  <file path="/var/www/html/queencar/app/Containers/Sos/Models" file="SosModel.php" realpath="/var/www/html/queencar/app/Containers/Sos/Models/SosModel.php" size="201" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="bb18df5707ac288bb1920e35033921e0703b914e" relative="Sos/Models/SosModel.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="table" default="'Sos'" type="string" visibility="protected" static="false" line="9"/>
+</class>

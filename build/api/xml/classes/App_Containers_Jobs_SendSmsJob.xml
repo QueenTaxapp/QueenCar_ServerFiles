@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Jobs\SendSmsJob" namespace="App\Containers\Jobs" name="SendSmsJob" abstract="false" final="false" start="24" end="103">
+  <file path="/var/www/html/queencar/app/Containers/Jobs" file="SendSmsJob.php" realpath="/var/www/html/queencar/app/Containers/Jobs/SendSmsJob.php" size="2205" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="433f8085dc3e1e6a81c2e8eef99710ac4c0239fb" relative="Jobs/SendSmsJob.php"/>
+  <docblock>
+    <description compact="Class SendSmsJob to send sms"/>
+    <package value="App\Containers\Jobs"/>
+  </docblock>
+  <implements full="Illuminate\Contracts\Queue\ShouldQueue" namespace="Illuminate\Contracts\Queue" name="ShouldQueue" unresolved="true"/>
+  <uses full="Illuminate\Foundation\Bus\Dispatchable" namespace="Illuminate\Foundation\Bus" name="Dispatchable" start="27" end="27" unresolved="true"/>
+  <uses full="Illuminate\Queue\InteractsWithQueue" namespace="Illuminate\Queue" name="InteractsWithQueue" start="27" end="27" unresolved="true"/>
+  <uses full="Illuminate\Bus\Queueable" namespace="Illuminate\Bus" name="Queueable" start="27" end="27" unresolved="true"/>
+  <uses full="Illuminate\Queue\SerializesModels" namespace="Illuminate\Queue" name="SerializesModels" start="27" end="27" unresolved="true"/>
+  <member name="to" visibility="public" static="false" line="28"/>
+  <member name="message" visibility="public" static="false" line="30"/>
+  <member name="status" visibility="public" static="false" line="32"/>
+  <constructor name="__construct" start="34" end="42" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="to" byreference="false" type="{unknown}"/>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+    <parameter name="status" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="handle" start="44" end="102" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="$accountSid   = 'AC75a5048afaf14beaafec1a8c9e92e766';//Config::get('app.twillo_account_sid');" line="48"/>
+      <comment value="$authToken    = 'aa4ee49f01d5696716185597b6aaa1c0';//Config::get('app.twillo_auth_token');" line="49"/>
+      <comment value="$twilioNumber = '+12562779152';//Config::get('app.twillo_number');" line="50"/>
+    </inline>
+  </method>
+</class>

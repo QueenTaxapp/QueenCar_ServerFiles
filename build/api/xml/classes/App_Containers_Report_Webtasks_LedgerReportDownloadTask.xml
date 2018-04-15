@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Report\Webtasks\LedgerReportDownloadTask" namespace="App\Containers\Report\Webtasks" name="LedgerReportDownloadTask" abstract="false" final="false" start="24" end="174">
+  <file path="/var/www/html/queencar/app/Containers/Report/Webtasks" file="LedgerReportDownloadTask.php" realpath="/var/www/html/queencar/app/Containers/Report/Webtasks/LedgerReportDownloadTask.php" size="6844" time="2018-04-06T09:20:03+00:00" unixtime="1523006403" sha1="2d64827e617257d5a5b89a561b4cd5df7455f0d8" relative="Report/Webtasks/LedgerReportDownloadTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="33" end="172" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="if($request-&gt;date_option == 'date_select')" line="35"/>
+      <comment value="{" line="36"/>
+      <comment value="if($request-&gt;has('start_date') &amp;&amp; $request-&gt;has('end_date'))" line="38"/>
+      <comment value="{" line="39"/>
+      <comment value="if($request-&gt;start_date == null || $request-&gt;end_date == null)" line="41"/>
+      <comment value="{" line="42"/>
+      <comment value="throw new ValidationException((new Message()),redirect()-&gt;back()" line="43"/>
+      <comment value="-&gt;withErrors([trans('localization::errors.start_date_and_end_date_required')], 'default'));" line="44"/>
+      <comment value="}" line="45"/>
+      <comment value="if($request-&gt;start_date &gt; $request-&gt;end_date)" line="47"/>
+      <comment value="{" line="48"/>
+      <comment value="throw new ValidationException((new Message()),redirect()-&gt;back()" line="49"/>
+      <comment value="-&gt;withErrors([trans('localization::errors.start_date_not_greater_than_end_date')], 'default'));" line="50"/>
+      <comment value="}" line="51"/>
+      <comment value="}" line="52"/>
+      <comment value="}" line="54"/>
+      <comment value="$key = array('request_id','country','city','rider_name','driver_name','company_name','trip_start_time','rating','comment');" line="157"/>
+      <comment value="echo&quot;&lt;pre&gt;&quot;;print_r($values);die();" line="168"/>
+    </inline>
+  </method>
+</class>

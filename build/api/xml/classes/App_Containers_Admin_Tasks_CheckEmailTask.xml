@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Tasks\CheckEmailTask" namespace="App\Containers\Admin\Tasks" name="CheckEmailTask" abstract="false" final="false" start="17" end="48">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Tasks" file="CheckEmailTask.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Tasks/CheckEmailTask.php" size="1379" time="2017-09-15T13:46:48+02:00" unixtime="1505476008" sha1="5f81397d68ab1f5a5c01f4e17ced33fddedeeaf5" relative="Admin/Tasks/CheckEmailTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="25" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to check if the email address is present or not"/>
+      <param variable="$email" type="string"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+  </method>
+</class>

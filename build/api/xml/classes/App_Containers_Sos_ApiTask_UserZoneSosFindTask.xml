@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sos\ApiTask\UserZoneSosFindTask" namespace="App\Containers\Sos\ApiTask" name="UserZoneSosFindTask" abstract="false" final="false" start="16" end="86">
+  <file path="/var/www/html/queencar/app/Containers/Sos/ApiTask" file="UserZoneSosFindTask.php" realpath="/var/www/html/queencar/app/Containers/Sos/ApiTask/UserZoneSosFindTask.php" size="2032" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="6bb5206e5e05ed1e4c5496fcfe29876eb168a53a" relative="Sos/ApiTask/UserZoneSosFindTask.php"/>
+  <docblock>
+    <description compact="Class ApiEta"/>
+    <package value="App\Containers\eta\ApiTask"/>
+  </docblock>
+  <method name="run" start="19" end="84" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($query);die();" line="29"/>
+      <comment value="if(count($userSos)==0){" line="33"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$userSos = new UserSosModel();" line="34"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$userSos-&gt;user_id = $data['request']-&gt;id;" line="35"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$userSos-&gt;name = $data['request']-&gt;name;" line="36"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$userSos-&gt;phone_number = $data['request']-&gt;phone_number;" line="37"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$userSos-&gt;save();" line="38"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}else{" line="39"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$userSos-&gt;name = $data['request']-&gt;name;" line="40"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$userSos-&gt;phone_number = $data['request']-&gt;phone_number;" line="41"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$userSos-&gt;save();" line="42"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="43"/>
+    </inline>
+  </method>
+</class>

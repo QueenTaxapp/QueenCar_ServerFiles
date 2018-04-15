@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\ApiTask\DispatchDriverTypeAvailableOnZoneTask" namespace="App\Containers\Dispatch\ApiTask" name="DispatchDriverTypeAvailableOnZoneTask" abstract="false" final="false" start="28" end="127">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/ApiTask" file="DispatchDriverTypeAvailableOnZoneTask.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/ApiTask/DispatchDriverTypeAvailableOnZoneTask.php" size="4638" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="9c3a28835d05d2c64606efd4c1a06aa3aa954c65" relative="Dispatch/ApiTask/DispatchDriverTypeAvailableOnZoneTask.php"/>
+  <docblock>
+    <description compact="Class UserDetailTask"/>
+    <package value="App\Containers\Promocode\ApiTask"/>
+  </docblock>
+  <method name="run" start="36" end="126" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="$query =  &quot;SELECT zone_type.id as zone_type_id,type.name,type.icon,zone_type.payment_type, (SELECT CONCAT_WS(',',latitude,longitude) FROM tab_Driver_Details detail WHERE detail.driver_id IN (SELECT GROUP_CONCAT(id) FROM tab_Drivers d WHERE d.type=zone_type.type_id) AND   ROUND(1 * 3956 * acos( cos( radians($latitude) ) * cos( radians(detail.latitude) ) * cos( radians(detail.longitude) - radians($longitude) ) + sin( radians($latitude) ) * sin( radians(detail.latitude) ) ) ,8) &lt; 8 ORDER BY  ROUND(1 * 3956 * acos( cos( radians($latitude) ) * cos( radians(detail.latitude) ) * cos( radians(detail.longitude) - radians($longitude) ) + sin( radians($longitude) ) * sin( radians(detail.latitude) ) ) ,8) desc LIMIT 1) as coordinate  FROM tab_zone_type zone_type LEFT JOIN tab_Types type ON type.id=zone_type.type_id WHERE zone_type.zone_id=&quot;.$id.&quot; AND zone_type.is_active=1 LIMIT 20&quot;;" line="42"/>
+      <comment value="$query =  &quot;SELECT a.id,a.name FROM tab_zone a,tab_zone_bound b WHERE a.id = b.zone_id AND b.north &gt;= '&quot;.$latitude.&quot;' AND b.south &lt;= '&quot;.$latitude.&quot;' AND b.east &gt;= '&quot;.$longitude.&quot;' AND b.west &lt;= '&quot;.$longitude.&quot;' AND a.is_active=1 AND a.deleted_at IS NULL LIMIT 1&quot;;" line="44"/>
+      <comment value="$typesList = ZoneTypeModel::leftjoin('Types','Types.id','zone_type.type_id')" line="61"/>
+      <comment value="-&gt;select('Types.id as driver_type_id','Types.name as driver_type_name','Types.icon as driver_type_icon')" line="62"/>
+      <comment value="-&gt;where('zone_type.zone_id',$zoneId)" line="63"/>
+      <comment value="-&gt;get();" line="64"/>
+      <comment value="success transformer message" line="86"/>
+      <comment value="$response-&gt;driver =$tempArray;" line="116"/>
+    </inline>
+  </method>
+</class>

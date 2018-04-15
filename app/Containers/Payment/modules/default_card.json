@@ -1,0 +1,40 @@
+{
+  "module": {
+    "payment": {
+      "change_default": {
+        "title": "Change Default Card",
+        "version": "1.0.0",
+        "description": "Change Your Default Card for Payment",
+        "module_type": "core",
+        "config_file": "Payment\/modules\/default_card.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Requests\\PaymentDefault"
+          },
+          "change_default_card": {
+            "id": "task",
+            "namespace": "App\\Containers\\Payment\\ApiTask\\PaymentDefault"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Transformers\\AddCard"
+          }
+        }
+      }
+    }
+  },
+"files":
+    {
+      "add_card.php":"Payment/ApiTask/",
+      "PaymentDefault.php":"Payment/ApiTask/",
+      "Payment.php":"Payment/Models/",
+      "Controller.php":"Payment/UI/API/Controllers/",
+      "PaymentDefaultRequest":"Payment/UI/API/Requests/",
+      "SetDefault.v1.public.php":"Payment/UI/API/Routes/",
+      "AddCard.php":"Payment/UI/API/Transformers/",
+      "default_card.json":"Payment/modules/"
+    }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sms\Tasks\WelcomeNote" namespace="App\Containers\Sms\Tasks" name="WelcomeNote" abstract="false" final="false" start="42" end="44">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Sms/Tasks" file="SmsInterface.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Sms/Tasks/SmsInterface.php" size="719" time="2017-10-07T11:55:17+02:00" unixtime="1507370117" sha1="72c20d317624514d41d638de44f818a8f5c34967" relative="Sms/Tasks/SmsInterface.php"/>
+  <member name="otp" visibility="public" static="false" line="43"/>
+</class>

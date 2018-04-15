@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sms\Tasks\SmsEditTask" namespace="App\Containers\Sms\Tasks" name="SmsEditTask" abstract="false" final="false" start="16" end="51">
+  <file path="/var/www/html/queencar/app/Containers/Sms/Tasks" file="SmsEditTask.php" realpath="/var/www/html/queencar/app/Containers/Sms/Tasks/SmsEditTask.php" size="1330" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="56a2f3486df2c3fbdb169ea621eaad4dcdf19618" relative="Sms/Tasks/SmsEditTask.php"/>
+  <docblock>
+    <description compact="Class SmsEditTask"/>
+    <package value="App\Containers\Sms\Tasks"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="24" end="49" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to return data to sms edit page"/>
+      <param variable="$request"/>
+      <return type="object">
+        <type full="App\Containers\Sms\Tasks\array|\Illuminate\Database\Eloquent\Model|null|static" namespace="App\Containers\Sms\Tasks\array|\Illuminate\Database\Eloquent" name="Model|null|static"/>
+      </return>
+      <throws type="object">
+        <type full="Illuminate\Validation\ValidationException" namespace="Illuminate\Validation" name="ValidationException"/>
+      </throws>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;table);die();" line="29"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($data);die();" line="37"/>
+    </inline>
+  </method>
+</class>

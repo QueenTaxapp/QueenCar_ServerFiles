@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Models\HeroCancelModel" namespace="App\Containers\Drivers\Models" name="HeroCancelModel" abstract="false" final="false" start="9" end="13">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Drivers/Models" file="HeroCancelModel.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Drivers/Models/HeroCancelModel.php" size="264" time="2017-10-09T12:07:22+02:00" unixtime="1507543642" sha1="a5fd70c4f2abd74119e1e1985c8bcb485c66fd58" relative="Drivers/Models/HeroCancelModel.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="dates" default="" type="array" visibility="protected" static="false" line="11"/>
+  <member name="table" default="'911_Hero_Cancel'" type="string" visibility="protected" static="false" line="12"/>
+</class>

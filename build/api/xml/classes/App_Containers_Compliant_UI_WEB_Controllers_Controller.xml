@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Compliant\UI\WEB\Controllers\Controller" namespace="App\Containers\Compliant\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="23" end="647">
+  <file path="/var/www/html/queencar/app/Containers/Compliant/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Compliant/UI/WEB/Controllers/Controller.php" size="20322" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="e88e2e8f94a0837b49fd1e87472ffc0172c076a9" relative="Compliant/UI/WEB/Controllers/Controller.php"/>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <uses full="Illuminate\Database\Eloquent\SoftDeletes" namespace="Illuminate\Database\Eloquent" name="SoftDeletes" start="25" end="25" unresolved="true"/>
+  <method name="userCompliantView" start="27" end="168" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$reterive_key = ApiHelper::reterive_key();" line="147"/>
+      <comment value="if($reterive_key != 0)" line="150"/>
+      <comment value="{" line="151"/>
+      <comment value="$types = $types-&gt;where('Sos.admin_reference',$reterive_key);" line="153"/>
+      <comment value="}" line="155"/>
+    </inline>
+  </method>
+  <method name="userCompliantEditPage" start="171" end="186" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="userCompliantModify" start="188" end="199" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Compliant\UI\WEB\Requests\CompliantEditRequest" namespace="App\Containers\Compliant\UI\WEB\Requests" name="CompliantEditRequest"/>
+    </parameter>
+  </method>
+  <method name="taken" start="201" end="230" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="statusEmail" start="232" end="249" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="language_change" line="234"/>
+      <comment value="language_change" line="243"/>
+    </inline>
+  </method>
+  <method name="solved" start="251" end="278" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="compliantView" start="280" end="301" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="addCompliant" start="303" end="324" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="editCompliant" start="328" end="339" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="registerCompliants" start="342" end="359" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="344"/>
+    </inline>
+  </method>
+  <method name="modifyCompliants" start="361" end="372" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="deleteCompliant" start="374" end="383" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="acceptCompliant" start="387" end="396" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="declineCompliant" start="398" end="407" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="driverCompliantView" start="410" end="555" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$reterive_key = ApiHelper::reterive_key();" line="535"/>
+      <comment value="if($reterive_key != 0)" line="538"/>
+      <comment value="{" line="539"/>
+      <comment value="$types = $types-&gt;where('Drivers.admin_reference',$reterive_key);" line="540"/>
+      <comment value="}" line="541"/>
+    </inline>
+  </method>
+  <method name="driverCompliantEditPage" start="558" end="574" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="driverCompliantModify" start="575" end="586" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Compliant\UI\WEB\Requests\CompliantEditRequest" namespace="App\Containers\Compliant\UI\WEB\Requests" name="CompliantEditRequest"/>
+    </parameter>
+  </method>
+  <method name="driverTaken" start="588" end="617" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="driverSolved" start="619" end="645" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

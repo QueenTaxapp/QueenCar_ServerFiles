@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Promocode\Models\PromocodeModel" namespace="App\Containers\Promocode\Models" name="PromocodeModel" abstract="false" final="false" start="9" end="13">
+  <file path="/var/www/html/queencar/app/Containers/Promocode/Models" file="PromocodeModel.php" realpath="/var/www/html/queencar/app/Containers/Promocode/Models/PromocodeModel.php" size="260" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="58c41bb1c70a881453a75edb1e001e8c9a9dc266" relative="Promocode/Models/PromocodeModel.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="dates" default="" type="array" visibility="protected" static="false" line="11"/>
+  <member name="table" default="'Promo_code'" type="string" visibility="protected" static="false" line="12"/>
+</class>

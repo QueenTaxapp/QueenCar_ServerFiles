@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Wallet\UI\API\Requests\WalletAddRequest" namespace="App\Containers\Wallet\UI\API\Requests" name="WalletAddRequest" abstract="false" final="false" start="10" end="32">
+  <file path="/var/www/html/queencar/app/Containers/Wallet/UI/API/Requests" file="WalletAddRequest.php" realpath="/var/www/html/queencar/app/Containers/Wallet/UI/API/Requests/WalletAddRequest.php" size="460" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="d4c7cdbe64e957b9dce93239d06c6b8441c594c4" relative="Wallet/UI/API/Requests/WalletAddRequest.php"/>
+  <docblock>
+    <description compact="Class GetMyProfileRequest."/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="16" end="23" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="authorize" start="28" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\Wallet\UI\API\Requests\bool" namespace="App\Containers\Wallet\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

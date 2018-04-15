@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Drivers/UI/API/Routes" file="ApiDriverProfile.v1.public.php" realpath="/var/www/html/queencar/app/Containers/Drivers/UI/API/Routes/ApiDriverProfile.v1.public.php" size="1862" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="f177d4ca74757c90bcaae550aa429fdd8acdb861" relative="Drivers/UI/API/Routes/ApiDriverProfile.v1.public.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * @apiGroup           Driver</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * @apiName            DriverProfile</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * @api                {post} /driver/profile  Driver Profile</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * @apiDescription     Driver Profile</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * @apiVersion         1.0.0</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * @apiPermission      none</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * @apiHeader          Accept application/json</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> * @apiParam           {Integer}     id   driver id</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      token   driver token</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      firstname</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      lastname</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      [new_password] it is required when old password field has value</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      [old_password] it is required when new password field has value</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> * @apiParam           {Multipart}   [profile_pic]</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT"> * @apiSuccessExample  {json}    Success-Response:</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> *   {</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> *      "success": true,</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> *      "success_message": "Profile Updated Successfully",</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> *      "driver":</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> *      {</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> *          "id": 15,</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> *          "firstname": "test",</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT"> *          "lastname": "test",</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT"> *          "email": "test@gmail.com",</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT"> *          "phone": "+919965356824",</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT"> *          "login_by": null,</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT"> *          "login_method": null,</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT"> *          "token": "$2y$10$XOToC0NoC/5/zg.pIvizH.xrb86G0URHO.fDZC3.p8BlfAQjcj.am",</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT"> *          "profile_pic": null,</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT"> *          "is_active": 1,</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT"> *          "is_approve": 0,</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT"> *          "is_available": 0,</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT"> *          "car_model":null,</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT"> *          "car_number":null,</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT"> *          "type_name":"adffs",</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT"> *          "type_icon":"http:\/\/192.168.1.18\/tabgo\/public\/assets\/img\/uploads\/50696.png"</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT"> *      },</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT"> *      "sos":[]</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT"> *   }</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="50"/>
+  <line no="51"/>
+  <line no="52"/>
+  <line no="53"/>
+  <line no="54"/>
+  <line no="55"/>
+  <line no="56"/>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$router</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">post</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/driver/profile'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="59">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'as'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Profile@driver_profile'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="60">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'uses'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Controller@run'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="61">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'middleware'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="62">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'DriverTokenCheck.api'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="63">
+    <token name="T_COMMENT">//                'userTokenCheck.api',</token>
+  </line>
+  <line no="64">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+  </line>
+  <line no="65">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="66"/>
+</source>

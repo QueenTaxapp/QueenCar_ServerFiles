@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\UI\API\Tests\Functional\DetachPermissionsFromRoleTest" namespace="App\Containers\Authorization\UI\API\Tests\Functional" name="DetachPermissionsFromRoleTest" abstract="false" final="false" start="14" end="82">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional" file="DetachPermissionsFromRoleTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Authorization/UI/API/Tests/Functional/DetachPermissionsFromRoleTest.php" size="2330" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="3a9c00aca52a192e31bce1d99db1c8f022b083c0" relative="Authorization/UI/API/Tests/Functional/DetachPermissionsFromRoleTest.php"/>
+  <docblock>
+    <description compact="Class DetachPermissionsFromRoleTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase"/>
+  <member name="endpoint" default="'post@v1/permissions/detach'" type="string" visibility="protected" static="false" line="17"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="19"/>
+  <method name="testDetachSinglePermissionFromRole_" start="24" end="49" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="36"/>
+    </inline>
+  </method>
+  <method name="testDetachMultiplePermissionFromRole_" start="51" end="79" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="65"/>
+    </inline>
+  </method>
+  <parent full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase">
+    <extends full="App\Ship\Parents\Tests\PhpUnit\TestCase" namespace="App\Ship\Parents\Tests\PhpUnit" name="TestCase" unresolved="true"/>
+  </parent>
+</class>

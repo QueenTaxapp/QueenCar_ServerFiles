@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Actions\ApiLoginAction" namespace="App\Containers\User\Actions" name="ApiLoginAction" abstract="false" final="false" start="20" end="74">
+  <file path="/var/www/html/queencar/app/Containers/User/Actions" file="ApiLoginAction.php" realpath="/var/www/html/queencar/app/Containers/User/Actions/ApiLoginAction.php" size="1856" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="506982ca1c6368510d415e383462697e039eeb15" relative="User/Actions/ApiLoginAction.php"/>
+  <docblock>
+    <description compact="Class WebAdminLoginAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="30" end="73" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="to User login"/>
+      <param type="object" variable="$request">
+        <type full="\App\Ship\Parents\Requests\Request" namespace="\App\Ship\Parents\Requests" name="Request"/>
+      </param>
+      <return type="array"/>
+      <throws type="object">
+        <type full="\App\Containers\Authorization\Exceptions\UserNotAdminException" namespace="\App\Containers\Authorization\Exceptions" name="UserNotAdminException"/>
+      </throws>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="common tasks" line="48"/>
+    </inline>
+  </method>
+</class>

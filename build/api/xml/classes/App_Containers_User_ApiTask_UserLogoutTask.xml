@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\ApiTask\UserLogoutTask" namespace="App\Containers\User\ApiTask" name="UserLogoutTask" abstract="false" final="false" start="8" end="40">
+  <file path="/var/www/html/queencar/app/Containers/User/ApiTask" file="UserLogoutTask.php" realpath="/var/www/html/queencar/app/Containers/User/ApiTask/UserLogoutTask.php" size="863" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="a24fe234cc1072d19534eaa73049b352aebd6ab9" relative="User/ApiTask/UserLogoutTask.php"/>
+  <method name="run" start="12" end="39" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+</class>

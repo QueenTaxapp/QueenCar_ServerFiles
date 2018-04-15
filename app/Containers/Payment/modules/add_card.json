@@ -1,0 +1,39 @@
+{
+  "module": {
+    "payment": {
+      "add_card": {
+        "title": "Add credit card",
+        "version": "1.0.0",
+        "description": "Add credit card to client account in braintree",
+        "module_type": "core",
+        "config_file": "Payment\/modules\/add_card.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Requests\\PaymentToken"
+          },
+          "save_card": {
+            "id": "task",
+            "namespace": "App\\Containers\\Payment\\ApiTask\\add_card"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Transformers\\AddCard"
+          }
+        }
+      }
+    }
+  },
+"files":
+    {
+      "add_card.php":"Payment/ApiTask/",
+      "Payment.php":"Payment/Models/",
+      "Controller.php":"Payment/UI/API/Controllers/",
+      "PaymentToken.php":"Payment/UI/API/Requests/",
+      "AddCard.v1.public.php":"Payment/UI/API/Routes/",
+      "AddCard.php":"Payment/UI/API/Transformers/",
+      "add_card.json":"Payment/modules/"
+    }
+}

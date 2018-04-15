@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Welcome\UI\API\Controllers\Controller" namespace="App\Containers\Welcome\UI\API\Controllers" name="Controller" abstract="false" final="false" start="14" end="37">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Welcome/UI/API/Controllers" file="Controller.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Welcome/UI/API/Controllers/Controller.php" size="819" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="ec48481c3ead51f0424aa5fba445528be736f466" relative="Welcome/UI/API/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\ApiController" namespace="App\Ship\Parents\Controllers" name="ApiController" unresolved="true"/>
+  <method name="apiRoot" start="20" end="25" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="\Illuminate\Http\JsonResponse" namespace="\Illuminate\Http" name="JsonResponse"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="v1ApiLandingPage" start="30" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="\Illuminate\Http\JsonResponse" namespace="\Illuminate\Http" name="JsonResponse"/>
+      </return>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Stripe\Tasks\CreateStripeCustomerTask" namespace="App\Containers\Stripe\Tasks" name="CreateStripeCustomerTask" abstract="false" final="false" start="16" end="53">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Tasks" file="CreateStripeCustomerTask.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Tasks/CreateStripeCustomerTask.php" size="1225" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="b953f45e21009d2ba2604e956f802c5691f744bd" relative="Stripe/Tasks/CreateStripeCustomerTask.php"/>
+  <docblock>
+    <description compact="Class CreateStripeCustomerTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <member name="stripe" visibility="public" static="false" line="19"/>
+  <constructor name="__construct" start="26" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="StripeApi constructor."/>
+      <param type="object" variable="$stripe">
+        <type full="\Cartalyst\Stripe\Stripe" namespace="\Cartalyst\Stripe" name="Stripe"/>
+      </param>
+    </docblock>
+    <parameter name="stripe" byreference="false" type="object">
+      <type full="Cartalyst\Stripe\Stripe" namespace="Cartalyst\Stripe" name="Stripe"/>
+    </parameter>
+  </constructor>
+  <method name="run" start="37" end="51" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$email"/>
+      <param type="string" variable="$description"/>
+      <return description="stripe customer object" type="array"/>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="description" byreference="false" type="string" default="''"/>
+  </method>
+</class>

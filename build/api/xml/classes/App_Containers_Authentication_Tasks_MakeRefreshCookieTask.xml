@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Tasks\MakeRefreshCookieTask" namespace="App\Containers\Authentication\Tasks" name="MakeRefreshCookieTask" abstract="false" final="false" start="13" end="36">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Tasks" file="MakeRefreshCookieTask.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Tasks/MakeRefreshCookieTask.php" size="783" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="759c09c3c7985febdfe9e3437219206886e88b03" relative="Authentication/Tasks/MakeRefreshCookieTask.php"/>
+  <docblock>
+    <description compact="Class MakeRefreshCookieTask"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="21" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$refreshToken"/>
+      <return type="object">
+        <type full="\Symfony\Component\HttpFoundation\Cookie" namespace="\Symfony\Component\HttpFoundation" name="Cookie"/>
+      </return>
+    </docblock>
+    <parameter name="refreshToken" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Save the refresh token in a HttpOnly cookie to minimize the risk of XSS attacks" line="23"/>
+    </inline>
+  </method>
+</class>

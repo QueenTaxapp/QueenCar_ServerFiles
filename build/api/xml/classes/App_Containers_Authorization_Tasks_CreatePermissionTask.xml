@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Tasks\CreatePermissionTask" namespace="App\Containers\Authorization\Tasks" name="CreatePermissionTask" abstract="false" final="false" start="14" end="33">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Tasks" file="CreatePermissionTask.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Tasks/CreatePermissionTask.php" size="748" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e05e791bc08c10df6ea72da66ab3f541d5f8df3e" relative="Authorization/Tasks/CreatePermissionTask.php"/>
+  <docblock>
+    <description compact="Class CreatePermissionTask"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="24" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$name"/>
+      <param type="null" variable="$description"/>
+      <param type="null" variable="$displayName"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="description" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="displayName" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+</class>

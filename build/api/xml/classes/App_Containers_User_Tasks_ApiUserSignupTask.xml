@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\ApiUserSignupTask" namespace="App\Containers\User\Tasks" name="ApiUserSignupTask" abstract="false" final="false" start="25" end="95">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="ApiUserSignupTask.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/ApiUserSignupTask.php" size="2966" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="f2c740c2e1de9f0d942641ad5e6c08dfa0f9b5d4" relative="User/Tasks/ApiUserSignupTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="34" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Save User Detail"/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\User\Tasks\Object" namespace="App\Containers\User\Tasks" name="Object"/>
+      </param>
+      <param type="object" variable="$token">
+        <type full="App\Containers\User\Tasks\String" namespace="App\Containers\User\Tasks" name="String"/>
+      </param>
+      <return type="object">
+        <type full="App\Containers\User\Tasks\Object" namespace="App\Containers\User\Tasks" name="Object"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <parameter name="token" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="get country" line="37"/>
+    </inline>
+  </method>
+</class>

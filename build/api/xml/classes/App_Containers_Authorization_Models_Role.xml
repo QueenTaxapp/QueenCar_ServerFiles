@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Models\Role" namespace="App\Containers\Authorization\Models" name="Role" abstract="false" final="false" start="14" end="30">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Models" file="Role.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Models/Role.php" size="533" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="c2b35d5e04a763c8c1b10d33c73991008154f7f1" relative="Authorization/Models/Role.php"/>
+  <docblock>
+    <description compact="Class Role"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="Spatie\Permission\Models\Role" namespace="Spatie\Permission\Models" name="Role" unresolved="true"/>
+  <uses full="Apiato\Core\Traits\HashIdTrait" namespace="Apiato\Core\Traits" name="HashIdTrait" start="17" end="17" unresolved="true"/>
+  <uses full="Apiato\Core\Traits\HasResourceKeyTrait" namespace="Apiato\Core\Traits" name="HasResourceKeyTrait" start="18" end="18" unresolved="true"/>
+  <member name="fillable" default="" type="array" visibility="protected" static="false" line="25">
+    <docblock>
+      <description compact="The attributes that are mass assignable."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+</class>

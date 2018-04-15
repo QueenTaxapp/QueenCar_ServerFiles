@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Tests\Functional\ListAllClientsTest" namespace="App\Containers\User\UI\API\Tests\Functional" name="ListAllClientsTest" abstract="false" final="false" start="13" end="61">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional" file="ListAllClientsTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional/ListAllClientsTest.php" size="1530" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="1ad5b454e6f639e36e713a22fee211ed75308081" relative="User/UI/API/Tests/Functional/ListAllClientsTest.php"/>
+  <docblock>
+    <description compact="Class ListAllUsersTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\User\Tests\TestCase" namespace="App\Containers\User\Tests" name="TestCase" unresolved="true"/>
+  <member name="endpoint" default="'get@v1/clients'" type="string" visibility="protected" static="false" line="16"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="18"/>
+  <method name="testListAllClientsByAdmin_" start="23" end="42" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="should be returned" line="25"/>
+      <comment value="should not be returned" line="28"/>
+      <comment value="send the HTTP request" line="31"/>
+      <comment value="assert response status is correct" line="34"/>
+      <comment value="convert JSON response string to Object" line="37"/>
+      <comment value="assert the returned data size is correct" line="40"/>
+    </inline>
+  </method>
+  <method name="testListAllClientsByNonAdmin_" start="44" end="59" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="prepare a user without any roles or permissions" line="46"/>
+      <comment value="send the HTTP request" line="49"/>
+      <comment value="assert response status is correct" line="52"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\ApiTask\DispatchCreateUserTask" namespace="App\Containers\Dispatch\ApiTask" name="DispatchCreateUserTask" abstract="false" final="false" start="30" end="144">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/ApiTask" file="DispatchCreateUserTask.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/ApiTask/DispatchCreateUserTask.php" size="4427" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="d5699c4e51b34d4a9c48997f1101336a62fc8a00" relative="Dispatch/ApiTask/DispatchCreateUserTask.php"/>
+  <method name="run" start="33" end="143" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="1-male , 2-female" line="56"/>
+      <comment value="if 1 active user or 0 is inactive user" line="61"/>
+      <comment value="$user-&gt;referred_by  = $request-&gt;name;" line="82"/>
+      <comment value="$user-&gt;promo_count  = $request-&gt;name;" line="83"/>
+      <comment value="$user-&gt;review       = $request-&gt;name;    // 1-male , 2-female" line="84"/>
+    </inline>
+  </method>
+</class>

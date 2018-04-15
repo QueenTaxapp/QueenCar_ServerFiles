@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sos\ApiTask\UserSosSaveTask" namespace="App\Containers\Sos\ApiTask" name="UserSosSaveTask" abstract="false" final="false" start="12" end="67">
+  <file path="/var/www/html/queencar/app/Containers/Sos/ApiTask" file="UserSosSaveTask.php" realpath="/var/www/html/queencar/app/Containers/Sos/ApiTask/UserSosSaveTask.php" size="1617" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="fa153e75eeb12e19d4f8870b67bbb640c4d9afde" relative="Sos/ApiTask/UserSosSaveTask.php"/>
+  <docblock>
+    <description compact="Class ApiEta"/>
+    <package value="App\Containers\eta\ApiTask"/>
+  </docblock>
+  <method name="run" start="15" end="65" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($data['request']-&gt;all());die();" line="17"/>
+      <comment value="$sos = SosModel::select('id','name','number')-&gt;get();" line="39"/>
+      <comment value="foreach ($sos as $key=&gt;$value)" line="43"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="44"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$obj = new \stdClass; // Instantiate stdClass object" line="45"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$obj-&gt;id = $value-&gt;id;" line="46"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$obj-&gt;name = $value-&gt;name;" line="47"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$obj-&gt;number = $value-&gt;number;" line="48"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$sos_array[] = $obj;" line="49"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="50"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($userSos);die();" line="62"/>
+    </inline>
+  </method>
+</class>

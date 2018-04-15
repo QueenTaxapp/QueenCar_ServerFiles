@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Company\Webtasks\CompanyDriverDetailsTask" namespace="App\Containers\Company\Webtasks" name="CompanyDriverDetailsTask" abstract="false" final="false" start="17" end="109">
+  <file path="/var/www/html/queencar/app/Containers/Company/Webtasks" file="CompanyDriverDetailsTask.php" realpath="/var/www/html/queencar/app/Containers/Company/Webtasks/CompanyDriverDetailsTask.php" size="2908" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="aaf7b14b4fb2e40cb3156c55672731e0145e2bc2" relative="Company/Webtasks/CompanyDriverDetailsTask.php"/>
+  <method name="run" start="20" end="108" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

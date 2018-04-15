@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Review\ApiTask\DriverReviewTask" namespace="App\Containers\Review\ApiTask" name="DriverReviewTask" abstract="false" final="false" start="20" end="104">
+  <file path="/var/www/html/queencar/app/Containers/Review/ApiTask" file="DriverReviewTask.php" realpath="/var/www/html/queencar/app/Containers/Review/ApiTask/DriverReviewTask.php" size="2687" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="e14770a2f4887b6b308056c0c7ada0b8afc9e3b3" relative="Review/ApiTask/DriverReviewTask.php"/>
+  <docblock>
+    <description compact="Class ApiEta"/>
+    <package value="App\Containers\eta\ApiTask"/>
+  </docblock>
+  <method name="run" start="23" end="102" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,40 @@
+{
+  "module": {
+    "payment": {
+      "delete_card": {
+        "title": "Delete Card",
+        "version": "1.0.0",
+        "description": "Delete card from database",
+        "module_type": "core",
+        "config_file": "Payment\/modules\/delete_card.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Requests\\PaymentDefaultRequest"
+          },
+          "delete_card": {
+            "id": "task",
+            "namespace": "App\\Containers\\Payment\\ApiTask\\DeleteCard"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Transformers\\AddCard"
+          }
+        }
+      }
+    }
+  },
+"files":
+    {
+      "add_card.php":"Payment/ApiTask/",
+      "DeleteCard.php":"Payment/ApiTask/",
+      "Payment.php":"Payment/Models/",
+      "Controller.php":"Payment/UI/API/Controllers/",
+      "PaymentDefaultRequest.php":"Payment/UI/API/Requests/",
+      "DeleteCard.v1.public.php":"Payment/UI/API/Routes/",
+      "AddCard.php":"Payment/UI/API/Transformers/",
+      "delete_card.json":"Payment/modules/"
+    }
+}

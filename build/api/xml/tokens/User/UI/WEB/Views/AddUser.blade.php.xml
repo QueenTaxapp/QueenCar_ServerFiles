@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/WEB/Views" file="AddUser.blade.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/WEB/Views/AddUser.blade.php" size="9214" time="2017-09-22T07:41:06+02:00" unixtime="1506058866" sha1="ec57ab0e97f3267c93cdf0341d0d6a45de1c36bb" relative="User/UI/WEB/Views/AddUser.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('admin::Layout')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;style&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        sup{</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            color:red;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            font-size: 12px;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">            left: 2px;</token>
+  </line>
+  <line no="9"/>
+  <line no="10">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="12"/>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_INLINE_HTML">&lt;!--</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_COMMENT">//echo "&lt;pre&gt;";print_r( session()-&gt;all());</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">--&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="16">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$firstName</token>
+    <token name="T_WHITESPACE">      </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="17">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$lastName</token>
+    <token name="T_WHITESPACE">       </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="18">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$address</token>
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="19">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$username</token>
+    <token name="T_WHITESPACE">       </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="20">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$emailAddress</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="21">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$phoneNumber</token>
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="22">
+    <token name="T_WHITESPACE">        </token>
+  </line>
+  <line no="23"/>
+  <line no="24">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">has</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="25">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="26">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$firstName</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"firstName"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="27">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$lastName</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"lastName"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="28">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$address</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"adr"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="29">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$username</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"username"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="30">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$emailAddress</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"email"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="31">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$phoneNumber</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"phone_number"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="32">
+    <token name="T_WHITESPACE">        </token>
+  </line>
+  <line no="33">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="34">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="35"/>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_INLINE_HTML">        &lt;div class="content"&gt;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">            &lt;div class="container-fluid"&gt;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                &lt;div class="row"&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                    &lt;div class="col-md-11"&gt;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                        &lt;div class="card"&gt;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                            &lt;div class="card-header card-header-icon" data-background-color="rose"&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                &lt;i class="material-icons"&gt;contacts&lt;/i&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_INLINE_HTML">                               {{-- &lt;p class="category"&gt;Complete your profile&lt;/p&gt;--}}</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">                            &lt;div class="card-content"&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">                                &lt;h4 &gt;{{ trans('localization::lang_view.create_user')}}&lt;/h4&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                                &lt;span style="position: absolute;float: right;right: 32px;top: 16px;"&gt;&lt;a href="{{ URL::Route('viewUser')}}" data-toggle="tooltip" title="{{ trans('localization::lang_view.back_to_view_users_details')}}"&gt;{{ trans('localization::lang_view.view_users')}}&lt;i class="material-icons"&gt;reply&lt;/i&gt; &lt;/a&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_INLINE_HTML">                                &lt;form id="RegisterValidation" action="{{ URL::Route('saveUser')}}" onsubmit="return Validate()" method="post" enctype="multipart/form-data" &gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                                    &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-md-6"&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                            &lt;div class="form-group label-floating"&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                                &lt;label class="control-label"&gt;{{ trans('localization::lang_view.first_name')}}&lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                                &lt;input name="firstName" type="text" class="form-control" value = "{{$firstName}}" required &gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-md-6"&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                                            &lt;div class="form-group label-floating"&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                                                &lt;label class="control-label"&gt;{{ trans('localization::lang_view.last_name')}}&lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                                &lt;input name="lastName" type="text" class="form-control" value = "{{$lastName}}" required &gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="67"/>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-md-12"&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                                            &lt;div class="form-group label-floating"&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                                &lt;label class="control-label"&gt;{{ trans('localization::lang_view.address')}}&lt;/label&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                                &lt;input name="adr" type="text" value = "{{$address}}" class="form-control" &gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="76"/>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-md-4"&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                                            &lt;div class="form-group label-floating"&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                                                &lt;label class="control-label"&gt;{{ trans('localization::lang_view.username')}}&lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                                                &lt;input name="username" type="text" class="form-control" value = "{{$username}}"required&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-md-4"&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                                            &lt;div class="form-group label-floating"&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                                                &lt;label class="control-label"&gt;{{ trans('localization::lang_view.email_address')}}&lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                                                &lt;input name="email" type="email" class="form-control" value = "{{$emailAddress}}"required &gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-md-4"&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                                            &lt;div class="form-group label-floating"&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                                                &lt;label class="control-label"&gt;{{ trans('localization::lang_view.phone_number')}}&lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                                                &lt;input name="phone_number" type="text" class="form-control" value = "{{$phoneNumber}}"required &gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="97"/>
+  <line no="98">
+    <token name="T_INLINE_HTML">                                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-md-6"&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                                            &lt;div class="form-group label-floating"&gt;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">                                                &lt;label class="control-label"&gt;{{ trans('localization::lang_view.password')}}&lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">                                                &lt;input name="pass" type="password" id="pass_id" class="form-control valid" required &gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-md-6"&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                                            &lt;div class="form-group label-floating"&gt;</token>
+  </line>
+  <line no="107"/>
+  <line no="108">
+    <token name="T_INLINE_HTML">                                                &lt;label class="control-label"&gt;{{ trans('localization::lang_view.confirm_password')}}&lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                                                &lt;input id="registerPasswordConfirmation" type="password" equalTo="#pass_id" class="form-control error" required &gt;</token>
+  </line>
+  <line no="110"/>
+  <line no="111">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="115"/>
+  <line no="116">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-md-6 col-sm-4"&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                                            &lt;legend&gt;{{ trans('localization::lang_view.set_profile_picture')}}&lt;/legend&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                                            &lt;div class="fileinput fileinput-new text-center" data-provides="fileinput"&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                                                &lt;div class="fileinput-new thumbnail img-circle"&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                                                    &lt;img name="profile_pic" src="http://via.placeholder.com/200?text=Upload%20Image" alt="..."&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                                                &lt;div class="fileinput-preview fileinput-exists thumbnail img-circle"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                                                &lt;div&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                                                    &lt;span class="btn btn-round btn-rose btn-file"&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                                                        &lt;span class="fileinput-new"&gt;{{ trans('localization::lang_view.add_photo')}}&lt;/span&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                                                        &lt;span class="fileinput-exists"&gt;{{ trans('localization::lang_view.change')}}&lt;/span&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                                                        &lt;input type="file" name="avatar"&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="ripple-container"&gt;&lt;/div&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                                                    &lt;br&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                                                    &lt;a href="#pablo" class="btn btn-danger btn-round fileinput-exists" data-dismiss="fileinput"&gt;&lt;i class="fa fa-times"&gt;&lt;/i&gt;{{ trans('localization::lang_view.remove')}}&lt;/a&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="134"/>
+  <line no="135"/>
+  <line no="136"/>
+  <line no="137">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col-lg-6 col-md-6 col-sm-3"&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                                            &lt;button type="submit" class="btn btn-primary pull-right" &gt;{{ trans('localization::lang_view.add_user')}}&lt;/button&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="141"/>
+  <line no="142">
+    <token name="T_INLINE_HTML">                                    </token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">                                    &lt;div class="clearfix"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                                &lt;/form&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="151"/>
+  <line no="152"/>
+  <line no="153"/>
+  <line no="154"/>
+  <line no="155">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

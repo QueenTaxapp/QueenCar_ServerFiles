@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Actions\SyncUserRolesAction" namespace="App\Containers\Authorization\Actions" name="SyncUserRolesAction" abstract="false" final="false" start="15" end="40">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Actions" file="SyncUserRolesAction.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Actions/SyncUserRolesAction.php" size="952" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="5dc7a04bff04558bf349d9f48e500a84e6ab21c1" relative="Authorization/Actions/SyncUserRolesAction.php"/>
+  <docblock>
+    <description compact="Class SyncUserRolesAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="23" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Ship\Parents\Requests\Request" namespace="\App\Ship\Parents\Requests" name="Request"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="convert roles IDs to array (in case single id passed)" line="27"/>
+    </inline>
+  </method>
+</class>

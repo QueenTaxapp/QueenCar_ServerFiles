@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Payment\ApiTask\Braintree" namespace="App\Containers\Payment\ApiTask" name="Braintree" abstract="false" final="false" start="12" end="24">
+  <file path="/var/www/html/queencar/app/Containers/Payment/ApiTask" file="Braintree.php" realpath="/var/www/html/queencar/app/Containers/Payment/ApiTask/Braintree.php" size="505" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="413ed00d7566b28ee972012ce9439a5458b0b9cb" relative="Payment/ApiTask/Braintree.php"/>
+  <docblock>
+    <description compact="Class Braintree"/>
+    <package value="App\Containers\Payment\ApiTask"/>
+  </docblock>
+  <method name="run" start="15" end="23" abstract="false" final="false" static="false" visibility="public"/>
+</class>

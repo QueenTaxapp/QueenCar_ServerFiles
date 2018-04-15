@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Request\Webtasks\RequestAllTask" namespace="App\Containers\Request\Webtasks" name="RequestAllTask" abstract="false" final="false" start="14" end="115">
+  <file path="/var/www/html/queencar/app/Containers/Request/Webtasks" file="RequestAllTask.php" realpath="/var/www/html/queencar/app/Containers/Request/Webtasks/RequestAllTask.php" size="3319" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="442462fce24e599242e83d51767aba834d111824" relative="Request/Webtasks/RequestAllTask.php"/>
+  <method name="run" start="23" end="113" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$heading" type="array"/>
+      <param variable="$values" type="object"/>
+      <param variable="$key" type="array"/>
+      <param variable="$title" type="string"/>
+      <return type="object">
+        <type full="App\Containers\Request\Webtasks\document" namespace="App\Containers\Request\Webtasks" name="document"/>
+      </return>
+    </docblock>
+    <parameter name="result" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="25"/>
+      <comment value="print_r($result);" line="26"/>
+      <comment value="die();" line="27"/>
+    </inline>
+  </method>
+</class>

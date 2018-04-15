@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Zone\Models\RequestPlaceModel" namespace="App\Containers\Zone\Models" name="RequestPlaceModel" abstract="false" final="false" start="11" end="15">
+  <file path="/var/www/html/queencar/app/Containers/Zone/Models" file="RequestPlaceModel.php" realpath="/var/www/html/queencar/app/Containers/Zone/Models/RequestPlaceModel.php" size="271" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="b4e37962671cfe3fa7ad4db9f7cab55eae890d7e" relative="Zone/Models/RequestPlaceModel.php"/>
+  <docblock>
+    <description/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="dates" default="" type="array" visibility="protected" static="false" line="13"/>
+  <member name="table" default="'request_place'" type="string" visibility="protected" static="false" line="14"/>
+</class>

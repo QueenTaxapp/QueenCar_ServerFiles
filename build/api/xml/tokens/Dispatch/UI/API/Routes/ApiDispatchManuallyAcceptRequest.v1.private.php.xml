@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Routes" file="ApiDispatchManuallyAcceptRequest.v1.private.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Routes/ApiDispatchManuallyAcceptRequest.v1.private.php" size="2641" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="b47e5e06941ba3cd8f1f850b73dabfb6bba5f464" relative="Dispatch/UI/API/Routes/ApiDispatchManuallyAcceptRequest.v1.private.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * @apiGroup           Dispatch</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * @apiName            Request Accepted manually by dispatch admin</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * @api                {post} /dispatch/manual/request/accept  Request Accepted manually by dispatch admin</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * @apiDescription      Request Accepted manually by dispatch admin</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * @apiVersion         1.0.0</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * @apiPermission      none</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * @apiHeader          Accept application/json</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> *@apiParam           {String}     id</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> *@apiParam           {String}     token</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Double}     platitude</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Double}     plongitude</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Double}     dlatitude</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Double}     dlongitude</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Integer}    payment_opt</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Integer}    type</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT"> *@apiParam           {Integer}    user_id</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> *@apiParam           {String}     pick_location</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> *@apiParam           {String}     drop_location</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> *@apiParam           {String}     firstname</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> *@apiParam           {String}     lastname</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> *@apiParam           {String}     phone_number</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> *@apiParam           {String}     driver_id</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT"> * @apiSuccessExample  {json}    Success-Response:</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT"> *  {</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT"> *      "success": true,</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT"> *      "success_message": "Driver start trip",</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT"> *                  "is_driver_started": 1,</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT"> *                  "payment_opt": 1,</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT"> *                  "type": 3,</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT"> *                  "pick_latitude": 11.0146138,</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT"> *                  "pick_longitude": 76.9817354,</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT"> *                  "drop_latitude": 11.0332088,</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT"> *                  "drop_longitude": 76.98,</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT"> *                  "pick_location": "LMS Street, P N Palayam, Coimbatore, Tamil Nadu, India",</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT"> *                  "drop_location": "PSG College of Arts &amp; Science, PSG CAS, Civil Aerodrome Post, Peelamedu, Coimbatore, Tamil Nadu, India",</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT"> *      "user": {</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT"> *                  "id": 43,</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT"> *                  "firstname": "Testonehh",</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT"> *                  "lastname": "One",</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT"> *                  "email": "test1@gmail.com",</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT"> *                  "phone_number": "+918056335103",</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT"> *                  "profile_pic": "http://192.168.1.20/tabgo/public/assets/img/uploads/151496344239549.png",</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT"> *                  "review": "4"</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT"> *               }</token>
+  </line>
+  <line no="51">
+    <token name="T_DOC_COMMENT"> *                   }</token>
+  </line>
+  <line no="52">
+    <token name="T_DOC_COMMENT"> *  }</token>
+  </line>
+  <line no="53">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="54">
+    <token name="T_DOC_COMMENT"> * @apiErrorExample  {json}       Error-Response:</token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT"> *       {</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT"> *           "success": false,</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT"> *           "error_code": "816",</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT"> *           "error_message": "Invalid request",</token>
+  </line>
+  <line no="59">
+    <token name="T_DOC_COMMENT"> *           "exception": "App\\Ship\\Exceptions\\CommonException",</token>
+  </line>
+  <line no="60">
+    <token name="T_DOC_COMMENT"> *       }</token>
+  </line>
+  <line no="61">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="62">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="63"/>
+  <line no="64">
+    <token name="T_VARIABLE">$router</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">post</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/dispatch/manual/request/accept'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="65">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'as'</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Dispatch@dispatch_manual_accept_request'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="66">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'uses'</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Controller@run'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="67">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'middleware'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="68">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'DispatchTokenCheck.api'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="69">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+  </line>
+  <line no="70">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="71"/>
+</source>

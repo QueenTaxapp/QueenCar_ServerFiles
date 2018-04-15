@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Settings\Tasks\FindSettingByKeyTask" namespace="App\Containers\Settings\Tasks" name="FindSettingByKeyTask" abstract="false" final="false" start="14" end="47">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Tasks" file="FindSettingByKeyTask.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Tasks/FindSettingByKeyTask.php" size="970" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="05014c575449c2ccdc09c3d85f088a8f0dbcf40a" relative="Settings/Tasks/FindSettingByKeyTask.php"/>
+  <docblock>
+    <description compact="Class FindSettingsByKeyTask"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <member name="repository" visibility="private" static="false" line="20">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\Containers\Settings\Data\Repositories\SettingRepository" namespace="App\Containers\Settings\Data\Repositories" name="SettingRepository"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="26" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="FindSettingsByKeyTask constructor."/>
+      <param type="object" variable="$repository">
+        <type full="App\Containers\Settings\Data\Repositories\SettingRepository" namespace="App\Containers\Settings\Data\Repositories" name="SettingRepository"/>
+      </param>
+    </docblock>
+    <parameter name="repository" byreference="false" type="object">
+      <type full="App\Containers\Settings\Data\Repositories\SettingRepository" namespace="App\Containers\Settings\Data\Repositories" name="SettingRepository"/>
+    </parameter>
+  </constructor>
+  <method name="run" start="37" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$key"/>
+      <return type="mixed"/>
+      <throws type="object">
+        <type full="App\Containers\Settings\Exceptions\SettingNotFoundException" namespace="App\Containers\Settings\Exceptions" name="SettingNotFoundException"/>
+      </throws>
+    </docblock>
+    <parameter name="key" byreference="false" type="{unknown}"/>
+  </method>
+</class>

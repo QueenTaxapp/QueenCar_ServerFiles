@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Authentication/UI/WEB/Views" file="login.blade.php" realpath="/var/www/html/queencar/app/Containers/Authentication/UI/WEB/Views/login.blade.php" size="4135" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="1dfd7683c3b7257a6bf2fed89427d52856a91418" relative="Authentication/UI/WEB/Views/login.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!DOCTYPE html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">    &lt;head&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">        &lt;title&gt;apiato&lt;/title&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        &lt;style&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            @import url(https://fonts.googleapis.com/css?family=Roboto:300);</token>
+  </line>
+  <line no="7"/>
+  <line no="8">
+    <token name="T_INLINE_HTML">            .login-page {</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">                width: 360px;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">                padding: 8% 0 0;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">                margin: auto;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">            .form {</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">                position: relative;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">                z-index: 1;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">                background: #FFFFFF;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">                max-width: 360px;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                margin: 0 auto 100px;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                padding: 45px;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                text-align: center;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">            .form input {</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                font-family: "Roboto", sans-serif;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                outline: 0;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                background: #f2f2f2;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">                width: 100%;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">                border: 0;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">                margin: 0 0 15px;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">                padding: 15px;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">                box-sizing: border-box;</token>
+  </line>
+  <line no="32">
+    <token name="T_INLINE_HTML">                font-size: 14px;</token>
+  </line>
+  <line no="33">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="34">
+    <token name="T_INLINE_HTML">            .form button {</token>
+  </line>
+  <line no="35">
+    <token name="T_INLINE_HTML">                font-family: "Roboto", sans-serif;</token>
+  </line>
+  <line no="36">
+    <token name="T_INLINE_HTML">                text-transform: uppercase;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                outline: 0;</token>
+  </line>
+  <line no="38">
+    <token name="T_INLINE_HTML">                background: #4CAF50;</token>
+  </line>
+  <line no="39">
+    <token name="T_INLINE_HTML">                width: 100%;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">                border: 0;</token>
+  </line>
+  <line no="41">
+    <token name="T_INLINE_HTML">                padding: 15px;</token>
+  </line>
+  <line no="42">
+    <token name="T_INLINE_HTML">                color: #FFFFFF;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">                font-size: 14px;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">                -webkit-transition: all 0.3 ease;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">                transition: all 0.3 ease;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">                cursor: pointer;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">            .form button:hover,.form button:active,.form button:focus {</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">                background: #43A047;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">            .form .message {</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                margin: 15px 0 0;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                color: #b3b3b3;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                font-size: 12px;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">            .form .message a {</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                color: #4CAF50;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                text-decoration: none;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">            .form .register-form {</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                display: none;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">            .container {</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">                position: relative;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">                z-index: 1;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                max-width: 300px;</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                margin: 0 auto;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">            .container:before, .container:after {</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                content: "";</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                display: block;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                clear: both;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">            .container .info {</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                margin: 50px auto;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                text-align: center;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">            h1, .container .info h1 {</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">                margin: 0 0 15px;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">                padding: 0;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                font-size: 36px;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                font-weight: 300;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                color: #1a1a1a;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="85"/>
+  <line no="86">
+    <token name="T_INLINE_HTML">            .center { text-align: center;  }</token>
+  </line>
+  <line no="87"/>
+  <line no="88">
+    <token name="T_INLINE_HTML">            .container .info span {</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                color: #4d4d4d;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                font-size: 12px;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">            .container .info span a {</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                color: #000000;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                text-decoration: none;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">            .container .info span .fa {</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                color: #EF3B3A;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">            body {</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                background: #ffffff;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">                font-family: "Roboto", sans-serif;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">                -webkit-font-smoothing: antialiased;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                -moz-osx-font-smoothing: grayscale;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">            .text-red {</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                color: red;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                margin-bottom: 10px;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">        &lt;/style&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">    &lt;/head&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">    &lt;body&gt;</token>
+  </line>
+  <line no="112"/>
+  <line no="113">
+    <token name="T_INLINE_HTML">    &lt;div class="login-page"&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">        &lt;h1 class="center"&gt;Login&lt;/h1&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">        &lt;div class="form"&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">            &lt;form class="login-form" action="{{route('post_admin_login_form')}}" method="post"&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                {{ csrf_field() }}</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                @if(session('status'))</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                    &lt;div class="text-red"&gt;{{ session('status') }}&lt;/div&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                @endif</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                &lt;input type="text"  placeholder="email" id="email" name="email"/&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                &lt;span class="text-red"&gt;{{ $errors-&gt;first('email') }}&lt;/span&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                &lt;input type="password" placeholder="password" id="password" name="password"/&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                &lt;span class="text-red"&gt;{{ $errors-&gt;first('password') }}&lt;/span&gt;</token>
+  </line>
+  <line no="125"/>
+  <line no="126">
+    <token name="T_INLINE_HTML">                &lt;button&gt;login&lt;/button&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">            &lt;/form&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="130"/>
+  <line no="131">
+    <token name="T_INLINE_HTML">    &lt;/body&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+  <line no="133"/>
+</source>

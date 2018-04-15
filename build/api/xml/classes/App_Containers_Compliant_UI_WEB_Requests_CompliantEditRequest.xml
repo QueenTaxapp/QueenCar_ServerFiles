@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Compliant\UI\WEB\Requests\CompliantEditRequest" namespace="App\Containers\Compliant\UI\WEB\Requests" name="CompliantEditRequest" abstract="false" final="false" start="8" end="24">
+  <file path="/var/www/html/queencar/app/Containers/Compliant/UI/WEB/Requests" file="CompliantEditRequest.php" realpath="/var/www/html/queencar/app/Containers/Compliant/UI/WEB/Requests/CompliantEditRequest.php" size="443" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="bc6e103142426ffb31644c1647d27fa925b9b2b0" relative="Compliant/UI/WEB/Requests/CompliantEditRequest.php"/>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="10" end="18" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="20" end="23" abstract="false" final="false" static="false" visibility="public"/>
+</class>

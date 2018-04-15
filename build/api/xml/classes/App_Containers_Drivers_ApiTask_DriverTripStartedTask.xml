@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\ApiTask\DriverTripStartedTask" namespace="App\Containers\Drivers\ApiTask" name="DriverTripStartedTask" abstract="false" final="false" start="11" end="94">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/ApiTask" file="DriverTripStartedTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/ApiTask/DriverTripStartedTask.php" size="2796" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="50521045f9a2b38feae680aae8d2544052f33b43" relative="Drivers/ApiTask/DriverTripStartedTask.php"/>
+  <method name="run" start="14" end="93" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="$request = RequestModel::join('User', 'User.id', '=', 'request.user_id')" line="22"/>
+      <comment value="-&gt;select('request.id','request.is_driver_arrived','request.is_cancelled','request.is_trip_start','request.user_id','User.device_token','User.login_by')" line="23"/>
+      <comment value="-&gt;where('request.id',$requestId)" line="24"/>
+      <comment value="-&gt;first();" line="25"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Request\ApiTask\RequestBillShowTask" namespace="App\Containers\Request\ApiTask" name="RequestBillShowTask" abstract="false" final="false" start="40" end="889">
+  <file path="/var/www/html/queencar/app/Containers/Request/ApiTask" file="RequestBillShowTask.php" realpath="/var/www/html/queencar/app/Containers/Request/ApiTask/RequestBillShowTask.php" size="31246" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="c230c05905fc19434ce5f3afa3ccb451459588b7" relative="Request/ApiTask/RequestBillShowTask.php"/>
+  <docblock>
+    <description compact="Class ApiEta"/>
+    <package value="App\Containers\eta\ApiTask"/>
+  </docblock>
+  <method name="run" start="42" end="820" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="48"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="print_r($result);" line="49"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="die();" line="50"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($data['request']-&gt;request_id);die(&quot;wrks&quot;);" line="53"/>
+      <comment value="('sandbox');" line="54"/>
+      <comment value="('dzyrm5nc7h9jr3nr');" line="55"/>
+      <comment value="('3cxryqwyg9cyq7mq');" line="56"/>
+      <comment value="('ece77cd5774720d9e1b5d758c779af3b');" line="57"/>
+      <comment value="driver fee from trip" line="87"/>
+      <comment value="base_price" line="184"/>
+      <comment value="base_distance" line="185"/>
+      <comment value="price_per_distance" line="186"/>
+      <comment value="price_per_time" line="187"/>
+      <comment value="distance_price" line="197"/>
+      <comment value="time_price" line="198"/>
+      <comment value="waiting_price" line="199"/>
+      <comment value="referral_amount" line="234"/>
+      <comment value="driver_amount" line="253"/>
+      <comment value="- ;//total_amount" line="255"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request_bill);die();" line="322"/>
+      <comment value="driver amount starts" line="333"/>
+      <comment value="driver amount ends" line="673"/>
+      <comment value="sms &amp; email" line="684"/>
+      <comment value="sms" line="696"/>
+      <comment value="user" line="697"/>
+      <comment value="driver" line="702"/>
+      <comment value="sms" line="707"/>
+      <comment value="email" line="710"/>
+      <comment value="driver" line="739"/>
+      <comment value="user" line="743"/>
+      <comment value="sms &amp; email" line="757"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($data['user_response']);die();" line="801"/>
+      <comment value="$this-&gt;driverPush($requestTable-&gt;driver_id, $data['response'], &quot;bill_generated&quot;);" line="808"/>
+      <comment value="&quot;unit&quot;      =&gt; $requestTable-&gt;unit," line="817"/>
+      <comment value="&quot;unit_in_words_without_lang&quot; =&gt; $unitArray[$requestTable-&gt;unit]," line="818"/>
+      <comment value="&quot;unit_in_words&quot;=&gt; $unitWithLang," line="819"/>
+    </inline>
+  </method>
+  <method name="durationTimeCalculate" start="822" end="831" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="startTime" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="requestBillGenerate" start="834" end="861" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request_id" byreference="false" type="{unknown}"/>
+    <parameter name="array" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($array['base_price']);die();" line="836"/>
+    </inline>
+  </method>
+  <method name="userPush" start="863" end="872" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="user_id" byreference="false" type="{unknown}"/>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+    <parameter name="title" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="driverPush" start="875" end="884" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="driver_id" byreference="false" type="{unknown}"/>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+    <parameter name="title" byreference="false" type="{unknown}"/>
+  </method>
+</class>

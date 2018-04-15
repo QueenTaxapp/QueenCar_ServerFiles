@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Models\HeroPathDetailsModel" namespace="App\Containers\Drivers\Models" name="HeroPathDetailsModel" abstract="false" final="false" start="9" end="13">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Drivers/Models" file="HeroPathDetailsModel.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Drivers/Models/HeroPathDetailsModel.php" size="275" time="2017-10-09T12:07:20+02:00" unixtime="1507543640" sha1="6febb95c1e389bc99635643dae3892e1610d6bd6" relative="Drivers/Models/HeroPathDetailsModel.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="dates" default="" type="array" visibility="protected" static="false" line="11"/>
+  <member name="table" default="'911_Hero_Path_Details'" type="string" visibility="protected" static="false" line="12"/>
+</class>

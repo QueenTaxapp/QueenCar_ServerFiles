@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Actions\RevokeUserFromRoleAction" namespace="App\Containers\Authorization\Actions" name="RevokeUserFromRoleAction" abstract="false" final="false" start="17" end="48">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Actions" file="RevokeUserFromRoleAction.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Actions/RevokeUserFromRoleAction.php" size="1182" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="665ec70a983983e37a45818ca2b88eb2c5d7b911" relative="Authorization/Actions/RevokeUserFromRoleAction.php"/>
+  <docblock>
+    <description compact="Class RevokeUserFromRoleAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="25" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Ship\Parents\Requests\Request" namespace="\App\Ship\Parents\Requests" name="Request"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request"/>
+    </parameter>
+  </method>
+</class>

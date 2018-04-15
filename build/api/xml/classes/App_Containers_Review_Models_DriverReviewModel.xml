@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Review\Models\DriverReviewModel" namespace="App\Containers\Review\Models" name="DriverReviewModel" abstract="false" final="false" start="13" end="23">
+  <file path="/var/www/html/queencar/app/Containers/Review/Models" file="DriverReviewModel.php" realpath="/var/www/html/queencar/app/Containers/Review/Models/DriverReviewModel.php" size="361" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="71ce484a586eabd70adee7d3e1a0d93e483c1100" relative="Review/Models/DriverReviewModel.php"/>
+  <docblock>
+    <description compact="Class DriverReviewModel"/>
+    <package value="App\Containers\Review\Models"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="dates" default="" type="array" visibility="protected" static="false" line="18">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="table" default="'Driver_Review'" type="string" visibility="protected" static="false" line="22">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+</class>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Models\UserDetail" namespace="App\Containers\User\Models" name="UserDetail" abstract="false" final="false" start="9" end="13">
+  <file path="/var/www/html/queencar/app/Containers/User/Models" file="UserDetail.php" realpath="/var/www/html/queencar/app/Containers/User/Models/UserDetail.php" size="214" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="afa01dc4e82fe11130bbb7b788f076eab27d70de" relative="User/Models/UserDetail.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="table" default="'User_detail'" type="string" visibility="protected" static="false" line="12"/>
+</class>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Webtasks\LoginEmailValidationTask" namespace="App\Containers\Admin\Webtasks" name="LoginEmailValidationTask" abstract="false" final="false" start="17" end="120">
+  <file path="/var/www/html/queencar/app/Containers/Admin/Webtasks" file="LoginEmailValidationTask.php" realpath="/var/www/html/queencar/app/Containers/Admin/Webtasks/LoginEmailValidationTask.php" size="3980" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="9a81816811cffb6da7265fb8feac1bd64f65f8be" relative="Admin/Webtasks/LoginEmailValidationTask.php"/>
+  <uses full="Apiato\Core\Traits\CallableTrait" namespace="Apiato\Core\Traits" name="CallableTrait" start="19" end="19" unresolved="true"/>
+  <method name="run" start="21" end="119" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="emailAddress" byreference="false" type="{unknown}"/>
+    <parameter name="password" byreference="false" type="{unknown}"/>
+    <parameter name="remember" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+</class>

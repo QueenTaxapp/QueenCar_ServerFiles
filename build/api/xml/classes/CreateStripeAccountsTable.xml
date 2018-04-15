@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="CreateStripeAccountsTable" namespace="" name="CreateStripeAccountsTable" abstract="false" final="false" start="11" end="46">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Data/Migrations" file="2016_07_08_110947_create_stripe_accounts_table.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/Data/Migrations/2016_07_08_110947_create_stripe_accounts_table.php" size="1089" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="4d26868445b7d296d62b90a075c1dfaa8bb0f8ae" relative="Stripe/Data/Migrations/2016_07_08_110947_create_stripe_accounts_table.php"/>
+  <docblock>
+    <description compact="Class CreateStripeAccountsTable"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="Illuminate\Database\Migrations\Migration" namespace="Illuminate\Database\Migrations" name="Migration" unresolved="true"/>
+  <method name="up" start="19" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Run the migrations."/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="down" start="42" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Reverse the migrations."/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+  </method>
+</class>

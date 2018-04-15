@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\ApiTask\DriverRequestInprogressTask" namespace="App\Containers\Drivers\ApiTask" name="DriverRequestInprogressTask" abstract="false" final="false" start="21" end="285">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/ApiTask" file="DriverRequestInprogressTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/ApiTask/DriverRequestInprogressTask.php" size="10403" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="deff4b542660a77c782acde93c7390a5430fa8c1" relative="Drivers/ApiTask/DriverRequestInprogressTask.php"/>
+  <docblock>
+    <description compact="Class DriverResponseRequestTask"/>
+    <package value="App\Containers\Drivers\ApiTask"/>
+  </docblock>
+  <member name="request" visibility="private" static="false" line="24"/>
+  <method name="run" start="32" end="55" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo&quot;&lt;pre&gt;&quot;;print_r($data['response']);die();" line="54"/>
+    </inline>
+  </method>
+  <method name="sos" start="58" end="73" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="admin_key" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_trip_status" start="75" end="151" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setRequestResponse" start="153" end="176" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setresponse" start="178" end="244" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="183"/>
+      <comment value="print_r($request-&gt;user_id);" line="184"/>
+      <comment value="die();" line="185"/>
+    </inline>
+  </method>
+  <method name="setmeta" start="247" end="284" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

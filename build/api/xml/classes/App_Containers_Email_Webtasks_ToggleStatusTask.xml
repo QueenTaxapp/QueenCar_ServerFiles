@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Email\Webtasks\ToggleStatusTask" namespace="App\Containers\Email\Webtasks" name="ToggleStatusTask" abstract="false" final="false" start="14" end="32">
+  <file path="/var/www/html/queencar/app/Containers/Email/Webtasks" file="ToggleStatusTask.php" realpath="/var/www/html/queencar/app/Containers/Email/Webtasks/ToggleStatusTask.php" size="627" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="d62c2aa2f8f00241df6c45befe640112f219cbcd" relative="Email/Webtasks/ToggleStatusTask.php"/>
+  <docblock>
+    <description compact="Class ToggleStatusTask"/>
+    <package value="App\Containers\Email\Tasks"/>
+  </docblock>
+  <method name="run" start="23" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="to toggle email settings"/>
+      <param variable="$id"/>
+      <param variable="$columnName"/>
+      <param variable="$tableName"/>
+    </docblock>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="columnName" byreference="false" type="{unknown}"/>
+    <parameter name="tableName" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Models\Refferal" namespace="App\Containers\User\Models" name="Refferal" abstract="false" final="false" start="12" end="19">
+  <file path="/var/www/html/queencar/app/Containers/User/Models" file="Refferal.php" realpath="/var/www/html/queencar/app/Containers/User/Models/Refferal.php" size="308" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="25f25cd838501fdc2a16bc5bbd64b40c2fb49799" relative="User/Models/Refferal.php"/>
+  <docblock>
+    <description compact="Class Refferal"/>
+    <package value="App\Containers\User\Models"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="table" default="'referral'" type="string" visibility="protected" static="false" line="18">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+</class>

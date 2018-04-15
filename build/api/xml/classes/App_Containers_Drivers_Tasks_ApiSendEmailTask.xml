@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Tasks\ApiSendEmailTask" namespace="App\Containers\Drivers\Tasks" name="ApiSendEmailTask" abstract="false" final="false" start="23" end="46">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/Tasks" file="ApiSendEmailTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/Tasks/ApiSendEmailTask.php" size="1182" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e7c75435a6c07ea1d4860090eaf40af15cfdac9e" relative="Drivers/Tasks/ApiSendEmailTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="31" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to check if the email address is present or not"/>
+      <param variable="$email" type="string"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}"/>
+    <parameter name="mess" byreference="false" type="{unknown}"/>
+  </method>
+</class>

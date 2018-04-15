@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Debugger\Tasks\QueryDebuggerTask" namespace="App\Containers\Debugger\Tasks" name="QueryDebuggerTask" abstract="false" final="false" start="16" end="48">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Debugger/Tasks" file="QueryDebuggerTask.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Debugger/Tasks/QueryDebuggerTask.php" size="1243" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="9d903da6ff4a3ac34d5e1adfedce7a1617e4e354" relative="Debugger/Tasks/QueryDebuggerTask.php"/>
+  <docblock>
+    <description compact="Class QueryDebuggerTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="23" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Write the DB queries in the Log and Display them in the terminal (in case you want to see them while executing the tests)."/>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Email\Webtasks\NewEmailViewTask" namespace="App\Containers\Email\Webtasks" name="NewEmailViewTask" abstract="false" final="false" start="15" end="73">
+  <file path="/var/www/html/queencar/app/Containers/Email/Webtasks" file="NewEmailViewTask.php" realpath="/var/www/html/queencar/app/Containers/Email/Webtasks/NewEmailViewTask.php" size="1572" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="83005a70bc996b12b2fc0edb39d14de75c85b608" relative="Email/Webtasks/NewEmailViewTask.php"/>
+  <docblock>
+    <description compact="Class EmailAction"/>
+    <package value="App\Containers\Email\Actions"/>
+  </docblock>
+  <method name="run" start="24" end="72" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="to validate user"/>
+      <param type="null" variable="$id"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="paginate($page);" line="29"/>
+      <comment value="paginate($page);" line="49"/>
+    </inline>
+  </method>
+</class>

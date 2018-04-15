@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Layout\UI\WEB\Controllers\Controller" namespace="App\Containers\Layout\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="32" end="112">
+  <file path="/var/www/html/queencar/app/Containers/Layout/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Layout/UI/WEB/Controllers/Controller.php" size="3360" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="0714fa33497527a07575b84af8785e02a26a5455" relative="Layout/UI/WEB/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="layoutPage" start="41" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="adminLogin"/>
+      <param type="object" variable="$request"/>
+      <return description="admin::AdminLoginBlade" type="object">
+        <type full="App\Containers\Layout\UI\WEB\Controllers\view" namespace="App\Containers\Layout\UI\WEB\Controllers" name="view"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="lockscreenValidationa" start="48" end="90" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="logouta" start="92" end="110" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r(Session::all());die();" line="94"/>
+    </inline>
+  </method>
+</class>

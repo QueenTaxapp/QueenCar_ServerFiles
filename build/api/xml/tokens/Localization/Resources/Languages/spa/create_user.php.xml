@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Localization/Resources/Languages/spa" file="create_user.php" realpath="/var/www/html/queencar/app/Containers/Localization/Resources/Languages/spa/create_user.php" size="56" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e6e0d89cc3f796acda160ee3a36fbe094a87a1d0" relative="Localization/Resources/Languages/spa/create_user.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'create_user'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Create User'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+</source>

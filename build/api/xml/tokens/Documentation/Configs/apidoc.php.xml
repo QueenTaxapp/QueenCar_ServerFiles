@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Documentation/Configs" file="apidoc.php" realpath="/var/www/html/queencar/app/Containers/Documentation/Configs/apidoc.php" size="1655" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="9be4cc8a2bfed0942905e3cc7279684af2c3c563" relative="Documentation/Configs/apidoc.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="4"/>
+  <line no="5">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">    | Executable</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">    | Specify how you run or access the `apidoc` tool on your machine.</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'executable'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'$(npm bin)/apidoc'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="15"/>
+  <line no="16">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT">    | API Types</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT">    | The `types` helps generating multiple documentations, by grouping them</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT">    | under types names. You can add or remove any type. By default</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT">    | `public` and `private` types are set.</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT">    | url: The url to access that generated API documentation.</token>
+  </line>
+  <line no="26">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="27">
+    <token name="T_COMMENT">    | routes: The route file to read when generating this documentation.</token>
+  </line>
+  <line no="28">
+    <token name="T_COMMENT">    |         Every route file will have the following name format:</token>
+  </line>
+  <line no="29">
+    <token name="T_COMMENT">    |         `{endpoint-name}.v{version-number}.{documentation-type}.php`.</token>
+  </line>
+  <line no="30">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="31">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="32"/>
+  <line no="33">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'types'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="34"/>
+  <line no="35">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'public'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="36">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'url'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'api/documentation'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="37">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'routes'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="38">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'public'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="39">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="40">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'private'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="43">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'url'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'api/private/documentation'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="44">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'routes'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="45">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'private'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="46">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'public'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="47">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="48">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="49">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*</token>
+  </line>
+  <line no="52">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="53">
+    <token name="T_COMMENT">    | HTML files</token>
+  </line>
+  <line no="54">
+    <token name="T_COMMENT">    |--------------------------------------------------------------------------</token>
+  </line>
+  <line no="55">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="56">
+    <token name="T_COMMENT">    | Specify where to put the generated HTML files.</token>
+  </line>
+  <line no="57">
+    <token name="T_COMMENT">    |</token>
+  </line>
+  <line no="58">
+    <token name="T_COMMENT">    */</token>
+  </line>
+  <line no="59"/>
+  <line no="60">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'html_files'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'public/'</token>
+  </line>
+  <line no="61">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="62"/>
+</source>

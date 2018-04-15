@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Tasks\CallOAuthServerTask" namespace="App\Containers\Authentication\Tasks" name="CallOAuthServerTask" abstract="false" final="false" start="16" end="53">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Tasks" file="CallOAuthServerTask.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Tasks/CallOAuthServerTask.php" size="1453" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="d2b73576ff522dc3a92abbc51182399904cae765" relative="Authentication/Tasks/CallOAuthServerTask.php"/>
+  <docblock>
+    <description compact="Class CallOAuthServerTask"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <constant type="string" name="AUTH_ROUTE" value="'/v1/oauth/token'">
+    <docblock>
+      <description/>
+      <string/>
+    </docblock>
+  </constant>
+  <method name="run" start="30" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <return type="array"/>
+      <throws type="object">
+        <type full="\App\Containers\Authentication\Exceptions\LoginFailedException" namespace="\App\Containers\Authentication\Exceptions" name="LoginFailedException"/>
+      </throws>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Full url to the oauth token endpoint" line="32"/>
+      <comment value="Create and handle the oauth request" line="37"/>
+      <comment value="response content as Array" line="42"/>
+      <comment value="If the internal request to the oauth token endpoint was not successful we throw an exception" line="45"/>
+    </inline>
+  </method>
+</class>

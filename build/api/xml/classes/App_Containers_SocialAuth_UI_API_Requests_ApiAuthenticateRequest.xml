@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\SocialAuth\UI\API\Requests\ApiAuthenticateRequest" namespace="App\Containers\SocialAuth\UI\API\Requests" name="ApiAuthenticateRequest" abstract="false" final="false" start="12" end="57">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/UI/API/Requests" file="ApiAuthenticateRequest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Socialauth/UI/API/Requests/ApiAuthenticateRequest.php" size="956" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="7222216eff3aa177ef0c4b5969f4c15308e2cd72" relative="Socialauth/UI/API/Requests/ApiAuthenticateRequest.php"/>
+  <docblock>
+    <description compact="Class ApiAuthenticateRequest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="21">
+    <docblock>
+      <description compact="Define which Roles and/or Permissions has access to this request."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="decode" default="" type="array" visibility="protected" static="false" line="30">
+    <docblock>
+      <description compact="Id's that needs decoding before applying the validation rules."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="rules" start="39" end="44" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the validation rules that apply to the request."/>
+      <return type="array"/>
+    </docblock>
+  </method>
+  <method name="authorize" start="51" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Determine if the user is authorized to make this request."/>
+      <return type="object">
+        <type full="App\Containers\SocialAuth\UI\API\Requests\bool" namespace="App\Containers\SocialAuth\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

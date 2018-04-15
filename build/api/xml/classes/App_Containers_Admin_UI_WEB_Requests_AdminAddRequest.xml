@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\UI\WEB\Requests\AdminAddRequest" namespace="App\Containers\Admin\UI\WEB\Requests" name="AdminAddRequest" abstract="false" final="false" start="10" end="68">
+  <file path="/var/www/html/queencar/app/Containers/Admin/UI/WEB/Requests" file="AdminAddRequest.php" realpath="/var/www/html/queencar/app/Containers/Admin/UI/WEB/Requests/AdminAddRequest.php" size="2420" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="dcf9e6050a31d437f49934dd60b94a190d040f63" relative="Admin/UI/WEB/Requests/AdminAddRequest.php"/>
+  <docblock>
+    <description/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="14" end="62" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="64" end="67" abstract="false" final="false" static="false" visibility="public"/>
+</class>

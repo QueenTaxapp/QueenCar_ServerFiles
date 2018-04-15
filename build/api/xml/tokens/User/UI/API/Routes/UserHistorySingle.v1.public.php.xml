@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/User/UI/API/Routes" file="UserHistorySingle.v1.public.php" realpath="/var/www/html/queencar/app/Containers/User/UI/API/Routes/UserHistorySingle.v1.public.php" size="3474" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="30bda221848f568fe1976f03cc05758cca54ec18" relative="User/UI/API/Routes/UserHistorySingle.v1.public.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * @apiGroup           Users</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * @apiName            User History Single</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> * @api                {post} /user/historySingle  User History Single</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * @apiDescription     User History Single</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * @apiVersion         1.0.0</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> * @apiPermission      none</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> * @apiHeader          Accept application/json</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * @apiParam           {Integer}     id   user id</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * @apiParam           {Integer}     request_id</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> * @apiParam           {String}      token   user token</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * @apiSuccessExample  {json}    Success-Response:</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> *   HTTP/1.1 200 OK</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> * {</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT"> *      "success": true,</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> *      "success_message": "user_single_history",</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> *      "request": {</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> *                  "request_id":"RES_53018",</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> *                  "id": 223,</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> *                  "later":0,</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> *                  "user_id": 37,</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> *                  "pick_latitude": 11.0146178999999992953462424338795244693756103515625,</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT"> *                  "pick_longitude": 76.98150440000000571671989746391773223876953125,</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT"> *                  "drop_latitude": 11.014487100000000197042027139104902744293212890625,</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT"> *                  "drop_longitude": 76.9811641000000008716597221791744232177734375,</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT"> *                  "pick_location": "44, LMS Street, P N Palayam, Coimbatore, Tamil Nadu 641037, India",</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT"> *                  "drop_location": "44, LMS Street, P N Palayam, Coimbatore, Tamil Nadu 641037, India",</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT"> *                  "trip_start_time": "2017-12-27 16:20:00",</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT"> *                  "is_completed": 0,</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT"> *                  "is_cancelled": 1,</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT"> *                  "payment_opt":1,</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT"> *                  "driver_type":8,</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT"> *                  "type_icon":"http:\/\/192.168.1.20\/tabgo\/public\/assets\/img\/uploads\/66185.png",</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT"> *                  "type_name ":"BMW",</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT"> *                  "distance":0,</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT"> *                  "time":0,</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT"> *                  "driver":{</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT"> *                          "id":57,</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT"> *                          "firstname":"gane",</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT"> *                          "lastname":"ganesh",</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT"> *                          "email":"ganesh.nplus@gmail.com",</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT"> *                          "phone_number":"+918270801842",</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT"> *                          "profile_pic":"",</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT"> *                          "car_model":"ew23",</token>
+  </line>
+  <line no="51">
+    <token name="T_DOC_COMMENT"> *                          "car_number":"1233",</token>
+  </line>
+  <line no="52">
+    <token name="T_DOC_COMMENT"> *                          "review":"5"</token>
+  </line>
+  <line no="53">
+    <token name="T_DOC_COMMENT"> *                  },</token>
+  </line>
+  <line no="54">
+    <token name="T_DOC_COMMENT"> *                  "bill": {</token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT"> *                          "base_price": 12,</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT"> *                          "base_distance": 1,</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT"> *                          "price_per_distance": 12,</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT"> *                          "price_per_time": 12,</token>
+  </line>
+  <line no="59">
+    <token name="T_DOC_COMMENT"> *                          "distance_price": 48,</token>
+  </line>
+  <line no="60">
+    <token name="T_DOC_COMMENT"> *                          "time_price": 17412,</token>
+  </line>
+  <line no="61">
+    <token name="T_DOC_COMMENT"> *                          "waiting_price": 360,</token>
+  </line>
+  <line no="62">
+    <token name="T_DOC_COMMENT"> *                          "service_tax": 1783.20,</token>
+  </line>
+  <line no="63">
+    <token name="T_DOC_COMMENT"> *                          "service_tax_percentage": 10,</token>
+  </line>
+  <line no="64">
+    <token name="T_DOC_COMMENT"> *                          "promo_amount": 6241.1999999999998181010596454143524169921875,</token>
+  </line>
+  <line no="65">
+    <token name="T_DOC_COMMENT"> *                          "referral_amount": 100,</token>
+  </line>
+  <line no="66">
+    <token name="T_DOC_COMMENT"> *                          "wallet_amount":0,</token>
+  </line>
+  <line no="67">
+    <token name="T_DOC_COMMENT"> *                          "service_fee": 980.759999999999990905052982270717620849609375,</token>
+  </line>
+  <line no="68">
+    <token name="T_DOC_COMMENT"> *                          "driver_amount": 18634.43999999999869032762944698333740234375,</token>
+  </line>
+  <line no="69">
+    <token name="T_DOC_COMMENT"> *                          "total": 13274,</token>
+  </line>
+  <line no="70">
+    <token name="T_DOC_COMMENT"> *                          "currency":"$",</token>
+  </line>
+  <line no="71">
+    <token name="T_DOC_COMMENT"> *                          "show_bill":1</token>
+  </line>
+  <line no="72">
+    <token name="T_DOC_COMMENT"> *                  }</token>
+  </line>
+  <line no="73">
+    <token name="T_DOC_COMMENT"> *      }</token>
+  </line>
+  <line no="74">
+    <token name="T_DOC_COMMENT"> * }</token>
+  </line>
+  <line no="75">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="76">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="77"/>
+  <line no="78">
+    <token name="T_VARIABLE">$router</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">post</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/user/historySingle'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="79">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'as'</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'user@user_single_history'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="80">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'uses'</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Controller@run'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="81">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'middleware'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="82">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'userTokenCheck.api'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="83">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+  </line>
+  <line no="84">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="85"/>
+</source>

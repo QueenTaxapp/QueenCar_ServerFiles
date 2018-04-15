@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Eta\Models\Zone_type" namespace="App\Containers\Eta\Models" name="Zone_type" abstract="false" final="false" start="11" end="25">
+  <file path="/var/www/html/queencar/app/Containers/Eta/Models" file="Zone_type.php" realpath="/var/www/html/queencar/app/Containers/Eta/Models/Zone_type.php" size="387" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="87bdb08472471cf0c492145ba6d79d3fb73a2854" relative="Eta/Models/Zone_type.php"/>
+  <docblock>
+    <description compact="Class Zone_type"/>
+    <package value="App\Containers\Eta\Models"/>
+  </docblock>
+  <extends full="Illuminate\Database\Eloquent\Model" namespace="Illuminate\Database\Eloquent" name="Model" unresolved="true"/>
+  <member name="table" default="'zone_type'" type="string" visibility="protected" static="false" line="18">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <method name="GetPickTime" start="21" end="24" abstract="false" final="false" static="false" visibility="public"/>
+</class>

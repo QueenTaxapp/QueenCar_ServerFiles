@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Stripe\UI\API\Controllers\Controller" namespace="App\Containers\Stripe\UI\API\Controllers" name="Controller" abstract="false" final="false" start="14" end="32">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/UI/API/Controllers" file="Controller.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Stripe/UI/API/Controllers/Controller.php" size="866" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="12bc674c6b9e37a3b85a2894e3a5679044d13053" relative="Stripe/UI/API/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\ApiController" namespace="App\Ship\Parents\Controllers" name="ApiController" unresolved="true"/>
+  <method name="createStripeAccount" start="22" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Stripe\UI\API\Requests\CreateStripeAccountRequest" namespace="\App\Containers\Stripe\UI\API\Requests" name="CreateStripeAccountRequest"/>
+      </param>
+      <return type="object">
+        <type full="\Illuminate\Http\JsonResponse" namespace="\Illuminate\Http" name="JsonResponse"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Stripe\UI\API\Requests\CreateStripeAccountRequest" namespace="App\Containers\Stripe\UI\API\Requests" name="CreateStripeAccountRequest"/>
+    </parameter>
+  </method>
+</class>

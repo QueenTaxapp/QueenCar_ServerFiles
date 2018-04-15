@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\UI\API\Requests\DispatchSpecificAdminRequestListRequest" namespace="App\Containers\Dispatch\UI\API\Requests" name="DispatchSpecificAdminRequestListRequest" abstract="false" final="false" start="9" end="51">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Requests" file="DispatchSpecificAdminRequestListRequest.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Requests/DispatchSpecificAdminRequestListRequest.php" size="1386" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="6f437c76d0599a9625605b1c6b6ac850966a7fc0" relative="Dispatch/UI/API/Requests/DispatchSpecificAdminRequestListRequest.php"/>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="18" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Class DispatchSpecificAdminRequestListRequest."/>
+      <author value="Vignesh R"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="47" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\Dispatch\UI\API\Requests\bool" namespace="App\Containers\Dispatch\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

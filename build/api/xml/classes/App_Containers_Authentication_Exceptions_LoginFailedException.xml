@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Exceptions\LoginFailedException" namespace="App\Containers\Authentication\Exceptions" name="LoginFailedException" abstract="false" final="false" start="11" end="16">
+  <file path="/var/www/html/queencar/app/Containers/User/Exceptions" file="LoginFailedException.php" realpath="/var/www/html/queencar/app/Containers/User/Exceptions/LoginFailedException.php" size="343" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="d64d83cfc9c5fb685eb9965580eadfda679e0cf9" relative="User/Exceptions/LoginFailedException.php"/>
+  <docblock>
+    <description compact="Class InvalidCredentialsException."/>
+  </docblock>
+  <extends full="App\Ship\Parents\Exceptions\Exception" namespace="App\Ship\Parents\Exceptions" name="Exception" unresolved="true"/>
+  <member name="httpStatusCode" default="" type="{unknown}" constant="Response::HTTP_BAD_REQUEST" visibility="public" static="false" line="13"/>
+  <member name="message" default="'Login failed.'" type="string" visibility="public" static="false" line="15"/>
+</class>

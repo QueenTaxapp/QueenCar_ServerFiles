@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\SendEmailTask" namespace="App\Containers\User\Tasks" name="SendEmailTask" abstract="false" final="false" start="25" end="44">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="SendEmailTask.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/SendEmailTask.php" size="1087" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="f30c82ee2a4be5eda9ae6eff6dfd76430781922b" relative="User/Tasks/SendEmailTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="35" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to check if the email address is present or not"/>
+      <param variable="$email" type="string"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="viewPage" byreference="false" type="{unknown}"/>
+    <parameter name="name" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="toEmail" byreference="false" type="{unknown}"/>
+    <parameter name="subject" byreference="false" type="{unknown}"/>
+  </method>
+</class>

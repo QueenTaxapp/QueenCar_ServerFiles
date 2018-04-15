@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Webtasks\NoOfDrivesCancelledTask" namespace="App\Containers\Admin\Webtasks" name="NoOfDrivesCancelledTask" abstract="false" final="false" start="10" end="43">
+  <file path="/var/www/html/queencar/app/Containers/Admin/Webtasks" file="NoOfDrivesCancelledTask.php" realpath="/var/www/html/queencar/app/Containers/Admin/Webtasks/NoOfDrivesCancelledTask.php" size="864" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="a99ed38c13bd14fe247ee4c04aecfdc5eedf320b" relative="Admin/Webtasks/NoOfDrivesCancelledTask.php"/>
+  <method name="run" start="13" end="42" abstract="false" final="false" static="false" visibility="public"/>
+</class>

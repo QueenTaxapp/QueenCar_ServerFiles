@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Jobs\AndroidPushNotificationJob" namespace="App\Containers\Jobs" name="AndroidPushNotificationJob" abstract="false" final="false" start="18" end="87">
+  <file path="/var/www/html/queencar/app/Containers/Jobs" file="AndroidPushNotificationJob.php" realpath="/var/www/html/queencar/app/Containers/Jobs/AndroidPushNotificationJob.php" size="1940" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="7b6ab58bceb23473fc91d902a0f8806058f80d43" relative="Jobs/AndroidPushNotificationJob.php"/>
+  <docblock>
+    <description compact="Class SendEmailJob to send email"/>
+    <package value="App\Containers\Jobs"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Jobs\Job" namespace="App\Ship\Parents\Jobs" name="Job" unresolved="true"/>
+  <member name="device_token" visibility="private" static="false" line="21"/>
+  <member name="message" visibility="private" static="false" line="22"/>
+  <member name="title" visibility="private" static="false" line="23"/>
+  <constructor name="__construct" start="28" end="35" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="device_token" byreference="false" type="{unknown}"/>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+    <parameter name="title" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="handle" start="38" end="86" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="prep the bundle" line="53"/>
+    </inline>
+  </method>
+</class>

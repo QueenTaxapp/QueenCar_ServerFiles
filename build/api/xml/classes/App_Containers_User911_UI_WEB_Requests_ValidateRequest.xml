@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User911\UI\WEB\Requests\ValidateRequest" namespace="App\Containers\User911\UI\WEB\Requests" name="ValidateRequest" abstract="false" final="false" start="14" end="35">
+  <file path="/var/www/html/queencar/app/Containers/Email/UI/WEB/Requests" file="ValidateRequest.php" realpath="/var/www/html/queencar/app/Containers/Email/UI/WEB/Requests/ValidateRequest.php" size="912" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="6f481ae77751569ef839d92066667c985dbea324" relative="Email/UI/WEB/Requests/ValidateRequest.php"/>
+  <docblock>
+    <description compact="Class ValidateRequest"/>
+    <package value="App\Containers\User911\UI\WEB\Requests"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="17" end="29" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="31" end="34" abstract="false" final="false" static="false" visibility="public"/>
+</class>

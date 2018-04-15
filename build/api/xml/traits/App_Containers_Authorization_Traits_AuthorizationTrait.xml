@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trait xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Traits\AuthorizationTrait" namespace="App\Containers\Authorization\Traits" name="AuthorizationTrait" abstract="false" final="false" start="12" end="30">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Traits" file="AuthorizationTrait.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Traits/AuthorizationTrait.php" size="473" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="a091798b326096ab59516e697dac821267a06f7c" relative="Authorization/Traits/AuthorizationTrait.php"/>
+  <docblock>
+    <description compact="Class AuthorizationTrait"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <method name="getUser" start="17" end="20" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="\App\Containers\User\Models\User|null" namespace="\App\Containers\User\Models" name="User|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="hasAdminRole" start="25" end="28" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+</trait>

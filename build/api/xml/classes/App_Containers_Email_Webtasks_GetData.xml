@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Email\Webtasks\GetData" namespace="App\Containers\Email\Webtasks" name="GetData" abstract="false" final="false" start="13" end="47">
+  <file path="/var/www/html/queencar/app/Containers/Email/Webtasks" file="GetData.php" realpath="/var/www/html/queencar/app/Containers/Email/Webtasks/GetData.php" size="897" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="be4e88b77d6f59dbcdb8e2c9ff14bfaa9c1977ee" relative="Email/Webtasks/GetData.php"/>
+  <docblock>
+    <description compact="Class GetData"/>
+    <package value="App\Containers\Email\Tasks"/>
+  </docblock>
+  <method name="run" start="22" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to GetData on the table"/>
+      <param type="string" variable="$id"/>
+      <param type="string" variable="$fieldName"/>
+      <param type="string" variable="$tableName"/>
+      <return type="object">
+        <type full="App\Containers\Email\Webtasks\object|array" namespace="App\Containers\Email\Webtasks" name="object|array"/>
+      </return>
+    </docblock>
+    <parameter name="id" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="fieldName" byreference="false" type="{unknown}"/>
+    <parameter name="tableName" byreference="false" type="{unknown}"/>
+  </method>
+</class>

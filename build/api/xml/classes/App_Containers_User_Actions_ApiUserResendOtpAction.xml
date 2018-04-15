@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Actions\ApiUserResendOtpAction" namespace="App\Containers\User\Actions" name="ApiUserResendOtpAction" abstract="false" final="false" start="22" end="66">
+  <file path="/var/www/html/queencar/app/Containers/User/Actions" file="ApiUserResendOtpAction.php" realpath="/var/www/html/queencar/app/Containers/User/Actions/ApiUserResendOtpAction.php" size="1559" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="727d2c1a0ba40ff2cc4fbadbe9bbe955c4cb4f8d" relative="User/Actions/ApiUserResendOtpAction.php"/>
+  <docblock>
+    <description compact="Class WebAdminLoginAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="32" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="to resend otp"/>
+      <param type="object" variable="$request">
+        <type full="\App\Ship\Parents\Requests\Request" namespace="\App\Ship\Parents\Requests" name="Request"/>
+      </param>
+      <return type="object">
+        <type full="App\Containers\User\Actions\String" namespace="App\Containers\User\Actions" name="String"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="format_otp_message" start="49" end="65" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="otp" byreference="false" type="{unknown}"/>
+  </method>
+</class>

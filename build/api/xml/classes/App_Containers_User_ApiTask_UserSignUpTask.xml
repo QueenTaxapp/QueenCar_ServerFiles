@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\ApiTask\UserSignUpTask" namespace="App\Containers\User\ApiTask" name="UserSignUpTask" abstract="false" final="false" start="17" end="108">
+  <file path="/var/www/html/queencar/app/Containers/User/ApiTask" file="UserSignUpTask.php" realpath="/var/www/html/queencar/app/Containers/User/ApiTask/UserSignUpTask.php" size="2809" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e9d004b1cfb0a84896d0cb47de21c0139917c693" relative="User/ApiTask/UserSignUpTask.php"/>
+  <method name="run" start="19" end="97" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="$sos = SosModel::select('id','name','number')-&gt;get();" line="84"/>
+    </inline>
+  </method>
+  <method name="check_phone_number" start="100" end="107" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="phone_number" byreference="false" type="{unknown}"/>
+  </method>
+</class>

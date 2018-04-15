@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Debugger\Objects\Output" namespace="App\Containers\Debugger\Objects" name="Output" abstract="false" final="false" start="15" end="200">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Debugger/Objects" file="Output.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Debugger/Objects/Output.php" size="4257" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="0c575bf5fbac5e4b07e17a23116d8628cfc3e78d" relative="Debugger/Objects/Output.php"/>
+  <docblock>
+    <description compact="Class Output"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <member name="output" default="''" type="string" visibility="public" static="false" line="21">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="request" visibility="private" static="false" line="26">
+    <docblock>
+      <description/>
+      <var/>
+    </docblock>
+  </member>
+  <member name="response" visibility="private" static="false" line="31">
+    <docblock>
+      <description/>
+      <var/>
+    </docblock>
+  </member>
+  <member name="responseDataCut" visibility="protected" static="false" line="36">
+    <docblock>
+      <description/>
+      <var/>
+    </docblock>
+  </member>
+  <member name="tokenDataCut" visibility="protected" static="false" line="41">
+    <docblock>
+      <description/>
+      <var/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="49" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Output constructor."/>
+      <param type="object" variable="$request">
+        <type full="\Symfony\Component\HttpFoundation\Request" namespace="\Symfony\Component\HttpFoundation" name="Request"/>
+      </param>
+      <param type="object" variable="$response">
+        <type full="\Symfony\Component\HttpFoundation\Response" namespace="\Symfony\Component\HttpFoundation" name="Response"/>
+      </param>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Symfony\Component\HttpFoundation\Request" namespace="Symfony\Component\HttpFoundation" name="Request"/>
+    </parameter>
+    <parameter name="response" byreference="false" type="object">
+      <type full="Symfony\Component\HttpFoundation\Response" namespace="Symfony\Component\HttpFoundation" name="Response"/>
+    </parameter>
+  </constructor>
+  <method name="set" start="61" end="64" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="text" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get" start="69" end="72" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="clear" start="77" end="80" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <void/>
+    </docblock>
+  </method>
+  <method name="header" start="87" end="90" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add header"/>
+      <param variable="$name"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="newRequest" start="97" end="100" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add line to indicate new request"/>
+      <void/>
+    </docblock>
+  </method>
+  <method name="spaceLine" start="107" end="110" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add empty line"/>
+      <void/>
+    </docblock>
+  </method>
+  <method name="endpoint" start="115" end="119" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <void/>
+    </docblock>
+  </method>
+  <method name="version" start="124" end="129" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <void/>
+    </docblock>
+  </method>
+  <method name="ip" start="134" end="137" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <void/>
+    </docblock>
+  </method>
+  <method name="format" start="142" end="145" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <void/>
+    </docblock>
+  </method>
+  <method name="userInfo" start="150" end="165" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <void/>
+    </docblock>
+    <inline>
+      <comment value="Auth Header" line="152"/>
+      <comment value="User" line="154"/>
+      <comment value="Browser" line="156"/>
+    </inline>
+  </method>
+  <method name="requestData" start="170" end="176" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <void/>
+    </docblock>
+    <inline>
+      <comment value="Request Data" line="172"/>
+    </inline>
+  </method>
+  <method name="responseData" start="181" end="188" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <void/>
+    </docblock>
+    <inline>
+      <comment value="Response Data" line="183"/>
+    </inline>
+  </method>
+  <method name="append" start="195" end="198" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param variable="$output"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="output" byreference="false" type="{unknown}"/>
+  </method>
+</class>

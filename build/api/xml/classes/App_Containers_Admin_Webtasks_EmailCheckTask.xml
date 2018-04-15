@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Webtasks\EmailCheckTask" namespace="App\Containers\Admin\Webtasks" name="EmailCheckTask" abstract="false" final="false" start="15" end="62">
+  <file path="/var/www/html/queencar/app/Containers/Admin/Webtasks" file="EmailCheckTask.php" realpath="/var/www/html/queencar/app/Containers/Admin/Webtasks/EmailCheckTask.php" size="1588" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="967c1892ac199bae3b2aa8e4635fa389374f7d93" relative="Admin/Webtasks/EmailCheckTask.php"/>
+  <docblock>
+    <description compact="Class AdminUpdateEmailTask"/>
+    <package value="App\Containers\Admin\Tasks"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="24" end="60" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to check if email is already present or not"/>
+      <param variable="$request"/>
+      <return type="object">
+        <type full="App\Containers\Admin\Webtasks\array|int" namespace="App\Containers\Admin\Webtasks" name="array|int"/>
+      </return>
+      <throws type="object">
+        <type full="Illuminate\Validation\ValidationException" namespace="Illuminate\Validation" name="ValidationException"/>
+      </throws>
+    </docblock>
+    <parameter name="model" byreference="false" type="{unknown}"/>
+    <parameter name="request_id" byreference="false" type="{unknown}"/>
+    <parameter name="request_email" byreference="false" type="{unknown}"/>
+    <parameter name="redirect_url" byreference="false" type="{unknown}"/>
+  </method>
+</class>

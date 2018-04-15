@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Jobs\SendEmailJob" namespace="App\Containers\Jobs" name="SendEmailJob" abstract="false" final="false" start="14" end="106">
+  <file path="/var/www/html/queencar/app/Containers/Jobs" file="SendEmailJob.php" realpath="/var/www/html/queencar/app/Containers/Jobs/SendEmailJob.php" size="2451" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="1366fcb7816fcbff290a11072fb53733ca611922" relative="Jobs/SendEmailJob.php"/>
+  <implements full="Illuminate\Contracts\Queue\ShouldQueue" namespace="Illuminate\Contracts\Queue" name="ShouldQueue" unresolved="true"/>
+  <uses full="Illuminate\Foundation\Bus\Dispatchable" namespace="Illuminate\Foundation\Bus" name="Dispatchable" start="16" end="16" unresolved="true"/>
+  <uses full="Illuminate\Queue\InteractsWithQueue" namespace="Illuminate\Queue" name="InteractsWithQueue" start="16" end="16" unresolved="true"/>
+  <uses full="Illuminate\Bus\Queueable" namespace="Illuminate\Bus" name="Queueable" start="16" end="16" unresolved="true"/>
+  <uses full="Illuminate\Queue\SerializesModels" namespace="Illuminate\Queue" name="SerializesModels" start="16" end="16" unresolved="true"/>
+  <member name="viewPage" visibility="public" static="false" line="25">
+    <docblock>
+      <description compact="Create a new job instance."/>
+      <return type="object">
+        <type full="App\Containers\Jobs\void" namespace="App\Containers\Jobs" name="void"/>
+      </return>
+    </docblock>
+  </member>
+  <member name="array" visibility="public" static="false" line="26"/>
+  <member name="toEmail" visibility="public" static="false" line="27"/>
+  <member name="subject" visibility="public" static="false" line="28"/>
+  <member name="status" visibility="public" static="false" line="29"/>
+  <constructor name="__construct" start="31" end="41" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="viewPage" byreference="false" type="{unknown}"/>
+    <parameter name="array" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="toEmail" byreference="false" type="{unknown}"/>
+    <parameter name="subject" byreference="false" type="{unknown}"/>
+    <parameter name="status" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="handle" start="48" end="105" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Execute the job."/>
+      <return type="object">
+        <type full="App\Containers\Jobs\void" namespace="App\Containers\Jobs" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="mail" byreference="false" type="object">
+      <type full="Illuminate\Contracts\Mail\Mailer" namespace="Illuminate\Contracts\Mail" name="Mailer"/>
+    </parameter>
+  </method>
+</class>

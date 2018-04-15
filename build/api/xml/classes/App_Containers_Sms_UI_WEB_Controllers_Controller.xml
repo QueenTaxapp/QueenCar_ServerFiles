@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sms\UI\WEB\Controllers\Controller" namespace="App\Containers\Sms\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="27" end="124">
+  <file path="/var/www/html/queencar/app/Containers/Sms/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Sms/UI/WEB/Controllers/Controller.php" size="3038" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="9c618f064bf40fad99b2e080bb37337ff5bf1652" relative="Sms/UI/WEB/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <package value="App\Containers\Sms\UI\WEB\Controllers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="smsView" start="34" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="smsView"/>
+      <param type="object" variable="$request"/>
+      <return type="object">
+        <type full="App\Containers\Sms\UI\WEB\Controllers\view" namespace="App\Containers\Sms\UI\WEB\Controllers" name="view"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="smsEdit" start="50" end="59" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="smsEdit"/>
+      <param type="object" variable="$request"/>
+      <return type="object">
+        <type full="App\Containers\Sms\UI\WEB\Controllers\view" namespace="App\Containers\Sms\UI\WEB\Controllers" name="view"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="smsUpdate" start="66" end="76" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="smsUpdate"/>
+      <param type="object" variable="$request"/>
+      <return type="object">
+        <type full="App\Containers\Sms\UI\WEB\Controllers\view" namespace="App\Containers\Sms\UI\WEB\Controllers" name="view"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="smsRevert" start="83" end="94" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="smsRevert"/>
+      <param type="object" variable="$request"/>
+      <return type="object">
+        <type full="App\Containers\Sms\UI\WEB\Controllers\view" namespace="App\Containers\Sms\UI\WEB\Controllers" name="view"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="smsActive" start="101" end="108" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="smsActive"/>
+      <param type="object" variable="$request"/>
+      <return type="object">
+        <type full="App\Containers\Sms\UI\WEB\Controllers\view" namespace="App\Containers\Sms\UI\WEB\Controllers" name="view"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="smsInactive" start="115" end="122" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="smsInactive"/>
+      <param type="object" variable="$request"/>
+      <return type="object">
+        <type full="App\Containers\Sms\UI\WEB\Controllers\view" namespace="App\Containers\Sms\UI\WEB\Controllers" name="view"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

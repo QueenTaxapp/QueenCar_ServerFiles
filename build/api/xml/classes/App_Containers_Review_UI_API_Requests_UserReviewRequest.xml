@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Review\UI\API\Requests\UserReviewRequest" namespace="App\Containers\Review\UI\API\Requests" name="UserReviewRequest" abstract="false" final="false" start="11" end="36">
+  <file path="/var/www/html/queencar/app/Containers/Request/UI/API/Requests" file="UserReviewRequest.php" realpath="/var/www/html/queencar/app/Containers/Request/UI/API/Requests/UserReviewRequest.php" size="631" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="7959639be237f11f9620e7badf05134888eb4037" relative="Request/UI/API/Requests/UserReviewRequest.php"/>
+  <docblock>
+    <description compact="Class GetMyProfileRequest."/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="16" end="27" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="32" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\Review\UI\API\Requests\bool" namespace="App\Containers\Review\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

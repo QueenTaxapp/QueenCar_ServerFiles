@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Core\CoreComponent\CustomTransform" namespace="App\Containers\Core\CoreComponent" name="CustomTransform" abstract="false" final="false" start="19" end="29">
+  <file path="/var/www/html/queencar/app/Containers/Core/CoreComponent" file="CustomTransform.php" realpath="/var/www/html/queencar/app/Containers/Core/CoreComponent/CustomTransform.php" size="565" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="fdb6984f880486a9787d95693952e8f7feeb8b4c" relative="Core/CoreComponent/CustomTransform.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <package value="App\Containers\User\UI\API\Controllers"/>
+  </docblock>
+  <uses full="Apiato\Core\Traits\ResponseTrait" namespace="Apiato\Core\Traits" name="ResponseTrait" start="22" end="22" unresolved="true"/>
+  <method name="run" start="23" end="27" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="class" byreference="false" type="{unknown}"/>
+  </method>
+</class>

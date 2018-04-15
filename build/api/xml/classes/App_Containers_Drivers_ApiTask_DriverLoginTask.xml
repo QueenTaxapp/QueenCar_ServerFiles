@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\ApiTask\DriverLoginTask" namespace="App\Containers\Drivers\ApiTask" name="DriverLoginTask" abstract="false" final="false" start="11" end="94">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/ApiTask" file="DriverLoginTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/ApiTask/DriverLoginTask.php" size="2594" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="500b428f633a108a739d5c585e01731770091e7e" relative="Drivers/ApiTask/DriverLoginTask.php"/>
+  <method name="run" start="20" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+</class>

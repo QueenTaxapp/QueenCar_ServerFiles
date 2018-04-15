@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Tasks\SessionKeyTask" namespace="App\Containers\Admin\Tasks" name="SessionKeyTask" abstract="false" final="false" start="14" end="30">
+  <file path="/var/www/html/queencar/app/Containers/Admin/Tasks" file="SessionKeyTask.php" realpath="/var/www/html/queencar/app/Containers/Admin/Tasks/SessionKeyTask.php" size="508" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="4a9889f8a8af2c47d22ab6cd563bab0fe4c47ba7" relative="Admin/Tasks/SessionKeyTask.php"/>
+  <docblock>
+    <description compact="Class SessionKeyTask"/>
+    <package value="App\Containers\Admin\Tasks"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="21" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to generate session key"/>
+      <return type="object">
+        <type full="App\Containers\Admin\Tasks\int|string" namespace="App\Containers\Admin\Tasks" name="int|string"/>
+      </return>
+    </docblock>
+  </method>
+</class>

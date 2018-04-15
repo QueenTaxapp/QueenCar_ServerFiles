@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\UI\API\Controllers\Controller" namespace="App\Containers\Authorization\UI\API\Controllers" name="Controller" abstract="false" final="false" start="39" end="188">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/UI/API/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Authorization/UI/API/Controllers/Controller.php" size="6473" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="3dde0ca3e8fce80576cdac56fe9d7e9c01be5c73" relative="Authorization/UI/API/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\ApiController" namespace="App\Ship\Parents\Controllers" name="ApiController" unresolved="true"/>
+  <method name="listAllPermissions" start="47" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\ListAllPermissionsRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="ListAllPermissionsRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\ListAllPermissionsRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="ListAllPermissionsRequest"/>
+    </parameter>
+  </method>
+  <method name="getPermission" start="59" end="64" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\GetPermissionRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="GetPermissionRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\GetPermissionRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="GetPermissionRequest"/>
+    </parameter>
+  </method>
+  <method name="listAllRoles" start="71" end="76" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\ListAllRolesRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="ListAllRolesRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\ListAllRolesRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="ListAllRolesRequest"/>
+    </parameter>
+  </method>
+  <method name="getRole" start="83" end="88" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\GetRoleRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="GetRoleRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\GetRoleRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="GetRoleRequest"/>
+    </parameter>
+  </method>
+  <method name="assignUserToRole" start="95" end="100" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\AssignUserToRoleRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="AssignUserToRoleRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\AssignUserToRoleRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="AssignUserToRoleRequest"/>
+    </parameter>
+  </method>
+  <method name="syncUserRoles" start="107" end="112" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\SyncUserRolesRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="SyncUserRolesRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\SyncUserRolesRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="SyncUserRolesRequest"/>
+    </parameter>
+  </method>
+  <method name="deleteRole" start="119" end="126" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\DeleteRoleRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="DeleteRoleRequest"/>
+      </param>
+      <return type="object">
+        <type full="\Illuminate\Http\JsonResponse" namespace="\Illuminate\Http" name="JsonResponse"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\DeleteRoleRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="DeleteRoleRequest"/>
+    </parameter>
+  </method>
+  <method name="revokeRoleFromUser" start="133" end="138" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\RevokeUserFromRoleRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="RevokeUserFromRoleRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\RevokeUserFromRoleRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="RevokeUserFromRoleRequest"/>
+    </parameter>
+  </method>
+  <method name="attachPermissionToRole" start="145" end="150" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\AttachPermissionToRoleRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="AttachPermissionToRoleRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\AttachPermissionToRoleRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="AttachPermissionToRoleRequest"/>
+    </parameter>
+  </method>
+  <method name="syncPermissionOnRole" start="157" end="162" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\SyncPermissionsOnRoleRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="SyncPermissionsOnRoleRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\SyncPermissionsOnRoleRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="SyncPermissionsOnRoleRequest"/>
+    </parameter>
+  </method>
+  <method name="detachPermissionFromRole" start="169" end="174" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\DetachPermissionToRoleRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="DetachPermissionToRoleRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\DetachPermissionToRoleRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="DetachPermissionToRoleRequest"/>
+    </parameter>
+  </method>
+  <method name="createRole" start="181" end="186" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Containers\Authorization\UI\API\Requests\CreateRoleRequest" namespace="\App\Containers\Authorization\UI\API\Requests" name="CreateRoleRequest"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Authorization\UI\API\Requests\CreateRoleRequest" namespace="App\Containers\Authorization\UI\API\Requests" name="CreateRoleRequest"/>
+    </parameter>
+  </method>
+</class>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trait xmlns="http://xml.phpdox.net/src" full="App\Containers\Documentation\Traits\DocsGeneratorTrait" namespace="App\Containers\Documentation\Traits" name="DocsGeneratorTrait" abstract="false" final="false" start="13" end="139">
+  <file path="/var/www/html/queencar/app/Containers/Documentation/Traits" file="DocsGeneratorTrait.php" realpath="/var/www/html/queencar/app/Containers/Documentation/Traits/DocsGeneratorTrait.php" size="2664" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="80e8630b04e8129245ede333a3ca45445e0b33bf" relative="Documentation/Traits/DocsGeneratorTrait.php"/>
+  <docblock>
+    <description compact="Class DocsGeneratorTrait"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <method name="getFullApiUrl" start="19" end="22" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getAppUrl" start="27" end="30" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getHtmlPath" start="35" end="38" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getDocumentationPath" start="45" end="48" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Where to generate the new documentation."/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getJsonFilePath" start="53" end="56" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getConfigFile" start="61" end="64" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="getTypeConfig" start="69" end="72" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getExecutable" start="77" end="80" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+  <method name="getUrl" start="87" end="92" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param variable="$type"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getEndpointFiles" start="99" end="112" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param variable="$type"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="what files types needs to be included" line="103"/>
+    </inline>
+  </method>
+  <method name="replace" start="119" end="122" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param variable="$templateKey"/>
+      <param variable="$value"/>
+    </docblock>
+    <parameter name="templateKey" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="minutesToTimeDisplay" start="129" end="137" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <param variable="$minutes"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="minutes" byreference="false" type="{unknown}"/>
+  </method>
+  <users>
+    <class full="App\Containers\Documentation\Tasks\GenerateAPIDocsTask" namespace="App\Containers\Documentation\Tasks" name="GenerateAPIDocsTask"/>
+    <class full="App\Containers\Documentation\Tasks\RenderTemplatesTask" namespace="App\Containers\Documentation\Tasks" name="RenderTemplatesTask"/>
+  </users>
+</trait>

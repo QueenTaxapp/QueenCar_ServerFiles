@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Zone\UI\WEB\Controllers\Controller" namespace="App\Containers\Zone\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="28" end="537">
+  <file path="/var/www/html/queencar/app/Containers/Zone/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Zone/UI/WEB/Controllers/Controller.php" size="16148" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="172da27b4c5a7b91a314765f3b673a86e6d4dd9f" relative="Zone/UI/WEB/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <package value="App\Containers\Admin\UI\WEB\Controllers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="heatMapView" start="35" end="61" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request_zone);die();" line="57"/>
+    </inline>
+  </method>
+  <method name="zoneView" start="64" end="83" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="zoneAdd" start="86" end="106" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="zoneSave" start="111" end="153" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Zone\UI\WEB\Requests\ZoneAddRequest" namespace="App\Containers\Zone\UI\WEB\Requests" name="ZoneAddRequest"/>
+    </parameter>
+  </method>
+  <method name="zoneDelete" start="155" end="165" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="zoneCurrencyEdit" start="167" end="178" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="zoneCurrencyUpdate" start="180" end="207" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Zone\UI\WEB\Requests\ZoneAddRequest" namespace="App\Containers\Zone\UI\WEB\Requests" name="ZoneAddRequest"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="182"/>
+    </inline>
+  </method>
+  <method name="zoneStatusToggle" start="209" end="234" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="zoneTypeView" start="237" end="250" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="zoneTypeAdd" start="252" end="292" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="-&gt;get();" line="256"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($types);die();" line="284"/>
+      <comment value="$types = Types::join('zone_type','Types.id','=','zone_type.type_id')-&gt;select('Types.*','zone_type.*')" line="286"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="-&gt;where('zone_type.zone_id',$request-&gt;id)-&gt;get();" line="287"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="echo &quot;&lt;pre&gt;&quot;;print_r($types);die();" line="288"/>
+    </inline>
+  </method>
+  <method name="zoneTypeSave" start="295" end="350" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="297"/>
+    </inline>
+  </method>
+  <method name="zoneTypeEdit" start="353" end="377" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;zone_id);die();" line="355"/>
+    </inline>
+  </method>
+  <method name="zoneTypeUpdate" start="379" end="417" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="zoneTypeStatusToggle" start="420" end="445" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="zoneSurgeEdit" start="447" end="473" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r(&quot;wrks&quot;);die();" line="449"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($zonePeak);die();" line="467"/>
+    </inline>
+  </method>
+  <method name="zoneSurgeUpdate" start="476" end="523" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());//die();" line="478"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($zonePeak);die();" line="517"/>
+    </inline>
+  </method>
+  <method name="zoneMapView" start="526" end="535" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($zoneMap);die();" line="530"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,805 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Company/UI/WEB/Views" file="Login.blade.php" realpath="/var/www/html/queencar/app/Containers/Company/UI/WEB/Views/Login.blade.php" size="7511" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e77cf982e694779f0799629ddbbbcf81ea274d53" relative="Company/UI/WEB/Views/Login.blade.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_STRING">Session</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">has</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'applicationName'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_BOOLEAN_OR">||</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EXCLAMATION_MARK">!</token>
+    <token name="T_STRING">Session</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">has</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'logo'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="3">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="4">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$path</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">asset</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'config.json'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="5">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_VARIABLE">$specificAdmin</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_AT">@</token>
+    <token name="T_STRING">get_headers</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$path</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$specificAdmin</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'HTTP/1.1 200 OK'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="8">
+    <token name="T_WHITESPACE">            </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="9">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_VARIABLE">$file</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">file_get_contents</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$path</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="10"/>
+  <line no="11">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_VARIABLE">$fileValue</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">json_decode</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$file</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_WHITESPACE">        </token>
+  </line>
+  <line no="14"/>
+  <line no="15">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$fileValue</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$key</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="16">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="17">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$ke</token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$val</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="18">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="19"/>
+  <line no="20">
+    <token name="T_WHITESPACE">                        </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$val</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'application_name'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="21">
+    <token name="T_WHITESPACE">                        </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="22">
+    <token name="T_WHITESPACE">                            </token>
+    <token name="T_VARIABLE">$applicationName</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$val</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">value</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="23">
+    <token name="T_WHITESPACE">                            </token>
+    <token name="T_STRING">Session</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">put</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'applicationName'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_VARIABLE">$applicationName</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+  </line>
+  <line no="24">
+    <token name="T_WHITESPACE">                        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="25">
+    <token name="T_WHITESPACE">                        </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$val</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">title</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_IS_EQUAL">==</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'logo'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="26">
+    <token name="T_WHITESPACE">                        </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="27">
+    <token name="T_WHITESPACE">                            </token>
+    <token name="T_VARIABLE">$logo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$val</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">value</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="28">
+    <token name="T_WHITESPACE">                            </token>
+    <token name="T_STRING">Session</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">put</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'logo'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_VARIABLE">$logo</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="29">
+    <token name="T_WHITESPACE">                        </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="30"/>
+  <line no="31">
+    <token name="T_WHITESPACE">                    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="32">
+    <token name="T_WHITESPACE">                </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="33">
+    <token name="T_WHITESPACE">            </token>
+  </line>
+  <line no="34">
+    <token name="T_WHITESPACE">             </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="35">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="36"/>
+  <line no="37">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">&lt;!doctype html&gt;</token>
+  </line>
+  <line no="40">
+    <token name="T_INLINE_HTML">&lt;html lang="en"&gt;</token>
+  </line>
+  <line no="41"/>
+  <line no="42">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="43">
+    <token name="T_INLINE_HTML">    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;</token>
+  </line>
+  <line no="44">
+    <token name="T_INLINE_HTML">    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</token>
+  </line>
+  <line no="45">
+    <token name="T_INLINE_HTML">    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">   &lt;title&gt; {{Session::get('applicationName')}}&lt;/title&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">    &lt;!-- Favicons--&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">    &lt;link rel="icon" href="../../images/favicon/favicon-32x32.png" sizes="32x32"&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">    &lt;!-- Favicons--&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">    &lt;link rel="apple-touch-icon-precomposed" href="../../images/favicon/apple-touch-icon-152x152.png"&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">    &lt;!-- For iPhone --&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">    &lt;meta name="msapplication-TileColor" content="#00bcd4"&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">    &lt;meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png"&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">    &lt;!-- For Windows Phone --&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">    &lt;!-- CORE CSS--&gt;</token>
+  </line>
+  <line no="56"/>
+  <line no="57">
+    <token name="T_INLINE_HTML">    &lt;link href="{{asset('assets/material_css/materialize.css')}}" type="text/css" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">    &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">    &lt;link href="{{asset('assets/material_css/style.css')}}" type="text/css" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">    &lt;!-- Custome CSS--&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">    &lt;link href="{{asset('assets/material_css/custom.css')}}" type="text/css" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">    &lt;link href="{{asset('assets/material_css/page-center.css')}}" type="text/css" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">    &lt;!-- INCLUDED PLUGIN CSS ON THIS PAGE --&gt;</token>
+  </line>
+  <line no="64">
+    <token name="T_INLINE_HTML">    &lt;link href="{{asset('assets/material_css/perfect-scrollbar.css')}}" type="text/css" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="65">
+    <token name="T_INLINE_HTML">    &lt;link href="https://pixinvent.com/materialize-material-design-admin-template/css/themes/semi-dark-menu/materialize.css" type="text/css" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="66"/>
+  <line no="67">
+    <token name="T_INLINE_HTML">    &lt;link href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css" type="text/css" rel="stylesheet"&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="69"/>
+  <line no="70">
+    <token name="T_INLINE_HTML">&lt;body class="cyan loaded"&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">&lt;!-- Start Page Loading --&gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">&lt;div id="loader-wrapper"&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">    &lt;div id="loader"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">    &lt;div class="loader-section section-left"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">    &lt;div class="loader-section section-right"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">&lt;!-- End Page Loading --&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">&lt;div id="login-page" class="row"&gt;</token>
+  </line>
+  <line no="79">
+    <token name="T_INLINE_HTML">    &lt;div class="col s12 z-depth-4 card-panel"&gt;</token>
+  </line>
+  <line no="80">
+    <token name="T_INLINE_HTML">        </token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">            &lt;form class="login-form" action="{{ URL::Route('companyLoginValidation')}}" method="POST"&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="83"/>
+  <line no="84">
+    <token name="T_INLINE_HTML">                &lt;div class="input-field col s12 center"&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                    &lt;img src="{{Session::get('logo')}}" alt="" class="circle responsive-img valign profile-image-login"&gt;</token>
+  </line>
+  <line no="86">
+    <token name="T_INLINE_HTML">                    &lt;p class="center login-form-text"&gt;{{Session::get('applicationName')}}&lt;/p&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">            &lt;div class="row margin"&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                &lt;div class="input-field col s12"&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                    &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                    &lt;i class="material-icons prefix pt-5"&gt;person_outline&lt;/i&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                    &lt;!--&lt;input id="email" type="text"&gt;--&gt;</token>
+  </line>
+  <line no="94"/>
+  <line no="95">
+    <token name="T_INLINE_HTML">                    &lt;input  id="email" type="email" name="emailAddress"  &gt;</token>
+  </line>
+  <line no="96"/>
+  <line no="97">
+    <token name="T_INLINE_HTML">                    &lt;label for="email" class="center-align"&gt;Email Address&lt;/label&gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                 </token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="101">
+    <token name="T_INLINE_HTML">            &lt;div class="row margin"&gt;</token>
+  </line>
+  <line no="102">
+    <token name="T_INLINE_HTML">                &lt;div class="input-field col s12"&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                    &lt;i class="material-icons prefix pt-5"&gt;lock_outline&lt;/i&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                    </token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                    &lt;input  id="password" type="password" name="password" &gt; &lt;/input&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                    &lt;label for="password"&gt;Password&lt;/label&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                   </token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                &lt;div class="col s12 m12 l12 ml-2 mt-3"&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                    &lt;!--&lt;input id="remember-me" type="checkbox"&gt;--&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                    &lt;input id="remember-me" type="checkbox"  name="rememberMe" value="remember-me"&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                    &lt;label for="remember-me"&gt;Remember me&lt;/label&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                &lt;div class="input-field col s12"&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                    &lt;button id="form" type="submit" class="btn waves-effect waves-light col s12"&gt;{{ trans('localization::login.letsgo') }}&lt;/button&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                &lt;div class="input-field col s12"&gt;</token>
+  </line>
+  <line no="124"/>
+  <line no="125">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="127"/>
+  <line no="128">
+    <token name="T_INLINE_HTML">        &lt;/form&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">&lt;/div&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">&lt;!-- ================================================</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">Scripts</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">================================================ --&gt;</token>
+  </line>
+  <line no="134"/>
+  <line no="135">
+    <token name="T_INLINE_HTML">&lt;div class="hiddendiv common"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="136"/>
+  <line no="137">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">&lt;!-- ================================================</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">Scripts</token>
+  </line>
+  <line no="140">
+    <token name="T_INLINE_HTML">================================================ --&gt;</token>
+  </line>
+  <line no="141">
+    <token name="T_INLINE_HTML">&lt;!-- jQuery Library --&gt;</token>
+  </line>
+  <line no="142"/>
+  <line no="143">
+    <token name="T_INLINE_HTML">&lt;script type="text/javascript" src="{{asset('assets/material_js/jquery-3.2.1.min.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="144"/>
+  <line no="145">
+    <token name="T_INLINE_HTML">&lt;script type="text/javascript" src="{{asset('assets/material_js/materialize.min.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="146"/>
+  <line no="147">
+    <token name="T_INLINE_HTML">&lt;!--scrollbar--&gt;</token>
+  </line>
+  <line no="148">
+    <token name="T_INLINE_HTML">&lt;script type="text/javascript" src="{{asset('assets/material_js/perfect-scrollbar.min.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">&lt;!--plugins.js - Some Specific JS codes for Plugin Settings--&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">&lt;script type="text/javascript" src="{{asset('assets/material_js/plugins.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">&lt;!--custom-script.js - Add your own theme custom JS--&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">&lt;script type="text/javascript" src="{{asset('assets/material_js/custom-script.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="153">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="154"/>
+  <line no="155">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">has</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'errors'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="156">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="157"/>
+  <line no="158">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$alertMessage</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'errors'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">all</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_LNUMBER">0</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="159">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">var alertMessage = "</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$alertMessage</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">";</token>
+  </line>
+  <line no="162"/>
+  <line no="163">
+    <token name="T_INLINE_HTML">  Materialize.toast(alertMessage, 4000);</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="165">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="166">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="167"/>
+  <line no="168">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">has</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'success'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="169">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="170">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$successMessage</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'success'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"message"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="171">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">        var successMessage = "</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$successMessage</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">";</token>
+  </line>
+  <line no="174"/>
+  <line no="175">
+    <token name="T_INLINE_HTML">        Materialize.toast(successMessage, 4000);       </token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="177">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="178">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="179">
+    <token name="T_WHITESPACE">    </token>
+  </line>
+  <line no="180">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Session</token>
+    <token name="T_DOUBLE_COLON">::</token>
+    <token name="T_STRING">has</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'logout'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="181">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="182">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">/* break back button */                                                                        </token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">window.onload=function(){                                                                      </token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">  var i=0; var previous_hash = window.location.hash;                                           </token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">  var x = setInterval(function(){   </token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                                                                 </token>
+  </line>
+  <line no="189">
+    <token name="T_INLINE_HTML">    i++; window.location.hash = "/noop/" + i;                                                  </token>
+  </line>
+  <line no="190">
+    <token name="T_INLINE_HTML">    if (i==48){clearInterval(x);                                                               </token>
+  </line>
+  <line no="191">
+    <token name="T_INLINE_HTML">      window.location.hash = previous_hash;}                                                   </token>
+  </line>
+  <line no="192">
+    <token name="T_INLINE_HTML">  },1);</token>
+  </line>
+  <line no="193">
+    <token name="T_INLINE_HTML"> </token>
+  </line>
+  <line no="194">
+    <token name="T_INLINE_HTML">}</token>
+  </line>
+  <line no="195">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="196">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="197">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="198">
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="199"/>
+  <line no="200"/>
+  <line no="201">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+  <line no="202"/>
+  <line no="203"/>
+</source>

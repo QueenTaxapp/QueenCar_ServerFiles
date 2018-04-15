@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Settings\Tasks\DeleteSettingTask" namespace="App\Containers\Settings\Tasks" name="DeleteSettingTask" abstract="false" final="false" start="9" end="35">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Tasks" file="DeleteSettingTask.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Tasks/DeleteSettingTask.php" size="710" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="aa44386cb615d7ef911a4092cf7120907e17f956" relative="Settings/Tasks/DeleteSettingTask.php"/>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <member name="repository" visibility="private" static="false" line="14">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="App\Containers\Settings\Data\Repositories\SettingRepository" namespace="App\Containers\Settings\Data\Repositories" name="SettingRepository"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="21" end="24" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="DeleteSettingTask constructor."/>
+      <param type="object" variable="$repository">
+        <type full="App\Containers\Settings\Data\Repositories\SettingRepository" namespace="App\Containers\Settings\Data\Repositories" name="SettingRepository"/>
+      </param>
+    </docblock>
+    <parameter name="repository" byreference="false" type="object">
+      <type full="App\Containers\Settings\Data\Repositories\SettingRepository" namespace="App\Containers\Settings\Data\Repositories" name="SettingRepository"/>
+    </parameter>
+  </constructor>
+  <method name="run" start="31" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$setting">
+        <type full="App\Containers\Settings\Models\Setting" namespace="App\Containers\Settings\Models" name="Setting"/>
+      </param>
+      <return type="int"/>
+    </docblock>
+    <parameter name="setting" byreference="false" type="object">
+      <type full="App\Containers\Settings\Models\Setting" namespace="App\Containers\Settings\Models" name="Setting"/>
+    </parameter>
+  </method>
+</class>

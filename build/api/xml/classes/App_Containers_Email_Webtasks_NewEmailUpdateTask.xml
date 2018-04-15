@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Email\Webtasks\NewEmailUpdateTask" namespace="App\Containers\Email\Webtasks" name="NewEmailUpdateTask" abstract="false" final="false" start="15" end="57">
+  <file path="/var/www/html/queencar/app/Containers/Email/Webtasks" file="NewEmailUpdateTask.php" realpath="/var/www/html/queencar/app/Containers/Email/Webtasks/NewEmailUpdateTask.php" size="1415" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="db87999afb59f56338ace8ed61d1d8035518bad8" relative="Email/Webtasks/NewEmailUpdateTask.php"/>
+  <docblock>
+    <description compact="Class EmailAction"/>
+    <package value="App\Containers\Email\Actions"/>
+  </docblock>
+  <method name="run" start="24" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="to validate user"/>
+      <param type="null" variable="$id"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="print_r($request['editor']);die();" line="47"/>
+      <comment value="print_r(html_entity_decode($request['editor'], ENT_QUOTES));die();" line="48"/>
+    </inline>
+  </method>
+</class>

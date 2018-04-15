@@ -1,0 +1,39 @@
+{
+  "module": {
+    "referral": {
+      "referral_check": {
+        "title": "check referral",
+        "version": "1.0.0",
+        "description": "check referral code and add amount to user",
+        "module_type": "core",
+        "config_file": "Referral\/modules\/referral_check.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "referral_validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Requests\\ApiRefferalCheckRequest"
+          },
+          "check_code": {
+            "id": "task",
+            "namespace": "App\\Containers\\Referral\\ApiTask\\CheckCode"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Transformers\\CheckReferral"
+          }
+        }
+      }
+    }
+  },
+"files":
+    {
+      "CheckCode.php":"Referral/ApiTask/",
+      "ReferralModel.php":"Referral/Models/",
+      "Controller.php":"Referral/UI/API/Controllers/",
+      "ApiRefferalCheckRequest.php":"Referral/UI/API/Requests/",
+      "ApiReferralCheck.v1.public.php":"Referral/UI/API/Routes/",
+      "CheckReferral.php":"Referral/UI/API/Transformers/",
+      "referral_check.json":"Referral/modules/"
+    }
+}

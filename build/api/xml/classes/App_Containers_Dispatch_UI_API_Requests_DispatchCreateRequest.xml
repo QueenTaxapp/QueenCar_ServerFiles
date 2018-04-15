@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\UI\API\Requests\DispatchCreateRequest" namespace="App\Containers\Dispatch\UI\API\Requests" name="DispatchCreateRequest" abstract="false" final="false" start="12" end="51">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Requests" file="DispatchCreateRequest.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Requests/DispatchCreateRequest.php" size="1125" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="89519635c194ec4b472d57e3386188e53724dda2" relative="Dispatch/UI/API/Requests/DispatchCreateRequest.php"/>
+  <docblock>
+    <description/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="19" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="47" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\Dispatch\UI\API\Requests\bool" namespace="App\Containers\Dispatch\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

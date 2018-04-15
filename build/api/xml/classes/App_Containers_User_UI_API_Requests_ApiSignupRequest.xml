@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Requests\ApiSignupRequest" namespace="App\Containers\User\UI\API\Requests" name="ApiSignupRequest" abstract="false" final="false" start="12" end="48">
+  <file path="/var/www/html/queencar/app/Containers/User/UI/API/Requests" file="ApiSignupRequest.php" realpath="/var/www/html/queencar/app/Containers/User/UI/API/Requests/ApiSignupRequest.php" size="1302" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="73195ff025414f03f0007a51a524a9d5db837567" relative="User/UI/API/Requests/ApiSignupRequest.php"/>
+  <docblock>
+    <description compact="Class GetMyProfileRequest."/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="19" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="44" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\User\UI\API\Requests\bool" namespace="App\Containers\User\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

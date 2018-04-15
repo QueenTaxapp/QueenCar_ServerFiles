@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Exceptions\UserNotAdminException" namespace="App\Containers\Authorization\Exceptions" name="UserNotAdminException" abstract="false" final="false" start="13" end="18">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Exceptions" file="UserNotAdminException.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Exceptions/UserNotAdminException.php" size="414" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="b0ad9fe74b252ffa57859d9b3e77e6406521aa9f" relative="Authorization/Exceptions/UserNotAdminException.php"/>
+  <docblock>
+    <description compact="Class UserNotAdminException."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Exceptions\Exception" namespace="App\Ship\Parents\Exceptions" name="Exception" unresolved="true"/>
+  <member name="httpStatusCode" default="" type="{unknown}" constant="Response::HTTP_UNAUTHORIZED" visibility="public" static="false" line="15"/>
+  <member name="message" default="'This User does not have an Admin permission.'" type="string" visibility="public" static="false" line="17"/>
+</class>

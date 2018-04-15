@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Providers\MainServiceProvider" namespace="App\Containers\Authorization\Providers" name="MainServiceProvider" abstract="false" final="false" start="16" end="38">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Providers" file="MainServiceProvider.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Providers/MainServiceProvider.php" size="696" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="bd1d4a41e73670b2f34d3aeffd0e981ef19c955d" relative="Authorization/Providers/MainServiceProvider.php"/>
+  <docblock>
+    <description compact="Class MainServiceProvider.">The Main Service Provider of this container, it will be automatically registered in the framework.</description>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Providers\MainProvider" namespace="App\Ship\Parents\Providers" name="MainProvider" unresolved="true"/>
+  <member name="serviceProviders" default="" type="array" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="Container Service Providers."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="aliases" default="" type="array" visibility="public" static="false" line="34">
+    <docblock>
+      <description compact="Container Aliases"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+</class>

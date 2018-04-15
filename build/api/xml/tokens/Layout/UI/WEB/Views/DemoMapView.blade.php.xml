@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Layout/UI/WEB/Views" file="DemoMapView.blade.php" realpath="/var/www/html/queencar/app/Containers/Layout/UI/WEB/Views/DemoMapView.blade.php" size="671" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="33eeb73d84b3868824e1d0e9a325137283b5dfc2" relative="Layout/UI/WEB/Views/DemoMapView.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!DOCTYPE html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;style&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        #map {</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            height: 400px;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">            width: 100%;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">&lt;body&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">&lt;h3&gt;My Google Maps Demo&lt;/h3&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">&lt;div id="map"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">&lt;script&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    function initMap() {</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">        var uluru = {lat: -25.363, lng: 131.044};</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">        var map = new google.maps.Map(document.getElementById('map'), {</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">            zoom: 4,</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">            center: uluru</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">        var marker = new google.maps.Marker({</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">            position: uluru,</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">            map: map</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">    }</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">&lt;script async defer</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap"&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">&lt;/script&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+  <line no="32"/>
+</source>

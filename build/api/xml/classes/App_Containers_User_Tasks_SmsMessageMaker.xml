@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\SmsMessageMaker" namespace="App\Containers\User\Tasks" name="SmsMessageMaker" abstract="false" final="false" start="16" end="31">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="SmsMessageMaker.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/SmsMessageMaker.php" size="555" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="ccdbf72c3a13079e926a68bbebcda37dbb324bee" relative="User/Tasks/SmsMessageMaker.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="26" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to form a sms message here"/>
+      <param variable="$object" type="object">
+        <type full="App\Containers\InterfaceSms\WelcomeSms" namespace="App\Containers\InterfaceSms" name="WelcomeSms"/>
+      </param>
+      <param type="object" variable="$title">
+        <type full="App\Containers\User\Tasks\String" namespace="App\Containers\User\Tasks" name="String"/>
+      </param>
+      <return type="object">
+        <type full="App\Containers\User\Tasks\String" namespace="App\Containers\User\Tasks" name="String"/>
+      </return>
+    </docblock>
+    <parameter name="sms" byreference="false" type="{unknown}"/>
+    <parameter name="title" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Documentation\Exceptions\NoDocTypesFoundException" namespace="App\Containers\Documentation\Exceptions" name="NoDocTypesFoundException" abstract="false" final="false" start="13" end="18">
+  <file path="/var/www/html/queencar/app/Containers/Documentation/Exceptions" file="NoDocTypesFoundException.php" realpath="/var/www/html/queencar/app/Containers/Documentation/Exceptions/NoDocTypesFoundException.php" size="415" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="85f9fb49b729a6860d569d4bc081bc9ffd621695" relative="Documentation/Exceptions/NoDocTypesFoundException.php"/>
+  <docblock>
+    <description compact="Class NoDocTypesFoundException"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Exceptions\Exception" namespace="App\Ship\Parents\Exceptions" name="Exception" unresolved="true"/>
+  <member name="httpStatusCode" default="" type="{unknown}" constant="Response::HTTP_MISDIRECTED_REQUEST" visibility="public" static="false" line="15"/>
+  <member name="message" default="'Please Update your config file.'" type="string" visibility="public" static="false" line="17"/>
+</class>

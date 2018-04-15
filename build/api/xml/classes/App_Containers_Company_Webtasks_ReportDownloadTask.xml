@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Company\Webtasks\ReportDownloadTask" namespace="App\Containers\Company\Webtasks" name="ReportDownloadTask" abstract="false" final="false" start="18" end="305">
+  <file path="/var/www/html/queencar/app/Containers/Company/Webtasks" file="ReportDownloadTask.php" realpath="/var/www/html/queencar/app/Containers/Company/Webtasks/ReportDownloadTask.php" size="9974" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="0b87db1dcd2939daebfc32b7e921281676272232" relative="Company/Webtasks/ReportDownloadTask.php"/>
+  <method name="run" start="27" end="303" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$heading" type="array"/>
+      <param variable="$values" type="object"/>
+      <param variable="$key" type="array"/>
+      <param variable="$title" type="string"/>
+      <return type="object">
+        <type full="App\Containers\Company\Webtasks\document" namespace="App\Containers\Company\Webtasks" name="document"/>
+      </return>
+    </docblock>
+    <parameter name="heading" byreference="false" type="{unknown}"/>
+    <parameter name="values" byreference="false" type="{unknown}"/>
+    <parameter name="key" byreference="false" type="{unknown}"/>
+    <parameter name="title" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($values);die();" line="30"/>
+      <comment value="0.echo &quot;&lt;pre&gt;&quot;;  print_r($values);" line="83"/>
+    </inline>
+  </method>
+</class>

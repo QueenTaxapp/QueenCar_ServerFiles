@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Company\UI\WEB\Controllers\Controller" namespace="App\Containers\Company\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="82" end="1289">
+  <file path="/var/www/html/queencar/app/Containers/Company/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Company/UI/WEB/Controllers/Controller.php" size="44580" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="2f9f0b3a45d924cd6328efccb60eb66254816d4e" relative="Company/UI/WEB/Controllers/Controller.php"/>
+  <docblock>
+    <description/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <uses full="Illuminate\Database\Eloquent\SoftDeletes" namespace="Illuminate\Database\Eloquent" name="SoftDeletes" start="84" end="84" unresolved="true"/>
+  <method name="createCompanyAccount" start="88" end="98" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;driver_id);die();" line="90"/>
+    </inline>
+  </method>
+  <method name="saveCompanyAccount" start="100" end="204" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="102"/>
+    </inline>
+  </method>
+  <method name="adminCompanyDeleteAccount" start="206" end="217" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companyLoginPage" start="222" end="235" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companyLoginValidation" start="237" end="311" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="password validation" line="257"/>
+      <comment value="Session::flush();" line="262"/>
+      <comment value="session" line="263"/>
+    </inline>
+  </method>
+  <method name="companyDashboard" start="313" end="353" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="die(&quot;dashboard&quot;);" line="318"/>
+      <comment value="$inProgressRequest = count($query-&gt;where('request.is_completed',0)-&gt;where('request.is_cancelled',0)-&gt;get());" line="340"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;" line="341"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="print_r('total : '.$totalRequest);" line="342"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="print_r('&lt;br&gt;complete : '.$completedRequest);" line="343"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="print_r('&lt;br&gt;cancel : '.$cancelledRequest);" line="344"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="print_r('&lt;br&gt;pending : '.$inProgressRequest);" line="345"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="die();" line="346"/>
+    </inline>
+  </method>
+  <method name="companyBlockToogle" start="356" end="369" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companyDriverView" start="372" end="421" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companyDriverToogleStatus" start="424" end="444" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$this-&gt;call(ToggleStatusTask::class, [$tableName,$columnName,$value,$whereId]);" line="438"/>
+    </inline>
+  </method>
+  <method name="deleteCompanyDriver" start="446" end="451" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="addCompanyDriver" start="453" end="467" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="editCompanyDriver" start="469" end="486" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companyView" start="490" end="601" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companyStatusToogle" start="603" end="613" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="deleteCompany" start="615" end="621" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="editCompany" start="623" end="645" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="editCompanyProfile" start="648" end="658" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companyUpdate" start="660" end="696" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Company\UI\WEB\Requests\CompanyAddRequest" namespace="App\Containers\Company\UI\WEB\Requests" name="CompanyAddRequest"/>
+    </parameter>
+  </method>
+  <method name="updateCompanyProfile" start="698" end="725" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Company\UI\WEB\Requests\CompanyAddRequest" namespace="App\Containers\Company\UI\WEB\Requests" name="CompanyAddRequest"/>
+    </parameter>
+    <inline>
+      <comment value="die(&quot;test&quot;);" line="700"/>
+    </inline>
+  </method>
+  <method name="addCompanyPage" start="727" end="750" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="registerCompany" start="752" end="844" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Company\UI\WEB\Requests\CompanyAddRequest" namespace="App\Containers\Company\UI\WEB\Requests" name="CompanyAddRequest"/>
+    </parameter>
+    <inline>
+      <comment value="language_change" line="811"/>
+      <comment value="language_change" line="820"/>
+    </inline>
+  </method>
+  <method name="companyLogout" start="855" end="874" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r(Session::all());die();" line="857"/>
+    </inline>
+  </method>
+  <method name="companyLockScreen" start="876" end="892" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r(Session::all());die();" line="878"/>
+    </inline>
+  </method>
+  <method name="companyLockScreenValidation" start="894" end="928" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="896"/>
+    </inline>
+  </method>
+  <method name="companyDriverIncomeValue" start="932" end="939" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companyDriverIncome" start="941" end="971" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companyCreateDriverAccount" start="973" end="984" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="CompanySaveDriverAccount" start="986" end="1077" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companyDriverDeleteAccount" start="1080" end="1091" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="companyPaymentViewPage" start="1094" end="1134" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r(&quot;welcome payment&quot;);die();" line="1096"/>
+    </inline>
+  </method>
+  <method name="companyMapViewPage" start="1136" end="1146" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($companyDrivers);die();" line="1140"/>
+    </inline>
+  </method>
+  <method name="companyMapAjax" start="1148" end="1177" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="CompanydriverIncomePaid" start="1179" end="1271" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="payment_opt" line="1196"/>
+      <comment value="0-card," line="1197"/>
+      <comment value="1-cash," line="1198"/>
+      <comment value="2-wallet," line="1199"/>
+      <comment value="3-wallet/cash" line="1200"/>
+    </inline>
+  </method>
+  <method name="companyDriverIncomePaidCash" start="1273" end="1286" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

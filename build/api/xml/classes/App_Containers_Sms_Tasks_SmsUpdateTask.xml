@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sms\Tasks\SmsUpdateTask" namespace="App\Containers\Sms\Tasks" name="SmsUpdateTask" abstract="false" final="false" start="15" end="62">
+  <file path="/var/www/html/queencar/app/Containers/Sms/Tasks" file="SmsUpdateTask.php" realpath="/var/www/html/queencar/app/Containers/Sms/Tasks/SmsUpdateTask.php" size="1694" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="91c352f4e12f8fa1679622dd50f1199e56eef8d2" relative="Sms/Tasks/SmsUpdateTask.php"/>
+  <docblock>
+    <description compact="Class SmsUpdateTask"/>
+    <package value="App\Containers\Sms\Tasks"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="23" end="60" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to update details of sms"/>
+      <param variable="$request"/>
+      <return type="array"/>
+      <throws type="object">
+        <type full="Illuminate\Validation\ValidationException" namespace="Illuminate\Validation" name="ValidationException"/>
+      </throws>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());print_r($request-&gt;lang);print_r($request-&gt;table);die();" line="25"/>
+      <comment value="die();" line="45"/>
+    </inline>
+  </method>
+</class>

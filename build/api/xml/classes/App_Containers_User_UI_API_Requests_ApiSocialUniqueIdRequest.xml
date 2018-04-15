@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Requests\ApiSocialUniqueIdRequest" namespace="App\Containers\User\UI\API\Requests" name="ApiSocialUniqueIdRequest" abstract="false" final="false" start="11" end="64">
+  <file path="/var/www/html/queencar/app/Containers/User/UI/API/Requests" file="ApiSocialUniqueIdRequest.php" realpath="/var/www/html/queencar/app/Containers/User/UI/API/Requests/ApiSocialUniqueIdRequest.php" size="1151" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="41b7ba6012446901b7ff3c77260472ae87b50603" relative="User/UI/API/Requests/ApiSocialUniqueIdRequest.php"/>
+  <docblock>
+    <description compact="Class GetMyProfileRequest."/>
+  </docblock>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="18">
+    <docblock>
+      <description compact="Define which Roles and/or Permissions has access to this request."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="decode" default="" type="array" visibility="protected" static="false" line="28">
+    <docblock>
+      <description compact="Id's that needs decoding before applying the validation rules."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="urlParameters" default="" type="array" visibility="protected" static="false" line="38">
+    <docblock>
+      <description compact="Defining the URL parameters (e.g, `/user/{id}`) allows applying validation rules on them and allows accessing them like request data."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="rules" start="45" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="58" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\User\UI\API\Requests\bool" namespace="App\Containers\User\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

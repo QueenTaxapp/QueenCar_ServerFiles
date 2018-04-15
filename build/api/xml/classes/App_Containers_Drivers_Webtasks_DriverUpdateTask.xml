@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Webtasks\DriverUpdateTask" namespace="App\Containers\Drivers\Webtasks" name="DriverUpdateTask" abstract="false" final="false" start="18" end="61">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/Webtasks" file="DriverUpdateTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/Webtasks/DriverUpdateTask.php" size="1741" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="0263b1c02d2ba0578bc23a10b031060b5002cbc4" relative="Drivers/Webtasks/DriverUpdateTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="27" end="59" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Save User Detail"/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\Drivers\Webtasks\Object" namespace="App\Containers\Drivers\Webtasks" name="Object"/>
+      </param>
+      <param type="object" variable="$token">
+        <type full="App\Containers\Drivers\Webtasks\String" namespace="App\Containers\Drivers\Webtasks" name="String"/>
+      </param>
+      <return type="object">
+        <type full="App\Containers\Drivers\Webtasks\Object" namespace="App\Containers\Drivers\Webtasks" name="Object"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

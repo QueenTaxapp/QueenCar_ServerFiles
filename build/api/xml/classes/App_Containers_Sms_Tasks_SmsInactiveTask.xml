@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sms\Tasks\SmsInactiveTask" namespace="App\Containers\Sms\Tasks" name="SmsInactiveTask" abstract="false" final="false" start="15" end="60">
+  <file path="/var/www/html/queencar/app/Containers/Sms/Tasks" file="SmsInactiveTask.php" realpath="/var/www/html/queencar/app/Containers/Sms/Tasks/SmsInactiveTask.php" size="1567" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="f58d5385619b71a96ecf56bad824ebd961eae999" relative="Sms/Tasks/SmsInactiveTask.php"/>
+  <docblock>
+    <description compact="Class SmsInactiveTask"/>
+    <package value="App\Containers\Sms\Tasks"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="23" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to deactive a sms setting"/>
+      <param variable="$request"/>
+      <return type="array"/>
+      <throws type="object">
+        <type full="Illuminate\Validation\ValidationException" namespace="Illuminate\Validation" name="ValidationException"/>
+      </throws>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

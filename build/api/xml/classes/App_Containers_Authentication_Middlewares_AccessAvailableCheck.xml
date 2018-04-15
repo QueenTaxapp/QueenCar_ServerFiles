@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Middlewares\AccessAvailableCheck" namespace="App\Containers\Authentication\Middlewares" name="AccessAvailableCheck" abstract="false" final="false" start="20" end="142">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Middlewares" file="AccessAvailableCheck.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Middlewares/AccessAvailableCheck.php" size="2935" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="b4cc68376db86c705a7d266c243e74020220a305" relative="Authentication/Middlewares/AccessAvailableCheck.php"/>
+  <docblock>
+    <description compact="Class AccessAvailableCheck"/>
+    <package value="App\Containers\Authentication\Middlewares"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Middlewares\Middleware" namespace="App\Ship\Parents\Middlewares" name="Middleware" unresolved="true"/>
+  <member name="auth" visibility="protected" static="false" line="28">
+    <docblock>
+      <description compact="The Guard implementation."/>
+      <var type="object">
+        <type full="Illuminate\Contracts\Auth\Guard" namespace="Illuminate\Contracts\Auth" name="Guard"/>
+      </var>
+    </docblock>
+  </member>
+  <method name="handle" start="36" end="140" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <param type="object" variable="$next">
+        <type full="Closure" namespace="" name="Closure"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+    <inline>
+      <comment value="$id = $request-&gt;session()-&gt;get('sessionMemory')['adminId'];" line="40"/>
+      <comment value="$currentUrl = explode(&quot;/public/&quot;, $currentUrl);" line="78"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$currentUrl = $currentUrl[1];" line="79"/>
+    </inline>
+  </method>
+</class>

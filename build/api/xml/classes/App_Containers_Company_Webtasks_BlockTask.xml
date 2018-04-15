@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Company\Webtasks\BlockTask" namespace="App\Containers\Company\Webtasks" name="BlockTask" abstract="false" final="false" start="14" end="46">
+  <file path="/var/www/html/queencar/app/Containers/Company/Webtasks" file="BlockTask.php" realpath="/var/www/html/queencar/app/Containers/Company/Webtasks/BlockTask.php" size="1059" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e6bfbc902a14bfbcbbd575f786121d57ef54cee5" relative="Company/Webtasks/BlockTask.php"/>
+  <uses full="Apiato\Core\Traits\CallableTrait" namespace="Apiato\Core\Traits" name="CallableTrait" start="16" end="16" unresolved="true"/>
+  <method name="run" start="18" end="45" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="block" byreference="false" type="{unknown}"/>
+    <parameter name="report" byreference="false" type="{unknown}"/>
+  </method>
+</class>

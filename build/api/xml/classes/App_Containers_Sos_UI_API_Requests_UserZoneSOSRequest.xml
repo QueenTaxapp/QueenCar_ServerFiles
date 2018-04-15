@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sos\UI\API\Requests\UserZoneSOSRequest" namespace="App\Containers\Sos\UI\API\Requests" name="UserZoneSOSRequest" abstract="false" final="false" start="8" end="32">
+  <file path="/var/www/html/queencar/app/Containers/Sos/UI/API/Requests" file="UserZoneSOSRequest.php" realpath="/var/www/html/queencar/app/Containers/Sos/UI/API/Requests/UserZoneSOSRequest.php" size="530" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="672e1ddf1546490359ed815977c6caf41e91151a" relative="Sos/UI/API/Requests/UserZoneSOSRequest.php"/>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="12" end="23" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="28" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <return type="object">
+        <type full="App\Containers\Sos\UI\API\Requests\bool" namespace="App\Containers\Sos\UI\API\Requests" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

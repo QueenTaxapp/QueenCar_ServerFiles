@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Middlewares\ContentLanguage" namespace="App\Containers\Authentication\Middlewares" name="ContentLanguage" abstract="false" final="false" start="19" end="33">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Middlewares" file="ContentLanguage.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Middlewares/ContentLanguage.php" size="660" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="064b42d0ec3f9f02150cf7ddbcce42fdee22a8f5" relative="Authentication/Middlewares/ContentLanguage.php"/>
+  <docblock>
+    <description compact="Class WebAuthentication"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Middlewares\Middleware" namespace="App\Ship\Parents\Middlewares" name="Middleware" unresolved="true"/>
+  <method name="handle" start="21" end="31" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+  </method>
+</class>

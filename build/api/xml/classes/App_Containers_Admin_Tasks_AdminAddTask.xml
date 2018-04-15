@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Tasks\AdminAddTask" namespace="App\Containers\Admin\Tasks" name="AdminAddTask" abstract="false" final="false" start="18" end="86">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Tasks" file="AdminAddTask.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Tasks/AdminAddTask.php" size="2939" time="2017-09-27T08:40:34+02:00" unixtime="1506494434" sha1="fcc14f2c543c3604223d8d450660c7709de5f93c" relative="Admin/Tasks/AdminAddTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="25" end="84" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Models\SettingsModel" namespace="App\Containers\Admin\Models" name="SettingsModel" abstract="false" final="false" start="9" end="13">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Models" file="SettingsModel.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Models/SettingsModel.php" size="253" time="2017-10-06T08:35:57+02:00" unixtime="1507271757" sha1="5faf34669b6c5f95dc36d21a94f85fac812b57a3" relative="Admin/Models/SettingsModel.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="dates" default="" type="array" visibility="protected" static="false" line="11"/>
+  <member name="table" default="'Settings'" type="string" visibility="protected" static="false" line="12"/>
+</class>

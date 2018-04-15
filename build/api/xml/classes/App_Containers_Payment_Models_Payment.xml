@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Payment\Models\Payment" namespace="App\Containers\Payment\Models" name="Payment" abstract="false" final="false" start="12" end="19">
+  <file path="/var/www/html/queencar/app/Containers/Payment/Models" file="Payment.php" realpath="/var/www/html/queencar/app/Containers/Payment/Models/Payment.php" size="309" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="266bcb0eb88abafc54ed59605bbd1116fa07375f" relative="Payment/Models/Payment.php"/>
+  <docblock>
+    <description compact="Class Payment"/>
+    <package value="App\Containers\Types\Models"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="table" default="'payment'" type="string" visibility="protected" static="false" line="18">
+    <docblock>
+      <description/>
+      <var type="string"/>
+    </docblock>
+  </member>
+</class>

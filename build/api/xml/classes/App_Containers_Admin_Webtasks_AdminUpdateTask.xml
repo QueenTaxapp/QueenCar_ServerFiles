@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Webtasks\AdminUpdateTask" namespace="App\Containers\Admin\Webtasks" name="AdminUpdateTask" abstract="false" final="false" start="22" end="141">
+  <file path="/var/www/html/queencar/app/Containers/Admin/Webtasks" file="AdminUpdateTask.php" realpath="/var/www/html/queencar/app/Containers/Admin/Webtasks/AdminUpdateTask.php" size="4468" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="bde1916ebab8513844b23f1d165771278e02d119" relative="Admin/Webtasks/AdminUpdateTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="29" end="126" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="update_language" start="128" end="139" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="lang" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Review\UI\WEB\Requests\SaveEditUserReviewRequest" namespace="App\Containers\Review\UI\WEB\Requests" name="SaveEditUserReviewRequest" abstract="false" final="false" start="8" end="27">
+  <file path="/var/www/html/queencar/app/Containers/Review/UI/WEB/Requests" file="SaveEditUserReviewRequest.php" realpath="/var/www/html/queencar/app/Containers/Review/UI/WEB/Requests/SaveEditUserReviewRequest.php" size="440" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="e81b55ff2dda1c23eca2c18fe51b4257c643ca70" relative="Review/UI/WEB/Requests/SaveEditUserReviewRequest.php"/>
+  <extends full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request" unresolved="true"/>
+  <method name="rules" start="11" end="21" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="authorize" start="23" end="26" abstract="false" final="false" static="false" visibility="public"/>
+</class>

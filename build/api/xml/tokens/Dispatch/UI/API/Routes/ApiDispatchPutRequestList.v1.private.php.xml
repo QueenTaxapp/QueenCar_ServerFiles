@@ -1,0 +1,454 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Routes" file="ApiDispatchPutRequestList.v1.private.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Routes/ApiDispatchPutRequestList.v1.private.php" size="5840" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="5dcc33febb38bc968ccff8491b78c8f6f5306e28" relative="Dispatch/UI/API/Routes/ApiDispatchPutRequestList.v1.private.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT">    * @apiGroup           Dispatch</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT">    * @apiName            Dispatch Specific Admin Request List</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT">    * @api                {post} /dispatch/request/list  Dispatch Specific Admin Request List</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT">    * @apiDescription     used to list the specific dispatch admin request and schedule as similiar to paginate</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT">    * @apiVersion         1.0.0</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT">    * @apiPermission      none</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT">    *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT">    * @apiHeader          Accept application/json</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT">    *</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT">    * @apiParam           {INT}        id</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT">    * @apiParam           {String}     token</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT">    * @apiParam           {INT}        page min 1</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT">    * @apiParam           {INT}        ride_later 0 for request ,1 for schedule</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT">    * @apiParam           {String}     [search_key_user] User name</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT">    * @apiParam           {String}     [search_key_driver] Driver Name</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT">    * @apiParam           {Int}        [search_key_trip_status] 1 : trip not yet start , 2 : ongoing, 3 : completed ,4:cancelled</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT">    * @apiParam           {String}     [search_key_payment_type] 0 : card ,1:cash, 2 : wallet , 3 : cash&amp;wallet</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT">    * @apiParam           {String}     [search_key_payment_status] 0 : unpaid ,1: paid</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT">    * @apiParam           {String}     [search_key_from_date] &lt;code&gt;required when search_key_to_date has value &lt;/code&gt; eg : 2018-02-24 17:07:39</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT">    * @apiParam           {String}     [search_key_to_date] &lt;code&gt;required when  search_key_from_date has value&lt;/code&gt; eg : 2018-02-24 17:07:39</token>
+  </line>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT">    * @apiSuccessExample  {json}    Success-Response:</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT">    *   {</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT">    *       "success": true,</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT">    *       "success_message": "request_list_for_specific_dispatch_admin_ride_later",</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">    *       "total_no_of_request": 2,</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">    *       "page": 1,</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">    *       "request": [</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">    *               {</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT">    *                   "id": 264,</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT">    *                   "trip_start_time": null,</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT">    *                   "created_at": {</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT">    *                           "date": "2018-02-27 11:52:58.000000",</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT">    *                           "timezone_type": 3,</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT">    *                           "timezone": "Asia/Kolkata"</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT">    *                                  },</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT">    *       "request_id": "RES_86444",</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT">    *       "is_completed": 0,</token>
+  </line>
+  <line no="43">
+    <token name="T_DOC_COMMENT">    *       "is_cancelled": 0,</token>
+  </line>
+  <line no="44">
+    <token name="T_DOC_COMMENT">    *       "payment_opt": 1,</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT">    *       "is_paid": 0,</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT">    *       "is_trip_start": 0,</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT">    *       "trip_bill": 0,</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT">    *       "user_name": "saravana test",</token>
+  </line>
+  <line no="49">
+    <token name="T_DOC_COMMENT">    *       "driver_name": null,</token>
+  </line>
+  <line no="50">
+    <token name="T_DOC_COMMENT">    *       "trip_status": "Trip Not Yet Started",</token>
+  </line>
+  <line no="51">
+    <token name="T_DOC_COMMENT">    *       "is_paid_message": "Unpaid",</token>
+  </line>
+  <line no="52">
+    <token name="T_DOC_COMMENT">    *       "payment_type_select": "Cash"</token>
+  </line>
+  <line no="53">
+    <token name="T_DOC_COMMENT">    *               },</token>
+  </line>
+  <line no="54">
+    <token name="T_DOC_COMMENT">    *               {</token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT">    *                   "id": 263,</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT">    *                   "trip_start_time": null,</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT">    *                   "created_at":</token>
+  </line>
+  <line no="58">
+    <token name="T_DOC_COMMENT">    *                                   {</token>
+  </line>
+  <line no="59">
+    <token name="T_DOC_COMMENT">    *                       "date": "2018-02-27 11:49:41.000000",</token>
+  </line>
+  <line no="60">
+    <token name="T_DOC_COMMENT">    *                       "timezone_type": 3,</token>
+  </line>
+  <line no="61">
+    <token name="T_DOC_COMMENT">    *                       "timezone": "Asia/Kolkata"</token>
+  </line>
+  <line no="62">
+    <token name="T_DOC_COMMENT">    *                                   },</token>
+  </line>
+  <line no="63">
+    <token name="T_DOC_COMMENT">    *                   "request_id": "RES_93066",</token>
+  </line>
+  <line no="64">
+    <token name="T_DOC_COMMENT">    *                   "is_completed": 0,</token>
+  </line>
+  <line no="65">
+    <token name="T_DOC_COMMENT">    *                   "is_cancelled": 0,</token>
+  </line>
+  <line no="66">
+    <token name="T_DOC_COMMENT">    *                   "payment_opt": 1,</token>
+  </line>
+  <line no="67">
+    <token name="T_DOC_COMMENT">    *                   "is_paid": 0,</token>
+  </line>
+  <line no="68">
+    <token name="T_DOC_COMMENT">    *                   "is_trip_start": 0,</token>
+  </line>
+  <line no="69">
+    <token name="T_DOC_COMMENT">    *                   "trip_bill": 0,</token>
+  </line>
+  <line no="70">
+    <token name="T_DOC_COMMENT">    *                   "user_name": "test ing",</token>
+  </line>
+  <line no="71">
+    <token name="T_DOC_COMMENT">    *                   "driver_name": null,</token>
+  </line>
+  <line no="72">
+    <token name="T_DOC_COMMENT">    *                   "trip_status": "Trip Not Yet Started",</token>
+  </line>
+  <line no="73">
+    <token name="T_DOC_COMMENT">    *                   "is_paid_message": "Unpaid",</token>
+  </line>
+  <line no="74">
+    <token name="T_DOC_COMMENT">    *                   "payment_type_select": "Cash"</token>
+  </line>
+  <line no="75">
+    <token name="T_DOC_COMMENT">    *               }</token>
+  </line>
+  <line no="76">
+    <token name="T_DOC_COMMENT">    *                   ]</token>
+  </line>
+  <line no="77">
+    <token name="T_DOC_COMMENT">    *   }</token>
+  </line>
+  <line no="78">
+    <token name="T_DOC_COMMENT">    *</token>
+  </line>
+  <line no="79">
+    <token name="T_DOC_COMMENT">    *</token>
+  </line>
+  <line no="80">
+    <token name="T_DOC_COMMENT">    * @apiSuccessExample  {json}    Success-Response:</token>
+  </line>
+  <line no="81">
+    <token name="T_DOC_COMMENT">    *   {</token>
+  </line>
+  <line no="82">
+    <token name="T_DOC_COMMENT">    *       "success": true,</token>
+  </line>
+  <line no="83">
+    <token name="T_DOC_COMMENT">    *       "success_message": "request_list_for_specific_dispatch_admin_request",</token>
+  </line>
+  <line no="84">
+    <token name="T_DOC_COMMENT">    *       "total_no_of_request": 2,</token>
+  </line>
+  <line no="85">
+    <token name="T_DOC_COMMENT">    *       "page": 1,</token>
+  </line>
+  <line no="86">
+    <token name="T_DOC_COMMENT">    *       "request": [</token>
+  </line>
+  <line no="87">
+    <token name="T_DOC_COMMENT">    *               {</token>
+  </line>
+  <line no="88">
+    <token name="T_DOC_COMMENT">    *                   "id": 264,</token>
+  </line>
+  <line no="89">
+    <token name="T_DOC_COMMENT">    *                   "trip_start_time": null,</token>
+  </line>
+  <line no="90">
+    <token name="T_DOC_COMMENT">    *                   "created_at":</token>
+  </line>
+  <line no="91">
+    <token name="T_DOC_COMMENT">    *                                   {</token>
+  </line>
+  <line no="92">
+    <token name="T_DOC_COMMENT">    *                       "date": "2018-02-27 11:49:41.000000",</token>
+  </line>
+  <line no="93">
+    <token name="T_DOC_COMMENT">    *                       "timezone_type": 3,</token>
+  </line>
+  <line no="94">
+    <token name="T_DOC_COMMENT">    *                       "timezone": "Asia/Kolkata"</token>
+  </line>
+  <line no="95">
+    <token name="T_DOC_COMMENT">    *                                   },</token>
+  </line>
+  <line no="96">
+    <token name="T_DOC_COMMENT">    *       "request_id": "RES_86444",</token>
+  </line>
+  <line no="97">
+    <token name="T_DOC_COMMENT">    *       "is_completed": 0,</token>
+  </line>
+  <line no="98">
+    <token name="T_DOC_COMMENT">    *       "is_cancelled": 0,</token>
+  </line>
+  <line no="99">
+    <token name="T_DOC_COMMENT">    *       "payment_opt": 1,</token>
+  </line>
+  <line no="100">
+    <token name="T_DOC_COMMENT">    *       "is_paid": 0,</token>
+  </line>
+  <line no="101">
+    <token name="T_DOC_COMMENT">    *       "is_trip_start": 0,</token>
+  </line>
+  <line no="102">
+    <token name="T_DOC_COMMENT">    *       "trip_bill": 0,</token>
+  </line>
+  <line no="103">
+    <token name="T_DOC_COMMENT">    *       "user_name": "saravana test",</token>
+  </line>
+  <line no="104">
+    <token name="T_DOC_COMMENT">    *       "driver_name": null,</token>
+  </line>
+  <line no="105">
+    <token name="T_DOC_COMMENT">    *       "trip_status": "Trip Not Yet Started",</token>
+  </line>
+  <line no="106">
+    <token name="T_DOC_COMMENT">    *       "is_paid_message": "Unpaid",</token>
+  </line>
+  <line no="107">
+    <token name="T_DOC_COMMENT">    *       "payment_type_select": "Cash"</token>
+  </line>
+  <line no="108">
+    <token name="T_DOC_COMMENT">    *               },</token>
+  </line>
+  <line no="109">
+    <token name="T_DOC_COMMENT">    *               {</token>
+  </line>
+  <line no="110">
+    <token name="T_DOC_COMMENT">    *                   "id": 263,</token>
+  </line>
+  <line no="111">
+    <token name="T_DOC_COMMENT">    *                   "trip_start_time": null,</token>
+  </line>
+  <line no="112">
+    <token name="T_DOC_COMMENT">    *                   "created_at": {</token>
+  </line>
+  <line no="113">
+    <token name="T_DOC_COMMENT">    *                       "date": "2018-02-27 11:49:41.000000",</token>
+  </line>
+  <line no="114">
+    <token name="T_DOC_COMMENT">    *                       "timezone_type": 3,</token>
+  </line>
+  <line no="115">
+    <token name="T_DOC_COMMENT">    *                       "timezone": "Asia/Kolkata"</token>
+  </line>
+  <line no="116">
+    <token name="T_DOC_COMMENT">    *                                   },</token>
+  </line>
+  <line no="117">
+    <token name="T_DOC_COMMENT">    *                   "request_id": "RES_93066",</token>
+  </line>
+  <line no="118">
+    <token name="T_DOC_COMMENT">    *                   "is_completed": 0,</token>
+  </line>
+  <line no="119">
+    <token name="T_DOC_COMMENT">    *                   "is_cancelled": 0,</token>
+  </line>
+  <line no="120">
+    <token name="T_DOC_COMMENT">    *                   "payment_opt": 1,</token>
+  </line>
+  <line no="121">
+    <token name="T_DOC_COMMENT">    *                   "is_paid": 0,</token>
+  </line>
+  <line no="122">
+    <token name="T_DOC_COMMENT">    *                   "is_trip_start": 0,</token>
+  </line>
+  <line no="123">
+    <token name="T_DOC_COMMENT">    *                   "trip_bill": 0,</token>
+  </line>
+  <line no="124">
+    <token name="T_DOC_COMMENT">    *                   "user_name": "test ing",</token>
+  </line>
+  <line no="125">
+    <token name="T_DOC_COMMENT">    *                   "driver_name": null,</token>
+  </line>
+  <line no="126">
+    <token name="T_DOC_COMMENT">    *                   "trip_status": "Trip Not Yet Started",</token>
+  </line>
+  <line no="127">
+    <token name="T_DOC_COMMENT">    *                   "is_paid_message": "Unpaid",</token>
+  </line>
+  <line no="128">
+    <token name="T_DOC_COMMENT">    *                   "payment_type_select": "Cash"</token>
+  </line>
+  <line no="129">
+    <token name="T_DOC_COMMENT">    *               }</token>
+  </line>
+  <line no="130">
+    <token name="T_DOC_COMMENT">    *                   ]</token>
+  </line>
+  <line no="131">
+    <token name="T_DOC_COMMENT">    *   }</token>
+  </line>
+  <line no="132">
+    <token name="T_DOC_COMMENT">    *</token>
+  </line>
+  <line no="133">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="134">
+    <token name="T_WHITESPACE">    </token>
+  </line>
+  <line no="135">
+    <token name="T_VARIABLE">$router</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">post</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/dispatch/request/list'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="136">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'as'</token>
+    <token name="T_WHITESPACE">   </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Dispatch@dispatch_request_list'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="137">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'uses'</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Controller@run'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+  </line>
+  <line no="138">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'middleware'</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+  </line>
+  <line no="139">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">//'DispatchTokenCheck.api',</token>
+  </line>
+  <line no="140"/>
+  <line no="141">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+  </line>
+  <line no="142">
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="143"/>
+</source>

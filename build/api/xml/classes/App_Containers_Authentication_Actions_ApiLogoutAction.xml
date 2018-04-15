@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Actions\ApiLogoutAction" namespace="App\Containers\Authentication\Actions" name="ApiLogoutAction" abstract="false" final="false" start="16" end="31">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Actions" file="ApiLogoutAction.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Actions/ApiLogoutAction.php" size="705" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="27c5a6335d434fe049e72d7c09088145c5c71941" relative="Authentication/Actions/ApiLogoutAction.php"/>
+  <docblock>
+    <description compact="Class ApiLogoutAction."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="23" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="\App\Ship\Parents\Requests\Request" namespace="\App\Ship\Parents\Requests" name="Request"/>
+      </param>
+      <return type="object">
+        <type full="App\Containers\Authentication\Actions\bool" namespace="App\Containers\Authentication\Actions" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Middlewares\DriverTokenCheck" namespace="App\Containers\Authentication\Middlewares" name="DriverTokenCheck" abstract="false" final="false" start="22" end="74">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Middlewares" file="DriverTokenCheck.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Middlewares/DriverTokenCheck.php" size="1859" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="69ca492dd1e70b08d5b753bcc4f11325f6803aec" relative="Authentication/Middlewares/DriverTokenCheck.php"/>
+  <docblock>
+    <description compact="Class WebAuthentication"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Middlewares\Middleware" namespace="App\Ship\Parents\Middlewares" name="Middleware" unresolved="true"/>
+  <method name="handle" start="24" end="32" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+  </method>
+  <method name="check" start="34" end="73" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

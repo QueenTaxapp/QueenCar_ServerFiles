@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\TempTokenCheck" namespace="App\Containers\User\Tasks" name="TempTokenCheck" abstract="false" final="false" start="22" end="58">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="TempTokenCheck.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/TempTokenCheck.php" size="1162" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="652305163b321f56f57d838565142e871aea8763" relative="User/Tasks/TempTokenCheck.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="32" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Check Token in Temp Table"/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\User\Tasks\Object" namespace="App\Containers\User\Tasks" name="Object"/>
+      </param>
+      <param type="object" variable="$phone">
+        <type full="App\Containers\User\Tasks\String" namespace="App\Containers\User\Tasks" name="String"/>
+      </param>
+      <return description="TempOtp" type="object">
+        <type full="App\Containers\User\Tasks\Object" namespace="App\Containers\User\Tasks" name="Object"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <parameter name="phone" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+</class>

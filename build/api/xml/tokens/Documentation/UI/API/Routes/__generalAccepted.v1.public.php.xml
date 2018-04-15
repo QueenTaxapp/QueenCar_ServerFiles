@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Documentation/UI/API/Routes" file="__generalAccepted.v1.public.php" realpath="/var/www/html/queencar/app/Containers/Documentation/UI/API/Routes/__generalAccepted.v1.public.php" size="126" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="bfb548387fe683d95e9974aba97bb4b81b0381d9" relative="Documentation/UI/API/Routes/__generalAccepted.v1.public.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> * @apiDefine GeneralAcceptedResponse</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * @apiSuccessExample {json} Success-Response:</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT">HTTP/1.1 202 Accepted</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT">{</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT">}</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="10"/>
+</source>

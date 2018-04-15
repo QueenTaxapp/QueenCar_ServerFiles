@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Wallet\ApiTask\ApiAddWallet" namespace="App\Containers\Wallet\ApiTask" name="ApiAddWallet" abstract="false" final="false" start="22" end="152">
+  <file path="/var/www/html/queencar/app/Containers/Wallet/ApiTask" file="ApiAddWallet.php" realpath="/var/www/html/queencar/app/Containers/Wallet/ApiTask/ApiAddWallet.php" size="4724" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="bf673de14a8d62c21f7a63b117d7478e9615cc86" relative="Wallet/ApiTask/ApiAddWallet.php"/>
+  <docblock>
+    <description compact="Class ApiAddWallet"/>
+    <package value="App\Containers\Payment\ApiTask"/>
+  </docblock>
+  <method name="run" start="30" end="95" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="transfer" start="97" end="116" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="converted_amount" byreference="false" type="{unknown}"/>
+    <parameter name="card" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="findCard" start="118" end="129" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="checkAmountAdd" start="131" end="139" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="converted_amount" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="CheckWalletAmount" start="141" end="149" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="wallet" byreference="false" type="{unknown}"/>
+    <parameter name="converted_amount" byreference="false" type="{unknown}"/>
+  </method>
+</class>

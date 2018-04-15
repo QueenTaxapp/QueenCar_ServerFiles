@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Settings\Data\Seeders\SettingsDefaultSettingsSeeder" namespace="App\Containers\Settings\Data\Seeders" name="SettingsDefaultSettingsSeeder" abstract="false" final="false" start="12" end="32">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Data/Seeders" file="SettingsDefaultSettingsSeeder.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Data/Seeders/SettingsDefaultSettingsSeeder.php" size="668" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="da668744d051f2eddcd28208e43fcd683e29a8f2" relative="Settings/Data/Seeders/SettingsDefaultSettingsSeeder.php"/>
+  <docblock>
+    <description compact="Class SettingsDefaultSettingsSeeder"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Seeders\Seeder" namespace="App\Ship\Parents\Seeders" name="Seeder" unresolved="true"/>
+  <method name="run" start="20" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Run the database seeds."/>
+      <return type="object">
+        <type full="App\Containers\Settings\Data\Seeders\void" namespace="App\Containers\Settings\Data\Seeders" name="void"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="$settings = new Settings();" line="22"/>
+      <comment value="$settings-&gt;key = 'referring_user_points';" line="23"/>
+      <comment value="$settings-&gt;value = '200';" line="24"/>
+      <comment value="$settings-&gt;save();" line="25"/>
+      <comment value="$settings = new Settings();" line="27"/>
+      <comment value="$settings-&gt;key = 'referred_user_points';" line="28"/>
+      <comment value="$settings-&gt;value = '200';" line="29"/>
+      <comment value="$settings-&gt;save();" line="30"/>
+    </inline>
+  </method>
+</class>

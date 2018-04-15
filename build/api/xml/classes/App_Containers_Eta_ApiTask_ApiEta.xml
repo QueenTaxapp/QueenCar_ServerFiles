@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Eta\ApiTask\ApiEta" namespace="App\Containers\Eta\ApiTask" name="ApiEta" abstract="false" final="false" start="17" end="209">
+  <file path="/var/www/html/queencar/app/Containers/Eta/ApiTask" file="ApiEta.php" realpath="/var/www/html/queencar/app/Containers/Eta/ApiTask/ApiEta.php" size="6344" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="742d92c47daeac704abb59ede0fd38db950bfc0e" relative="Eta/ApiTask/ApiEta.php"/>
+  <docblock>
+    <description compact="Class ApiEta"/>
+    <package value="App\Containers\eta\ApiTask"/>
+  </docblock>
+  <member name="extraTimeCharge" default="NULL" visibility="private" static="false" line="19"/>
+  <member name="applyOn" default="1" type="integer" visibility="private" static="false" line="21"/>
+  <method name="run" start="27" end="140" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="applyextraTimeCharge" start="143" end="150" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="amount" byreference="false" type="{unknown}"/>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="calTax" start="152" end="158" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="ride_total" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getextraTimeCharge" start="160" end="184" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="zone_type" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="find_distance" start="187" end="205" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="distance_matrix" byreference="false" type="{unknown}"/>
+  </method>
+</class>

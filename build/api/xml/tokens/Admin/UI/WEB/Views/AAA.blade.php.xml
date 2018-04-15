@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Admin/UI/WEB/Views" file="AAA.blade.php" realpath="/var/www/html/queencar/app/Containers/Admin/UI/WEB/Views/AAA.blade.php" size="4" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="a94a8fe5ccb19ba61c4c0873d391e987982fbbd3" relative="Admin/UI/WEB/Views/AAA.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">test</token>
+  </line>
+</source>

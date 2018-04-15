@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Payment\UI\API\Transformers\AddCard" namespace="App\Containers\Payment\UI\API\Transformers" name="AddCard" abstract="false" final="false" start="14" end="36">
+  <file path="/var/www/html/queencar/app/Containers/Payment/UI/API/Transformers" file="AddCard.php" realpath="/var/www/html/queencar/app/Containers/Payment/UI/API/Transformers/AddCard.php" size="556" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="c2e6a502f5b3b458dd6edd1e312930c40bdc9b1b" relative="Payment/UI/API/Transformers/AddCard.php"/>
+  <docblock>
+    <description compact="Class CheckReferral"/>
+    <package value="App\Containers\Referral\UI\API\Transformers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="21" end="32" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$result"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="result" byreference="false" type="{unknown}"/>
+  </method>
+</class>

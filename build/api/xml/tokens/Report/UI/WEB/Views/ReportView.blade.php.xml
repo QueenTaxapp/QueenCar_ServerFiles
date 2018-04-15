@@ -1,0 +1,3697 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Report/UI/WEB/Views" file="ReportView.blade.php" realpath="/var/www/html/queencar/app/Containers/Report/UI/WEB/Views/ReportView.blade.php" size="70739" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="f89b2cf8ac10c2d57ec827d7c1aada0b9b019b0d" relative="Report/UI/WEB/Views/ReportView.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('layout::Layout')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3"/>
+  <line no="4"/>
+  <line no="5"/>
+  <line no="6"/>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;style&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">        sup{</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">            color:red;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">            font-size: 12px;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">            left: 2px;</token>
+  </line>
+  <line no="12"/>
+  <line no="13">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="15"/>
+  <line no="16"/>
+  <line no="17"/>
+  <line no="18">
+    <token name="T_INLINE_HTML">    &lt;section id="content"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">        &lt;!--start container--&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">        &lt;div class="container"&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">            &lt;!--card stats start--&gt;</token>
+  </line>
+  <line no="22"/>
+  <line no="23">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="25"/>
+  <line no="26">
+    <token name="T_INLINE_HTML">                    &lt;h4 class="header"&gt;{{ $title }}&lt;/h4&gt;</token>
+  </line>
+  <line no="27"/>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_INLINE_HTML">                        &lt;ul class="collapsible popout collapsible-accordion" data-collapsible="accordion"&gt;</token>
+  </line>
+  <line no="30"/>
+  <line no="31"/>
+  <line no="32">
+    <token name="T_INLINE_HTML">                            &lt;li id="financial_report" class=""&gt;</token>
+  </line>
+  <line no="33"/>
+  <line no="34">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-header active"&gt;</token>
+  </line>
+  <line no="35"/>
+  <line no="36">
+    <token name="T_INLINE_HTML">                                    &lt;h6&gt;&lt;b&gt;{{ trans('localization::lang_view.financial_reports')}}&lt;/b&gt;&lt;/h6&gt;</token>
+  </line>
+  <line no="37">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="38"/>
+  <line no="39">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-body" style="overflow: auto;display: none;"&gt;</token>
+  </line>
+  <line no="40"/>
+  <line no="41">
+    <token name="T_INLINE_HTML">                                    &lt;div class="table-bordered"&gt;</token>
+  </line>
+  <line no="42"/>
+  <line no="43">
+    <token name="T_INLINE_HTML">                                        &lt;form onsubmit="return FormValidate('date_option-financial','start-date-financial','end-date-financial');" action="{{ URL::Route('adminReportDownload')}}"  method="post" enctype="multipart/form-data" &gt;</token>
+  </line>
+  <line no="44"/>
+  <line no="45">
+    <token name="T_INLINE_HTML">                                            &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="46"/>
+  <line no="47">
+    <token name="T_INLINE_HTML">                                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="48"/>
+  <line no="49">
+    <token name="T_INLINE_HTML">                                            &lt;div class="col s12 m4 l4"&gt;</token>
+  </line>
+  <line no="50">
+    <token name="T_INLINE_HTML">                                                &lt;select name="date_option" id="date_option-financial" class="input-field date_option" required&gt;</token>
+  </line>
+  <line no="51">
+    <token name="T_INLINE_HTML">                                                    &lt;option value=""&gt; {{trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="date_select"&gt;{{ trans('localization::lang_view.date') }}&lt;/option&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="today"&gt;{{ trans('localization::lang_view.today') }}&lt;/option&gt;</token>
+  </line>
+  <line no="54">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="yesterday"&gt;{{ trans('localization::lang_view.yesterday') }}&lt;/option&gt;</token>
+  </line>
+  <line no="55">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="current_week"&gt;{{ trans('localization::lang_view.current_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="last_week"&gt;{{ trans('localization::lang_view.last_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="57">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="current_month"&gt;{{ trans('localization::lang_view.current_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="58">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="previous_month"&gt;{{ trans('localization::lang_view.previous_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="59">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="current_year"&gt;{{ trans('localization::lang_view.current_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="60">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="last_year"&gt;{{ trans('localization::lang_view.last_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="61">
+    <token name="T_INLINE_HTML">                                                &lt;/select&gt;</token>
+  </line>
+  <line no="62">
+    <token name="T_INLINE_HTML">                                                &lt;label for="start-date"&gt;{{ trans('localization::lang_view.start_date')}}&lt;/label&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="64"/>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                            &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="66">
+    <token name="T_INLINE_HTML">                                                &lt;input type="text" class="datepicker"</token>
+  </line>
+  <line no="67">
+    <token name="T_INLINE_HTML">                                                       id="start-date-financial" name="start_date"</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                                       placeholder="{{ trans('localization::lang_view.start').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                                       value="{{--{{ Input::get('start_date') }}--}}"&gt;</token>
+  </line>
+  <line no="70"/>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="72"/>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                            &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                                                &lt;input type="text" class="datepicker"</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                                                       id="end-date-financial" name="end_date"</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                                                       placeholder="{{ trans('localization::lang_view.end').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                                       value="{{--{{ Input::get('end_date') }}--}}" /&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="79"/>
+  <line no="80">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="81"/>
+  <line no="82"/>
+  <line no="83"/>
+  <line no="84">
+    <token name="T_INLINE_HTML">                                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="85"/>
+  <line no="86">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="87">
+    <token name="T_INLINE_HTML">                                                &lt;select name="company" id="company" &gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                                                    &lt;option value=""&gt;{{ trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="0"&gt;{{ trans('localization::lang_view.individual')}}&lt;/option&gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                                                    </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$company</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$key</token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="91"/>
+  <line no="92">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">id</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"  &gt;</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">company_name</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/option&gt;</token>
+  </line>
+  <line no="93"/>
+  <line no="94">
+    <token name="T_INLINE_HTML">                                                    </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                                                &lt;/select&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                                                &lt;label for="company"&gt;{{ trans('localization::lang_view.company')}}&lt;/label&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="98"/>
+  <line no="99">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="100"/>
+  <line no="101"/>
+  <line no="102">
+    <token name="T_INLINE_HTML">                                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="103"/>
+  <line no="104">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="105"/>
+  <line no="106">
+    <token name="T_INLINE_HTML">                                                &lt;select name="trip_status" id="status" class=""&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                                                    &lt;option value=""&gt;{{ trans('localization::lang_view.select') }}&lt;/option&gt;</token>
+  </line>
+  <line no="108">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="1"&gt;{{ trans('localization::lang_view.completed') }}&lt;/option&gt;</token>
+  </line>
+  <line no="109">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="2"&gt;{{ trans('localization::lang_view.cancelled') }}&lt;/option&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                                                &lt;/select&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                                                &lt;label for="status"&gt;{{ trans('localization::lang_view.status')}}&lt;/label&gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="113"/>
+  <line no="114">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="115"/>
+  <line no="116">
+    <token name="T_INLINE_HTML">                                                &lt;select name="payment" id="payment" class=""&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                                                    &lt;option value=""&gt;{{ trans('localization::lang_view.select') }}&lt;/option&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="0"&gt;{{ trans('localization::lang_view.card') }}&lt;/option&gt;</token>
+  </line>
+  <line no="119">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="1"&gt;{{ trans('localization::lang_view.cash') }}&lt;/option&gt;</token>
+  </line>
+  <line no="120">
+    <token name="T_INLINE_HTML">                                                    &lt;option value="2"&gt;{{ trans('localization::lang_view.wallet') }}&lt;/option&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                                                &lt;/select&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                                                &lt;label for="payment"&gt;{{ trans('localization::lang_view.payment_method')}}&lt;/label&gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="124"/>
+  <line no="125"/>
+  <line no="126">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="127"/>
+  <line no="128">
+    <token name="T_INLINE_HTML">                                        &lt;button type="submit" name="submit" value="financial_report" class="btn save-btn btn-primary right" &gt;{{ trans('localization::lang_view.download')}}&lt;/button&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                                        &lt;div class="clearfix"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="130"/>
+  <line no="131">
+    <token name="T_INLINE_HTML">                                        &lt;/form&gt;</token>
+  </line>
+  <line no="132"/>
+  <line no="133"/>
+  <line no="134">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="135"/>
+  <line no="136">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="138"/>
+  <line no="139"/>
+  <line no="140">
+    <token name="T_INLINE_HTML">                     {{--       //Business--}}</token>
+  </line>
+  <line no="141"/>
+  <line no="142">
+    <token name="T_INLINE_HTML">                            &lt;li id="business_report" class=""&gt;</token>
+  </line>
+  <line no="143"/>
+  <line no="144">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-header"&gt;</token>
+  </line>
+  <line no="145"/>
+  <line no="146">
+    <token name="T_INLINE_HTML">                                    &lt;h6&gt;&lt;b&gt;{{ trans('localization::lang_view.business_reports')}}&lt;/b&gt;&lt;/h6&gt;</token>
+  </line>
+  <line no="147">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="148"/>
+  <line no="149">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-body" style="overflow: auto;display: none;"&gt;</token>
+  </line>
+  <line no="150"/>
+  <line no="151">
+    <token name="T_INLINE_HTML">                                    &lt;div class="table-bordered"&gt;</token>
+  </line>
+  <line no="152"/>
+  <line no="153">
+    <token name="T_INLINE_HTML">                                        &lt;form onsubmit="return FormValidate('date_option-business','start-date-business','end-date-business');" action="{{ URL::Route('adminReportDownload')}}"  method="post" enctype="multipart/form-data" &gt;</token>
+  </line>
+  <line no="154"/>
+  <line no="155">
+    <token name="T_INLINE_HTML">                                            &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="156"/>
+  <line no="157">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="158"/>
+  <line no="159">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4"&gt;</token>
+  </line>
+  <line no="160">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="date_option" id="date_option-business" class="input-field date_option" required&gt;</token>
+  </line>
+  <line no="161">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt; {{trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="162">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="date_select"&gt;{{ trans('localization::lang_view.date') }}&lt;/option&gt;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="today"&gt;{{ trans('localization::lang_view.today') }}&lt;/option&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="yesterday"&gt;{{ trans('localization::lang_view.yesterday') }}&lt;/option&gt;</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_week"&gt;{{ trans('localization::lang_view.current_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="166">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="last_week"&gt;{{ trans('localization::lang_view.last_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="167">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_month"&gt;{{ trans('localization::lang_view.current_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="168">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="previous_month"&gt;{{ trans('localization::lang_view.previous_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_year"&gt;{{ trans('localization::lang_view.current_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="last_year"&gt;{{ trans('localization::lang_view.last_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="start-date"&gt;{{ trans('localization::lang_view.start_date')}}&lt;/label&gt;</token>
+  </line>
+  <line no="173">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="174"/>
+  <line no="175">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="text" class="start-date datepicker"</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">                                                           id="start-date-business" name="start_date"</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                                                           placeholder="{{ trans('localization::lang_view.start').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                                                           value="{{--{{ Input::get('start_date') }}--}}"&gt;</token>
+  </line>
+  <line no="180"/>
+  <line no="181">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="182"/>
+  <line no="183">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="text" class="end-date datepicker"</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">                                                           id="end-date-business" name="end_date"</token>
+  </line>
+  <line no="186">
+    <token name="T_INLINE_HTML">                                                           placeholder="{{ trans('localization::lang_view.end').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="187">
+    <token name="T_INLINE_HTML">                                                           value="{{--{{ Input::get('end_date') }}--}}" /&gt;</token>
+  </line>
+  <line no="188">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="189"/>
+  <line no="190">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="191"/>
+  <line no="192"/>
+  <line no="193"/>
+  <line no="194">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="195"/>
+  <line no="196">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="197">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="company" id="company" &gt;</token>
+  </line>
+  <line no="198">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="199">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="0"&gt;{{ trans('localization::lang_view.individual')}}&lt;/option&gt;</token>
+  </line>
+  <line no="200">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$company</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$key</token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="201"/>
+  <line no="202">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">id</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"  &gt;</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">company_name</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/option&gt;</token>
+  </line>
+  <line no="203"/>
+  <line no="204">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="205">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="206">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="company"&gt;{{ trans('localization::lang_view.company')}}&lt;/label&gt;</token>
+  </line>
+  <line no="207">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="208">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="209">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="vehicle" id="vehicle" &gt;</token>
+  </line>
+  <line no="210">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="211">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$types</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$key</token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="212"/>
+  <line no="213">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">id</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"  &gt;</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">name</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/option&gt;</token>
+  </line>
+  <line no="214"/>
+  <line no="215">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="216">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="217">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="vehicle"&gt;{{ trans('localization::lang_view.vehicle_type')}}&lt;/label&gt;</token>
+  </line>
+  <line no="218">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="219"/>
+  <line no="220">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="221"/>
+  <line no="222"/>
+  <line no="223">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="224"/>
+  <line no="225">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="226"/>
+  <line no="227">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="trip_status" id="status" class=""&gt;</token>
+  </line>
+  <line no="228">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select') }}&lt;/option&gt;</token>
+  </line>
+  <line no="229">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="1"&gt;{{ trans('localization::lang_view.completed') }}&lt;/option&gt;</token>
+  </line>
+  <line no="230">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="2"&gt;{{ trans('localization::lang_view.cancelled') }}&lt;/option&gt;</token>
+  </line>
+  <line no="231">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="232">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="status"&gt;{{ trans('localization::lang_view.status')}}&lt;/label&gt;</token>
+  </line>
+  <line no="233">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="234"/>
+  <line no="235">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="236"/>
+  <line no="237">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="payment" id="payment" class=""&gt;</token>
+  </line>
+  <line no="238">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select') }}&lt;/option&gt;</token>
+  </line>
+  <line no="239">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="0"&gt;{{ trans('localization::lang_view.card') }}&lt;/option&gt;</token>
+  </line>
+  <line no="240">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="1"&gt;{{ trans('localization::lang_view.cash') }}&lt;/option&gt;</token>
+  </line>
+  <line no="241">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="2"&gt;{{ trans('localization::lang_view.wallet') }}&lt;/option&gt;</token>
+  </line>
+  <line no="242">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="243">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="payment"&gt;{{ trans('localization::lang_view.payment_method')}}&lt;/label&gt;</token>
+  </line>
+  <line no="244">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="245"/>
+  <line no="246"/>
+  <line no="247">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="248"/>
+  <line no="249">
+    <token name="T_INLINE_HTML">                                            &lt;button type="submit" name="submit" value="business_report" class="btn save-btn btn-primary right" &gt;{{ trans('localization::lang_view.download')}}&lt;/button&gt;</token>
+  </line>
+  <line no="250">
+    <token name="T_INLINE_HTML">                                            &lt;div class="clearfix"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="251"/>
+  <line no="252">
+    <token name="T_INLINE_HTML">                                        &lt;/form&gt;</token>
+  </line>
+  <line no="253"/>
+  <line no="254"/>
+  <line no="255">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="256"/>
+  <line no="257">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="258">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="259"/>
+  <line no="260">
+    <token name="T_INLINE_HTML">                           {{-- //Travel Reports--}}</token>
+  </line>
+  <line no="261"/>
+  <line no="262">
+    <token name="T_INLINE_HTML">                            &lt;li id="travel_report" class=""&gt;</token>
+  </line>
+  <line no="263"/>
+  <line no="264">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-header "&gt;</token>
+  </line>
+  <line no="265"/>
+  <line no="266">
+    <token name="T_INLINE_HTML">                                    &lt;h6&gt;&lt;b&gt;{{ trans('localization::lang_view.travel_reports')}}&lt;/b&gt;&lt;/h6&gt;</token>
+  </line>
+  <line no="267">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="268"/>
+  <line no="269">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-body" style="overflow: auto;display: none;"&gt;</token>
+  </line>
+  <line no="270"/>
+  <line no="271">
+    <token name="T_INLINE_HTML">                                    &lt;div class="table-bordered"&gt;</token>
+  </line>
+  <line no="272"/>
+  <line no="273">
+    <token name="T_INLINE_HTML">                                        &lt;form onsubmit="return FormValidate('date_option-travel','start-date-travel','end-date-travel');" action="{{ URL::Route('adminReportDownload')}}"  method="post" enctype="multipart/form-data" &gt;</token>
+  </line>
+  <line no="274"/>
+  <line no="275">
+    <token name="T_INLINE_HTML">                                            &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="276"/>
+  <line no="277">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="278"/>
+  <line no="279">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4"&gt;</token>
+  </line>
+  <line no="280">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="date_option" id="date_option-travel" class="input-field date_option" required&gt;</token>
+  </line>
+  <line no="281">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt; {{trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="282">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="date_select"&gt;{{ trans('localization::lang_view.date') }}&lt;/option&gt;</token>
+  </line>
+  <line no="283">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="today"&gt;{{ trans('localization::lang_view.today') }}&lt;/option&gt;</token>
+  </line>
+  <line no="284">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="yesterday"&gt;{{ trans('localization::lang_view.yesterday') }}&lt;/option&gt;</token>
+  </line>
+  <line no="285">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_week"&gt;{{ trans('localization::lang_view.current_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="286">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="last_week"&gt;{{ trans('localization::lang_view.last_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="287">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_month"&gt;{{ trans('localization::lang_view.current_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="288">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="previous_month"&gt;{{ trans('localization::lang_view.previous_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="289">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_year"&gt;{{ trans('localization::lang_view.current_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="290">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="last_year"&gt;{{ trans('localization::lang_view.last_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="291">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="292">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="start-date"&gt;{{ trans('localization::lang_view.start_date')}}&lt;/label&gt;</token>
+  </line>
+  <line no="293">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="294"/>
+  <line no="295">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="296">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="text" class="start-date datepicker"</token>
+  </line>
+  <line no="297">
+    <token name="T_INLINE_HTML">                                                           id="start-date-travel" name="start_date"</token>
+  </line>
+  <line no="298">
+    <token name="T_INLINE_HTML">                                                           placeholder="{{ trans('localization::lang_view.start').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="299">
+    <token name="T_INLINE_HTML">                                                           value="{{--{{ Input::get('start_date') }}--}}"&gt;</token>
+  </line>
+  <line no="300"/>
+  <line no="301">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="302"/>
+  <line no="303">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="304">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="text" class="end-date datepicker"</token>
+  </line>
+  <line no="305">
+    <token name="T_INLINE_HTML">                                                           id="end-date-travel" name="end_date"</token>
+  </line>
+  <line no="306">
+    <token name="T_INLINE_HTML">                                                           placeholder="{{ trans('localization::lang_view.end').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="307">
+    <token name="T_INLINE_HTML">                                                           value="{{--{{ Input::get('end_date') }}--}}" /&gt;</token>
+  </line>
+  <line no="308">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="309"/>
+  <line no="310">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="311"/>
+  <line no="312"/>
+  <line no="313"/>
+  <line no="314">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="315"/>
+  <line no="316">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="317">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="vehicle" id="vehicle" &gt;</token>
+  </line>
+  <line no="318">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="319">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$types</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$key</token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="320"/>
+  <line no="321">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">id</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"  &gt;</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">name</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/option&gt;</token>
+  </line>
+  <line no="322"/>
+  <line no="323">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="324">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="325">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="vehicle"&gt;{{ trans('localization::lang_view.vehicle_type')}}&lt;/label&gt;</token>
+  </line>
+  <line no="326">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="327">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="328">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="rating" id="rating" &gt;</token>
+  </line>
+  <line no="329">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="330">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_FOR">for</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_IS_SMALLER_OR_EQUAL">&lt;=</token>
+    <token name="T_LNUMBER">5</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_INC">++</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="331"/>
+  <line no="332">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"  &gt;</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$i</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/option&gt;</token>
+  </line>
+  <line no="333"/>
+  <line no="334">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="335">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="336">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="rating"&gt;{{ trans('localization::lang_view.rating')}}&lt;/label&gt;</token>
+  </line>
+  <line no="337">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="338"/>
+  <line no="339">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="340"/>
+  <line no="341"/>
+  <line no="342">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="343"/>
+  <line no="344">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="345"/>
+  <line no="346">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="trip_status" id="status" class=""&gt;</token>
+  </line>
+  <line no="347">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select') }}&lt;/option&gt;</token>
+  </line>
+  <line no="348">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="1"&gt;{{ trans('localization::lang_view.completed') }}&lt;/option&gt;</token>
+  </line>
+  <line no="349">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="2"&gt;{{ trans('localization::lang_view.cancelled') }}&lt;/option&gt;</token>
+  </line>
+  <line no="350">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="351">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="status"&gt;{{ trans('localization::lang_view.status')}}&lt;/label&gt;</token>
+  </line>
+  <line no="352">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="353"/>
+  <line no="354">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="355"/>
+  <line no="356">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="payment" id="payment" class=""&gt;</token>
+  </line>
+  <line no="357">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select') }}&lt;/option&gt;</token>
+  </line>
+  <line no="358">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="0"&gt;{{ trans('localization::lang_view.card') }}&lt;/option&gt;</token>
+  </line>
+  <line no="359">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="1"&gt;{{ trans('localization::lang_view.cash') }}&lt;/option&gt;</token>
+  </line>
+  <line no="360">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="2"&gt;{{ trans('localization::lang_view.wallet') }}&lt;/option&gt;</token>
+  </line>
+  <line no="361">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="362">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="payment"&gt;{{ trans('localization::lang_view.payment_method')}}&lt;/label&gt;</token>
+  </line>
+  <line no="363">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="364"/>
+  <line no="365"/>
+  <line no="366">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="367"/>
+  <line no="368">
+    <token name="T_INLINE_HTML">                                            &lt;button type="submit" name="submit" value="travel_report" class="btn save-btn btn-primary right" &gt;{{ trans('localization::lang_view.download')}}&lt;/button&gt;</token>
+  </line>
+  <line no="369">
+    <token name="T_INLINE_HTML">                                            &lt;div class="clearfix"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="370"/>
+  <line no="371">
+    <token name="T_INLINE_HTML">                                        &lt;/form&gt;</token>
+  </line>
+  <line no="372"/>
+  <line no="373"/>
+  <line no="374">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="375"/>
+  <line no="376">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="377">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="378"/>
+  <line no="379"/>
+  <line no="380">
+    <token name="T_INLINE_HTML">                           {{-- //provider_payment_report--}}</token>
+  </line>
+  <line no="381"/>
+  <line no="382">
+    <token name="T_INLINE_HTML">                            &lt;li id="provider_payment_report" class=""&gt;</token>
+  </line>
+  <line no="383"/>
+  <line no="384">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-header "&gt;</token>
+  </line>
+  <line no="385"/>
+  <line no="386">
+    <token name="T_INLINE_HTML">                                    &lt;h6&gt;&lt;b&gt;{{ trans('localization::lang_view.provider_payment_reports')}}&lt;/b&gt;&lt;/h6&gt;</token>
+  </line>
+  <line no="387">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="388"/>
+  <line no="389">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-body" style="overflow: auto;display: none;"&gt;</token>
+  </line>
+  <line no="390"/>
+  <line no="391">
+    <token name="T_INLINE_HTML">                                    &lt;div class="table-bordered"&gt;</token>
+  </line>
+  <line no="392"/>
+  <line no="393">
+    <token name="T_INLINE_HTML">                                        &lt;form onsubmit="return FormValidate('date_option-provider_payment','start-date-provider_payment','end-date-provider_payment');" action="{{ URL::Route('adminReportDownload')}}"  method="post" enctype="multipart/form-data" &gt;</token>
+  </line>
+  <line no="394"/>
+  <line no="395">
+    <token name="T_INLINE_HTML">                                            &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="396"/>
+  <line no="397">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="398"/>
+  <line no="399">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4"&gt;</token>
+  </line>
+  <line no="400">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="date_option" id="date_option-provider_payment" class="input-field date_option" required&gt;</token>
+  </line>
+  <line no="401">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt; {{trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="402">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="date_select"&gt;{{ trans('localization::lang_view.date') }}&lt;/option&gt;</token>
+  </line>
+  <line no="403">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="today"&gt;{{ trans('localization::lang_view.today') }}&lt;/option&gt;</token>
+  </line>
+  <line no="404">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="yesterday"&gt;{{ trans('localization::lang_view.yesterday') }}&lt;/option&gt;</token>
+  </line>
+  <line no="405">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_week"&gt;{{ trans('localization::lang_view.current_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="406">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="last_week"&gt;{{ trans('localization::lang_view.last_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="407">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_month"&gt;{{ trans('localization::lang_view.current_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="408">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="previous_month"&gt;{{ trans('localization::lang_view.previous_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="409">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_year"&gt;{{ trans('localization::lang_view.current_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="410">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="last_year"&gt;{{ trans('localization::lang_view.last_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="411">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="412">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="start-date"&gt;{{ trans('localization::lang_view.start_date')}}&lt;/label&gt;</token>
+  </line>
+  <line no="413">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="414"/>
+  <line no="415">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="416">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="text" class="start-date datepicker"</token>
+  </line>
+  <line no="417">
+    <token name="T_INLINE_HTML">                                                           id="start-date-provider_payment" name="start_date"</token>
+  </line>
+  <line no="418">
+    <token name="T_INLINE_HTML">                                                           placeholder="{{ trans('localization::lang_view.start').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="419">
+    <token name="T_INLINE_HTML">                                                           value="{{--{{ Input::get('start_date') }}--}}"&gt;</token>
+  </line>
+  <line no="420"/>
+  <line no="421">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="422"/>
+  <line no="423">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="424">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="text" class="end-date datepicker"</token>
+  </line>
+  <line no="425">
+    <token name="T_INLINE_HTML">                                                           id="end-date-provider_payment" name="end_date"</token>
+  </line>
+  <line no="426">
+    <token name="T_INLINE_HTML">                                                           placeholder="{{ trans('localization::lang_view.end').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="427">
+    <token name="T_INLINE_HTML">                                                           value="{{--{{ Input::get('end_date') }}--}}" /&gt;</token>
+  </line>
+  <line no="428">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="429"/>
+  <line no="430">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="431"/>
+  <line no="432"/>
+  <line no="433"/>
+  <line no="434">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="435"/>
+  <line no="436">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="437">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="company_paid" id="company_paid" &gt;</token>
+  </line>
+  <line no="438">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="439">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="1"&gt;{{ trans('localization::lang_view.settle')}}&lt;/option&gt;</token>
+  </line>
+  <line no="440">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="2"&gt;{{ trans('localization::lang_view.un_settle')}}&lt;/option&gt;</token>
+  </line>
+  <line no="441">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="442">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="company_paid"&gt;{{ trans('localization::lang_view.payment_status')}}&lt;/label&gt;</token>
+  </line>
+  <line no="443">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="444"/>
+  <line no="445">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="446">
+    <token name="T_INLINE_HTML">                                            </token>
+  </line>
+  <line no="447"/>
+  <line no="448">
+    <token name="T_INLINE_HTML">                                            &lt;button type="submit" name="submit" value="provider_payment_report" class="btn save-btn btn-primary right" &gt;{{ trans('localization::lang_view.download')}}&lt;/button&gt;</token>
+  </line>
+  <line no="449">
+    <token name="T_INLINE_HTML">                                            &lt;div class="clearfix"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="450"/>
+  <line no="451">
+    <token name="T_INLINE_HTML">                                        &lt;/form&gt;</token>
+  </line>
+  <line no="452"/>
+  <line no="453"/>
+  <line no="454">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="455"/>
+  <line no="456">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="457">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="458"/>
+  <line no="459"/>
+  <line no="460"/>
+  <line no="461">
+    <token name="T_INLINE_HTML">                            &lt;li class=""&gt;</token>
+  </line>
+  <line no="462"/>
+  <line no="463">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-header "&gt;</token>
+  </line>
+  <line no="464"/>
+  <line no="465">
+    <token name="T_INLINE_HTML">                                    &lt;h6&gt;&lt;b&gt;{{ trans('localization::lang_view.rating_reports')}}&lt;/b&gt;&lt;/h6&gt;</token>
+  </line>
+  <line no="466">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="467"/>
+  <line no="468">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-body" style="overflow: auto;display: none;"&gt;</token>
+  </line>
+  <line no="469"/>
+  <line no="470">
+    <token name="T_INLINE_HTML">                                    &lt;div class="table-bordered"&gt;</token>
+  </line>
+  <line no="471"/>
+  <line no="472">
+    <token name="T_INLINE_HTML">                                        &lt;form onsubmit="return FormValidate('date_option-rating','start-date-rating','end-date-rating');" action="{{ URL::Route('driverRatingReportDownload')}}"  method="post" enctype="multipart/form-data" &gt;</token>
+  </line>
+  <line no="473"/>
+  <line no="474">
+    <token name="T_INLINE_HTML">                                            &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="475"/>
+  <line no="476">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="477"/>
+  <line no="478">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4"&gt;</token>
+  </line>
+  <line no="479">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="date_option" id="date_option-rating" class="input-field date_option" required&gt;</token>
+  </line>
+  <line no="480">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt; {{trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="481">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="date_select"&gt;{{ trans('localization::lang_view.date') }}&lt;/option&gt;</token>
+  </line>
+  <line no="482">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="today"&gt;{{ trans('localization::lang_view.today') }}&lt;/option&gt;</token>
+  </line>
+  <line no="483">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="yesterday"&gt;{{ trans('localization::lang_view.yesterday') }}&lt;/option&gt;</token>
+  </line>
+  <line no="484">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_week"&gt;{{ trans('localization::lang_view.current_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="485">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="last_week"&gt;{{ trans('localization::lang_view.last_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="486">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_month"&gt;{{ trans('localization::lang_view.current_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="487">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="previous_month"&gt;{{ trans('localization::lang_view.previous_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="488">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_year"&gt;{{ trans('localization::lang_view.current_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="489">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="last_year"&gt;{{ trans('localization::lang_view.last_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="490">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="491">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="start-date"&gt;{{ trans('localization::lang_view.start_date')}}&lt;/label&gt;</token>
+  </line>
+  <line no="492">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="493"/>
+  <line no="494">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="495">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="text" class="datepicker"</token>
+  </line>
+  <line no="496">
+    <token name="T_INLINE_HTML">                                                           id="start-date-rating" name="start_date"</token>
+  </line>
+  <line no="497">
+    <token name="T_INLINE_HTML">                                                           placeholder="{{ trans('localization::lang_view.start').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="498">
+    <token name="T_INLINE_HTML">                                                           value="{{--{{ Input::get('start_date') }}--}}"&gt;</token>
+  </line>
+  <line no="499"/>
+  <line no="500">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="501"/>
+  <line no="502">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="503">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="text" class="datepicker"</token>
+  </line>
+  <line no="504">
+    <token name="T_INLINE_HTML">                                                           id="end-date-rating" name="end_date"</token>
+  </line>
+  <line no="505">
+    <token name="T_INLINE_HTML">                                                           placeholder="{{ trans('localization::lang_view.end').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="506">
+    <token name="T_INLINE_HTML">                                                           value="{{--{{ Input::get('end_date') }}--}}" /&gt;</token>
+  </line>
+  <line no="507">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="508"/>
+  <line no="509">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="510"/>
+  <line no="511">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="512"/>
+  <line no="513">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="514"/>
+  <line no="515">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="who" id="status" class="" required&gt;</token>
+  </line>
+  <line no="516">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select') }}&lt;/option&gt;</token>
+  </line>
+  <line no="517">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="1"&gt;{{ trans('localization::lang_view.user') }}&lt;/option&gt;</token>
+  </line>
+  <line no="518">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="2"&gt;{{ trans('localization::lang_view.driver') }}&lt;/option&gt;</token>
+  </line>
+  <line no="519">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="520">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="status"&gt;{{ trans('localization::lang_view.who')}}&lt;/label&gt;</token>
+  </line>
+  <line no="521">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="522"/>
+  <line no="523">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="524"/>
+  <line no="525">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="company" id="company" &gt;</token>
+  </line>
+  <line no="526">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="527">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="0"&gt;{{ trans('localization::lang_view.individual')}}&lt;/option&gt;</token>
+  </line>
+  <line no="528">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$company</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$key</token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="529"/>
+  <line no="530">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">id</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"  &gt;</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">company_name</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/option&gt;</token>
+  </line>
+  <line no="531"/>
+  <line no="532">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="533">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="534">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="company"&gt;{{ trans('localization::lang_view.company')}}&lt;/label&gt;</token>
+  </line>
+  <line no="535">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="536"/>
+  <line no="537"/>
+  <line no="538">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="539"/>
+  <line no="540">
+    <token name="T_INLINE_HTML">                                            &lt;button type="submit" name="submit" value="rating_report" class="btn save-btn btn-primary right" &gt;{{ trans('localization::lang_view.download')}}&lt;/button&gt;</token>
+  </line>
+  <line no="541">
+    <token name="T_INLINE_HTML">                                            &lt;div class="clearfix"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="542"/>
+  <line no="543">
+    <token name="T_INLINE_HTML">                                        &lt;/form&gt;</token>
+  </line>
+  <line no="544"/>
+  <line no="545"/>
+  <line no="546">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="547"/>
+  <line no="548">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="549">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="550"/>
+  <line no="551">
+    <token name="T_INLINE_HTML">                            &lt;li class=""&gt;</token>
+  </line>
+  <line no="552"/>
+  <line no="553">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-header"&gt;</token>
+  </line>
+  <line no="554"/>
+  <line no="555">
+    <token name="T_INLINE_HTML">                                    &lt;h6&gt;&lt;b&gt;{{ trans('localization::lang_view.ledger_reports')}}&lt;/b&gt;&lt;/h6&gt;</token>
+  </line>
+  <line no="556">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="557"/>
+  <line no="558">
+    <token name="T_INLINE_HTML">                                &lt;div class="collapsible-body" style="overflow: auto;display: none;"&gt;</token>
+  </line>
+  <line no="559"/>
+  <line no="560">
+    <token name="T_INLINE_HTML">                                    &lt;div class="table-bordered"&gt;</token>
+  </line>
+  <line no="561"/>
+  <line no="562">
+    <token name="T_INLINE_HTML">                                        &lt;form onsubmit="return FormValidate('date_option-ledger','start-date-ledger','end-date-ledger');" action="{{ URL::Route('ledgerReportDownload')}}"  method="post" enctype="multipart/form-data" &gt;</token>
+  </line>
+  <line no="563"/>
+  <line no="564">
+    <token name="T_INLINE_HTML">                                            &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="565"/>
+  <line no="566">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="567"/>
+  <line no="568">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4"&gt;</token>
+  </line>
+  <line no="569">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="date_option" id="date_option-ledger" class="input-field date_option" required&gt;</token>
+  </line>
+  <line no="570">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt; {{trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="571">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="date_select"&gt;{{ trans('localization::lang_view.date') }}&lt;/option&gt;</token>
+  </line>
+  <line no="572">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="today"&gt;{{ trans('localization::lang_view.today') }}&lt;/option&gt;</token>
+  </line>
+  <line no="573">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="yesterday"&gt;{{ trans('localization::lang_view.yesterday') }}&lt;/option&gt;</token>
+  </line>
+  <line no="574">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_week"&gt;{{ trans('localization::lang_view.current_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="575">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="last_week"&gt;{{ trans('localization::lang_view.last_week') }}&lt;/option&gt;</token>
+  </line>
+  <line no="576">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_month"&gt;{{ trans('localization::lang_view.current_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="577">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="previous_month"&gt;{{ trans('localization::lang_view.previous_month') }}&lt;/option&gt;</token>
+  </line>
+  <line no="578">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="current_year"&gt;{{ trans('localization::lang_view.current_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="579">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="last_year"&gt;{{ trans('localization::lang_view.last_year') }}&lt;/option&gt;</token>
+  </line>
+  <line no="580">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="581">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="start-date"&gt;{{ trans('localization::lang_view.start_date')}}&lt;/label&gt;</token>
+  </line>
+  <line no="582">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="583"/>
+  <line no="584">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="585">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="text" class="datepicker"</token>
+  </line>
+  <line no="586">
+    <token name="T_INLINE_HTML">                                                           id="start-date-ledger" name="start_date"</token>
+  </line>
+  <line no="587">
+    <token name="T_INLINE_HTML">                                                           placeholder="{{ trans('localization::lang_view.start').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="588">
+    <token name="T_INLINE_HTML">                                                           value="{{--{{ Input::get('start_date') }}--}}"&gt;</token>
+  </line>
+  <line no="589"/>
+  <line no="590">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="591"/>
+  <line no="592">
+    <token name="T_INLINE_HTML">                                                &lt;div class="col s12 m4 l4 input-field"&gt;</token>
+  </line>
+  <line no="593">
+    <token name="T_INLINE_HTML">                                                    &lt;input type="text" class="datepicker"</token>
+  </line>
+  <line no="594">
+    <token name="T_INLINE_HTML">                                                           id="end-date-ledger" name="end_date"</token>
+  </line>
+  <line no="595">
+    <token name="T_INLINE_HTML">                                                           placeholder="{{ trans('localization::lang_view.end').' '.trans('localization::lang_view.date') }}"</token>
+  </line>
+  <line no="596">
+    <token name="T_INLINE_HTML">                                                           value="{{--{{ Input::get('end_date') }}--}}" /&gt;</token>
+  </line>
+  <line no="597">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="598"/>
+  <line no="599">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="600"/>
+  <line no="601">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="602"/>
+  <line no="603">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="604"/>
+  <line no="605">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="company" id="company" &gt;</token>
+  </line>
+  <line no="606">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select')}}&lt;/option&gt;</token>
+  </line>
+  <line no="607">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="0"&gt;{{ trans('localization::lang_view.individual')}}&lt;/option&gt;</token>
+  </line>
+  <line no="608">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_FOREACH">foreach</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$company</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_AS">as</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$key</token>
+    <token name="T_DOUBLE_ARROW">=&gt;</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="609"/>
+  <line no="610">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">id</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">"  &gt;</token>
+    <token name="T_OPEN_TAG_WITH_ECHO">&lt;?=</token>
+    <token name="T_VARIABLE">$value</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">company_name</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">&lt;/option&gt;</token>
+  </line>
+  <line no="611"/>
+  <line no="612">
+    <token name="T_INLINE_HTML">                                                        </token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="613">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="614">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="company"&gt;{{ trans('localization::lang_view.company')}}&lt;/label&gt;</token>
+  </line>
+  <line no="615">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="616"/>
+  <line no="617"/>
+  <line no="618">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="619"/>
+  <line no="620">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="621"/>
+  <line no="622">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="623"/>
+  <line no="624">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="trip_status" id="status" class=""&gt;</token>
+  </line>
+  <line no="625">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select') }}&lt;/option&gt;</token>
+  </line>
+  <line no="626">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="1"&gt;{{ trans('localization::lang_view.completed') }}&lt;/option&gt;</token>
+  </line>
+  <line no="627">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="2"&gt;{{ trans('localization::lang_view.cancelled') }}&lt;/option&gt;</token>
+  </line>
+  <line no="628">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="629">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="status"&gt;{{ trans('localization::lang_view.status')}}&lt;/label&gt;</token>
+  </line>
+  <line no="630">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="631"/>
+  <line no="632">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="633"/>
+  <line no="634">
+    <token name="T_INLINE_HTML">                                                    &lt;select name="payment" id="payment" class=""&gt;</token>
+  </line>
+  <line no="635">
+    <token name="T_INLINE_HTML">                                                        &lt;option value=""&gt;{{ trans('localization::lang_view.select') }}&lt;/option&gt;</token>
+  </line>
+  <line no="636">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="0"&gt;{{ trans('localization::lang_view.card') }}&lt;/option&gt;</token>
+  </line>
+  <line no="637">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="1"&gt;{{ trans('localization::lang_view.cash') }}&lt;/option&gt;</token>
+  </line>
+  <line no="638">
+    <token name="T_INLINE_HTML">                                                        &lt;option value="2"&gt;{{ trans('localization::lang_view.wallet') }}&lt;/option&gt;</token>
+  </line>
+  <line no="639">
+    <token name="T_INLINE_HTML">                                                    &lt;/select&gt;</token>
+  </line>
+  <line no="640">
+    <token name="T_INLINE_HTML">                                                    &lt;label for="payment"&gt;{{ trans('localization::lang_view.payment_method')}}&lt;/label&gt;</token>
+  </line>
+  <line no="641">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="642"/>
+  <line no="643"/>
+  <line no="644">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="645">
+    <token name="T_INLINE_HTML">                                            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="646">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="647">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="frmSearch"&gt;</token>
+  </line>
+  <line no="648">
+    <token name="T_INLINE_HTML">                                                        &lt;input type="text" id="search-box" name="user_name" placeholder="{{ trans('localization::lang_view.user_name')}}" /&gt;</token>
+  </line>
+  <line no="649">
+    <token name="T_INLINE_HTML">                                                        &lt;div id="suggesstion-box" &gt;&lt;/div&gt;</token>
+  </line>
+  <line no="650">
+    <token name="T_INLINE_HTML">                                                        &lt;label for="company"&gt;{{ trans('localization::lang_view.user')}}&lt;/label&gt;</token>
+  </line>
+  <line no="651"/>
+  <line no="652">
+    <token name="T_INLINE_HTML">                                                    &lt;/div&gt;</token>
+  </line>
+  <line no="653">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="654">
+    <token name="T_INLINE_HTML">                                                &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="655">
+    <token name="T_INLINE_HTML">                                                    &lt;div class="frmSearch-driver-name"&gt;</token>
+  </line>
+  <line no="656">
+    <token name="T_INLINE_HTML">                                                        &lt;input type="text" id="search-box-driver-name" name="driver_name" placeholder="{{ trans('localization::lang_view.driver_name')}}" /&gt;</token>
+  </line>
+  <line no="657">
+    <token name="T_INLINE_HTML">                                                        &lt;div id="suggesstion-box-driver-name" &gt;&lt;/div&gt;</token>
+  </line>
+  <line no="658">
+    <token name="T_INLINE_HTML">                                                        &lt;label for="company"&gt;{{ trans('localization::lang_view.driver')}}&lt;/label&gt;</token>
+  </line>
+  <line no="659">
+    <token name="T_INLINE_HTML">                                                    &lt;/div&gt;</token>
+  </line>
+  <line no="660">
+    <token name="T_INLINE_HTML">                                                &lt;/div&gt;</token>
+  </line>
+  <line no="661">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="662">
+    <token name="T_INLINE_HTML">                                            &lt;button type="submit" name="submit" value="ledger_report" class="btn save-btn btn-primary right" &gt;{{ trans('localization::lang_view.download')}}&lt;/button&gt;</token>
+  </line>
+  <line no="663">
+    <token name="T_INLINE_HTML">                                            &lt;div class="clearfix"&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="664"/>
+  <line no="665">
+    <token name="T_INLINE_HTML">                                        &lt;/form&gt;</token>
+  </line>
+  <line no="666"/>
+  <line no="667"/>
+  <line no="668">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="669"/>
+  <line no="670">
+    <token name="T_INLINE_HTML">                                &lt;/div&gt;</token>
+  </line>
+  <line no="671">
+    <token name="T_INLINE_HTML">                            &lt;/li&gt;</token>
+  </line>
+  <line no="672"/>
+  <line no="673"/>
+  <line no="674"/>
+  <line no="675">
+    <token name="T_INLINE_HTML">                        &lt;/ul&gt;</token>
+  </line>
+  <line no="676"/>
+  <line no="677">
+    <token name="T_INLINE_HTML">                        &lt;input type="hidden" name="admin_type" value=""&gt;</token>
+  </line>
+  <line no="678">
+    <token name="T_INLINE_HTML">                        &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</token>
+  </line>
+  <line no="679"/>
+  <line no="680">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="681">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="682">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="683"/>
+  <line no="684">
+    <token name="T_INLINE_HTML">    &lt;/section&gt;</token>
+  </line>
+  <line no="685"/>
+  <line no="686">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript" src="{{asset('assets/material_js/jquery-3.2.1.min.js')}}"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="687"/>
+  <line no="688">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="689">
+    <token name="T_INLINE_HTML">        function FormValidate(option,start,end){</token>
+  </line>
+  <line no="690"/>
+  <line no="691">
+    <token name="T_INLINE_HTML">            var option_value =  $('#'+option).val();</token>
+  </line>
+  <line no="692">
+    <token name="T_INLINE_HTML">            var startDate =  $('#'+start).val();</token>
+  </line>
+  <line no="693">
+    <token name="T_INLINE_HTML">            var startDate =  $('#'+start).val();</token>
+  </line>
+  <line no="694">
+    <token name="T_INLINE_HTML">            var endDate =  $('#'+end).val();</token>
+  </line>
+  <line no="695"/>
+  <line no="696">
+    <token name="T_INLINE_HTML">            if(option_value == 'date_select'){</token>
+  </line>
+  <line no="697">
+    <token name="T_INLINE_HTML">                if(startDate == ''){</token>
+  </line>
+  <line no="698">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.start_date_required')}}", 4000);</token>
+  </line>
+  <line no="699">
+    <token name="T_INLINE_HTML">                    return false;</token>
+  </line>
+  <line no="700">
+    <token name="T_INLINE_HTML">                }else if(endDate == ''){</token>
+  </line>
+  <line no="701">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.end_date_required')}}", 4000);</token>
+  </line>
+  <line no="702">
+    <token name="T_INLINE_HTML">                    return false;</token>
+  </line>
+  <line no="703">
+    <token name="T_INLINE_HTML">                }else{</token>
+  </line>
+  <line no="704">
+    <token name="T_INLINE_HTML">                    return true;</token>
+  </line>
+  <line no="705">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="706">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="707"/>
+  <line no="708"/>
+  <line no="709">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="710">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="711">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="712">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="713">
+    <token name="T_INLINE_HTML">            $('#start-date').prop('disabled', true);</token>
+  </line>
+  <line no="714">
+    <token name="T_INLINE_HTML">            $('#end-date').prop('disabled', true);</token>
+  </line>
+  <line no="715"/>
+  <line no="716">
+    <token name="T_INLINE_HTML">            var selected_option = $('#date_option option:selected').val();</token>
+  </line>
+  <line no="717"/>
+  <line no="718">
+    <token name="T_INLINE_HTML">            if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="719"/>
+  <line no="720">
+    <token name="T_INLINE_HTML">                $('#start-date').prop('disabled', false);</token>
+  </line>
+  <line no="721">
+    <token name="T_INLINE_HTML">                $('#end-date').prop('disabled', false);</token>
+  </line>
+  <line no="722">
+    <token name="T_INLINE_HTML">                $('#start-date').prop('required', true);</token>
+  </line>
+  <line no="723">
+    <token name="T_INLINE_HTML">                $('#end-date').prop('required', true);</token>
+  </line>
+  <line no="724"/>
+  <line no="725">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="726"/>
+  <line no="727">
+    <token name="T_INLINE_HTML">            $('.datepicker').pickadate({</token>
+  </line>
+  <line no="728">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="729">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="730">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="731">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="732">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="733">
+    <token name="T_INLINE_HTML">                    //alert("start");</token>
+  </line>
+  <line no="734">
+    <token name="T_INLINE_HTML">                    $('#end-date').pickadate("option", "min", selectedDate);</token>
+  </line>
+  <line no="735">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="736">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="737">
+    <token name="T_INLINE_HTML">            $('#end-date').pickadate({</token>
+  </line>
+  <line no="738">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="739">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="740">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="741">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="742">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="743">
+    <token name="T_INLINE_HTML">                    $('#start-date').pickadate("option", "max", selectedDate);</token>
+  </line>
+  <line no="744">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="745">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="746"/>
+  <line no="747"/>
+  <line no="748">
+    <token name="T_INLINE_HTML">            $('#start-date').change(function() {</token>
+  </line>
+  <line no="749"/>
+  <line no="750"/>
+  <line no="751">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date').val();</token>
+  </line>
+  <line no="752">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date').val();</token>
+  </line>
+  <line no="753">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate &amp;&amp; endDate != ''){</token>
+  </line>
+  <line no="754"/>
+  <line no="755">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.start_date_not_greater_than_end_date')}}", 4000);</token>
+  </line>
+  <line no="756">
+    <token name="T_INLINE_HTML">                    $('#start-date').val('');</token>
+  </line>
+  <line no="757">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="758"/>
+  <line no="759"/>
+  <line no="760">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="761"/>
+  <line no="762">
+    <token name="T_INLINE_HTML">            $('#date_option').change(function() {</token>
+  </line>
+  <line no="763"/>
+  <line no="764">
+    <token name="T_INLINE_HTML">               // alert("changed");</token>
+  </line>
+  <line no="765"/>
+  <line no="766">
+    <token name="T_INLINE_HTML">                var selected_option = $('#date_option option:selected').val();</token>
+  </line>
+  <line no="767"/>
+  <line no="768">
+    <token name="T_INLINE_HTML">                if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="769">
+    <token name="T_INLINE_HTML">                    $('#start-date').prop('disabled', false);</token>
+  </line>
+  <line no="770">
+    <token name="T_INLINE_HTML">                    $('#end-date').prop('disabled', false);</token>
+  </line>
+  <line no="771">
+    <token name="T_INLINE_HTML">                    $('#start-date').prop('required', true);</token>
+  </line>
+  <line no="772">
+    <token name="T_INLINE_HTML">                    $('#end-date').prop('required', true);</token>
+  </line>
+  <line no="773"/>
+  <line no="774">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="775">
+    <token name="T_INLINE_HTML">                    $('#start-date').val('');</token>
+  </line>
+  <line no="776">
+    <token name="T_INLINE_HTML">                    $('#end-date').val('');</token>
+  </line>
+  <line no="777"/>
+  <line no="778"/>
+  <line no="779">
+    <token name="T_INLINE_HTML">                    $('#start-date').prop('disabled', true);</token>
+  </line>
+  <line no="780">
+    <token name="T_INLINE_HTML">                    $('#end-date').prop('disabled', true);</token>
+  </line>
+  <line no="781"/>
+  <line no="782">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="783"/>
+  <line no="784">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="785"/>
+  <line no="786">
+    <token name="T_INLINE_HTML">            $('#end-date').change(function() {</token>
+  </line>
+  <line no="787"/>
+  <line no="788">
+    <token name="T_INLINE_HTML">                   var endDate =  $('#end-date').val();</token>
+  </line>
+  <line no="789">
+    <token name="T_INLINE_HTML">                   var startDate =  $('#start-date').val();</token>
+  </line>
+  <line no="790">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate ){</token>
+  </line>
+  <line no="791"/>
+  <line no="792">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.end_date_not_less_than_start_date')}}", 4000);</token>
+  </line>
+  <line no="793">
+    <token name="T_INLINE_HTML">                    $('#end-date').val('');</token>
+  </line>
+  <line no="794">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="795"/>
+  <line no="796"/>
+  <line no="797">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="798"/>
+  <line no="799">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="800"/>
+  <line no="801"/>
+  <line no="802"/>
+  <line no="803"/>
+  <line no="804">
+    <token name="T_INLINE_HTML">        // provider payment</token>
+  </line>
+  <line no="805"/>
+  <line no="806">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="807">
+    <token name="T_INLINE_HTML">            $('#start-date-provider_payment').prop('disabled', true);</token>
+  </line>
+  <line no="808">
+    <token name="T_INLINE_HTML">            $('#end-date-provider_payment').prop('disabled', true);</token>
+  </line>
+  <line no="809"/>
+  <line no="810">
+    <token name="T_INLINE_HTML">            var selected_option = $('#date_option-provider_payment option:selected').val();</token>
+  </line>
+  <line no="811"/>
+  <line no="812">
+    <token name="T_INLINE_HTML">            if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="813"/>
+  <line no="814">
+    <token name="T_INLINE_HTML">                $('#start-date-provider_payment').prop('disabled', false);</token>
+  </line>
+  <line no="815">
+    <token name="T_INLINE_HTML">                $('#end-date-provider_payment').prop('disabled', false);</token>
+  </line>
+  <line no="816">
+    <token name="T_INLINE_HTML">                $('#start-date-provider_payment').prop('required', true);</token>
+  </line>
+  <line no="817">
+    <token name="T_INLINE_HTML">                $('#end-date-provider_payment').prop('required', true);</token>
+  </line>
+  <line no="818"/>
+  <line no="819">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="820"/>
+  <line no="821">
+    <token name="T_INLINE_HTML">            $('.datepicker').pickadate({</token>
+  </line>
+  <line no="822">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="823">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="824">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="825">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="826">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="827">
+    <token name="T_INLINE_HTML">                    //alert("start");</token>
+  </line>
+  <line no="828">
+    <token name="T_INLINE_HTML">                    $('#end-date-provider_payment').pickadate("option", "min", selectedDate);</token>
+  </line>
+  <line no="829">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="830">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="831">
+    <token name="T_INLINE_HTML">            $('#end-date-provider_payment').pickadate({</token>
+  </line>
+  <line no="832">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="833">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="834">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="835">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="836">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="837">
+    <token name="T_INLINE_HTML">                    $('#start-date-provider_payment').pickadate("option", "max", selectedDate);</token>
+  </line>
+  <line no="838">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="839">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="840"/>
+  <line no="841">
+    <token name="T_INLINE_HTML">            $('#date_option-provider_payment').change(function() {</token>
+  </line>
+  <line no="842"/>
+  <line no="843">
+    <token name="T_INLINE_HTML">                // alert("changed");</token>
+  </line>
+  <line no="844"/>
+  <line no="845">
+    <token name="T_INLINE_HTML">                var selected_option = $('#date_option-provider_payment option:selected').val();</token>
+  </line>
+  <line no="846"/>
+  <line no="847">
+    <token name="T_INLINE_HTML">                if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="848">
+    <token name="T_INLINE_HTML">                    $('#start-date-provider_payment').prop('disabled', false);</token>
+  </line>
+  <line no="849">
+    <token name="T_INLINE_HTML">                    $('#end-date-provider_payment').prop('disabled', false);</token>
+  </line>
+  <line no="850">
+    <token name="T_INLINE_HTML">                    $('#start-date-provider_payment').prop('required', true);</token>
+  </line>
+  <line no="851">
+    <token name="T_INLINE_HTML">                    $('#end-date-provider_payment').prop('required', true);</token>
+  </line>
+  <line no="852"/>
+  <line no="853">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="854">
+    <token name="T_INLINE_HTML">                    $('#start-date-provider_payment').val('');</token>
+  </line>
+  <line no="855">
+    <token name="T_INLINE_HTML">                    $('#end-date-provider_payment').val('');</token>
+  </line>
+  <line no="856"/>
+  <line no="857"/>
+  <line no="858">
+    <token name="T_INLINE_HTML">                    $('#start-date-provider_payment').prop('disabled', true);</token>
+  </line>
+  <line no="859">
+    <token name="T_INLINE_HTML">                    $('#end-date-provider_payment').prop('disabled', true);</token>
+  </line>
+  <line no="860"/>
+  <line no="861">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="862"/>
+  <line no="863">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="864"/>
+  <line no="865">
+    <token name="T_INLINE_HTML">            $('#end-date-provider_payment').change(function() {</token>
+  </line>
+  <line no="866"/>
+  <line no="867"/>
+  <line no="868">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-provider_payment').val();</token>
+  </line>
+  <line no="869">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-provider_payment').val();</token>
+  </line>
+  <line no="870">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate ){</token>
+  </line>
+  <line no="871"/>
+  <line no="872">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.end_date_not_less_than_start_date')}}", 4000);</token>
+  </line>
+  <line no="873">
+    <token name="T_INLINE_HTML">                    $('#end-date-provider_payment').val('');</token>
+  </line>
+  <line no="874">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="875"/>
+  <line no="876"/>
+  <line no="877">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="878"/>
+  <line no="879"/>
+  <line no="880">
+    <token name="T_INLINE_HTML">            $('#start-date-provider_payment').change(function() {</token>
+  </line>
+  <line no="881"/>
+  <line no="882"/>
+  <line no="883">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-provider_payment').val();</token>
+  </line>
+  <line no="884">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-provider_payment').val();</token>
+  </line>
+  <line no="885">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate &amp;&amp; endDate != ''){</token>
+  </line>
+  <line no="886"/>
+  <line no="887">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.start_date_not_greater_than_end_date')}}", 4000);</token>
+  </line>
+  <line no="888">
+    <token name="T_INLINE_HTML">                    $('#start-date-provider_payment').val('');</token>
+  </line>
+  <line no="889">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="890"/>
+  <line no="891"/>
+  <line no="892">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="893"/>
+  <line no="894">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="895"/>
+  <line no="896"/>
+  <line no="897">
+    <token name="T_INLINE_HTML">        // provider payment</token>
+  </line>
+  <line no="898"/>
+  <line no="899"/>
+  <line no="900"/>
+  <line no="901"/>
+  <line no="902"/>
+  <line no="903">
+    <token name="T_INLINE_HTML">        // rating</token>
+  </line>
+  <line no="904"/>
+  <line no="905">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="906">
+    <token name="T_INLINE_HTML">            $('#start-date-rating').prop('disabled', true);</token>
+  </line>
+  <line no="907">
+    <token name="T_INLINE_HTML">            $('#end-date-rating').prop('disabled', true);</token>
+  </line>
+  <line no="908"/>
+  <line no="909">
+    <token name="T_INLINE_HTML">            var selected_option = $('#date_option-rating option:selected').val();</token>
+  </line>
+  <line no="910"/>
+  <line no="911">
+    <token name="T_INLINE_HTML">            if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="912"/>
+  <line no="913">
+    <token name="T_INLINE_HTML">                $('#start-date-rating').prop('disabled', false);</token>
+  </line>
+  <line no="914">
+    <token name="T_INLINE_HTML">                $('#end-date-rating').prop('disabled', false);</token>
+  </line>
+  <line no="915">
+    <token name="T_INLINE_HTML">                $('#start-date-rating').prop('required', true);</token>
+  </line>
+  <line no="916">
+    <token name="T_INLINE_HTML">                $('#end-date-rating').prop('required', true);</token>
+  </line>
+  <line no="917"/>
+  <line no="918">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="919"/>
+  <line no="920">
+    <token name="T_INLINE_HTML">            $('.datepicker').pickadate({</token>
+  </line>
+  <line no="921">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="922">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="923">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="924">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="925">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="926">
+    <token name="T_INLINE_HTML">                    //alert("start");</token>
+  </line>
+  <line no="927">
+    <token name="T_INLINE_HTML">                    $('#end-date-rating').pickadate("option", "min", selectedDate);</token>
+  </line>
+  <line no="928">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="929">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="930">
+    <token name="T_INLINE_HTML">            $('#end-date-rating').pickadate({</token>
+  </line>
+  <line no="931">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="932">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="933">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="934">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="935">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="936">
+    <token name="T_INLINE_HTML">                    $('#start-date-rating').pickadate("option", "max", selectedDate);</token>
+  </line>
+  <line no="937">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="938">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="939"/>
+  <line no="940">
+    <token name="T_INLINE_HTML">            $('#date_option-rating').change(function() {</token>
+  </line>
+  <line no="941"/>
+  <line no="942">
+    <token name="T_INLINE_HTML">                // alert("changed");</token>
+  </line>
+  <line no="943"/>
+  <line no="944">
+    <token name="T_INLINE_HTML">                var selected_option = $('#date_option-rating option:selected').val();</token>
+  </line>
+  <line no="945"/>
+  <line no="946">
+    <token name="T_INLINE_HTML">                if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="947">
+    <token name="T_INLINE_HTML">                    $('#start-date-rating').prop('disabled', false);</token>
+  </line>
+  <line no="948">
+    <token name="T_INLINE_HTML">                    $('#end-date-rating').prop('disabled', false);</token>
+  </line>
+  <line no="949">
+    <token name="T_INLINE_HTML">                    $('#start-date-rating').prop('required', true);</token>
+  </line>
+  <line no="950">
+    <token name="T_INLINE_HTML">                    $('#end-date-rating').prop('required', true);</token>
+  </line>
+  <line no="951"/>
+  <line no="952">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="953">
+    <token name="T_INLINE_HTML">                    $('#start-date-rating').val('');</token>
+  </line>
+  <line no="954">
+    <token name="T_INLINE_HTML">                    $('#end-date-rating').val('');</token>
+  </line>
+  <line no="955"/>
+  <line no="956"/>
+  <line no="957">
+    <token name="T_INLINE_HTML">                    $('#start-date-rating').prop('disabled', true);</token>
+  </line>
+  <line no="958">
+    <token name="T_INLINE_HTML">                    $('#end-date-rating').prop('disabled', true);</token>
+  </line>
+  <line no="959"/>
+  <line no="960">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="961"/>
+  <line no="962">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="963"/>
+  <line no="964">
+    <token name="T_INLINE_HTML">            $('#end-date-rating').change(function() {</token>
+  </line>
+  <line no="965"/>
+  <line no="966"/>
+  <line no="967">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-rating').val();</token>
+  </line>
+  <line no="968">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-rating').val();</token>
+  </line>
+  <line no="969">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate  ){</token>
+  </line>
+  <line no="970"/>
+  <line no="971">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.end_date_not_less_than_start_date')}}", 4000);</token>
+  </line>
+  <line no="972">
+    <token name="T_INLINE_HTML">                    $('#end-date-rating').val('');</token>
+  </line>
+  <line no="973">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="974"/>
+  <line no="975"/>
+  <line no="976">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="977"/>
+  <line no="978"/>
+  <line no="979">
+    <token name="T_INLINE_HTML">            $('#start-date-rating').change(function() {</token>
+  </line>
+  <line no="980"/>
+  <line no="981"/>
+  <line no="982">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-rating').val();</token>
+  </line>
+  <line no="983">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-rating').val();</token>
+  </line>
+  <line no="984">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate &amp;&amp; endDate != ''){</token>
+  </line>
+  <line no="985"/>
+  <line no="986">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.start_date_not_greater_than_end_date')}}", 4000);</token>
+  </line>
+  <line no="987">
+    <token name="T_INLINE_HTML">                    $('#start-date-rating').val('');</token>
+  </line>
+  <line no="988">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="989"/>
+  <line no="990"/>
+  <line no="991">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="992"/>
+  <line no="993">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="994"/>
+  <line no="995"/>
+  <line no="996">
+    <token name="T_INLINE_HTML">        // rating</token>
+  </line>
+  <line no="997"/>
+  <line no="998"/>
+  <line no="999"/>
+  <line no="1000"/>
+  <line no="1001">
+    <token name="T_INLINE_HTML">        // bussiness</token>
+  </line>
+  <line no="1002"/>
+  <line no="1003">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="1004">
+    <token name="T_INLINE_HTML">            $('#start-date-business').prop('disabled', true);</token>
+  </line>
+  <line no="1005">
+    <token name="T_INLINE_HTML">            $('#end-date-business').prop('disabled', true);</token>
+  </line>
+  <line no="1006"/>
+  <line no="1007">
+    <token name="T_INLINE_HTML">            var selected_option = $('#date_option-business option:selected').val();</token>
+  </line>
+  <line no="1008"/>
+  <line no="1009">
+    <token name="T_INLINE_HTML">            if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="1010"/>
+  <line no="1011">
+    <token name="T_INLINE_HTML">                $('#start-date-business').prop('disabled', false);</token>
+  </line>
+  <line no="1012">
+    <token name="T_INLINE_HTML">                $('#end-date-business').prop('disabled', false);</token>
+  </line>
+  <line no="1013">
+    <token name="T_INLINE_HTML">                $('#start-date-business').prop('required', true);</token>
+  </line>
+  <line no="1014">
+    <token name="T_INLINE_HTML">                $('#end-date-business').prop('required', true);</token>
+  </line>
+  <line no="1015"/>
+  <line no="1016">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="1017"/>
+  <line no="1018">
+    <token name="T_INLINE_HTML">            $('.datepicker').pickadate({</token>
+  </line>
+  <line no="1019">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="1020">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="1021">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="1022">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="1023">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="1024">
+    <token name="T_INLINE_HTML">                    //alert("start");</token>
+  </line>
+  <line no="1025">
+    <token name="T_INLINE_HTML">                    $('#end-date-business').pickadate("option", "min", selectedDate);</token>
+  </line>
+  <line no="1026">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1027">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1028">
+    <token name="T_INLINE_HTML">            $('#end-date-business').pickadate({</token>
+  </line>
+  <line no="1029">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="1030">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="1031">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="1032">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="1033">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="1034">
+    <token name="T_INLINE_HTML">                    $('#start-date-business').pickadate("option", "max", selectedDate);</token>
+  </line>
+  <line no="1035">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1036">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1037"/>
+  <line no="1038">
+    <token name="T_INLINE_HTML">            $('#start-date-business').change(function() {</token>
+  </line>
+  <line no="1039"/>
+  <line no="1040"/>
+  <line no="1041">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-business').val();</token>
+  </line>
+  <line no="1042">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-business').val();</token>
+  </line>
+  <line no="1043">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate &amp;&amp; endDate != ''){</token>
+  </line>
+  <line no="1044"/>
+  <line no="1045">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.start_date_not_greater_than_end_date')}}", 4000);</token>
+  </line>
+  <line no="1046">
+    <token name="T_INLINE_HTML">                    $('#start-date-business').val('');</token>
+  </line>
+  <line no="1047">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1048"/>
+  <line no="1049"/>
+  <line no="1050">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1051">
+    <token name="T_INLINE_HTML">            $('#date_option-business').change(function() {</token>
+  </line>
+  <line no="1052"/>
+  <line no="1053">
+    <token name="T_INLINE_HTML">                // alert("changed");</token>
+  </line>
+  <line no="1054"/>
+  <line no="1055">
+    <token name="T_INLINE_HTML">                var selected_option = $('#date_option-business option:selected').val();</token>
+  </line>
+  <line no="1056"/>
+  <line no="1057">
+    <token name="T_INLINE_HTML">                if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="1058">
+    <token name="T_INLINE_HTML">                    $('#start-date-business').prop('disabled', false);</token>
+  </line>
+  <line no="1059">
+    <token name="T_INLINE_HTML">                    $('#end-date-business').prop('disabled', false);</token>
+  </line>
+  <line no="1060">
+    <token name="T_INLINE_HTML">                    $('#start-date-business').prop('required', true);</token>
+  </line>
+  <line no="1061">
+    <token name="T_INLINE_HTML">                    $('#end-date-business').prop('required', true);</token>
+  </line>
+  <line no="1062"/>
+  <line no="1063">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="1064">
+    <token name="T_INLINE_HTML">                    $('#start-date-business').val('');</token>
+  </line>
+  <line no="1065">
+    <token name="T_INLINE_HTML">                    $('#end-date-business').val('');</token>
+  </line>
+  <line no="1066"/>
+  <line no="1067"/>
+  <line no="1068">
+    <token name="T_INLINE_HTML">                    $('#start-date-business').prop('disabled', true);</token>
+  </line>
+  <line no="1069">
+    <token name="T_INLINE_HTML">                    $('#end-date-business').prop('disabled', true);</token>
+  </line>
+  <line no="1070"/>
+  <line no="1071">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1072"/>
+  <line no="1073">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1074"/>
+  <line no="1075">
+    <token name="T_INLINE_HTML">            $('#end-date-business').change(function() {</token>
+  </line>
+  <line no="1076"/>
+  <line no="1077">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-business').val();</token>
+  </line>
+  <line no="1078">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-business').val();</token>
+  </line>
+  <line no="1079">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate ){</token>
+  </line>
+  <line no="1080"/>
+  <line no="1081">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.end_date_not_less_than_start_date')}}", 4000);</token>
+  </line>
+  <line no="1082">
+    <token name="T_INLINE_HTML">                    $('#end-date-business').val('');</token>
+  </line>
+  <line no="1083">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1084"/>
+  <line no="1085"/>
+  <line no="1086">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1087"/>
+  <line no="1088">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="1089"/>
+  <line no="1090"/>
+  <line no="1091">
+    <token name="T_INLINE_HTML">        // bussiness</token>
+  </line>
+  <line no="1092">
+    <token name="T_INLINE_HTML">        // travel</token>
+  </line>
+  <line no="1093"/>
+  <line no="1094">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="1095">
+    <token name="T_INLINE_HTML">            $('#start-date-travel').prop('disabled', true);</token>
+  </line>
+  <line no="1096">
+    <token name="T_INLINE_HTML">            $('#end-date-travel').prop('disabled', true);</token>
+  </line>
+  <line no="1097"/>
+  <line no="1098">
+    <token name="T_INLINE_HTML">            var selected_option = $('#date_option-travel option:selected').val();</token>
+  </line>
+  <line no="1099"/>
+  <line no="1100">
+    <token name="T_INLINE_HTML">            if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="1101"/>
+  <line no="1102">
+    <token name="T_INLINE_HTML">                $('#start-date-travel').prop('disabled', false);</token>
+  </line>
+  <line no="1103">
+    <token name="T_INLINE_HTML">                $('#end-date-travel').prop('disabled', false);</token>
+  </line>
+  <line no="1104">
+    <token name="T_INLINE_HTML">                $('#start-date-travel').prop('required', true);</token>
+  </line>
+  <line no="1105">
+    <token name="T_INLINE_HTML">                $('#end-date-travel').prop('required', true);</token>
+  </line>
+  <line no="1106"/>
+  <line no="1107">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="1108"/>
+  <line no="1109">
+    <token name="T_INLINE_HTML">            $('.datepicker').pickadate({</token>
+  </line>
+  <line no="1110">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="1111">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="1112">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="1113">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="1114">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="1115">
+    <token name="T_INLINE_HTML">                    //alert("start");</token>
+  </line>
+  <line no="1116">
+    <token name="T_INLINE_HTML">                    $('#end-date-travel').pickadate("option", "min", selectedDate);</token>
+  </line>
+  <line no="1117">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1118">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1119">
+    <token name="T_INLINE_HTML">            $('#end-date-travel').pickadate({</token>
+  </line>
+  <line no="1120">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="1121">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="1122">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="1123">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="1124">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="1125">
+    <token name="T_INLINE_HTML">                    $('#start-date-travel').pickadate("option", "max", selectedDate);</token>
+  </line>
+  <line no="1126">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1127">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1128"/>
+  <line no="1129">
+    <token name="T_INLINE_HTML">            $('#start-date-travel').change(function() {</token>
+  </line>
+  <line no="1130"/>
+  <line no="1131"/>
+  <line no="1132">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-travel').val();</token>
+  </line>
+  <line no="1133">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-travel').val();</token>
+  </line>
+  <line no="1134">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate &amp;&amp; endDate != ''){</token>
+  </line>
+  <line no="1135"/>
+  <line no="1136">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.start_date_not_greater_than_end_date')}}", 4000);</token>
+  </line>
+  <line no="1137">
+    <token name="T_INLINE_HTML">                    $('#start-date-travel').val('');</token>
+  </line>
+  <line no="1138">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1139"/>
+  <line no="1140"/>
+  <line no="1141">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1142">
+    <token name="T_INLINE_HTML">            $('#date_option-travel').change(function() {</token>
+  </line>
+  <line no="1143"/>
+  <line no="1144">
+    <token name="T_INLINE_HTML">                // alert("changed");</token>
+  </line>
+  <line no="1145"/>
+  <line no="1146">
+    <token name="T_INLINE_HTML">                var selected_option = $('#date_option-travel option:selected').val();</token>
+  </line>
+  <line no="1147"/>
+  <line no="1148">
+    <token name="T_INLINE_HTML">                if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="1149">
+    <token name="T_INLINE_HTML">                    $('#start-date-travel').prop('disabled', false);</token>
+  </line>
+  <line no="1150">
+    <token name="T_INLINE_HTML">                    $('#end-date-travel').prop('disabled', false);</token>
+  </line>
+  <line no="1151">
+    <token name="T_INLINE_HTML">                    $('#start-date-travel').prop('required', true);</token>
+  </line>
+  <line no="1152">
+    <token name="T_INLINE_HTML">                    $('#end-date-travel').prop('required', true);</token>
+  </line>
+  <line no="1153"/>
+  <line no="1154">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="1155">
+    <token name="T_INLINE_HTML">                    $('#start-date-travel').val('');</token>
+  </line>
+  <line no="1156">
+    <token name="T_INLINE_HTML">                    $('#end-date-travel').val('');</token>
+  </line>
+  <line no="1157"/>
+  <line no="1158"/>
+  <line no="1159">
+    <token name="T_INLINE_HTML">                    $('#start-date-travel').prop('disabled', true);</token>
+  </line>
+  <line no="1160">
+    <token name="T_INLINE_HTML">                    $('#end-date-travel').prop('disabled', true);</token>
+  </line>
+  <line no="1161"/>
+  <line no="1162">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1163"/>
+  <line no="1164">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1165"/>
+  <line no="1166">
+    <token name="T_INLINE_HTML">            $('#end-date-travel').change(function() {</token>
+  </line>
+  <line no="1167"/>
+  <line no="1168">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-travel').val();</token>
+  </line>
+  <line no="1169">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-travel').val();</token>
+  </line>
+  <line no="1170">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate){</token>
+  </line>
+  <line no="1171"/>
+  <line no="1172">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.end_date_not_less_than_start_date')}}", 4000);</token>
+  </line>
+  <line no="1173">
+    <token name="T_INLINE_HTML">                    $('#end-date-travel').val('');</token>
+  </line>
+  <line no="1174">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1175"/>
+  <line no="1176"/>
+  <line no="1177">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1178"/>
+  <line no="1179">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="1180"/>
+  <line no="1181"/>
+  <line no="1182">
+    <token name="T_INLINE_HTML">        // travel</token>
+  </line>
+  <line no="1183"/>
+  <line no="1184"/>
+  <line no="1185"/>
+  <line no="1186">
+    <token name="T_INLINE_HTML">        // financial</token>
+  </line>
+  <line no="1187"/>
+  <line no="1188">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="1189">
+    <token name="T_INLINE_HTML">            $('#start-date-financial').prop('disabled', true);</token>
+  </line>
+  <line no="1190">
+    <token name="T_INLINE_HTML">            $('#end-date-financial').prop('disabled', true);</token>
+  </line>
+  <line no="1191"/>
+  <line no="1192">
+    <token name="T_INLINE_HTML">            var selected_option = $('#date_option-financial option:selected').val();</token>
+  </line>
+  <line no="1193"/>
+  <line no="1194">
+    <token name="T_INLINE_HTML">            if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="1195"/>
+  <line no="1196">
+    <token name="T_INLINE_HTML">                $('#start-date-financial').prop('disabled', false);</token>
+  </line>
+  <line no="1197">
+    <token name="T_INLINE_HTML">                $('#end-date-financial').prop('disabled', false);</token>
+  </line>
+  <line no="1198">
+    <token name="T_INLINE_HTML">                $('#start-date-financial').prop('required', true);</token>
+  </line>
+  <line no="1199">
+    <token name="T_INLINE_HTML">                $('#end-date-financial').prop('required', true);</token>
+  </line>
+  <line no="1200"/>
+  <line no="1201">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="1202"/>
+  <line no="1203">
+    <token name="T_INLINE_HTML">            $('.datepicker').pickadate({</token>
+  </line>
+  <line no="1204">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="1205">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="1206">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="1207">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="1208">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="1209">
+    <token name="T_INLINE_HTML">                    //alert("start");</token>
+  </line>
+  <line no="1210">
+    <token name="T_INLINE_HTML">                    $('#end-date-financial').pickadate("option", "min", selectedDate);</token>
+  </line>
+  <line no="1211">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1212">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1213">
+    <token name="T_INLINE_HTML">            $('#end-date-financial').pickadate({</token>
+  </line>
+  <line no="1214">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="1215">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="1216">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="1217">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="1218">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="1219">
+    <token name="T_INLINE_HTML">                    $('#start-date-financial').pickadate("option", "max", selectedDate);</token>
+  </line>
+  <line no="1220">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1221">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1222"/>
+  <line no="1223">
+    <token name="T_INLINE_HTML">            $('#start-date-financial').change(function() {</token>
+  </line>
+  <line no="1224"/>
+  <line no="1225"/>
+  <line no="1226">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-financial').val();</token>
+  </line>
+  <line no="1227">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-financial').val();</token>
+  </line>
+  <line no="1228">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate &amp;&amp; endDate != ''){</token>
+  </line>
+  <line no="1229"/>
+  <line no="1230">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.start_date_not_greater_than_end_date')}}", 4000);</token>
+  </line>
+  <line no="1231">
+    <token name="T_INLINE_HTML">                    $('#start-date-financial').val('');</token>
+  </line>
+  <line no="1232">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1233"/>
+  <line no="1234"/>
+  <line no="1235">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1236">
+    <token name="T_INLINE_HTML">            $('#date_option-financial').change(function() {</token>
+  </line>
+  <line no="1237"/>
+  <line no="1238">
+    <token name="T_INLINE_HTML">                // alert("changed");</token>
+  </line>
+  <line no="1239"/>
+  <line no="1240">
+    <token name="T_INLINE_HTML">                var selected_option = $('#date_option-financial option:selected').val();</token>
+  </line>
+  <line no="1241"/>
+  <line no="1242">
+    <token name="T_INLINE_HTML">                if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="1243">
+    <token name="T_INLINE_HTML">                    $('#start-date-financial').prop('disabled', false);</token>
+  </line>
+  <line no="1244">
+    <token name="T_INLINE_HTML">                    $('#end-date-financial').prop('disabled', false);</token>
+  </line>
+  <line no="1245">
+    <token name="T_INLINE_HTML">                    $('#start-date-financial').prop('required', true);</token>
+  </line>
+  <line no="1246">
+    <token name="T_INLINE_HTML">                    $('#end-date-financial').prop('required', true);</token>
+  </line>
+  <line no="1247"/>
+  <line no="1248">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="1249">
+    <token name="T_INLINE_HTML">                    $('#start-date-financial').val('');</token>
+  </line>
+  <line no="1250">
+    <token name="T_INLINE_HTML">                    $('#end-date-financial').val('');</token>
+  </line>
+  <line no="1251"/>
+  <line no="1252"/>
+  <line no="1253">
+    <token name="T_INLINE_HTML">                    $('#start-date-financial').prop('disabled', true);</token>
+  </line>
+  <line no="1254">
+    <token name="T_INLINE_HTML">                    $('#end-date-financial').prop('disabled', true);</token>
+  </line>
+  <line no="1255"/>
+  <line no="1256">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1257"/>
+  <line no="1258">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1259"/>
+  <line no="1260">
+    <token name="T_INLINE_HTML">            $('#end-date-financial').change(function() {</token>
+  </line>
+  <line no="1261"/>
+  <line no="1262">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-financial').val();</token>
+  </line>
+  <line no="1263">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-financial').val();</token>
+  </line>
+  <line no="1264">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate){</token>
+  </line>
+  <line no="1265"/>
+  <line no="1266">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.end_date_not_less_than_start_date')}}", 4000);</token>
+  </line>
+  <line no="1267">
+    <token name="T_INLINE_HTML">                    $('#end-date-financial').val('');</token>
+  </line>
+  <line no="1268">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1269"/>
+  <line no="1270"/>
+  <line no="1271">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1272"/>
+  <line no="1273">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="1274"/>
+  <line no="1275"/>
+  <line no="1276">
+    <token name="T_INLINE_HTML">        //  financial</token>
+  </line>
+  <line no="1277"/>
+  <line no="1278"/>
+  <line no="1279"/>
+  <line no="1280"/>
+  <line no="1281"/>
+  <line no="1282"/>
+  <line no="1283">
+    <token name="T_INLINE_HTML">        // ledger</token>
+  </line>
+  <line no="1284"/>
+  <line no="1285">
+    <token name="T_INLINE_HTML">        $(document).ready(function () {</token>
+  </line>
+  <line no="1286">
+    <token name="T_INLINE_HTML">            $('#start-date-ledger').prop('disabled', true);</token>
+  </line>
+  <line no="1287">
+    <token name="T_INLINE_HTML">            $('#end-date-ledger').prop('disabled', true);</token>
+  </line>
+  <line no="1288"/>
+  <line no="1289">
+    <token name="T_INLINE_HTML">            var selected_option = $('#date_option-ledger option:selected').val();</token>
+  </line>
+  <line no="1290"/>
+  <line no="1291">
+    <token name="T_INLINE_HTML">            if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="1292"/>
+  <line no="1293">
+    <token name="T_INLINE_HTML">                $('#start-date-ledger').prop('disabled', false);</token>
+  </line>
+  <line no="1294">
+    <token name="T_INLINE_HTML">                $('#end-date-ledger').prop('disabled', false);</token>
+  </line>
+  <line no="1295">
+    <token name="T_INLINE_HTML">                $('#start-date-ledger').prop('required', true);</token>
+  </line>
+  <line no="1296">
+    <token name="T_INLINE_HTML">                $('#end-date-ledger').prop('required', true);</token>
+  </line>
+  <line no="1297"/>
+  <line no="1298">
+    <token name="T_INLINE_HTML">            }</token>
+  </line>
+  <line no="1299"/>
+  <line no="1300">
+    <token name="T_INLINE_HTML">            $('.datepicker').pickadate({</token>
+  </line>
+  <line no="1301">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="1302">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="1303">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="1304">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="1305">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="1306">
+    <token name="T_INLINE_HTML">                    //alert("start");</token>
+  </line>
+  <line no="1307">
+    <token name="T_INLINE_HTML">                    $('#end-date-ledger').pickadate("option", "min", selectedDate);</token>
+  </line>
+  <line no="1308">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1309">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1310">
+    <token name="T_INLINE_HTML">            $('#end-date-ledger').pickadate({</token>
+  </line>
+  <line no="1311">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="1312">
+    <token name="T_INLINE_HTML">                defaultDate: "+1w",</token>
+  </line>
+  <line no="1313">
+    <token name="T_INLINE_HTML">                changeMonth: true,</token>
+  </line>
+  <line no="1314">
+    <token name="T_INLINE_HTML">                numberOfMonths: 1,</token>
+  </line>
+  <line no="1315">
+    <token name="T_INLINE_HTML">                onClose: function (selectedDate) {</token>
+  </line>
+  <line no="1316">
+    <token name="T_INLINE_HTML">                    $('#start-date-ledger').pickadate("option", "max", selectedDate);</token>
+  </line>
+  <line no="1317">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1318">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1319"/>
+  <line no="1320">
+    <token name="T_INLINE_HTML">            $('#start-date-ledger').change(function() {</token>
+  </line>
+  <line no="1321"/>
+  <line no="1322"/>
+  <line no="1323">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-ledger').val();</token>
+  </line>
+  <line no="1324">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-ledger').val();</token>
+  </line>
+  <line no="1325"/>
+  <line no="1326">
+    <token name="T_INLINE_HTML">;</token>
+  </line>
+  <line no="1327">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate  &amp;&amp; endDate != ''){</token>
+  </line>
+  <line no="1328"/>
+  <line no="1329">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.start_date_not_greater_than_end_date')}}", 4000);</token>
+  </line>
+  <line no="1330">
+    <token name="T_INLINE_HTML">                    $('#start-date-ledger').val('');</token>
+  </line>
+  <line no="1331">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1332"/>
+  <line no="1333"/>
+  <line no="1334">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1335">
+    <token name="T_INLINE_HTML">            $('#date_option-ledger').change(function() {</token>
+  </line>
+  <line no="1336"/>
+  <line no="1337">
+    <token name="T_INLINE_HTML">                // alert("changed");</token>
+  </line>
+  <line no="1338"/>
+  <line no="1339">
+    <token name="T_INLINE_HTML">                var selected_option = $('#date_option-ledger option:selected').val();</token>
+  </line>
+  <line no="1340"/>
+  <line no="1341">
+    <token name="T_INLINE_HTML">                if (selected_option == 'date_select') {</token>
+  </line>
+  <line no="1342">
+    <token name="T_INLINE_HTML">                    $('#start-date-ledger').prop('disabled', false);</token>
+  </line>
+  <line no="1343">
+    <token name="T_INLINE_HTML">                    $('#end-date-ledger').prop('disabled', false);</token>
+  </line>
+  <line no="1344">
+    <token name="T_INLINE_HTML">                    $('#start-date-ledger').prop('required', true);</token>
+  </line>
+  <line no="1345">
+    <token name="T_INLINE_HTML">                    $('#end-date-ledger').prop('required', true);</token>
+  </line>
+  <line no="1346"/>
+  <line no="1347">
+    <token name="T_INLINE_HTML">                } else {</token>
+  </line>
+  <line no="1348">
+    <token name="T_INLINE_HTML">                    $('#start-date-ledger').val('');</token>
+  </line>
+  <line no="1349">
+    <token name="T_INLINE_HTML">                    $('#end-date-ledger').val('');</token>
+  </line>
+  <line no="1350"/>
+  <line no="1351"/>
+  <line no="1352">
+    <token name="T_INLINE_HTML">                    $('#start-date-ledger').prop('disabled', true);</token>
+  </line>
+  <line no="1353">
+    <token name="T_INLINE_HTML">                    $('#end-date-ledger').prop('disabled', true);</token>
+  </line>
+  <line no="1354"/>
+  <line no="1355">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1356"/>
+  <line no="1357">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1358"/>
+  <line no="1359">
+    <token name="T_INLINE_HTML">            $('#end-date-ledger').change(function() {</token>
+  </line>
+  <line no="1360"/>
+  <line no="1361">
+    <token name="T_INLINE_HTML">                var endDate =  $('#end-date-ledger').val();</token>
+  </line>
+  <line no="1362">
+    <token name="T_INLINE_HTML">                var startDate =  $('#start-date-ledger').val();</token>
+  </line>
+  <line no="1363">
+    <token name="T_INLINE_HTML">                if(startDate &gt; endDate ){</token>
+  </line>
+  <line no="1364"/>
+  <line no="1365">
+    <token name="T_INLINE_HTML">                    Materialize.toast("{{trans('localization::errors.end_date_not_less_than_start_date')}}", 4000);</token>
+  </line>
+  <line no="1366">
+    <token name="T_INLINE_HTML">                    $('#end-date-ledger').val('');</token>
+  </line>
+  <line no="1367">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1368"/>
+  <line no="1369"/>
+  <line no="1370">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1371"/>
+  <line no="1372">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="1373"/>
+  <line no="1374"/>
+  <line no="1375">
+    <token name="T_INLINE_HTML">        // ledger</token>
+  </line>
+  <line no="1376">
+    <token name="T_INLINE_HTML">      </token>
+  </line>
+  <line no="1377"/>
+  <line no="1378">
+    <token name="T_INLINE_HTML">        var userNamesAjaxPath = "</token>
+    <token name="T_OPEN_TAG">&lt;?php </token>
+    <token name="T_ECHO">echo</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">public_path</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'admin/user/names/ajax'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+    <token name="T_INLINE_HTML">";</token>
+  </line>
+  <line no="1379"/>
+  <line no="1380">
+    <token name="T_INLINE_HTML">        $(document).ready(function(){</token>
+  </line>
+  <line no="1381">
+    <token name="T_INLINE_HTML">            $("#search-box").keyup(function(){</token>
+  </line>
+  <line no="1382"/>
+  <line no="1383"/>
+  <line no="1384">
+    <token name="T_INLINE_HTML">                if($(this).val() != '')</token>
+  </line>
+  <line no="1385">
+    <token name="T_INLINE_HTML">                {</token>
+  </line>
+  <line no="1386"/>
+  <line no="1387"/>
+  <line no="1388">
+    <token name="T_INLINE_HTML">                    $.ajax({</token>
+  </line>
+  <line no="1389">
+    <token name="T_INLINE_HTML">                        type: "POST",</token>
+  </line>
+  <line no="1390">
+    <token name="T_INLINE_HTML">                        url: "{{ url('/admin/user/names/ajax') }}",</token>
+  </line>
+  <line no="1391">
+    <token name="T_INLINE_HTML">//                    data:'keyword='+$(this).val(),</token>
+  </line>
+  <line no="1392"/>
+  <line no="1393">
+    <token name="T_INLINE_HTML">                        data: {</token>
+  </line>
+  <line no="1394">
+    <token name="T_INLINE_HTML">                            "_token": "{{ csrf_token() }}",</token>
+  </line>
+  <line no="1395">
+    <token name="T_INLINE_HTML">                            "keyword": $(this).val(),</token>
+  </line>
+  <line no="1396">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="1397">
+    <token name="T_INLINE_HTML">                        beforeSend: function(){</token>
+  </line>
+  <line no="1398">
+    <token name="T_INLINE_HTML">                            $("#search-box").css("background","#FFF url(LoaderIcon.gif) no-repeat 165px");</token>
+  </line>
+  <line no="1399">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="1400">
+    <token name="T_INLINE_HTML">                        success: function(data){</token>
+  </line>
+  <line no="1401"/>
+  <line no="1402">
+    <token name="T_INLINE_HTML">                            // alert(data);</token>
+  </line>
+  <line no="1403">
+    <token name="T_INLINE_HTML">                            //  console.log(data);</token>
+  </line>
+  <line no="1404">
+    <token name="T_INLINE_HTML">                            $("#suggesstion-box").show();</token>
+  </line>
+  <line no="1405">
+    <token name="T_INLINE_HTML">                            $("#suggesstion-box").html(data);</token>
+  </line>
+  <line no="1406">
+    <token name="T_INLINE_HTML">                            $("#search-box").css("background","#FFF");</token>
+  </line>
+  <line no="1407">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="1408">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="1409"/>
+  <line no="1410">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1411">
+    <token name="T_INLINE_HTML">                else</token>
+  </line>
+  <line no="1412">
+    <token name="T_INLINE_HTML">                {</token>
+  </line>
+  <line no="1413">
+    <token name="T_INLINE_HTML">                    $("#suggesstion-box").hide();</token>
+  </line>
+  <line no="1414"/>
+  <line no="1415">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1416"/>
+  <line no="1417"/>
+  <line no="1418">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1419">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="1420">
+    <token name="T_INLINE_HTML">        //To select country name</token>
+  </line>
+  <line no="1421">
+    <token name="T_INLINE_HTML">        function selectCountry(val) {</token>
+  </line>
+  <line no="1422">
+    <token name="T_INLINE_HTML">            $("#search-box").val(val);</token>
+  </line>
+  <line no="1423">
+    <token name="T_INLINE_HTML">            $("#suggesstion-box").hide();</token>
+  </line>
+  <line no="1424">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="1425"/>
+  <line no="1426"/>
+  <line no="1427"/>
+  <line no="1428">
+    <token name="T_INLINE_HTML">        $(document).ready(function(){</token>
+  </line>
+  <line no="1429">
+    <token name="T_INLINE_HTML">            $("#search-box-driver-name").keyup(function(){</token>
+  </line>
+  <line no="1430"/>
+  <line no="1431">
+    <token name="T_INLINE_HTML">                if($(this).val() != '')</token>
+  </line>
+  <line no="1432">
+    <token name="T_INLINE_HTML">                {</token>
+  </line>
+  <line no="1433">
+    <token name="T_INLINE_HTML">                    $.ajax({</token>
+  </line>
+  <line no="1434">
+    <token name="T_INLINE_HTML">                        type: "POST",</token>
+  </line>
+  <line no="1435">
+    <token name="T_INLINE_HTML">                        url: "{{ url('/admin/driver/names/ajax') }}",</token>
+  </line>
+  <line no="1436">
+    <token name="T_INLINE_HTML">//                    data:'keyword='+$(this).val(),</token>
+  </line>
+  <line no="1437"/>
+  <line no="1438">
+    <token name="T_INLINE_HTML">                        data: {</token>
+  </line>
+  <line no="1439">
+    <token name="T_INLINE_HTML">                            "_token": "{{ csrf_token() }}",</token>
+  </line>
+  <line no="1440">
+    <token name="T_INLINE_HTML">                            "driverKeyword": $(this).val(),</token>
+  </line>
+  <line no="1441">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="1442">
+    <token name="T_INLINE_HTML">                        beforeSend: function(){</token>
+  </line>
+  <line no="1443">
+    <token name="T_INLINE_HTML">                            $("#search-box-driver-name").css("background","#FFF url(LoaderIcon.gif) no-repeat 165px");</token>
+  </line>
+  <line no="1444">
+    <token name="T_INLINE_HTML">                        },</token>
+  </line>
+  <line no="1445">
+    <token name="T_INLINE_HTML">                        success: function(data){</token>
+  </line>
+  <line no="1446"/>
+  <line no="1447">
+    <token name="T_INLINE_HTML">                            //  alert(data);</token>
+  </line>
+  <line no="1448">
+    <token name="T_INLINE_HTML">                            //  console.log(data);</token>
+  </line>
+  <line no="1449">
+    <token name="T_INLINE_HTML">                            $("#suggesstion-box-driver-name").show();</token>
+  </line>
+  <line no="1450">
+    <token name="T_INLINE_HTML">                            $("#suggesstion-box-driver-name").html(data);</token>
+  </line>
+  <line no="1451">
+    <token name="T_INLINE_HTML">                            $("#search-box-driver-name").css("background","#FFF");</token>
+  </line>
+  <line no="1452">
+    <token name="T_INLINE_HTML">                        }</token>
+  </line>
+  <line no="1453">
+    <token name="T_INLINE_HTML">                    });</token>
+  </line>
+  <line no="1454">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1455">
+    <token name="T_INLINE_HTML">                else</token>
+  </line>
+  <line no="1456">
+    <token name="T_INLINE_HTML">                {</token>
+  </line>
+  <line no="1457">
+    <token name="T_INLINE_HTML">                    $("#suggesstion-box-driver-name").hide();</token>
+  </line>
+  <line no="1458"/>
+  <line no="1459">
+    <token name="T_INLINE_HTML">                }</token>
+  </line>
+  <line no="1460"/>
+  <line no="1461">
+    <token name="T_INLINE_HTML">            });</token>
+  </line>
+  <line no="1462">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="1463">
+    <token name="T_INLINE_HTML">        //To select country name</token>
+  </line>
+  <line no="1464">
+    <token name="T_INLINE_HTML">        function selectCountryDriverName(val) {</token>
+  </line>
+  <line no="1465">
+    <token name="T_INLINE_HTML">            $("#search-box-driver-name").val(val);</token>
+  </line>
+  <line no="1466">
+    <token name="T_INLINE_HTML">            $("#suggesstion-box-driver-name").hide();</token>
+  </line>
+  <line no="1467">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="1468"/>
+  <line no="1469">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="1470"/>
+  <line no="1471">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

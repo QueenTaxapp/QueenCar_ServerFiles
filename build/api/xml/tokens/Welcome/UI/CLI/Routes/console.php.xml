@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/tabgo/app/Containers/Welcome/UI/CLI/Routes" file="console.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Welcome/UI/CLI/Routes/console.php" size="124" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="7a735686913bd9be58980c777a3c9e6d3ed84dfb" relative="Welcome/UI/CLI/Routes/console.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_COMMENT">// For this file to be registered you need to edit the commands function in `app/Ship/kernel/ShipConsoleKernel.php`.</token>
+  </line>
+  <line no="4"/>
+</source>

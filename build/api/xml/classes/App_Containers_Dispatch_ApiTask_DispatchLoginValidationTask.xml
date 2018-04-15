@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\ApiTask\DispatchLoginValidationTask" namespace="App\Containers\Dispatch\ApiTask" name="DispatchLoginValidationTask" abstract="false" final="false" start="24" end="125">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/ApiTask" file="DispatchLoginValidationTask.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/ApiTask/DispatchLoginValidationTask.php" size="2967" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="5e0f70de46f937079ef4b7c38d2cfc84f7c0156d" relative="Dispatch/ApiTask/DispatchLoginValidationTask.php"/>
+  <docblock>
+    <description compact="Class UserDetailTask"/>
+    <package value="App\Containers\Promocode\ApiTask"/>
+  </docblock>
+  <method name="run" start="32" end="124" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$data"/>
+      <param variable="$custom_parameter"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="check  email address" line="43"/>
+      <comment value="check role" line="61"/>
+      <comment value="check password" line="70"/>
+      <comment value="success transformer message" line="80"/>
+    </inline>
+  </method>
+</class>

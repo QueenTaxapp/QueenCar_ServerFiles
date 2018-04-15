@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Models\AdminDetails" namespace="App\Containers\Admin\Models" name="AdminDetails" abstract="false" final="false" start="8" end="11">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Models" file="AdminDetails.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Models/AdminDetails.php" size="220" time="2017-09-13T12:01:58+02:00" unixtime="1505296918" sha1="38e7bf2bc5cba8aa15c16296c4991b592f7d5764" relative="Admin/Models/AdminDetails.php"/>
+  <extends full="App\Ship\Parents\Models\UserModel" namespace="App\Ship\Parents\Models" name="UserModel" unresolved="true"/>
+  <member name="table" default="'911_Admin_details'" type="string" visibility="protected" static="false" line="10"/>
+</class>

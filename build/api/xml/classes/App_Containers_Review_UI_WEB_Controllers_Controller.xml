@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Review\UI\WEB\Controllers\Controller" namespace="App\Containers\Review\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="42" end="139">
+  <file path="/var/www/html/queencar/app/Containers/Review/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Review/UI/WEB/Controllers/Controller.php" size="4265" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="0c24867b4f2d529234fab31fdfa74d4f40ebf2da" relative="Review/UI/WEB/Controllers/Controller.php"/>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="userReview" start="45" end="58" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="editUserReview" start="61" end="71" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$title = trans('localization::title.user_review');" line="66"/>
+    </inline>
+  </method>
+  <method name="saveEditUserReview" start="74" end="88" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Review\UI\WEB\Requests\SaveEditUserReviewRequest" namespace="App\Containers\Review\UI\WEB\Requests" name="SaveEditUserReviewRequest"/>
+    </parameter>
+  </method>
+  <method name="driverReview" start="91" end="107" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="editDriverReview" start="110" end="118" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="saveEditDriverReview" start="122" end="136" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Containers\Review\UI\WEB\Requests\SaveEditUserReviewRequest" namespace="App\Containers\Review\UI\WEB\Requests" name="SaveEditUserReviewRequest"/>
+    </parameter>
+  </method>
+</class>

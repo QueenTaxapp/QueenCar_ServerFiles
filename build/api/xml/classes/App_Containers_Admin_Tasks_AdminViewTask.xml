@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Tasks\AdminViewTask" namespace="App\Containers\Admin\Tasks" name="AdminViewTask" abstract="false" final="false" start="18" end="42">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Tasks" file="AdminViewTask.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Admin/Tasks/AdminViewTask.php" size="1119" time="2017-09-18T07:52:02+02:00" unixtime="1505713922" sha1="bde021c24e8663e33cfcdbe939cf80c0e3ab02d5" relative="Admin/Tasks/AdminViewTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="25" end="40" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <inline>
+      <comment value="echo&quot;&lt;pre&gt;&quot;;print_r($data);die();" line="29"/>
+    </inline>
+  </method>
+</class>

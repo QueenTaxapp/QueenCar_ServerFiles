@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Admin\Tasks\DynamicApiEmailCheckTask" namespace="App\Containers\Admin\Tasks" name="DynamicApiEmailCheckTask" abstract="false" final="false" start="11" end="32">
+  <file path="/var/www/html/queencar/app/Containers/Admin/Tasks" file="DynamicEmailCheckTask.php" realpath="/var/www/html/queencar/app/Containers/Admin/Tasks/DynamicEmailCheckTask.php" size="684" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="c8933828184e07c1eec64559768a67c1ccf2a1b3" relative="Admin/Tasks/DynamicEmailCheckTask.php"/>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="14" end="31" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="emailAddress" byreference="false" type="{unknown}"/>
+    <parameter name="tableNameSpace" byreference="false" type="{unknown}"/>
+    <parameter name="select" byreference="false" type="string" default="'*'"/>
+    <parameter name="errorCode" byreference="false" type="{unknown}"/>
+  </method>
+</class>

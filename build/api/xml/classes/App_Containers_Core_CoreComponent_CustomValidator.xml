@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Core\CoreComponent\CustomValidator" namespace="App\Containers\Core\CoreComponent" name="CustomValidator" abstract="false" final="false" start="18" end="37">
+  <file path="/var/www/html/queencar/app/Containers/Core/CoreComponent" file="CustomValidator.php" realpath="/var/www/html/queencar/app/Containers/Core/CoreComponent/CustomValidator.php" size="753" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="5f5d84473ee21b838b2e9bd1d629e0acd6363917" relative="Core/CoreComponent/CustomValidator.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <package value="App\Containers\User\UI\API\Controllers"/>
+  </docblock>
+  <method name="run" start="22" end="35" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <parameter name="rules" byreference="false" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/opt/lampp/htdocs/tabgo/app/Containers/Welcome/UI/WEB/Tests/Acceptance" file="WelcomeTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Welcome/UI/WEB/Tests/Acceptance/WelcomeTest.php" size="415" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="eeb32061ab1d2f7ffabd903e845cca967373fcd4" relative="Welcome/UI/WEB/Tests/Acceptance/WelcomeTest.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_COMMENT">//</token>
+  </line>
+  <line no="3">
+    <token name="T_COMMENT">//namespace App\Containers\Welcome\UI\WEB\Tests\Acceptance;</token>
+  </line>
+  <line no="4">
+    <token name="T_COMMENT">//</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT">//use App\Ship\Parents\Tests\PhpUnit\TestCase;</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">//</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">///**</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">// * Class WelcomeTest.</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">// *</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">// * @author Mahmoud Zalt &lt;mahmoud@zalt.me&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">// */</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">//class WelcomeTest extends TestCase</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT">//{</token>
+  </line>
+  <line no="14">
+    <token name="T_COMMENT">//</token>
+  </line>
+  <line no="15">
+    <token name="T_COMMENT">//    private $page = '/';</token>
+  </line>
+  <line no="16">
+    <token name="T_COMMENT">//</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">//    public function testDisplayWelcomeView()</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT">//    {</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT">//        $this-&gt;visit($this-&gt;page)</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT">//            -&gt;see('apiato');</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT">//    }</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT">//}</token>
+  </line>
+  <line no="23"/>
+</source>

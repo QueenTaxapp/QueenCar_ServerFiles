@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Email\Actions\RevertEmailAction" namespace="App\Containers\Email\Actions" name="RevertEmailAction" abstract="false" final="false" start="16" end="39">
+  <file path="/var/www/html/queencar/app/Containers/Email/Actions" file="RevertEmailAction.php" realpath="/var/www/html/queencar/app/Containers/Email/Actions/RevertEmailAction.php" size="917" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="dfb753352efb8153b0ab0292e150c27a7356a2a0" relative="Email/Actions/RevertEmailAction.php"/>
+  <docblock>
+    <description compact="Class RevertEmailAction"/>
+    <package value="App\Containers\Email\Actions"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="25" end="38" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="to revertemail action"/>
+      <param variable="$id"/>
+      <return type="object">
+        <type full="App\Containers\Email\Actions\array|\Illuminate\Contracts\Translation\Translator|null|string" namespace="App\Containers\Email\Actions\array|\Illuminate\Contracts\Translation" name="Translator|null|string"/>
+      </return>
+    </docblock>
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="DB::table('911_Email')-&gt;where('id', '=', $id)" line="36"/>
+      <comment value="-&gt;update(array('message' =&gt; html_entity_decode($request['editor'], ENT_QUOTES) ));" line="37"/>
+    </inline>
+  </method>
+</class>

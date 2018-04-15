@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Email\UI\WEB\Controllers\Controller" namespace="App\Containers\Email\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="36" end="112">
+  <file path="/var/www/html/queencar/app/Containers/Email/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Email/UI/WEB/Controllers/Controller.php" size="6082" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e387dcf8c2bc3ddddbd6c2f39db4a74ff5641f1b" relative="Email/UI/WEB/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <package value="App\Containers\Email\UI\WEB\Controllers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="viewEmail" start="39" end="49" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($data);die();" line="43"/>
+    </inline>
+  </method>
+  <method name="editemail" start="51" end="61" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($data);die();" line="53"/>
+    </inline>
+  </method>
+  <method name="updateEmail" start="63" end="72" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="65"/>
+      <comment value="die();" line="70"/>
+    </inline>
+  </method>
+  <method name="revertEmail" start="74" end="85" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="return $return_value;" line="80"/>
+      <comment value="$request-&gt;session()-&gt;flash('success', $result);" line="82"/>
+    </inline>
+  </method>
+  <method name="toogleStatus" start="87" end="94" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+  <method name="emailTrail" start="97" end="111" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

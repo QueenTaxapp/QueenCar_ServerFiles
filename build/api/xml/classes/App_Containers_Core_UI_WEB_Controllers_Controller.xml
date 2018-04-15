@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Core\UI\WEB\Controllers\Controller" namespace="App\Containers\Core\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="22" end="43">
+  <file path="/var/www/html/queencar/app/Containers/Core/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Core/UI/WEB/Controllers/Controller.php" size="1121" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="ba8e9851f6db52737aa8c9f6254bbc25c1076d4d" relative="Core/UI/WEB/Controllers/Controller.php"/>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="viewmodule" start="31" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="createuser"/>
+      <param type="object" variable="$request"/>
+      <return description="User::AddUser" type="object">
+        <type full="App\Containers\Core\UI\WEB\Controllers\view" namespace="App\Containers\Core\UI\WEB\Controllers" name="view"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+  </method>
+</class>

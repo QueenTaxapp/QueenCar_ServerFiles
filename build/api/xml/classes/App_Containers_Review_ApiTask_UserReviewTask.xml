@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Review\ApiTask\UserReviewTask" namespace="App\Containers\Review\ApiTask" name="UserReviewTask" abstract="false" final="false" start="19" end="105">
+  <file path="/var/www/html/queencar/app/Containers/Review/ApiTask" file="UserReviewTask.php" realpath="/var/www/html/queencar/app/Containers/Review/ApiTask/UserReviewTask.php" size="2531" time="2018-04-06T06:01:27+00:00" unixtime="1522994487" sha1="48998224fa7f526759cd55e11cb4c94c9380dfea" relative="Review/ApiTask/UserReviewTask.php"/>
+  <docblock>
+    <description compact="Class ApiEta"/>
+    <package value="App\Containers\eta\ApiTask"/>
+  </docblock>
+  <method name="run" start="22" end="103" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+  </method>
+</class>

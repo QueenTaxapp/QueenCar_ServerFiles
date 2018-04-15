@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Email\Webtasks\NewEmailRevertTask" namespace="App\Containers\Email\Webtasks" name="NewEmailRevertTask" abstract="false" final="false" start="15" end="64">
+  <file path="/var/www/html/queencar/app/Containers/Email/Webtasks" file="NewEmailRevertTask.php" realpath="/var/www/html/queencar/app/Containers/Email/Webtasks/NewEmailRevertTask.php" size="1522" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="e7ecfe0b4ab7e5762bb274ffeb4162fb7974e0cc" relative="Email/Webtasks/NewEmailRevertTask.php"/>
+  <docblock>
+    <description compact="Class EmailAction"/>
+    <package value="App\Containers\Email\Actions"/>
+  </docblock>
+  <method name="run" start="24" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="to validate user"/>
+      <param type="null" variable="$id"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

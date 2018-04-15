@@ -1,0 +1,39 @@
+{
+  "module": {
+    "payment": {
+      "client_token": {
+        "title": "Generate Client Token App",
+        "version": "1.0.0",
+        "description": "Generate Client Token App",
+        "module_type": "core",
+        "config_file": "Payment\/modules\/client_token.json",
+        "author": "venkat",
+        "is_active": true,
+        "flow": {
+          "validate": {
+            "id": "validator",
+            "namespace": "App\\Containers\\Referral\\UI\\API\\Requests\\emptyRequest"
+          },
+          "generate_clientToken": {
+            "id": "task",
+            "namespace": "App\\Containers\\Payment\\ApiTask\\client_token"
+          },
+          "response": {
+            "id": "end",
+            "namespace": "App\\Containers\\Payment\\UI\\API\\Transformers\\ClientToken"
+          }
+        }
+      }
+    }
+  },
+"files":
+    {
+      "client_token.php":"Payment/ApiTask/",
+      "Payment.php":"Payment/Models/",
+      "Controller.php":"Payment/UI/API/Controllers/",
+      "emptyRequest.php":"Payment/UI/API/Requests/",
+      "ApiClientToken.v1.public.php":"Payment/UI/API/Routes/",
+      "ClientToken.php":"Payment/UI/API/Transformers/",
+      "client_token.json":"Payment/modules/"
+    }
+}

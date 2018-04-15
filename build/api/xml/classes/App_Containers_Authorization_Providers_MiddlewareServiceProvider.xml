@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Providers\MiddlewareServiceProvider" namespace="App\Containers\Authorization\Providers" name="MiddlewareServiceProvider" abstract="false" final="false" start="12" end="43">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Providers" file="MiddlewareServiceProvider.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Providers/MiddlewareServiceProvider.php" size="817" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="5c217526bc4f976915f2ae1cd13b1c6f9faf29a9" relative="Authorization/Providers/MiddlewareServiceProvider.php"/>
+  <docblock>
+    <description compact="Class MiddlewareServiceProvider"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Providers\MiddlewareProvider" namespace="App\Ship\Parents\Providers" name="MiddlewareProvider" unresolved="true"/>
+  <member name="middlewares" default="" type="array" visibility="protected" static="false" line="19">
+    <docblock>
+      <description compact="Register Middleware's"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="middlewareGroups" default="" type="array" visibility="protected" static="false" line="28">
+    <docblock>
+      <description compact="Register Container Middleware Groups"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="routeMiddleware" default="" type="array" visibility="protected" static="false" line="37"/>
+</class>

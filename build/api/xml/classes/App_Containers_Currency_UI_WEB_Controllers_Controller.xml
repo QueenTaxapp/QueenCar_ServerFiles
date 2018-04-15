@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Currency\UI\WEB\Controllers\Controller" namespace="App\Containers\Currency\UI\WEB\Controllers" name="Controller" abstract="false" final="false" start="23" end="155">
+  <file path="/var/www/html/queencar/app/Containers/Currency/UI/WEB/Controllers" file="Controller.php" realpath="/var/www/html/queencar/app/Containers/Currency/UI/WEB/Controllers/Controller.php" size="5068" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="8515fb4243efb5c65b2b8b89691ee2305f404cfd" relative="Currency/UI/WEB/Controllers/Controller.php"/>
+  <docblock>
+    <description compact="Class Controller"/>
+    <package value="App\Containers\Admin\UI\WEB\Controllers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Controllers\WebController" namespace="App\Ship\Parents\Controllers" name="WebController" unresolved="true"/>
+  <method name="adminCurrencyView" start="31" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$request">
+        <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+      </param>
+      <return type="object">
+        <type full="\Illuminate\Contracts\View\Factory|\Illuminate\View\View" namespace="\Illuminate\Contracts\View\Factory|\Illuminate\View" name="View"/>
+      </return>
+    </docblock>
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="$promo =(object)$promo;" line="36"/>
+      <comment value="$ =AdminModel::get();" line="39"/>
+    </inline>
+  </method>
+  <method name="adminCurrencyAdd" start="45" end="57" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r(&quot;wrks&quot;);die();" line="47"/>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($currency);die();" line="51"/>
+      <comment value="$ =AdminModel::get();" line="53"/>
+    </inline>
+  </method>
+  <method name="adminCurrencyAddSave" start="60" end="77" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="62"/>
+    </inline>
+  </method>
+  <method name="adminCurrencyEdit" start="80" end="93" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="82"/>
+      <comment value="$ =AdminModel::get();" line="89"/>
+    </inline>
+  </method>
+  <method name="adminCurrencyUpdate" start="96" end="114" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="98"/>
+    </inline>
+  </method>
+  <method name="adminCurrencyDelete" start="116" end="126" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r($request-&gt;all());die();" line="118"/>
+    </inline>
+  </method>
+  <method name="adminCurrencyToggle" start="128" end="151" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <inline>
+      <comment value="echo &quot;&lt;pre&gt;&quot;;print_r( $promo-&gt;state);die();" line="146"/>
+    </inline>
+  </method>
+</class>

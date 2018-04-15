@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Exceptions\OAuthException" namespace="App\Containers\Authentication\Exceptions" name="OAuthException" abstract="false" final="false" start="13" end="18">
+  <file path="/var/www/html/queencar/app/Containers/User/Exceptions" file="OAuthException.php" realpath="/var/www/html/queencar/app/Containers/User/Exceptions/OAuthException.php" size="400" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="79acd60f986e4c7a3d5ba6ef82a9c26ab54f7f92" relative="User/Exceptions/OAuthException.php"/>
+  <docblock>
+    <description compact="Class UserNotAdminException."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Exceptions\Exception" namespace="App\Ship\Parents\Exceptions" name="Exception" unresolved="true"/>
+  <member name="httpStatusCode" default="" type="{unknown}" constant="Response::HTTP_INTERNAL_SERVER_ERROR" visibility="public" static="false" line="15"/>
+  <member name="message" default="'OAuth 2.0 is not installed!'" type="string" visibility="public" static="false" line="17"/>
+</class>

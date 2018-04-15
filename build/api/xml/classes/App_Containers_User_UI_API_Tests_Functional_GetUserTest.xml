@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Tests\Functional\GetUserTest" namespace="App\Containers\User\UI\API\Tests\Functional" name="GetUserTest" abstract="false" final="false" start="12" end="72">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional" file="GetUserTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional/GetUserTest.php" size="1939" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="a8fd7ec1925abef74cfdfecec2b9d33a62485448" relative="User/UI/API/Tests/Functional/GetUserTest.php"/>
+  <docblock>
+    <description compact="Class GetUsersTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\User\Tests\TestCase" namespace="App\Containers\User\Tests" name="TestCase" unresolved="true"/>
+  <member name="endpoint" default="'get@v1/users/{id}'" type="string" visibility="protected" static="false" line="15"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="17"/>
+  <method name="testGetUser_" start="22" end="35" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="26"/>
+      <comment value="assert response status is correct" line="29"/>
+    </inline>
+  </method>
+  <method name="testGetFilteredUserResponse_" start="37" end="53" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="41"/>
+      <comment value="assert response status is correct" line="44"/>
+    </inline>
+  </method>
+  <method name="testGetUserWithRelation_" start="55" end="70" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="59"/>
+      <comment value="assert response status is correct" line="62"/>
+    </inline>
+  </method>
+</class>

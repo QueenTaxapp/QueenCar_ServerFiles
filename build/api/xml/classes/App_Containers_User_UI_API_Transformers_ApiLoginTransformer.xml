@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Transformers\ApiLoginTransformer" namespace="App\Containers\User\UI\API\Transformers" name="ApiLoginTransformer" abstract="false" final="false" start="16" end="47">
+  <file path="/var/www/html/queencar/app/Containers/Promocode/UI/API/Transformers" file="ApiLoginTransformer.php" realpath="/var/www/html/queencar/app/Containers/Promocode/UI/API/Transformers/ApiLoginTransformer.php" size="1150" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="525bd2c6b8bcce79523253ef6265b8360596e09f" relative="Promocode/UI/API/Transformers/ApiLoginTransformer.php"/>
+  <docblock>
+    <description compact="Class UserTransformer."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="23" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$user">
+        <type full="\App\Containers\User\Models\User" namespace="\App\Containers\User\Models" name="User"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="result" byreference="false" type="{unknown}"/>
+  </method>
+</class>

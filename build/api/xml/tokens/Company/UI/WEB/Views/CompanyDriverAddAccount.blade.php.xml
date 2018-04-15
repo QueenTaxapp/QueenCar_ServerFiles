@@ -1,0 +1,781 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Company/UI/WEB/Views" file="CompanyDriverAddAccount.blade.php" realpath="/var/www/html/queencar/app/Containers/Company/UI/WEB/Views/CompanyDriverAddAccount.blade.php" size="10971" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="6fbe6929abe54529bb54b769063a12bf15b330aa" relative="Company/UI/WEB/Views/CompanyDriverAddAccount.blade.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">@extends('company::CompanyLayout')</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">@section('content')</token>
+  </line>
+  <line no="3"/>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;style&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">        .highlight{</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">            border-color: red;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">        }</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;/style&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">    </token>
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="10"/>
+  <line no="11">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$firstName</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="12">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$lastName</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="13">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$address</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="14">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$city</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="15">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$region</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="16">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$postal_code</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="17">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$emailAddress</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="18">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$phoneNumber</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="19">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$dob</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="20">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$accountNumber</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="21">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$ifscCode</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="22">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_VARIABLE">$socialSecurityNumber</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">""</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="23"/>
+  <line no="24"/>
+  <line no="25">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_IF">if</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">has</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="26"/>
+  <line no="27">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$firstName</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"firstName"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="28">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$lastName</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"lastName"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="29">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$address</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"address"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="30">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$city</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"city"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="31">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$region</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"region"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="32">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$postal_code</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"postal_code"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="33">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$emailAddress</token>
+    <token name="T_WHITESPACE">  </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"email"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="34">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$phoneNumber</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"phone_number"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="35">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$dob</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"dob"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="36">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$accountNumber</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"acc_number"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="37">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$ifscCode</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"ifsc"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="38">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_VARIABLE">$socialSecurityNumber</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">session</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'_old_input'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_OPEN_SQUARE">[</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">"ssn"</token>
+    <token name="T_PHPDOX_CLOSE_SQUARE">]</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="39"/>
+  <line no="40"/>
+  <line no="41">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="42"/>
+  <line no="43">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_CLOSE_TAG">?&gt;</token>
+  </line>
+  <line no="44"/>
+  <line no="45">
+    <token name="T_INLINE_HTML">    &lt;!-- START CONTENT --&gt;</token>
+  </line>
+  <line no="46">
+    <token name="T_INLINE_HTML">    &lt;section id="content"&gt;</token>
+  </line>
+  <line no="47">
+    <token name="T_INLINE_HTML">        &lt;!--start container--&gt;</token>
+  </line>
+  <line no="48">
+    <token name="T_INLINE_HTML">        &lt;div class="container"&gt;</token>
+  </line>
+  <line no="49">
+    <token name="T_INLINE_HTML">            &lt;!--card stats start--&gt;</token>
+  </line>
+  <line no="50"/>
+  <line no="51">
+    <token name="T_INLINE_HTML">            &lt;div class="row"&gt;</token>
+  </line>
+  <line no="52">
+    <token name="T_INLINE_HTML">                &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="53">
+    <token name="T_INLINE_HTML">                    &lt;div id="bordered-table"&gt;</token>
+  </line>
+  <line no="54"/>
+  <line no="55">
+    <token name="T_INLINE_HTML">                        &lt;h4 class="header"&gt;{{ trans('localization::lang_view.add_account')}}</token>
+  </line>
+  <line no="56">
+    <token name="T_INLINE_HTML">                            &lt;span class="back-button" style="float: right;"&gt;&lt;a class="tooltipped" href="{{  URL::Route('companyDriverView') }}" data-position="left" data-delay="50" data-tooltip="{{ trans('localization::lang_view.click_here_to_go_driver_view_page')}}" &gt;{{ trans('localization::lang_view.back')}}&lt;i class="material-icons"&gt;reply&lt;/i&gt;&lt;/a&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_INLINE_HTML">                        &lt;/h4&gt;</token>
+  </line>
+  <line no="59"/>
+  <line no="60">
+    <token name="T_INLINE_HTML">                        &lt;div class="row"&gt;</token>
+  </line>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_INLINE_HTML">                            &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="63">
+    <token name="T_INLINE_HTML">                                &lt;form action="{{URL::Route('companyDriverSaveAccount',$request-&gt;driver_id)}}" method="post" enctype="multipart/form-data" &gt;</token>
+  </line>
+  <line no="64"/>
+  <line no="65">
+    <token name="T_INLINE_HTML">                                    &lt;input type="hidden" name="_token" value="{{ csrf_token() }}"&gt;</token>
+  </line>
+  <line no="66"/>
+  <line no="67">
+    <token name="T_INLINE_HTML">                                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="68">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col s12 m12 l12"&gt;&lt;b&gt;{{ trans('localization::lang_view.individual_details')}}&lt;/b&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="69">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="70">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="71">
+    <token name="T_INLINE_HTML">                                                &lt;input name="firstName" id="first_name" type="text" value="{{ $firstName}}" class="validate" required &gt;</token>
+  </line>
+  <line no="72">
+    <token name="T_INLINE_HTML">                                                &lt;label for="first_name" class="active"&gt;{{ trans('localization::lang_view.first_name')}} &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="73">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="74">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="75">
+    <token name="T_INLINE_HTML">                                                &lt;input name="lastName" id="last_name" type="text" value="{{ $lastName}}" class="validate" required &gt;</token>
+  </line>
+  <line no="76">
+    <token name="T_INLINE_HTML">                                                &lt;label for="last_name"&gt;{{ trans('localization::lang_view.last_name')}}  &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="77">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="78">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="79"/>
+  <line no="80">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="81">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="82">
+    <token name="T_INLINE_HTML">                                                &lt;input name="address" id="address" type="text" value="{{ $address}}" class="validate" required &gt;</token>
+  </line>
+  <line no="83">
+    <token name="T_INLINE_HTML">                                                &lt;label for="address" &gt;{{ trans('localization::lang_view.street_address')}} &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="84">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="85">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="86"/>
+  <line no="87">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="88">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m4 l4"&gt;</token>
+  </line>
+  <line no="89">
+    <token name="T_INLINE_HTML">                                                &lt;input name="city" id="city" type="text" value="{{ $city}}" class="validate" required &gt;</token>
+  </line>
+  <line no="90">
+    <token name="T_INLINE_HTML">                                                &lt;label for="city" class="active"&gt;{{ trans('localization::lang_view.locality')}} &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="91">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="92">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m4 l4"&gt;</token>
+  </line>
+  <line no="93">
+    <token name="T_INLINE_HTML">                                                &lt;input name="region" id="region" maxlength="2" type="text" value="{{ $region}}" required &gt;</token>
+  </line>
+  <line no="94">
+    <token name="T_INLINE_HTML">                                                &lt;label for="region"&gt;{{ trans('localization::lang_view.region')}}&lt;sup&gt;*&lt;/sup&gt; ({{trans('localization::lang_view.only_two_letters')}})&lt;/label&gt;</token>
+  </line>
+  <line no="95">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="96">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m4 l4"&gt;</token>
+  </line>
+  <line no="97">
+    <token name="T_INLINE_HTML">                                                &lt;input name="postal_code" id="pincode" maxlength="5" type="text" value="{{ $postal_code}}" required &gt;</token>
+  </line>
+  <line no="98">
+    <token name="T_INLINE_HTML">                                                &lt;label for="pincode"&gt;{{ trans('localization::lang_view.postal_code')}}&lt;sup&gt;*&lt;/sup&gt; ({{trans('localization::lang_view.only_five_letters')}})&lt;/label&gt;</token>
+  </line>
+  <line no="99">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="100">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="101"/>
+  <line no="102">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="103">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="104">
+    <token name="T_INLINE_HTML">                                                &lt;input name="email" id="email" type="email" class="validate" value="{{ $emailAddress }}" required &gt;</token>
+  </line>
+  <line no="105">
+    <token name="T_INLINE_HTML">                                                &lt;label for="email" data-error="wrong" data-success="right"&gt;{{ trans('localization::lang_view.email')}} &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="106">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="107">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="108"/>
+  <line no="109">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="110">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="111">
+    <token name="T_INLINE_HTML">                                                &lt;input name="phone_number" id="phone" type="text" value="{{ $phoneNumber }}" class="validate" required &gt;</token>
+  </line>
+  <line no="112">
+    <token name="T_INLINE_HTML">                                                &lt;label for="phone" class="active"&gt;{{ trans('localization::lang_view.phone')}} &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="113">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="114">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="115">
+    <token name="T_INLINE_HTML">                                                &lt;input name="dob" id="dob" type="text" value="{{ $dob }}" class="datepicker" required &gt;</token>
+  </line>
+  <line no="116">
+    <token name="T_INLINE_HTML">                                                &lt;label for="dob" class="active"&gt;{{ trans('localization::lang_view.date_of_birth')}} &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="117">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="118">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="119"/>
+  <line no="120">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="121">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="122">
+    <token name="T_INLINE_HTML">                                                &lt;input name="ssn" id="ssn" type="text" minlength="4" maxlength="9" value="{{ $socialSecurityNumber }}" class="validate" required &gt;</token>
+  </line>
+  <line no="123">
+    <token name="T_INLINE_HTML">                                                &lt;label for="ssn"&gt;{{ trans('localization::lang_view.social_security_number')}} &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="124">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="125">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="126">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="127">
+    <token name="T_INLINE_HTML">                                    &lt;br&gt;</token>
+  </line>
+  <line no="128">
+    <token name="T_INLINE_HTML">                                    &lt;div class="row"&gt;</token>
+  </line>
+  <line no="129">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col s12 m12 l12"&gt;&lt;b&gt;{{ trans('localization::lang_view.funding_details')}}&lt;/b&gt;&lt;/div&gt;</token>
+  </line>
+  <line no="130">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="131">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="132">
+    <token name="T_INLINE_HTML">                                                &lt;input name="acc_number" id="account" type="text" value="{{ $accountNumber }}" class="validate" required &gt;</token>
+  </line>
+  <line no="133">
+    <token name="T_INLINE_HTML">                                                &lt;label for="account" class="active"&gt;{{ trans('localization::lang_view.account_number')}} &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="134">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="135">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m6 l6"&gt;</token>
+  </line>
+  <line no="136">
+    <token name="T_INLINE_HTML">                                                &lt;input name="ifsc" id="ifsc" type="text" value="{{ $ifscCode }}" class="validate" required &gt;</token>
+  </line>
+  <line no="137">
+    <token name="T_INLINE_HTML">                                                &lt;label for="ifsc" class="active"&gt;{{ trans('localization::lang_view.routing_number')}} &lt;sup&gt;*&lt;/sup&gt;&lt;/label&gt;</token>
+  </line>
+  <line no="138">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="139">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="140"/>
+  <line no="141">
+    <token name="T_INLINE_HTML">                                        &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="142">
+    <token name="T_INLINE_HTML">                                            &lt;div class="input-field col s12 m6 l4"&gt;</token>
+  </line>
+  <line no="143">
+    <token name="T_INLINE_HTML">                                                &lt;input name="tos" id="terms" type="checkbox" style="z-index: 1;pointer-events:auto ;width: 17px;height: 17px;margin-top: 15px;margin-left: 10px;" &gt;</token>
+  </line>
+  <line no="144">
+    <token name="T_INLINE_HTML">                                                &lt;label for="terms"&gt;{{ trans('localization::lang_view.accept_terms_and_conditions')}}&lt;/label&gt;</token>
+  </line>
+  <line no="145">
+    <token name="T_INLINE_HTML">                                            &lt;/div&gt;</token>
+  </line>
+  <line no="146">
+    <token name="T_INLINE_HTML">                                        &lt;/div&gt;</token>
+  </line>
+  <line no="147"/>
+  <line no="148">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="149">
+    <token name="T_INLINE_HTML">                                    &lt;br&gt;</token>
+  </line>
+  <line no="150">
+    <token name="T_INLINE_HTML">                                    &lt;br&gt;</token>
+  </line>
+  <line no="151">
+    <token name="T_INLINE_HTML">                                    &lt;div class="col s12 m12 l12"&gt;</token>
+  </line>
+  <line no="152">
+    <token name="T_INLINE_HTML">                                        &lt;button class="btn save-btn cyan waves-effect waves-light right" type="submit" name="action"&gt;{{ trans('localization::lang_view.add_account')}}</token>
+  </line>
+  <line no="153">
+    <token name="T_INLINE_HTML">                                            &lt;i class="material-icons right"&gt;send&lt;/i&gt;</token>
+  </line>
+  <line no="154">
+    <token name="T_INLINE_HTML">                                        &lt;/button&gt;</token>
+  </line>
+  <line no="155">
+    <token name="T_INLINE_HTML">                                    &lt;/div&gt;</token>
+  </line>
+  <line no="156"/>
+  <line no="157">
+    <token name="T_INLINE_HTML">                                &lt;/form&gt;</token>
+  </line>
+  <line no="158">
+    <token name="T_INLINE_HTML">                                &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;</token>
+  </line>
+  <line no="159"/>
+  <line no="160">
+    <token name="T_INLINE_HTML">                            &lt;/div&gt;</token>
+  </line>
+  <line no="161"/>
+  <line no="162">
+    <token name="T_INLINE_HTML">                        &lt;/div&gt;</token>
+  </line>
+  <line no="163">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="164">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="165">
+    <token name="T_INLINE_HTML">            &lt;/div&gt;</token>
+  </line>
+  <line no="166"/>
+  <line no="167"/>
+  <line no="168">
+    <token name="T_INLINE_HTML">            &lt;!--end container--&gt;</token>
+  </line>
+  <line no="169">
+    <token name="T_INLINE_HTML">        &lt;/div&gt;</token>
+  </line>
+  <line no="170">
+    <token name="T_INLINE_HTML">    &lt;/section&gt;</token>
+  </line>
+  <line no="171">
+    <token name="T_INLINE_HTML">    &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="172">
+    <token name="T_INLINE_HTML">    &lt;script&gt;</token>
+  </line>
+  <line no="173"/>
+  <line no="174">
+    <token name="T_INLINE_HTML">        $(document).ready(function(){</token>
+  </line>
+  <line no="175">
+    <token name="T_INLINE_HTML">            $('.datepicker').pickadate({</token>
+  </line>
+  <line no="176">
+    <token name="T_INLINE_HTML">                format: 'yyyy-mm-dd',</token>
+  </line>
+  <line no="177">
+    <token name="T_INLINE_HTML">                max: new Date(),</token>
+  </line>
+  <line no="178">
+    <token name="T_INLINE_HTML">                labelMonthNext: 'Next month',</token>
+  </line>
+  <line no="179">
+    <token name="T_INLINE_HTML">                labelMonthPrev: 'Previous month',</token>
+  </line>
+  <line no="180">
+    <token name="T_INLINE_HTML">                labelMonthSelect: 'Select a month',</token>
+  </line>
+  <line no="181">
+    <token name="T_INLINE_HTML">                labelYearSelect: 'Select a year',</token>
+  </line>
+  <line no="182">
+    <token name="T_INLINE_HTML">                selectMonths: true,</token>
+  </line>
+  <line no="183">
+    <token name="T_INLINE_HTML">                selectYears: 50</token>
+  </line>
+  <line no="184">
+    <token name="T_INLINE_HTML">            })</token>
+  </line>
+  <line no="185">
+    <token name="T_INLINE_HTML">        });</token>
+  </line>
+  <line no="186"/>
+  <line no="187">
+    <token name="T_INLINE_HTML">    &lt;/script&gt;</token>
+  </line>
+  <line no="188"/>
+  <line no="189">
+    <token name="T_INLINE_HTML">@endsection</token>
+  </line>
+</source>

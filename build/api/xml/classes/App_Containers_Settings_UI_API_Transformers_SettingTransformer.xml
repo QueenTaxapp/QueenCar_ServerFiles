@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Settings\UI\API\Transformers\SettingTransformer" namespace="App\Containers\Settings\UI\API\Transformers" name="SettingTransformer" abstract="false" final="false" start="8" end="43">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Settings/UI/API/Transformers" file="SettingTransformer.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Settings/UI/API/Transformers/SettingTransformer.php" size="806" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="2d109dcd7f00ffd5895c8dac0a99d4ecf7db1c3d" relative="Settings/UI/API/Transformers/SettingTransformer.php"/>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <member name="defaultIncludes" default="" type="array" visibility="protected" static="false" line="13">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="availableIncludes" default="" type="array" visibility="protected" static="false" line="19">
+    <docblock>
+      <description/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="transform" start="26" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$entity">
+        <type full="App\Containers\Settings\Models\Setting" namespace="App\Containers\Settings\Models" name="Setting"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="entity" byreference="false" type="object">
+      <type full="App\Containers\Settings\Models\Setting" namespace="App\Containers\Settings\Models" name="Setting"/>
+    </parameter>
+  </method>
+</class>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Middlewares\Comments" namespace="App\Containers\Authentication\Middlewares" name="Comments" abstract="false" final="false" start="23" end="118">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Middlewares" file="Comments.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Middlewares/Comments.php" size="3047" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="98e5349739552b2020776c83c06df6f764ab744a" relative="Authentication/Middlewares/Comments.php"/>
+  <docblock>
+    <description compact="Class WebAuthentication"/>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Middlewares\Middleware" namespace="App\Ship\Parents\Middlewares" name="Middleware" unresolved="true"/>
+  <method name="handle" start="25" end="116" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="Illuminate\Http\Request" namespace="Illuminate\Http" name="Request"/>
+    </parameter>
+    <parameter name="next" byreference="false" type="object">
+      <type full="Closure" namespace="" name="Closure"/>
+    </parameter>
+    <inline>
+      <comment value="$connection = mysqli_connect(&quot;localhost&quot;, &quot;root&quot;, &quot;&quot;, &quot;tabandgo&quot;);" line="77"/>
+      <comment value="foreach($data as $key =&gt; $value)" line="80"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="81"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if($key != 'editor')" line="82"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="83"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="if(is_array($value))" line="84"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="85"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$tempArray = array();" line="86"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="foreach($value as $keys =&gt;$tempArray1)" line="87"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="88"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$val = htmlspecialchars($tempArray1);" line="89"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$val = mysqli_real_escape_string($connection,$val);" line="90"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$tempArray[$keys] =$val;" line="91"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="92"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$request-&gt;merge(array($key =&gt; $tempArray));" line="93"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="94"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="else" line="95"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="{" line="96"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$val = htmlspecialchars($value);" line="97"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$val = mysqli_real_escape_string($connection,$value);" line="98"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$val = DB::connection()-&gt;getPdo()-&gt;quote($value);" line="99"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$val = DB::connection()-&gt;getPdo($value);" line="100"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="$request-&gt;merge(array($key =&gt; $val));" line="101"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="102"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="103"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="}" line="104"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Authentication/UI/WEB/Tests/Functional" file="AccessDashboardTest.php" realpath="/var/www/html/queencar/app/Containers/Authentication/UI/WEB/Tests/Functional/AccessDashboardTest.php" size="729" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="33b45f03439e61cd951bd08c4e93e866709f5fee" relative="Authentication/UI/WEB/Tests/Functional/AccessDashboardTest.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_COMMENT">//</token>
+  </line>
+  <line no="3">
+    <token name="T_COMMENT">//namespace App\Containers\Authentication\UI\WEB\Tests\Functional;</token>
+  </line>
+  <line no="4">
+    <token name="T_COMMENT">//</token>
+  </line>
+  <line no="5">
+    <token name="T_COMMENT">//use App\Containers\Authentication\Tests\WebTestCase;</token>
+  </line>
+  <line no="6">
+    <token name="T_COMMENT">//</token>
+  </line>
+  <line no="7">
+    <token name="T_COMMENT">///**</token>
+  </line>
+  <line no="8">
+    <token name="T_COMMENT">// * Class AccessDashboardTest</token>
+  </line>
+  <line no="9">
+    <token name="T_COMMENT">// *</token>
+  </line>
+  <line no="10">
+    <token name="T_COMMENT">// * @author  Johan Alvarez &lt;llstarscreamll@hotmail.com&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_COMMENT">// * @author  Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_COMMENT">// */</token>
+  </line>
+  <line no="13">
+    <token name="T_COMMENT">//class AccessDashboardTest extends WebTestCase</token>
+  </line>
+  <line no="14">
+    <token name="T_COMMENT">//{</token>
+  </line>
+  <line no="15">
+    <token name="T_COMMENT">//    protected $endpoint = '/dashboard';</token>
+  </line>
+  <line no="16">
+    <token name="T_COMMENT">//</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">//    public function testProtectedDashboardRoute()</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT">//    {</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT">//        // go to the protected page, without login</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT">//        $response = $this-&gt;get($this-&gt;endpoint);</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT">//</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT">//        // should be redirected to login page</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT">//        $response-&gt;assertStatus(302);</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT">//        $this-&gt;assertRedirectedTo('login');</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT">//        $this-&gt;see('login');</token>
+  </line>
+  <line no="26">
+    <token name="T_COMMENT">//    }</token>
+  </line>
+  <line no="27">
+    <token name="T_COMMENT">//}</token>
+  </line>
+  <line no="28"/>
+</source>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Settings\Data\Criterias\OrderByKeyAscendingCriteria" namespace="App\Containers\Settings\Data\Criterias" name="OrderByKeyAscendingCriteria" abstract="false" final="false" start="13" end="25">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Data/Criterias" file="OrderByKeyAscendingCriteria.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Data/Criterias/OrderByKeyAscendingCriteria.php" size="674" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="7cba22d73981472bfcad61857fc1be415dd43796" relative="Settings/Data/Criterias/OrderByKeyAscendingCriteria.php"/>
+  <docblock>
+    <description compact="Class OrderByKeyAscendingCriteria."/>
+    <author value="Johannes Schobel &lt;johannes.schobel@googlemail.com&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Criterias\Criteria" namespace="App\Ship\Parents\Criterias" name="Criteria" unresolved="true"/>
+  <method name="apply" start="21" end="24" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$model"/>
+      <param type="object" variable="$repository">
+        <type full="\Prettus\Repository\Contracts\RepositoryInterface" namespace="\Prettus\Repository\Contracts" name="RepositoryInterface"/>
+      </param>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="model" byreference="false" type="{unknown}"/>
+    <parameter name="repository" byreference="false" type="object">
+      <type full="Prettus\Repository\Contracts\RepositoryInterface" namespace="Prettus\Repository\Contracts" name="RepositoryInterface"/>
+    </parameter>
+  </method>
+</class>

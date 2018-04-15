@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Settings\Actions\UpdateSettingAction" namespace="App\Containers\Settings\Actions" name="UpdateSettingAction" abstract="false" final="false" start="10" end="25">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Actions" file="UpdateSettingAction.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Settings/Actions/UpdateSettingAction.php" size="607" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="26c3f75984c95b0ba3fabf3035871cf14ac0dce4" relative="Settings/Actions/UpdateSettingAction.php"/>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="12" end="24" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="object">
+      <type full="App\Ship\Parents\Requests\Request" namespace="App\Ship\Parents\Requests" name="Request"/>
+    </parameter>
+  </method>
+</class>

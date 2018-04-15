@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authorization\Tests\TestCase" namespace="App\Containers\Authorization\Tests" name="TestCase" abstract="false" final="false" start="14" end="17">
+  <file path="/var/www/html/queencar/app/Containers/Authorization/Tests" file="TestCase.php" realpath="/var/www/html/queencar/app/Containers/Authorization/Tests/TestCase.php" size="341" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="c2b66087a801a7922bf3a1e67647d356c7a762cc" relative="Authorization/Tests/TestCase.php"/>
+  <docblock>
+    <description compact="Class TestCase">Container TestCase class. Use this class to put your container specific tests helper functions.</description>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tests\PhpUnit\TestCase" namespace="App\Ship\Parents\Tests\PhpUnit" name="TestCase" unresolved="true"/>
+</class>

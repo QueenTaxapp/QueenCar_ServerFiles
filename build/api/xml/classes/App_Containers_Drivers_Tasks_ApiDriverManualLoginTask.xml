@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Tasks\ApiDriverManualLoginTask" namespace="App\Containers\Drivers\Tasks" name="ApiDriverManualLoginTask" abstract="false" final="false" start="23" end="93">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/Tasks" file="ApiDriverManualLoginTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/Tasks/ApiDriverManualLoginTask.php" size="2611" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="1bec387bfd6ac70098143c46e34f49f85d2a1897" relative="Drivers/Tasks/ApiDriverManualLoginTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="30" end="91" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

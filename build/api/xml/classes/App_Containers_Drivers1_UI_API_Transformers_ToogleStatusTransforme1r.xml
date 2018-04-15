@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers1\UI\API\Transformers\ToogleStatusTransforme1r" namespace="App\Containers\Drivers1\UI\API\Transformers" name="ToogleStatusTransforme1r" abstract="false" final="false" start="13" end="33">
+  <file path="/var/www/html/queencar/app/Containers/Compliant/UI/API/Transformers" file="ToogleStatusTransformer.php" realpath="/var/www/html/queencar/app/Containers/Compliant/UI/API/Transformers/ToogleStatusTransformer.php" size="571" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="67f7f3f1bbf5e2e513d869a312fd168a13ce5607" relative="Compliant/UI/API/Transformers/ToogleStatusTransformer.php"/>
+  <docblock>
+    <description compact="Class ToogleStatusTransformer"/>
+    <package value="App\Containers\Drivers\UI\API\Transformers"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="20" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$request"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

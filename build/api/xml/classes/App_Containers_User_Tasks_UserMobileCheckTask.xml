@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\Tasks\UserMobileCheckTask" namespace="App\Containers\User\Tasks" name="UserMobileCheckTask" abstract="false" final="false" start="17" end="40">
+  <file path="/var/www/html/queencar/app/Containers/User/Tasks" file="UserMobileCheckTask.php" realpath="/var/www/html/queencar/app/Containers/User/Tasks/UserMobileCheckTask.php" size="1065" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="3a377ab41a7e1ccec0051a1e2437e05d48baf888" relative="User/Tasks/UserMobileCheckTask.php"/>
+  <docblock>
+    <description compact="Class UserMobileCheckTask"/>
+    <package value="App\Containers\User\Tasks"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="27" end="38" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to check if the email address/username is present or not"/>
+      <param type="object" variable="$request">
+        <type full="App\Containers\User\Tasks\Object" namespace="App\Containers\User\Tasks" name="Object"/>
+      </param>
+      <param type="object" variable="$class">
+        <type full="App\Containers\User\Tasks\Class" namespace="App\Containers\User\Tasks" name="Class"/>
+      </param>
+      <return type="object">
+        <type full="App\Containers\User\Tasks\Object" namespace="App\Containers\User\Tasks" name="Object"/>
+      </return>
+      <throw value="CommonException ('Otp Already Sent to this number')"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <parameter name="class" byreference="false" type="{unknown}"/>
+  </method>
+</class>

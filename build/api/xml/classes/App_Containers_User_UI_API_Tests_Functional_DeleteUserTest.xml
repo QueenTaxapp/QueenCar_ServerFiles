@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\User\UI\API\Tests\Functional\DeleteUserTest" namespace="App\Containers\User\UI\API\Tests\Functional" name="DeleteUserTest" abstract="false" final="false" start="13" end="52">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional" file="DeleteUserTest.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/User/UI/API/Tests/Functional/DeleteUserTest.php" size="1307" time="2017-09-08T07:35:32+02:00" unixtime="1504848932" sha1="f994df31f66408a3434fddce59f7a090658ffdbe" relative="User/UI/API/Tests/Functional/DeleteUserTest.php"/>
+  <docblock>
+    <description compact="Class DeleteUserTest."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Containers\User\Tests\TestCase" namespace="App\Containers\User\Tests" name="TestCase" unresolved="true"/>
+  <member name="endpoint" default="'delete@v1/users/{id}'" type="string" visibility="protected" static="false" line="16"/>
+  <member name="access" default="" type="array" visibility="protected" static="false" line="18"/>
+  <method name="testDeleteExistingUser_" start="23" end="37" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="send the HTTP request" line="27"/>
+      <comment value="assert response status is correct" line="30"/>
+      <comment value="assert the returned message is correct" line="33"/>
+    </inline>
+  </method>
+  <method name="testDeleteAnotherExistingUser_" start="39" end="51" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="make the call form the user token who has no access" line="41"/>
+      <comment value="send the HTTP request" line="46"/>
+      <comment value="assert response status is correct" line="49"/>
+    </inline>
+  </method>
+</class>

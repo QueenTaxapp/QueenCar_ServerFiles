@@ -1,0 +1,2130 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="/var/www/html/queencar/app/Containers/Authentication/Middlewares" file="TableCheck.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Middlewares/TableCheck.php" size="39001" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="cd4c1c3db1d9025e2dc956ef1ad7783c70f3c8a9" relative="Authentication/Middlewares/TableCheck.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2"/>
+  <line no="3">
+    <token name="T_NAMESPACE">namespace</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">App</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Containers</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Authentication</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Middlewares</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="4"/>
+  <line no="5"/>
+  <line no="6">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">App</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Containers</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Admin</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Models</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">AdminModel</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="7">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">App</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Containers</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Admin</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Models</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">SettingsModel</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="8">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">App</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Containers</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Sms</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Models</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">SmsModel</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="9">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">App</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Ship</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Parents</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Middlewares</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Middleware</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="10">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Closure</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="11">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Illuminate</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Contracts</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Auth</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Guard</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="12">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Illuminate</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Http</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Request</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_COMMENT">//migration</token>
+  </line>
+  <line no="15">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Illuminate</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Support</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Facades</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">DB</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="16">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Illuminate</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Support</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Facades</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Schema</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="17">
+    <token name="T_USE">use</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Illuminate</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Database</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Schema</token>
+    <token name="T_NS_SEPARATOR">\</token>
+    <token name="T_STRING">Blueprint</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="18"/>
+  <line no="19">
+    <token name="T_COMMENT">//migration</token>
+  </line>
+  <line no="20"/>
+  <line no="21">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> * Class WebAuthentication</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> * @author  Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="26">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">TableCheck</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXTENDS">extends</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Middleware</token>
+  </line>
+  <line no="27">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="28"/>
+  <line no="29">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT">     * The Guard implementation.</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT">     * @var Guard</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="34">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PROTECTED">protected</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$auth</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="35"/>
+  <line no="36"/>
+  <line no="37"/>
+  <line no="38">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT">     * WebAuthentication constructor.</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT">     * @param \Illuminate\Contracts\Auth\Guard $auth</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="43">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">// public function __construct(Guard $auth)</token>
+  </line>
+  <line no="44">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">// {</token>
+  </line>
+  <line no="45"/>
+  <line no="46">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">//     // $this-&gt;auth = $auth;</token>
+  </line>
+  <line no="47"/>
+  <line no="48">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">// }</token>
+  </line>
+  <line no="49"/>
+  <line no="50">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="51">
+    <token name="T_DOC_COMMENT">     * Handle an incoming request.</token>
+  </line>
+  <line no="52">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="53">
+    <token name="T_DOC_COMMENT">     * @param  \Illuminate\Http\Request $request</token>
+  </line>
+  <line no="54">
+    <token name="T_DOC_COMMENT">     * @param  \Closure                 $next</token>
+  </line>
+  <line no="55">
+    <token name="T_DOC_COMMENT">     *</token>
+  </line>
+  <line no="56">
+    <token name="T_DOC_COMMENT">     * @return mixed</token>
+  </line>
+  <line no="57">
+    <token name="T_DOC_COMMENT">     */</token>
+  </line>
+  <line no="58">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PUBLIC">public</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_FUNCTION">function</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">handle</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_STRING">Request</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Closure</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$next</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+  </line>
+  <line no="59">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="60"/>
+  <line no="61">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_COMMENT">/*if (!Schema::hasTable('Admin'))</token>
+  </line>
+  <line no="62">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="63">
+    <token name="T_COMMENT">            Schema::create('Admin', function (Blueprint $table)</token>
+  </line>
+  <line no="64">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="65"/>
+  <line no="66">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="67">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="68">
+    <token name="T_COMMENT">                $table-&gt;string('firstname');</token>
+  </line>
+  <line no="69">
+    <token name="T_COMMENT">                $table-&gt;string('lastname');</token>
+  </line>
+  <line no="70">
+    <token name="T_COMMENT">                $table-&gt;string('email');</token>
+  </line>
+  <line no="71">
+    <token name="T_COMMENT">                $table-&gt;string('password');</token>
+  </line>
+  <line no="72">
+    <token name="T_COMMENT">                $table-&gt;string('remember_token')-&gt;nullable();</token>
+  </line>
+  <line no="73">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="74">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="75">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="76">
+    <token name="T_COMMENT">                $table-&gt;integer('is_active')-&gt;comment = " if 1 active user or 0 is inactive user";</token>
+  </line>
+  <line no="77">
+    <token name="T_COMMENT">                $table-&gt;integer('role')-&gt;comment = " 1 = super admin , 2 = sub admin";</token>
+  </line>
+  <line no="78">
+    <token name="T_COMMENT">                $table-&gt;string('profile_pic')-&gt;nullable();</token>
+  </line>
+  <line no="79"/>
+  <line no="80">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="81">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="82"/>
+  <line no="83">
+    <token name="T_COMMENT">        if(!Schema::hasTable('Admin_details'))</token>
+  </line>
+  <line no="84">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="85">
+    <token name="T_COMMENT">            Schema::create('Admin_details', function (Blueprint $table)</token>
+  </line>
+  <line no="86">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="87">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="88">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="89">
+    <token name="T_COMMENT">                $table-&gt;integer('admin_id')-&gt;unsigned();</token>
+  </line>
+  <line no="90">
+    <token name="T_COMMENT">                $table-&gt;string('address')-&gt;nullable();</token>
+  </line>
+  <line no="91">
+    <token name="T_COMMENT">                $table-&gt;string('city')-&gt;nullable();</token>
+  </line>
+  <line no="92">
+    <token name="T_COMMENT">                $table-&gt;string('country')-&gt;nullable();</token>
+  </line>
+  <line no="93">
+    <token name="T_COMMENT">                $table-&gt;string('postalcode')-&gt;nullable();</token>
+  </line>
+  <line no="94">
+    <token name="T_COMMENT">                $table-&gt;string('last_login_ip_address')-&gt;nullable();</token>
+  </line>
+  <line no="95">
+    <token name="T_COMMENT">                $table-&gt;integer('block')-&gt;default(1)-&gt;nullable()-&gt;comment = " 1 = free , 0 = block ";</token>
+  </line>
+  <line no="96">
+    <token name="T_COMMENT">                $table-&gt;integer('login_attempt')-&gt;default(0)-&gt;nullable();</token>
+  </line>
+  <line no="97">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="98">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at')-&gt;nullable();</token>
+  </line>
+  <line no="99">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="100">
+    <token name="T_COMMENT">                //$table-&gt;foreign('admin_id')-&gt;references('id')-&gt;on('911_Admin')-&gt;onDelete('cascade');</token>
+  </line>
+  <line no="101">
+    <token name="T_COMMENT">                 //$table-&gt;foreign('photoIDs')-&gt;references('userID')-&gt;on('housePhotos');</token>
+  </line>
+  <line no="102"/>
+  <line no="103">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="104"/>
+  <line no="105">
+    <token name="T_COMMENT">            Schema::table('Admin_details', function (Blueprint $table)</token>
+  </line>
+  <line no="106">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="107">
+    <token name="T_COMMENT">                $table-&gt;foreign('admin_id')-&gt;references('id')-&gt;on('Admin');</token>
+  </line>
+  <line no="108">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="109"/>
+  <line no="110">
+    <token name="T_COMMENT">            $demo = new AdminModel;</token>
+  </line>
+  <line no="111">
+    <token name="T_COMMENT">            $demo-&gt;firstname ='admin';</token>
+  </line>
+  <line no="112">
+    <token name="T_COMMENT">            $demo-&gt;lastname ='test';</token>
+  </line>
+  <line no="113">
+    <token name="T_COMMENT">            $demo-&gt;email = 'admin@gmail.com';</token>
+  </line>
+  <line no="114">
+    <token name="T_COMMENT">            $demo-&gt;password = '$2y$10$imamWLc8rE.chdi96UJ4du0UMUIiUjJgQjp/QT5aPMAirIZFmwMC2';</token>
+  </line>
+  <line no="115">
+    <token name="T_COMMENT">            $demo-&gt;is_active = '1';</token>
+  </line>
+  <line no="116">
+    <token name="T_COMMENT">            $demo-&gt;role = '1';</token>
+  </line>
+  <line no="117">
+    <token name="T_COMMENT">            $demo-&gt;save();</token>
+  </line>
+  <line no="118"/>
+  <line no="119">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="120"/>
+  <line no="121">
+    <token name="T_COMMENT">        if (!Schema::hasTable('Drivers'))</token>
+  </line>
+  <line no="122">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="123">
+    <token name="T_COMMENT">            Schema::create('Drivers', function (Blueprint $table)</token>
+  </line>
+  <line no="124">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="125"/>
+  <line no="126">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="127">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="128">
+    <token name="T_COMMENT">                $table-&gt;string('firstname');</token>
+  </line>
+  <line no="129">
+    <token name="T_COMMENT">                $table-&gt;string('lastname');</token>
+  </line>
+  <line no="130">
+    <token name="T_COMMENT">                $table-&gt;string('email');</token>
+  </line>
+  <line no="131">
+    <token name="T_COMMENT">                $table-&gt;string('password');</token>
+  </line>
+  <line no="132">
+    <token name="T_COMMENT">                $table-&gt;string('phone_number');</token>
+  </line>
+  <line no="133">
+    <token name="T_COMMENT">                $table-&gt;integer('is_active')-&gt;comment = " if 1 active user or 0 is inactive user";</token>
+  </line>
+  <line no="134">
+    <token name="T_COMMENT">                $table-&gt;integer('is_approve')-&gt;comment = " if 1 approved user or 0 is declined user";</token>
+  </line>
+  <line no="135">
+    <token name="T_COMMENT">                $table-&gt;integer('is_available')-&gt;comment = " if 1 available user or 0 is busy";</token>
+  </line>
+  <line no="136">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="137">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="138">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="139">
+    <token name="T_COMMENT">                $table-&gt;string('token')-&gt;nullable();</token>
+  </line>
+  <line no="140">
+    <token name="T_COMMENT">                $table-&gt;dateTime('token_expiry')-&gt;nullable();</token>
+  </line>
+  <line no="141">
+    <token name="T_COMMENT">                $table-&gt;string('device_token')-&gt;nullable();</token>
+  </line>
+  <line no="142">
+    <token name="T_COMMENT">                $table-&gt;string('social_unique_id')-&gt;nullable();</token>
+  </line>
+  <line no="143">
+    <token name="T_COMMENT">                $table-&gt;string('login_method');</token>
+  </line>
+  <line no="144">
+    <token name="T_COMMENT">                $table-&gt;string('login_by');</token>
+  </line>
+  <line no="145">
+    <token name="T_COMMENT">                $table-&gt;integer('type');</token>
+  </line>
+  <line no="146">
+    <token name="T_COMMENT">                $table-&gt;string('profile_pic')-&gt;nullable();</token>
+  </line>
+  <line no="147">
+    <token name="T_COMMENT">                $table-&gt;string('car_model')-&gt;nullable();</token>
+  </line>
+  <line no="148">
+    <token name="T_COMMENT">                $table-&gt;string('car_number')-&gt;nullable();</token>
+  </line>
+  <line no="149"/>
+  <line no="150"/>
+  <line no="151">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="152">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="153">
+    <token name="T_COMMENT">        if (!Schema::hasTable('Driver_Details'))</token>
+  </line>
+  <line no="154">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="155">
+    <token name="T_COMMENT">            Schema::create('Driver_Details', function (Blueprint $table)</token>
+  </line>
+  <line no="156">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="157"/>
+  <line no="158">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="159">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="160">
+    <token name="T_COMMENT">                $table-&gt;integer('driver_id')-&gt;nullable()-&gt;unsigned();</token>
+  </line>
+  <line no="161">
+    <token name="T_COMMENT">                $table-&gt;double('latitude',15,8)-&gt;nullable();</token>
+  </line>
+  <line no="162">
+    <token name="T_COMMENT">                $table-&gt;double('longitude',15,8)-&gt;nullable();</token>
+  </line>
+  <line no="163">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="164">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="165">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="166"/>
+  <line no="167">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="168"/>
+  <line no="169">
+    <token name="T_COMMENT">            Schema::table('Driver_Details', function (Blueprint $table)</token>
+  </line>
+  <line no="170">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="171">
+    <token name="T_COMMENT">                $table-&gt;foreign('driver_id')-&gt;references('id')-&gt;on('Drivers');</token>
+  </line>
+  <line no="172">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="173">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="174"/>
+  <line no="175">
+    <token name="T_COMMENT">        if(!Schema::hasTable('DriverDocument'))</token>
+  </line>
+  <line no="176">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="177">
+    <token name="T_COMMENT">            Schema::create('DriverDocument', function (Blueprint $table)</token>
+  </line>
+  <line no="178">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="179"/>
+  <line no="180">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="181">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="182">
+    <token name="T_COMMENT">                $table-&gt;integer('driver_id')-&gt;nullable()-&gt;unsigned();</token>
+  </line>
+  <line no="183">
+    <token name="T_COMMENT">                $table-&gt;string('document_name')-&gt;nullable();</token>
+  </line>
+  <line no="184">
+    <token name="T_COMMENT">                $table-&gt;string('document')-&gt;nullable();</token>
+  </line>
+  <line no="185">
+    <token name="T_COMMENT">                $table-&gt;date('document_ex_date')-&gt;nullable();</token>
+  </line>
+  <line no="186">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="187">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="188">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="189"/>
+  <line no="190">
+    <token name="T_COMMENT">            Schema::table('DriverDocument', function (Blueprint $table)</token>
+  </line>
+  <line no="191">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="192">
+    <token name="T_COMMENT">                $table-&gt;foreign('driver_id')-&gt;references('id')-&gt;on('Drivers');</token>
+  </line>
+  <line no="193">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="194"/>
+  <line no="195">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="196"/>
+  <line no="197"/>
+  <line no="198">
+    <token name="T_COMMENT">        if(!Schema::hasTable('Types'))</token>
+  </line>
+  <line no="199">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="200">
+    <token name="T_COMMENT">            Schema::create('Types', function (Blueprint $table)</token>
+  </line>
+  <line no="201">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="202"/>
+  <line no="203">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="204">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="205">
+    <token name="T_COMMENT">                $table-&gt;string('name')-&gt;nullable();</token>
+  </line>
+  <line no="206">
+    <token name="T_COMMENT">                $table-&gt;string('icon')-&gt;nullable();</token>
+  </line>
+  <line no="207">
+    <token name="T_COMMENT">                $table-&gt;double('base_price',15,2)-&gt;nullable();</token>
+  </line>
+  <line no="208">
+    <token name="T_COMMENT">                $table-&gt;double('price_per_distance',15,2)-&gt;nullable();</token>
+  </line>
+  <line no="209">
+    <token name="T_COMMENT">                $table-&gt;double('price_per_time',15,2)-&gt;nullable();</token>
+  </line>
+  <line no="210">
+    <token name="T_COMMENT">                $table-&gt;integer('max_size')-&gt;nullable();</token>
+  </line>
+  <line no="211">
+    <token name="T_COMMENT">                $table-&gt;integer('base_distance')-&gt;nullable();</token>
+  </line>
+  <line no="212">
+    <token name="T_COMMENT">                $table-&gt;integer('is_active')-&gt;comment = " if 1 available Type or 0 is Invisiable Type";</token>
+  </line>
+  <line no="213">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="214">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="215">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="216">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="217">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="218"/>
+  <line no="219"/>
+  <line no="220">
+    <token name="T_COMMENT">        if (!Schema::hasTable('User'))</token>
+  </line>
+  <line no="221">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="222">
+    <token name="T_COMMENT">            Schema::create('User', function (Blueprint $table)</token>
+  </line>
+  <line no="223">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="224">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="225">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="226">
+    <token name="T_COMMENT">                $table-&gt;string('firstname');</token>
+  </line>
+  <line no="227">
+    <token name="T_COMMENT">                $table-&gt;string('lastname');</token>
+  </line>
+  <line no="228">
+    <token name="T_COMMENT">                $table-&gt;string('email')-&gt;unique();</token>
+  </line>
+  <line no="229">
+    <token name="T_COMMENT">                $table-&gt;string('phone_number')-&gt;unique();</token>
+  </line>
+  <line no="230">
+    <token name="T_COMMENT">                $table-&gt;string('password');</token>
+  </line>
+  <line no="231">
+    <token name="T_COMMENT">                $table-&gt;string('country')-&gt;nullable();</token>
+  </line>
+  <line no="232">
+    <token name="T_COMMENT">                $table-&gt;integer('is_active')-&gt;default(0)-&gt;comment = " if 1 active user or 0 is inactive user";</token>
+  </line>
+  <line no="233">
+    <token name="T_COMMENT">                $table-&gt;string('profile_pic')-&gt;nullable();</token>
+  </line>
+  <line no="234">
+    <token name="T_COMMENT">                $table-&gt;string('token')-&gt;nullable();</token>
+  </line>
+  <line no="235">
+    <token name="T_COMMENT">                $table-&gt;dateTime('token_expiry')-&gt;nullable();  </token>
+  </line>
+  <line no="236">
+    <token name="T_COMMENT">                $table-&gt;string('device_token')-&gt;nullable();   </token>
+  </line>
+  <line no="237">
+    <token name="T_COMMENT">                $table-&gt;string('login_by')-&gt;nullable();</token>
+  </line>
+  <line no="238">
+    <token name="T_COMMENT">                $table-&gt;string('login_method')-&gt;nullable();</token>
+  </line>
+  <line no="239">
+    <token name="T_COMMENT">                $table-&gt;string('social_unique_id')-&gt;nullable();</token>
+  </line>
+  <line no="240">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="241">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="242">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="243"/>
+  <line no="244">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="245"/>
+  <line no="246">
+    <token name="T_COMMENT">            Schema::create('User_detail', function (Blueprint $table)</token>
+  </line>
+  <line no="247">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="248">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="249">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="250">
+    <token name="T_COMMENT">                $table-&gt;integer('user_id')-&gt;unsigned();</token>
+  </line>
+  <line no="251">
+    <token name="T_COMMENT">                $table-&gt;double('latitude',15,8);</token>
+  </line>
+  <line no="252">
+    <token name="T_COMMENT">                $table-&gt;double('longitude',15,8);</token>
+  </line>
+  <line no="253">
+    <token name="T_COMMENT">                $table-&gt;integer('referred_by')-&gt;default(0);</token>
+  </line>
+  <line no="254">
+    <token name="T_COMMENT">                $table-&gt;integer('promo_count')-&gt;default(0);</token>
+  </line>
+  <line no="255">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="256">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="257">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="258">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="259"/>
+  <line no="260">
+    <token name="T_COMMENT">            Schema::table('User_detail', function (Blueprint $table)</token>
+  </line>
+  <line no="261">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="262">
+    <token name="T_COMMENT">                $table-&gt;foreign('user_id')-&gt;references('id')-&gt;on('User');</token>
+  </line>
+  <line no="263">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="264"/>
+  <line no="265">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="266"/>
+  <line no="267">
+    <token name="T_COMMENT">        if (!Schema::hasTable('refferal'))</token>
+  </line>
+  <line no="268">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="269">
+    <token name="T_COMMENT">            Schema::create('refferal', function (Blueprint $table)</token>
+  </line>
+  <line no="270">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="271">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="272">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="273">
+    <token name="T_COMMENT">                $table-&gt;integer('user_id')-&gt;unsigned();</token>
+  </line>
+  <line no="274">
+    <token name="T_COMMENT">                $table-&gt;string('code');</token>
+  </line>
+  <line no="275">
+    <token name="T_COMMENT">                $table-&gt;double('amount_earned',15,2)-&gt;nullable();</token>
+  </line>
+  <line no="276">
+    <token name="T_COMMENT">                $table-&gt;double('amount_spent',15,2)-&gt;nullable();</token>
+  </line>
+  <line no="277">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="278">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="279">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="280">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="281">
+    <token name="T_COMMENT">            Schema::table('refferal', function (Blueprint $table)</token>
+  </line>
+  <line no="282">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="283">
+    <token name="T_COMMENT">                $table-&gt;foreign('user_id')-&gt;references('id')-&gt;on('User');</token>
+  </line>
+  <line no="284">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="285">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="286"/>
+  <line no="287">
+    <token name="T_COMMENT">    if (!Schema::hasTable('Email'))</token>
+  </line>
+  <line no="288">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="289">
+    <token name="T_COMMENT">            Schema::create('Email', function (Blueprint $table)</token>
+  </line>
+  <line no="290">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="291">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="292">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="293">
+    <token name="T_COMMENT">                $table-&gt;string('title');</token>
+  </line>
+  <line no="294">
+    <token name="T_COMMENT">                $table-&gt;string('message');  </token>
+  </line>
+  <line no="295">
+    <token name="T_COMMENT">                $table-&gt;string('hint');   </token>
+  </line>
+  <line no="296">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="297">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="298">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();       </token>
+  </line>
+  <line no="299">
+    <token name="T_COMMENT">            });    </token>
+  </line>
+  <line no="300">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="301"/>
+  <line no="302">
+    <token name="T_COMMENT">        if(!Schema::hasTable('Settings'))</token>
+  </line>
+  <line no="303">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="304">
+    <token name="T_COMMENT">            Schema::create('Settings', function (Blueprint $table)</token>
+  </line>
+  <line no="305">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="306">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="307">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="308">
+    <token name="T_COMMENT">                $table-&gt;string('message_id');</token>
+  </line>
+  <line no="309">
+    <token name="T_COMMENT">                $table-&gt;string('title');</token>
+  </line>
+  <line no="310">
+    <token name="T_COMMENT">                $table-&gt;string('value')-&gt;nullable();</token>
+  </line>
+  <line no="311">
+    <token name="T_COMMENT">                $table-&gt;string('type');</token>
+  </line>
+  <line no="312">
+    <token name="T_COMMENT">                $table-&gt;string('method_field');</token>
+  </line>
+  <line no="313">
+    <token name="T_COMMENT">                $table-&gt;mediumText('value_default')-&gt;nullable();</token>
+  </line>
+  <line no="314">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="315">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="316">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="317">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="318">
+    <token name="T_COMMENT">            $settings = new SettingsModel();</token>
+  </line>
+  <line no="319">
+    <token name="T_COMMENT">            $settings-&gt;message_id="sms_notification_description";</token>
+  </line>
+  <line no="320">
+    <token name="T_COMMENT">            $settings-&gt;title="sms_notification_title";</token>
+  </line>
+  <line no="321">
+    <token name="T_COMMENT">            $settings-&gt;type="notification-type";</token>
+  </line>
+  <line no="322">
+    <token name="T_COMMENT">            $settings-&gt;method_field="text";</token>
+  </line>
+  <line no="323">
+    <token name="T_COMMENT">            $settings-&gt;value_default="";</token>
+  </line>
+  <line no="324">
+    <token name="T_COMMENT">            $settings-&gt;save();</token>
+  </line>
+  <line no="325">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="326"/>
+  <line no="327">
+    <token name="T_COMMENT">      /*  if (!Schema::hasTable('911_Request'))</token>
+  </line>
+  <line no="328">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="329">
+    <token name="T_COMMENT">            Schema::create('911_Request', function (Blueprint $table)</token>
+  </line>
+  <line no="330">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="331">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="332">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="333">
+    <token name="T_COMMENT">                $table-&gt;string('conformed_hero_id');</token>
+  </line>
+  <line no="334">
+    <token name="T_COMMENT">                $table-&gt;double('lat');  </token>
+  </line>
+  <line no="335">
+    <token name="T_COMMENT">                $table-&gt;double('long'); </token>
+  </line>
+  <line no="336">
+    <token name="T_COMMENT">                $table-&gt;string('type');   </token>
+  </line>
+  <line no="337">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="338">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');       </token>
+  </line>
+  <line no="339">
+    <token name="T_COMMENT">            });    </token>
+  </line>
+  <line no="340">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="341"/>
+  <line no="342"/>
+  <line no="343">
+    <token name="T_COMMENT">        if (!Schema::hasTable('911_Request_Meta'))</token>
+  </line>
+  <line no="344">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="345">
+    <token name="T_COMMENT">            Schema::create('911_Request_Meta', function (Blueprint $table)</token>
+  </line>
+  <line no="346">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="347">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="348">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="349">
+    <token name="T_COMMENT">                $table-&gt;integer('request_id')-&gt;unsigned();</token>
+  </line>
+  <line no="350">
+    <token name="T_COMMENT">                $table-&gt;integer('hero_id')-&gt;unsigned();</token>
+  </line>
+  <line no="351">
+    <token name="T_COMMENT">                $table-&gt;string('status')-&gt;nullable()-&gt;comment = " 1 = Waiting for hero , 0 = Pending";;</token>
+  </line>
+  <line no="352">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="353">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at')-&gt;nullable();</token>
+  </line>
+  <line no="354">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="355">
+    <token name="T_COMMENT">            });*/</token>
+  </line>
+  <line no="356"/>
+  <line no="357">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_COMMENT">/*    if (!Schema::hasTable('Sms'))</token>
+  </line>
+  <line no="358">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="359">
+    <token name="T_COMMENT">            Schema::create('Sms', function (Blueprint $table)</token>
+  </line>
+  <line no="360">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="361">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="362">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="363">
+    <token name="T_COMMENT">                $table-&gt;string('title');</token>
+  </line>
+  <line no="364">
+    <token name="T_COMMENT">                $table-&gt;string('message');</token>
+  </line>
+  <line no="365">
+    <token name="T_COMMENT">                $table-&gt;longText('hint')-&gt;nullable();</token>
+  </line>
+  <line no="366">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="367">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="368">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="369">
+    <token name="T_COMMENT">                </token>
+  </line>
+  <line no="370">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="371"/>
+  <line no="372">
+    <token name="T_COMMENT">            $demo = new SmsModel;</token>
+  </line>
+  <line no="373">
+    <token name="T_COMMENT">            $demo-&gt;title ='sms_otp';</token>
+  </line>
+  <line no="374">
+    <token name="T_COMMENT">            $demo-&gt;message ='your otp is ';</token>
+  </line>
+  <line no="375">
+    <token name="T_COMMENT">            $demo-&gt;hint = 'a:4:{s:8:"%number%";a:2:{s:4:"name";s:3:"otp";s:8:"required";s:4:"true";}s:12:"%first_name%";a:2:{s:4:"name";s:10:"first_name";s:8:"required";s:4:"true";}s:11:"%last_name%";a:2:{s:4:"name";s:9:"last_name";s:8:"required";s:5:"false";}s:11:"%user_name%";a:2:{s:4:"name";s:9:"user_name";s:8:"required";s:4:"true";}}';</token>
+  </line>
+  <line no="376">
+    <token name="T_COMMENT">            $demo-&gt;save();</token>
+  </line>
+  <line no="377"/>
+  <line no="378"/>
+  <line no="379"/>
+  <line no="380">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="381"/>
+  <line no="382">
+    <token name="T_COMMENT">        if (!Schema::hasTable('tempOtp'))</token>
+  </line>
+  <line no="383">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="384">
+    <token name="T_COMMENT">            Schema::create('tempOtp', function (Blueprint $table)</token>
+  </line>
+  <line no="385">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="386">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="387">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="388">
+    <token name="T_COMMENT">                $table-&gt;string('phone_number')-&gt;nullable();</token>
+  </line>
+  <line no="389">
+    <token name="T_COMMENT">                $table-&gt;string('token');</token>
+  </line>
+  <line no="390">
+    <token name="T_COMMENT">                $table-&gt;string('otp')-&gt;nullable();</token>
+  </line>
+  <line no="391">
+    <token name="T_COMMENT">                $table-&gt;dateTime('otp_time')-&gt;nullable();</token>
+  </line>
+  <line no="392">
+    <token name="T_COMMENT">                $table-&gt;integer('status')-&gt;default(0)-&gt;comment = " if 1 otp verified or 0 is unverified";</token>
+  </line>
+  <line no="393">
+    <token name="T_COMMENT">                $table-&gt;string('verified_numbers')-&gt;nullable();</token>
+  </line>
+  <line no="394">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="395">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="396">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="397"/>
+  <line no="398">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="399">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="400"/>
+  <line no="401">
+    <token name="T_COMMENT">        if (!Schema::hasTable('country'))</token>
+  </line>
+  <line no="402">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="403">
+    <token name="T_COMMENT">            Schema::create('country', function (Blueprint $table)</token>
+  </line>
+  <line no="404">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="405">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="406">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="407">
+    <token name="T_COMMENT">                $table-&gt;string('code');</token>
+  </line>
+  <line no="408">
+    <token name="T_COMMENT">                $table-&gt;string('name');</token>
+  </line>
+  <line no="409">
+    <token name="T_COMMENT">                $table-&gt;string('d_code');</token>
+  </line>
+  <line no="410">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at')-&gt;nullable();</token>
+  </line>
+  <line no="411">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at')-&gt;nullable();</token>
+  </line>
+  <line no="412">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="413">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="414"/>
+  <line no="415">
+    <token name="T_COMMENT">            $countries = [];</token>
+  </line>
+  <line no="416">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AF", "name" =&gt; "Afghanistan", "d_code" =&gt; "+93");</token>
+  </line>
+  <line no="417">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AL", "name" =&gt; "Albania", "d_code" =&gt; "+355");</token>
+  </line>
+  <line no="418">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "DZ", "name" =&gt; "Algeria", "d_code" =&gt; "+213");</token>
+  </line>
+  <line no="419">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AS", "name" =&gt; "American Samoa", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="420">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AD", "name" =&gt; "Andorra", "d_code" =&gt; "+376");</token>
+  </line>
+  <line no="421">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AO", "name" =&gt; "Angola", "d_code" =&gt; "+244");</token>
+  </line>
+  <line no="422">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AI", "name" =&gt; "Anguilla", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="423">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AG", "name" =&gt; "Antigua", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="424">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AR", "name" =&gt; "Argentina", "d_code" =&gt; "+54");</token>
+  </line>
+  <line no="425">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AM", "name" =&gt; "Armenia", "d_code" =&gt; "+374");</token>
+  </line>
+  <line no="426">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AW", "name" =&gt; "Aruba", "d_code" =&gt; "+297");</token>
+  </line>
+  <line no="427">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AU", "name" =&gt; "Australia", "d_code" =&gt; "+61");</token>
+  </line>
+  <line no="428">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AT", "name" =&gt; "Austria", "d_code" =&gt; "+43");</token>
+  </line>
+  <line no="429">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AZ", "name" =&gt; "Azerbaijan", "d_code" =&gt; "+994");</token>
+  </line>
+  <line no="430">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BH", "name" =&gt; "Bahrain", "d_code" =&gt; "+973");</token>
+  </line>
+  <line no="431">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BD", "name" =&gt; "Bangladesh", "d_code" =&gt; "+880");</token>
+  </line>
+  <line no="432">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BB", "name" =&gt; "Barbados", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="433">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BY", "name" =&gt; "Belarus", "d_code" =&gt; "+375");</token>
+  </line>
+  <line no="434">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BE", "name" =&gt; "Belgium", "d_code" =&gt; "+32");</token>
+  </line>
+  <line no="435">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BZ", "name" =&gt; "Belize", "d_code" =&gt; "+501");</token>
+  </line>
+  <line no="436">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BJ", "name" =&gt; "Benin", "d_code" =&gt; "+229");</token>
+  </line>
+  <line no="437">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BM", "name" =&gt; "Bermuda", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="438">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BT", "name" =&gt; "Bhutan", "d_code" =&gt; "+975");</token>
+  </line>
+  <line no="439">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BO", "name" =&gt; "Bolivia", "d_code" =&gt; "+591");</token>
+  </line>
+  <line no="440">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BA", "name" =&gt; "Bosnia and Herzegovina", "d_code" =&gt; "+387");</token>
+  </line>
+  <line no="441">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BW", "name" =&gt; "Botswana", "d_code" =&gt; "+267");</token>
+  </line>
+  <line no="442">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BR", "name" =&gt; "Brazil", "d_code" =&gt; "+55");</token>
+  </line>
+  <line no="443">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "IO", "name" =&gt; "British Indian Ocean Territory", "d_code" =&gt; "+246");</token>
+  </line>
+  <line no="444">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "VG", "name" =&gt; "British Virgin Islands", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="445">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BN", "name" =&gt; "Brunei", "d_code" =&gt; "+673");</token>
+  </line>
+  <line no="446">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BG", "name" =&gt; "Bulgaria", "d_code" =&gt; "+359");</token>
+  </line>
+  <line no="447">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BF", "name" =&gt; "Burkina Faso", "d_code" =&gt; "+226");</token>
+  </line>
+  <line no="448">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MM", "name" =&gt; "Burma Myanmar", "d_code" =&gt; "+95");</token>
+  </line>
+  <line no="449">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BI", "name" =&gt; "Burundi", "d_code" =&gt; "+257");</token>
+  </line>
+  <line no="450">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "KH", "name" =&gt; "Cambodia", "d_code" =&gt; "+855");</token>
+  </line>
+  <line no="451">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CM", "name" =&gt; "Cameroon", "d_code" =&gt; "+237");</token>
+  </line>
+  <line no="452">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CA", "name" =&gt; "Canada", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="453">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CV", "name" =&gt; "Cape Verde", "d_code" =&gt; "+238");</token>
+  </line>
+  <line no="454">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "KY", "name" =&gt; "Cayman Islands", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="455">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CF", "name" =&gt; "Central African Republic", "d_code" =&gt; "+236");</token>
+  </line>
+  <line no="456">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TD", "name" =&gt; "Chad", "d_code" =&gt; "+235");</token>
+  </line>
+  <line no="457">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CL", "name" =&gt; "Chile", "d_code" =&gt; "+56");</token>
+  </line>
+  <line no="458">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CN", "name" =&gt; "China", "d_code" =&gt; "+86");</token>
+  </line>
+  <line no="459">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CO", "name" =&gt; "Colombia", "d_code" =&gt; "+57");</token>
+  </line>
+  <line no="460">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "KM", "name" =&gt; "Comoros", "d_code" =&gt; "+269");</token>
+  </line>
+  <line no="461">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CK", "name" =&gt; "Cook Islands", "d_code" =&gt; "+682");</token>
+  </line>
+  <line no="462">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CR", "name" =&gt; "Costa Rica", "d_code" =&gt; "+506");</token>
+  </line>
+  <line no="463">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CI", "name" =&gt; "C&#xF4;te d'Ivoire", "d_code" =&gt; "+225");</token>
+  </line>
+  <line no="464">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "HR", "name" =&gt; "Croatia", "d_code" =&gt; "+385");</token>
+  </line>
+  <line no="465">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CU", "name" =&gt; "Cuba", "d_code" =&gt; "+53");</token>
+  </line>
+  <line no="466">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CY", "name" =&gt; "Cyprus", "d_code" =&gt; "+357");</token>
+  </line>
+  <line no="467">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CZ", "name" =&gt; "Czech Republic", "d_code" =&gt; "+420");</token>
+  </line>
+  <line no="468">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CD", "name" =&gt; "Democratic Republic of Congo", "d_code" =&gt; "+243");</token>
+  </line>
+  <line no="469">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "DK", "name" =&gt; "Denmark", "d_code" =&gt; "+45");</token>
+  </line>
+  <line no="470">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "DJ", "name" =&gt; "Djibouti", "d_code" =&gt; "+253");</token>
+  </line>
+  <line no="471">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "DM", "name" =&gt; "Dominica", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="472">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "DO", "name" =&gt; "Dominican Republic", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="473">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "EC", "name" =&gt; "Ecuador", "d_code" =&gt; "+593");</token>
+  </line>
+  <line no="474">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "EG", "name" =&gt; "Egypt", "d_code" =&gt; "+20");</token>
+  </line>
+  <line no="475">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SV", "name" =&gt; "El Salvador", "d_code" =&gt; "+503");</token>
+  </line>
+  <line no="476">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GQ", "name" =&gt; "Equatorial Guinea", "d_code" =&gt; "+240");</token>
+  </line>
+  <line no="477">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "ER", "name" =&gt; "Eritrea", "d_code" =&gt; "+291");</token>
+  </line>
+  <line no="478">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "EE", "name" =&gt; "Estonia", "d_code" =&gt; "+372");</token>
+  </line>
+  <line no="479">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "ET", "name" =&gt; "Ethiopia", "d_code" =&gt; "+251");</token>
+  </line>
+  <line no="480">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "FK", "name" =&gt; "Falkland Islands", "d_code" =&gt; "+500");</token>
+  </line>
+  <line no="481">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "FO", "name" =&gt; "Faroe Islands", "d_code" =&gt; "+298");</token>
+  </line>
+  <line no="482">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "FM", "name" =&gt; "Federated States of Micronesia", "d_code" =&gt; "+691");</token>
+  </line>
+  <line no="483">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "FJ", "name" =&gt; "Fiji", "d_code" =&gt; "+679");</token>
+  </line>
+  <line no="484">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "FI", "name" =&gt; "Finland", "d_code" =&gt; "+358");</token>
+  </line>
+  <line no="485">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "FR", "name" =&gt; "France", "d_code" =&gt; "+33");</token>
+  </line>
+  <line no="486">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GF", "name" =&gt; "French Guiana", "d_code" =&gt; "+594");</token>
+  </line>
+  <line no="487">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PF", "name" =&gt; "French Polynesia", "d_code" =&gt; "+689");</token>
+  </line>
+  <line no="488">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GA", "name" =&gt; "Gabon", "d_code" =&gt; "+241");</token>
+  </line>
+  <line no="489">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GE", "name" =&gt; "Georgia", "d_code" =&gt; "+995");</token>
+  </line>
+  <line no="490">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "DE", "name" =&gt; "Germany", "d_code" =&gt; "+49");</token>
+  </line>
+  <line no="491">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GH", "name" =&gt; "Ghana", "d_code" =&gt; "+233");</token>
+  </line>
+  <line no="492">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GI", "name" =&gt; "Gibraltar", "d_code" =&gt; "+350");</token>
+  </line>
+  <line no="493">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GR", "name" =&gt; "Greece", "d_code" =&gt; "+30");</token>
+  </line>
+  <line no="494">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GL", "name" =&gt; "Greenland", "d_code" =&gt; "+299");</token>
+  </line>
+  <line no="495">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GD", "name" =&gt; "Grenada", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="496">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GP", "name" =&gt; "Guadeloupe", "d_code" =&gt; "+590");</token>
+  </line>
+  <line no="497">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GU", "name" =&gt; "Guam", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="498">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GT", "name" =&gt; "Guatemala", "d_code" =&gt; "+502");</token>
+  </line>
+  <line no="499">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GN", "name" =&gt; "Guinea", "d_code" =&gt; "+224");</token>
+  </line>
+  <line no="500">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GW", "name" =&gt; "Guinea-Bissau", "d_code" =&gt; "+245");</token>
+  </line>
+  <line no="501">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GY", "name" =&gt; "Guyana", "d_code" =&gt; "+592");</token>
+  </line>
+  <line no="502">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "HT", "name" =&gt; "Haiti", "d_code" =&gt; "+509");</token>
+  </line>
+  <line no="503">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "HN", "name" =&gt; "Honduras", "d_code" =&gt; "+504");</token>
+  </line>
+  <line no="504">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "HK", "name" =&gt; "Hong Kong", "d_code" =&gt; "+852");</token>
+  </line>
+  <line no="505">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "HU", "name" =&gt; "Hungary", "d_code" =&gt; "+36");</token>
+  </line>
+  <line no="506">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "IS", "name" =&gt; "Iceland", "d_code" =&gt; "+354");</token>
+  </line>
+  <line no="507">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "IN", "name" =&gt; "India", "d_code" =&gt; "+91");</token>
+  </line>
+  <line no="508">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "ID", "name" =&gt; "Indonesia", "d_code" =&gt; "+62");</token>
+  </line>
+  <line no="509">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "IR", "name" =&gt; "Iran", "d_code" =&gt; "+98");</token>
+  </line>
+  <line no="510">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "IQ", "name" =&gt; "Iraq", "d_code" =&gt; "+964");</token>
+  </line>
+  <line no="511">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "IE", "name" =&gt; "Ireland", "d_code" =&gt; "+353");</token>
+  </line>
+  <line no="512">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "IL", "name" =&gt; "Israel", "d_code" =&gt; "+972");</token>
+  </line>
+  <line no="513">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "IT", "name" =&gt; "Italy", "d_code" =&gt; "+39");</token>
+  </line>
+  <line no="514">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "JM", "name" =&gt; "Jamaica", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="515">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "JP", "name" =&gt; "Japan", "d_code" =&gt; "+81");</token>
+  </line>
+  <line no="516">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "JO", "name" =&gt; "Jordan", "d_code" =&gt; "+962");</token>
+  </line>
+  <line no="517">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "KZ", "name" =&gt; "Kazakhstan", "d_code" =&gt; "+7");</token>
+  </line>
+  <line no="518">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "KE", "name" =&gt; "Kenya", "d_code" =&gt; "+254");</token>
+  </line>
+  <line no="519">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "KI", "name" =&gt; "Kiribati", "d_code" =&gt; "+686");</token>
+  </line>
+  <line no="520">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "XK", "name" =&gt; "Kosovo", "d_code" =&gt; "+381");</token>
+  </line>
+  <line no="521">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "KW", "name" =&gt; "Kuwait", "d_code" =&gt; "+965");</token>
+  </line>
+  <line no="522">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "KG", "name" =&gt; "Kyrgyzstan", "d_code" =&gt; "+996");</token>
+  </line>
+  <line no="523">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "LA", "name" =&gt; "Laos", "d_code" =&gt; "+856");</token>
+  </line>
+  <line no="524">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "LV", "name" =&gt; "Latvia", "d_code" =&gt; "+371");</token>
+  </line>
+  <line no="525">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "LB", "name" =&gt; "Lebanon", "d_code" =&gt; "+961");</token>
+  </line>
+  <line no="526">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "LS", "name" =&gt; "Lesotho", "d_code" =&gt; "+266");</token>
+  </line>
+  <line no="527">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "LR", "name" =&gt; "Liberia", "d_code" =&gt; "+231");</token>
+  </line>
+  <line no="528">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "LY", "name" =&gt; "Libya", "d_code" =&gt; "+218");</token>
+  </line>
+  <line no="529">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "LI", "name" =&gt; "Liechtenstein", "d_code" =&gt; "+423");</token>
+  </line>
+  <line no="530">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "LT", "name" =&gt; "Lithuania", "d_code" =&gt; "+370");</token>
+  </line>
+  <line no="531">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "LU", "name" =&gt; "Luxembourg", "d_code" =&gt; "+352");</token>
+  </line>
+  <line no="532">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MO", "name" =&gt; "Macau", "d_code" =&gt; "+853");</token>
+  </line>
+  <line no="533">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MK", "name" =&gt; "Macedonia", "d_code" =&gt; "+389");</token>
+  </line>
+  <line no="534">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MG", "name" =&gt; "Madagascar", "d_code" =&gt; "+261");</token>
+  </line>
+  <line no="535">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MW", "name" =&gt; "Malawi", "d_code" =&gt; "+265");</token>
+  </line>
+  <line no="536">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MY", "name" =&gt; "Malaysia", "d_code" =&gt; "+60");</token>
+  </line>
+  <line no="537">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MV", "name" =&gt; "Maldives", "d_code" =&gt; "+960");</token>
+  </line>
+  <line no="538">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "ML", "name" =&gt; "Mali", "d_code" =&gt; "+223");</token>
+  </line>
+  <line no="539">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MT", "name" =&gt; "Malta", "d_code" =&gt; "+356");</token>
+  </line>
+  <line no="540">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MH", "name" =&gt; "Marshall Islands", "d_code" =&gt; "+692");</token>
+  </line>
+  <line no="541">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MQ", "name" =&gt; "Martinique", "d_code" =&gt; "+596");</token>
+  </line>
+  <line no="542">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MR", "name" =&gt; "Mauritania", "d_code" =&gt; "+222");</token>
+  </line>
+  <line no="543">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MU", "name" =&gt; "Mauritius", "d_code" =&gt; "+230");</token>
+  </line>
+  <line no="544">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "YT", "name" =&gt; "Mayotte", "d_code" =&gt; "+262");</token>
+  </line>
+  <line no="545">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MX", "name" =&gt; "Mexico", "d_code" =&gt; "+52");</token>
+  </line>
+  <line no="546">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MD", "name" =&gt; "Moldova", "d_code" =&gt; "+373");</token>
+  </line>
+  <line no="547">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MC", "name" =&gt; "Monaco", "d_code" =&gt; "+377");</token>
+  </line>
+  <line no="548">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MN", "name" =&gt; "Mongolia", "d_code" =&gt; "+976");</token>
+  </line>
+  <line no="549">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "ME", "name" =&gt; "Montenegro", "d_code" =&gt; "+382");</token>
+  </line>
+  <line no="550">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MS", "name" =&gt; "Montserrat", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="551">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MA", "name" =&gt; "Morocco", "d_code" =&gt; "+212");</token>
+  </line>
+  <line no="552">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MZ", "name" =&gt; "Mozambique", "d_code" =&gt; "+258");</token>
+  </line>
+  <line no="553">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NA", "name" =&gt; "Namibia", "d_code" =&gt; "+264");</token>
+  </line>
+  <line no="554">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NR", "name" =&gt; "Nauru", "d_code" =&gt; "+674");</token>
+  </line>
+  <line no="555">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NP", "name" =&gt; "Nepal", "d_code" =&gt; "+977");</token>
+  </line>
+  <line no="556">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NL", "name" =&gt; "Netherlands", "d_code" =&gt; "+31");</token>
+  </line>
+  <line no="557">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AN", "name" =&gt; "Netherlands Antilles", "d_code" =&gt; "+599");</token>
+  </line>
+  <line no="558">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NC", "name" =&gt; "New Caledonia", "d_code" =&gt; "+687");</token>
+  </line>
+  <line no="559">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NZ", "name" =&gt; "New Zealand", "d_code" =&gt; "+64");</token>
+  </line>
+  <line no="560">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NI", "name" =&gt; "Nicaragua", "d_code" =&gt; "+505");</token>
+  </line>
+  <line no="561">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NE", "name" =&gt; "Niger", "d_code" =&gt; "+227");</token>
+  </line>
+  <line no="562">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NG", "name" =&gt; "Nigeria", "d_code" =&gt; "+234");</token>
+  </line>
+  <line no="563">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NU", "name" =&gt; "Niue", "d_code" =&gt; "+683");</token>
+  </line>
+  <line no="564">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NF", "name" =&gt; "Norfolk Island", "d_code" =&gt; "+672");</token>
+  </line>
+  <line no="565">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "KP", "name" =&gt; "North Korea", "d_code" =&gt; "+850");</token>
+  </line>
+  <line no="566">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MP", "name" =&gt; "Northern Mariana Islands", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="567">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "NO", "name" =&gt; "Norway", "d_code" =&gt; "+47");</token>
+  </line>
+  <line no="568">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "OM", "name" =&gt; "Oman", "d_code" =&gt; "+968");</token>
+  </line>
+  <line no="569">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PK", "name" =&gt; "Pakistan", "d_code" =&gt; "+92");</token>
+  </line>
+  <line no="570">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PW", "name" =&gt; "Palau", "d_code" =&gt; "+680");</token>
+  </line>
+  <line no="571">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PS", "name" =&gt; "Palestine", "d_code" =&gt; "+970");</token>
+  </line>
+  <line no="572">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PA", "name" =&gt; "Panama", "d_code" =&gt; "+507");</token>
+  </line>
+  <line no="573">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PG", "name" =&gt; "Papua New Guinea", "d_code" =&gt; "+675");</token>
+  </line>
+  <line no="574">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PY", "name" =&gt; "Paraguay", "d_code" =&gt; "+595");</token>
+  </line>
+  <line no="575">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PE", "name" =&gt; "Peru", "d_code" =&gt; "+51");</token>
+  </line>
+  <line no="576">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PH", "name" =&gt; "Philippines", "d_code" =&gt; "+63");</token>
+  </line>
+  <line no="577">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PL", "name" =&gt; "Poland", "d_code" =&gt; "+48");</token>
+  </line>
+  <line no="578">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PT", "name" =&gt; "Portugal", "d_code" =&gt; "+351");</token>
+  </line>
+  <line no="579">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PR", "name" =&gt; "Puerto Rico", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="580">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "QA", "name" =&gt; "Qatar", "d_code" =&gt; "+974");</token>
+  </line>
+  <line no="581">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CG", "name" =&gt; "Republic of the Congo", "d_code" =&gt; "+242");</token>
+  </line>
+  <line no="582">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "RE", "name" =&gt; "R&#xE9;union", "d_code" =&gt; "+262");</token>
+  </line>
+  <line no="583">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "RO", "name" =&gt; "Romania", "d_code" =&gt; "+40");</token>
+  </line>
+  <line no="584">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "RU", "name" =&gt; "Russia", "d_code" =&gt; "+7");</token>
+  </line>
+  <line no="585">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "RW", "name" =&gt; "Rwanda", "d_code" =&gt; "+250");</token>
+  </line>
+  <line no="586">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BL", "name" =&gt; "Saint Barth&#xE9;lemy", "d_code" =&gt; "+590");</token>
+  </line>
+  <line no="587">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SH", "name" =&gt; "Saint Helena", "d_code" =&gt; "+290");</token>
+  </line>
+  <line no="588">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "KN", "name" =&gt; "Saint Kitts and Nevis", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="589">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "MF", "name" =&gt; "Saint Martin", "d_code" =&gt; "+590");</token>
+  </line>
+  <line no="590">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "PM", "name" =&gt; "Saint Pierre and Miquelon", "d_code" =&gt; "+508");</token>
+  </line>
+  <line no="591">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "VC", "name" =&gt; "Saint Vincent and the Grenadines", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="592">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "WS", "name" =&gt; "Samoa", "d_code" =&gt; "+685");</token>
+  </line>
+  <line no="593">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SM", "name" =&gt; "San Marino", "d_code" =&gt; "+378");</token>
+  </line>
+  <line no="594">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "ST", "name" =&gt; "S&#xE3;o Tom&#xE9; and Pr&#xED;ncipe", "d_code" =&gt; "+239");</token>
+  </line>
+  <line no="595">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SA", "name" =&gt; "Saudi Arabia", "d_code" =&gt; "+966");</token>
+  </line>
+  <line no="596">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SN", "name" =&gt; "Senegal", "d_code" =&gt; "+221");</token>
+  </line>
+  <line no="597">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "RS", "name" =&gt; "Serbia", "d_code" =&gt; "+381");</token>
+  </line>
+  <line no="598">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SC", "name" =&gt; "Seychelles", "d_code" =&gt; "+248");</token>
+  </line>
+  <line no="599">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SL", "name" =&gt; "Sierra Leone", "d_code" =&gt; "+232");</token>
+  </line>
+  <line no="600">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SG", "name" =&gt; "Singapore", "d_code" =&gt; "+65");</token>
+  </line>
+  <line no="601">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SK", "name" =&gt; "Slovakia", "d_code" =&gt; "+421");</token>
+  </line>
+  <line no="602">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SI", "name" =&gt; "Slovenia", "d_code" =&gt; "+386");</token>
+  </line>
+  <line no="603">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SB", "name" =&gt; "Solomon Islands", "d_code" =&gt; "+677");</token>
+  </line>
+  <line no="604">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SO", "name" =&gt; "Somalia", "d_code" =&gt; "+252");</token>
+  </line>
+  <line no="605">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "ZA", "name" =&gt; "South Africa", "d_code" =&gt; "+27");</token>
+  </line>
+  <line no="606">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "KR", "name" =&gt; "South Korea", "d_code" =&gt; "+82");</token>
+  </line>
+  <line no="607">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "ES", "name" =&gt; "Spain", "d_code" =&gt; "+34");</token>
+  </line>
+  <line no="608">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "LK", "name" =&gt; "Sri Lanka", "d_code" =&gt; "+94");</token>
+  </line>
+  <line no="609">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "LC", "name" =&gt; "St. Lucia", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="610">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SD", "name" =&gt; "Sudan", "d_code" =&gt; "+249");</token>
+  </line>
+  <line no="611">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SR", "name" =&gt; "Suriname", "d_code" =&gt; "+597");</token>
+  </line>
+  <line no="612">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SZ", "name" =&gt; "Swaziland", "d_code" =&gt; "+268");</token>
+  </line>
+  <line no="613">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SE", "name" =&gt; "Sweden", "d_code" =&gt; "+46");</token>
+  </line>
+  <line no="614">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "CH", "name" =&gt; "Switzerland", "d_code" =&gt; "+41");</token>
+  </line>
+  <line no="615">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "SY", "name" =&gt; "Syria", "d_code" =&gt; "+963");</token>
+  </line>
+  <line no="616">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TW", "name" =&gt; "Taiwan", "d_code" =&gt; "+886");</token>
+  </line>
+  <line no="617">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TJ", "name" =&gt; "Tajikistan", "d_code" =&gt; "+992");</token>
+  </line>
+  <line no="618">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TZ", "name" =&gt; "Tanzania", "d_code" =&gt; "+255");</token>
+  </line>
+  <line no="619">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TH", "name" =&gt; "Thailand", "d_code" =&gt; "+66");</token>
+  </line>
+  <line no="620">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "BS", "name" =&gt; "The Bahamas", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="621">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GM", "name" =&gt; "The Gambia", "d_code" =&gt; "+220");</token>
+  </line>
+  <line no="622">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TL", "name" =&gt; "Timor-Leste", "d_code" =&gt; "+670");</token>
+  </line>
+  <line no="623">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TG", "name" =&gt; "Togo", "d_code" =&gt; "+228");</token>
+  </line>
+  <line no="624">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TK", "name" =&gt; "Tokelau", "d_code" =&gt; "+690");</token>
+  </line>
+  <line no="625">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TO", "name" =&gt; "Tonga", "d_code" =&gt; "+676");</token>
+  </line>
+  <line no="626">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TT", "name" =&gt; "Trinidad and Tobago", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="627">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TN", "name" =&gt; "Tunisia", "d_code" =&gt; "+216");</token>
+  </line>
+  <line no="628">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TR", "name" =&gt; "Turkey", "d_code" =&gt; "+90");</token>
+  </line>
+  <line no="629">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TM", "name" =&gt; "Turkmenistan", "d_code" =&gt; "+993");</token>
+  </line>
+  <line no="630">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TC", "name" =&gt; "Turks and Caicos Islands", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="631">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "TV", "name" =&gt; "Tuvalu", "d_code" =&gt; "+688");</token>
+  </line>
+  <line no="632">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "UG", "name" =&gt; "Uganda", "d_code" =&gt; "+256");</token>
+  </line>
+  <line no="633">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "UA", "name" =&gt; "Ukraine", "d_code" =&gt; "+380");</token>
+  </line>
+  <line no="634">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "AE", "name" =&gt; "United Arab Emirates", "d_code" =&gt; "+971");</token>
+  </line>
+  <line no="635">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "GB", "name" =&gt; "United Kingdom", "d_code" =&gt; "+44");</token>
+  </line>
+  <line no="636">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "US", "name" =&gt; "United States", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="637">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "UY", "name" =&gt; "Uruguay", "d_code" =&gt; "+598");</token>
+  </line>
+  <line no="638">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "VI", "name" =&gt; "US Virgin Islands", "d_code" =&gt; "+1");</token>
+  </line>
+  <line no="639">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "UZ", "name" =&gt; "Uzbekistan", "d_code" =&gt; "+998");</token>
+  </line>
+  <line no="640">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "VU", "name" =&gt; "Vanuatu", "d_code" =&gt; "+678");</token>
+  </line>
+  <line no="641">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "VA", "name" =&gt; "Vatican City", "d_code" =&gt; "+39");</token>
+  </line>
+  <line no="642">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "VE", "name" =&gt; "Venezuela", "d_code" =&gt; "+58");</token>
+  </line>
+  <line no="643">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "VN", "name" =&gt; "Vietnam", "d_code" =&gt; "+84");</token>
+  </line>
+  <line no="644">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "WF", "name" =&gt; "Wallis and Futuna", "d_code" =&gt; "+681");</token>
+  </line>
+  <line no="645">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "YE", "name" =&gt; "Yemen", "d_code" =&gt; "+967");</token>
+  </line>
+  <line no="646">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "ZM", "name" =&gt; "Zambia", "d_code" =&gt; "+260");</token>
+  </line>
+  <line no="647">
+    <token name="T_COMMENT">            $countries[] = array("code" =&gt; "ZW", "name" =&gt; "Zimbabwe", "d_code" =&gt; "+263");</token>
+  </line>
+  <line no="648">
+    <token name="T_COMMENT">            DB::table('country')-&gt;insert($countries);</token>
+  </line>
+  <line no="649">
+    <token name="T_COMMENT">        }</token>
+  </line>
+  <line no="650">
+    <token name="T_COMMENT">        </token>
+  </line>
+  <line no="651">
+    <token name="T_COMMENT">        if (!Schema::hasTable('Company'))</token>
+  </line>
+  <line no="652">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="653">
+    <token name="T_COMMENT">            Schema::create('Company', function (Blueprint $table)</token>
+  </line>
+  <line no="654">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="655"/>
+  <line no="656">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="657">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="658">
+    <token name="T_COMMENT">                $table-&gt;string('company_name');</token>
+  </line>
+  <line no="659">
+    <token name="T_COMMENT">                $table-&gt;string('company_url');</token>
+  </line>
+  <line no="660">
+    <token name="T_COMMENT">                $table-&gt;string('email');</token>
+  </line>
+  <line no="661">
+    <token name="T_COMMENT">                $table-&gt;string('password');</token>
+  </line>
+  <line no="662">
+    <token name="T_COMMENT">                $table-&gt;integer('status')-&gt;default(0)-&gt;comment = " if 1 inactive or 0 active";</token>
+  </line>
+  <line no="663">
+    <token name="T_COMMENT">                $table-&gt;string('address');</token>
+  </line>
+  <line no="664">
+    <token name="T_COMMENT">                $table-&gt;string('phone_number');</token>
+  </line>
+  <line no="665">
+    <token name="T_COMMENT">                $table-&gt;string('state');</token>
+  </line>
+  <line no="666">
+    <token name="T_COMMENT">                $table-&gt;string('country');</token>
+  </line>
+  <line no="667">
+    <token name="T_COMMENT">                $table-&gt;string('zipcode');</token>
+  </line>
+  <line no="668">
+    <token name="T_COMMENT">                //  $table-&gt;string('remember_token')-&gt;nullable();</token>
+  </line>
+  <line no="669">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="670">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="671">
+    <token name="T_COMMENT">                $table-&gt;dateTime('deleted_at')-&gt;nullable();</token>
+  </line>
+  <line no="672">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="673">
+    <token name="T_COMMENT">        }*/</token>
+  </line>
+  <line no="674"/>
+  <line no="675">
+    <token name="T_WHITESPACE">       </token>
+    <token name="T_COMMENT">/* if (!Schema::hasTable('911_Path_Details'))</token>
+  </line>
+  <line no="676">
+    <token name="T_COMMENT">        {</token>
+  </line>
+  <line no="677">
+    <token name="T_COMMENT">            Schema::create('911_Path_Details', function (Blueprint $table)</token>
+  </line>
+  <line no="678">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="679">
+    <token name="T_COMMENT">                $table-&gt;engine = 'InnoDB';</token>
+  </line>
+  <line no="680">
+    <token name="T_COMMENT">                $table-&gt;increments('id');</token>
+  </line>
+  <line no="681">
+    <token name="T_COMMENT">                $table-&gt;string('hero_id');</token>
+  </line>
+  <line no="682">
+    <token name="T_COMMENT">                $table-&gt;string('lat');</token>
+  </line>
+  <line no="683">
+    <token name="T_COMMENT">                $table-&gt;string('long');</token>
+  </line>
+  <line no="684">
+    <token name="T_COMMENT">                $table-&gt;string('old_lat');</token>
+  </line>
+  <line no="685">
+    <token name="T_COMMENT">                $table-&gt;string('old_long');</token>
+  </line>
+  <line no="686">
+    <token name="T_COMMENT">                $table-&gt;dateTime('created_at');</token>
+  </line>
+  <line no="687">
+    <token name="T_COMMENT">                $table-&gt;dateTime('updated_at');</token>
+  </line>
+  <line no="688"/>
+  <line no="689">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="690">
+    <token name="T_COMMENT">        }*/</token>
+  </line>
+  <line no="691"/>
+  <line no="692"/>
+  <line no="693"/>
+  <line no="694">
+    <token name="T_WHITESPACE">           </token>
+    <token name="T_COMMENT">/* Schema::table('911_Request_Meta', function (Blueprint $table)</token>
+  </line>
+  <line no="695">
+    <token name="T_COMMENT">            {</token>
+  </line>
+  <line no="696">
+    <token name="T_COMMENT">                $table-&gt;foreign('request_id')-&gt;references('id')-&gt;on('911_Request');</token>
+  </line>
+  <line no="697">
+    <token name="T_COMMENT">            });</token>
+  </line>
+  <line no="698">
+    <token name="T_COMMENT">        }*/</token>
+  </line>
+  <line no="699">
+    <token name="T_WHITESPACE">        </token>
+    <token name="T_RETURN">return</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$next</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$request</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="700"/>
+  <line no="701"/>
+  <line no="702">
+    <token name="T_WHITESPACE">    </token>
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="703">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+  <line no="704"/>
+</source>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sms\Actions\SmsInactiveAction" namespace="App\Containers\Sms\Actions" name="SmsInactiveAction" abstract="false" final="false" start="14" end="29">
+  <file path="/var/www/html/queencar/app/Containers/Sms/Actions" file="SmsInactiveAction.php" realpath="/var/www/html/queencar/app/Containers/Sms/Actions/SmsInactiveAction.php" size="554" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="6d8728bbef58533c7205602d62f284ca00d14e8f" relative="Sms/Actions/SmsInactiveAction.php"/>
+  <docblock>
+    <description compact="Class SmsInactiveAction"/>
+    <package value="App\Containers\Sms\Actions"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Actions\Action" namespace="App\Ship\Parents\Actions" name="Action" unresolved="true"/>
+  <method name="run" start="21" end="28" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="used to deactivate a sms settings"/>
+      <param variable="$request"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

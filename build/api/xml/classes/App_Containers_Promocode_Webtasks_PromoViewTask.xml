@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Promocode\Webtasks\PromoViewTask" namespace="App\Containers\Promocode\Webtasks" name="PromoViewTask" abstract="false" final="false" start="18" end="55">
+  <file path="/var/www/html/queencar/app/Containers/Promocode/Webtasks" file="PromoViewTask.php" realpath="/var/www/html/queencar/app/Containers/Promocode/Webtasks/PromoViewTask.php" size="1282" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="31eee0d505c239083b0736f07fef3dcf33bc7aa3" relative="Promocode/Webtasks/PromoViewTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="25" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+    <inline>
+      <comment value="-&gt;paginate($page);" line="30"/>
+      <comment value="echo&quot;&lt;pre&gt;&quot;;print_r($data);die();" line="42"/>
+    </inline>
+  </method>
+</class>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Dispatch\UI\API\Transformers\ApiDispatchSpecificRequestDetailsTransformers" namespace="App\Containers\Dispatch\UI\API\Transformers" name="ApiDispatchSpecificRequestDetailsTransformers" abstract="false" final="false" start="9" end="30">
+  <file path="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Transformers" file="ApiDispatchSpecificRequestDetailsTransformers.php" realpath="/var/www/html/queencar/app/Containers/Dispatch/UI/API/Transformers/ApiDispatchSpecificRequestDetailsTransformers.php" size="510" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="cbdfac911a14cb2f8a008efa9301a029e8797067" relative="Dispatch/UI/API/Transformers/ApiDispatchSpecificRequestDetailsTransformers.php"/>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="13" end="27" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>

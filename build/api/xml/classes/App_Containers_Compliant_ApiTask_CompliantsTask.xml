@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Compliant\ApiTask\CompliantsTask" namespace="App\Containers\Compliant\ApiTask" name="CompliantsTask" abstract="false" final="false" start="14" end="71">
+  <file path="/var/www/html/queencar/app/Containers/Compliant/ApiTask" file="CompliantsTask.php" realpath="/var/www/html/queencar/app/Containers/Compliant/ApiTask/CompliantsTask.php" size="2051" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="85f0dcda5d8a938851bfc9238961c3a1604febb6" relative="Compliant/ApiTask/CompliantsTask.php"/>
+  <method name="run" start="17" end="70" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="custom_parameter" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="dispatch(new SendReminderEmail($email-&gt;message,$compliant,$emailAddress,$subject,$email-&gt;status));" line="60"/>
+    </inline>
+  </method>
+</class>

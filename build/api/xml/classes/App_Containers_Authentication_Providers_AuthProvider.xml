@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Authentication\Providers\AuthProvider" namespace="App\Containers\Authentication\Providers" name="AuthProvider" abstract="false" final="false" start="22" end="73">
+  <file path="/var/www/html/queencar/app/Containers/Authentication/Providers" file="AuthProvider.php" realpath="/var/www/html/queencar/app/Containers/Authentication/Providers/AuthProvider.php" size="1624" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="728af55fc3638709af81cd2899f6043cb7d5b67e" relative="Authentication/Providers/AuthProvider.php"/>
+  <docblock>
+    <description compact="Class ShipAuthServiceProvider">This class is provided by Laravel as default provider,
+to register authorization policies.
+
+A.K.A App\Providers\AuthServiceProvider.php</description>
+    <author value="Mahmoud Zalt  &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Providers\AuthProvider" namespace="App\Ship\Parents\Providers" name="AuthProvider" unresolved="true"/>
+  <uses full="Apiato\Core\Loaders\RoutesLoaderTrait" namespace="Apiato\Core\Loaders" name="RoutesLoaderTrait" start="24" end="24" unresolved="true"/>
+  <member name="defer" default="true" type="boolean" visibility="protected" static="false" line="31">
+    <docblock>
+      <description compact="Indicates if loading of the provider is deferred."/>
+      <var type="object">
+        <type full="App\Containers\Authentication\Providers\bool" namespace="App\Containers\Authentication\Providers" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="policies" default="" type="array" visibility="protected" static="false" line="38">
+    <docblock>
+      <description compact="The policy mappings for the application."/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <method name="boot" start="47" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Register any authentication / authorization services."/>
+      <return type="object">
+        <type full="App\Containers\Authentication\Providers\void" namespace="App\Containers\Authentication\Providers" name="void"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="registerPassport" start="57" end="72" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description/>
+      <void/>
+    </docblock>
+  </method>
+</class>

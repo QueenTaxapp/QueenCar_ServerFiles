@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Sms\Tasks\SendSmsWithPermissionTask" namespace="App\Containers\Sms\Tasks" name="SendSmsWithPermissionTask" abstract="false" final="false" start="18" end="37">
+  <file path="/var/www/html/queencar/app/Containers/Sms/Tasks" file="SendSmsWithPermissionTask.php" realpath="/var/www/html/queencar/app/Containers/Sms/Tasks/SendSmsWithPermissionTask.php" size="889" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="38bea233c6e26a4e1f13a129012b5d6c0c2ef05f" relative="Sms/Tasks/SendSmsWithPermissionTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="28" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Send Sms from Twilio"/>
+      <param type="object" variable="$phone">
+        <type full="App\Containers\Sms\Tasks\String" namespace="App\Containers\Sms\Tasks" name="String"/>
+      </param>
+      <param type="object" variable="$message">
+        <type full="App\Containers\Sms\Tasks\String" namespace="App\Containers\Sms\Tasks" name="String"/>
+      </param>
+      <param type="object" variable="$imp">
+        <type full="phpDocumentor\Reflection\Types\Boolean" namespace="phpDocumentor\Reflection\Types" name="Boolean"/>
+      </param>
+    </docblock>
+    <parameter name="phone" byreference="false" type="{unknown}"/>
+    <parameter name="message" byreference="false" type="{unknown}"/>
+    <parameter name="imp" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="$setting = SettingsModel::where('title',&quot;sms_notification_title&quot;)-&gt;first();" line="30"/>
+    </inline>
+  </method>
+</class>

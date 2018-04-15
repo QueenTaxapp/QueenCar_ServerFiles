@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Company\UI\API\Transformers\CompanyListTransformer" namespace="App\Containers\Company\UI\API\Transformers" name="CompanyListTransformer" abstract="false" final="false" start="9" end="36">
+  <file path="/var/www/html/queencar/app/Containers/Company/UI/API/Transformers" file="CompanyListTransformer.php" realpath="/var/www/html/queencar/app/Containers/Company/UI/API/Transformers/CompanyListTransformer.php" size="532" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="77d8dae28033a5f4406e2e303594fd4b0e203539" relative="Company/UI/API/Transformers/CompanyListTransformer.php"/>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="16" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param variable="$request"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="print_r($response);" line="28"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="die(&quot;i&quot;);" line="29"/>
+    </inline>
+  </method>
+</class>

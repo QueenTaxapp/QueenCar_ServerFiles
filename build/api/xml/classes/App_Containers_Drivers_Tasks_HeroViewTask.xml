@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\Tasks\HeroViewTask" namespace="App\Containers\Drivers\Tasks" name="HeroViewTask" abstract="false" final="false" start="20" end="44">
+  <file path="/var/www/html/queencar/app/Containers/Drivers/Tasks" file="HeroViewTask.php" realpath="/var/www/html/queencar/app/Containers/Drivers/Tasks/HeroViewTask.php" size="1110" time="2018-04-06T05:25:06+00:00" unixtime="1522992306" sha1="21139cbaf41ee3a8e1cebd11aa1832af0095ff04" relative="Drivers/Tasks/HeroViewTask.php"/>
+  <docblock>
+    <description compact="Class WebLoginTask."/>
+    <author value="Mahmoud Zalt &lt;mahmoud@zalt.me&gt;"/>
+  </docblock>
+  <extends full="App\Ship\Parents\Tasks\Task" namespace="App\Ship\Parents\Tasks" name="Task" unresolved="true"/>
+  <method name="run" start="27" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object"/>
+      <return type="mixed"/>
+    </docblock>
+  </method>
+</class>

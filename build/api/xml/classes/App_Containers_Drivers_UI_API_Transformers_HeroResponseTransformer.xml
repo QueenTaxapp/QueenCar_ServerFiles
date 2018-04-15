@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="App\Containers\Drivers\UI\API\Transformers\HeroResponseTransformer" namespace="App\Containers\Drivers\UI\API\Transformers" name="HeroResponseTransformer" abstract="false" final="false" start="12" end="31">
+  <file path="/opt/lampp/htdocs/tabgo/app/Containers/Drivers/UI/API/Transformers" file="HeroResponseTransformer.php" realpath="/opt/lampp/htdocs/tabgo/app/Containers/Drivers/UI/API/Transformers/HeroResponseTransformer.php" size="521" time="2017-10-09T12:07:21+02:00" unixtime="1507543641" sha1="4f0bf699e514842c0180fe99bc0a0d615e75bd30" relative="Drivers/UI/API/Transformers/HeroResponseTransformer.php"/>
+  <docblock>
+    <description compact="Class UserTransformer."/>
+  </docblock>
+  <extends full="App\Ship\Parents\Transformers\Transformer" namespace="App\Ship\Parents\Transformers" name="Transformer" unresolved="true"/>
+  <method name="transform" start="19" end="28" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$hero">
+        <type full="\App\Containers\Drivers\Models\HeroModel" namespace="\App\Containers\Drivers\Models" name="HeroModel"/>
+      </param>
+      <return type="array"/>
+    </docblock>
+    <parameter name="request" byreference="false" type="{unknown}"/>
+  </method>
+</class>
