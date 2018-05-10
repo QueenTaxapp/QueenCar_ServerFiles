@@ -34,19 +34,19 @@ class UserPromoCodeCheckTask
             ->where('coupon_code',$promoCode)
             ->orderBy('id', 'desc')->first();
 
+// check promocode exist
+        if(count($promoCode) <= 0)
+        {
+            throw (new CommonException())->setValue('813',trans('localization::errors.813'));
+
+        }
+
 
         if($promoCode->zone_id != 0 && $promoZoneCheck->zone_id != $promoCode->zone_id){
 
             throw (new CommonException())->setValue('813',trans('localization::errors.813'));
         }
 
-
-        // check promocode exist
-        if(count($promoCode) <= 0)
-        {
-            throw (new CommonException())->setValue('811',trans('localization::errors.811'));
-
-        }
 
         // check promo code active or in active
 

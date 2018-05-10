@@ -10,14 +10,14 @@
 						<table border="0" cellpadding="0" cellspacing="0" style="width:100%">
 							<tbody>
 								<tr>
-									<td style="text-align:center"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="font-size:24px"><span style="color:#1abc9c">{{$value->appName}}</span></span></span><span style="color:#000000"><span style="font-size:18px"><span style="font-family:Tahoma,Geneva,sans-serif"> </span></span></span></td>
+									<td style="text-align:center"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="font-size:24px"><span style="color:#1abc9c">{{$value->appName}}</span></span></span><span style="color:#000000"><span style="font-size:18px"><span style="font-family:Tahoma,Geneva,sans-serif">    </span></span></span></td>
 								</tr>
 								<tr>
 									<td>
 									<div class="contentEditableContainer contentImageEditable">
-									<div class="contentEditable" style="text-align:justify"> </div>
+									<div class="contentEditable" style="text-align:justify"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="font-size:18px"><span style="color:#000000">  </span></span></span><span style="font-family:Tahoma,Geneva,sans-serif"><span style="font-size:18px"><span style="color:#000000"> </span></span></span></div>
 
-									<div class="contentEditable" style="text-align:justify"><span style="font-size:18px"><span style="color:#555555">               Your drive (</span> {{$value->requestId}} <span style="color:#555555">) accepted Successfully. </span></span></div>
+									<div class="contentEditable" style="text-align:justify"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="font-size:18px"><span style="color:#000000">             </span></span></span><span style="font-size:18px"><span style="color:#000000">              </span><span style="color:#555555">Your Request (</span> {{$value->requestId}} <span style="color:#555555">) is registered Successfully at   {{$value->appName}}  on </span>{{$value->date}} . The driver will pick you at {{$value->pickupLocation}} and drop you at {{$value->dropLocation}} .</span></div>
 									</div>
 									</td>
 								</tr>
@@ -40,15 +40,15 @@
 										<tbody>
 											<tr>
 												<td colspan="3">
-												<p style="text-align:center"><span style="font-size:24px"><span style="font-family:Tahoma,Geneva,sans-serif"><strong>User Details</strong></span></span></p>
+												<p style="text-align:center"><span style="font-size:24px"><span style="font-family:Tahoma,Geneva,sans-serif"><strong>Your Request  Details</strong></span></span></p>
 
-												<p style="text-align:left"> </p>
+												<p style="text-align:left"><span style="font-size:18px"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="color:#000000"> </span></span></span></p>
 
-												<p style="text-align:left"><strong><span style="font-size:20px"><span style="color:#000000"> Client Name : </span>{{$value->userName}}<span style="color:#000000"> ,</span></span></strong></p>
+												<p style="text-align:left"><span style="font-size:18px"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="color:#000000"> </span></span></span><span style="font-size:20px"><span style="color:#000000">Request Id  : </span>{{$value->requestId}}<span style="color:#000000"> ,</span></span></p>
 
-												<p style="text-align:left"><strong><span style="font-size:20px">  <span style="color:#000000">Client Phone number  : </span>{{$value->userPhoneNumber}} <span style="color:#000000">,</span></span></strong></p>
+												<p style="text-align:left"><span style="font-size:20px"><span style="color:#000000"> Pick up location  : </span>{{$value->pickupLocation}}<span style="color:#000000"> ,</span></span></p>
 
-												<p style="text-align:left"> </p>
+												<p style="text-align:left"><span style="font-size:20px"><span style="color:#000000"> Drop location  : </span>{{$value->dropLocation}}<span style="color:#000000"> ,</span></span></p>
 												</td>
 											</tr>
 											<tr>

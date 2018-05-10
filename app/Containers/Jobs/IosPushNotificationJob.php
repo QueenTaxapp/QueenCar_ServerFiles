@@ -55,12 +55,12 @@ class IosPushNotificationJob extends Job
         if($this->type == "user")
         {
             //$file = public_path('assets/TaxiappzCustomerDevPush.pem');
-            $file = public_path('assets/AwamiDemoCustomerProdPush.pem');
+            $file = public_path('assets/queenuserdev.pem');
         }
         else
         {
 
-           $file = public_path('assets/TaxiappzCustomerDevPush.pem');
+           $file = public_path('assets/queendriverdev.pem');
         }
 
 
@@ -69,18 +69,22 @@ class IosPushNotificationJob extends Job
         stream_context_set_option($ctx, 'ssl', 'passphrase','nPlus@2014');
         // Open a connection to the APNS server  'ssl://gateway.sandbox.push.apple.com:2195'
         $fp = stream_socket_client(
-            //'ssl://gateway.sandbox.push.apple.com:2195', $err,
-            'ssl://gateway.push.apple.com:2195', $err,
+            'ssl://gateway.sandbox.push.apple.com:2195', $err,        //sandbox
+            //'ssl://gateway.push.apple.com:2195', $err,                  //production
             $errstr, 60, STREAM_CLIENT_CONNECT|STREAM_CLIENT_PERSISTENT, $ctx);
         if (!$fp){
             exit("Failed to connect: $err $errstr" . PHP_EOL);}
         // Create the payload body
         $body['aps'] = array(
-            'alert' => array(
-                'title' =>$this->title,
-                'body' =>$this->message,
-            ),
+            'alert' => $this->title,
+            /*array(
+                'title' =>$this->title
+            ),*/
+            'content-available' => 1,
             'sound' => 'default'
+        );
+        $body['data']=array(
+            'body' =>$this->message,
         );
         // Encode the payload as JSON
         $payload = json_encode($body);
@@ -96,10 +100,10 @@ class IosPushNotificationJob extends Job
         // Close the connection to the server
         fclose($fp);
         if (!$result) {
-            echo 'Message not delivered' . PHP_EOL;
+           // echo 'Message not delivered' . PHP_EOL;
         }
         else {
-            echo 'Message successfully delivered' . PHP_EOL;
+            //echo 'Message successfully delivered' . PHP_EOL;
         }
 //die('die');
     }

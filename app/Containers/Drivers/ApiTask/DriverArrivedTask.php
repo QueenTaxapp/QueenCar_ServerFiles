@@ -100,7 +100,7 @@ class DriverArrivedTask
             ->leftJoin('request_place','request.id','=','request_place.request_id')
             //->select('request.id','request.is_driver_started','request.is_cancelled','request.is_driver_arrived','request.user_id','User.phone_number','User.device_token','User.login_by')
             -> select('request.id','request.trip_start_time','request.is_driver_started','request.is_driver_arrived','request.is_trip_start',
-                'request.is_completed','request.payment_opt','request.type','request_place.pick_latitude',
+                'request.is_cancelled','request.is_completed','request.payment_opt','request.type','request_place.pick_latitude',
                 'request_place.pick_longitude','request_place.drop_latitude','request_place.drop_longitude','request_place.pick_location',
                 'request_place.drop_location','User.id AS user_id','User.firstname','User.lastname','User.email',
                 'User.phone_number','User.profile_pic','User.device_token',
@@ -139,7 +139,7 @@ class DriverArrivedTask
         $obj->user->email=$result->email;
         $obj->user->phone_number =$result->phone_number;
         $obj->user->profile_pic = $result->profile_pic;
-        $obj->user->review = $result->review?:0;
+        $obj->user->review = $result->review?:'0';
 
             return $obj;
         }

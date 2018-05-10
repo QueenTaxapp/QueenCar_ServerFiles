@@ -27,11 +27,11 @@
                                     <div class="row">
                                         <div class="col s12 m12 l12">
                                             <div class="input-field col s12 m6 l6">
-                                                <input name="firstName" id="first_name" type="text" value="<?=$user->firstname;?>" class="validate" required >
+                                                <input name="firstName" id="first_name" type="text" maxlength="15" value="<?=$user->firstname;?>" class="validate" required >
                                                 <label for="first_name" class="active">{{ trans('localization::lang_view.first_name')}} <sup>*</sup></label>
                                             </div>
                                             <div class="input-field col s12 m6 l6">
-                                                <input name="lastName" id="last_name" type="text" value="<?=$user->lastname;?>" required >
+                                                <input name="lastName" id="last_name" type="text" maxlength="15" value="<?=$user->lastname;?>" required >
                                                 <label for="last_name">{{ trans('localization::lang_view.last_name')}}  <sup>*</sup></label>
                                             </div>
                                         </div>

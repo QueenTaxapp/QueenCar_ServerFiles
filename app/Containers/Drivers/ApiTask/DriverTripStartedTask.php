@@ -61,7 +61,7 @@ class DriverTripStartedTask
             $request  = $obj->requestFullDetails($requestId);
 
 
-            $title = 'trip started';
+            $title = trans('localization::errors.trip_started');
 
             $message = trans('localization::errors.trip_started');
             $message = $obj->requestFullDetailsStructure($request,$message);

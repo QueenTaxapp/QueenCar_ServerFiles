@@ -30,7 +30,7 @@ class UserRequestInprogressTask
             ->where('request.user_id',$data['request']->id)
             ->select('request_place.pick_latitude as platitude','request_place.pick_longitude as plongitude','request_place.drop_latitude as dlatitude'
                 ,'request_place.drop_longitude as dlongitude','request_place.drop_location as dlocation','request.id as request_id'
-                ,'request.request_id as request_user_id','request.trip_start_time as trip_start_time','request.is_driver_started','request.is_driver_arrived'
+                ,'request.request_id as request_user_id','request.trip_start_time as trip_start_time','request.user_rated as is_user_rated','request.is_driver_started','request.is_driver_arrived'
                 ,'request.is_trip_start','request.is_completed','request.distance as request_distance','request.payment_opt','request.promo_id'
                 ,'request_bill.base_price','request_bill.base_distance','request_bill.price_per_distance','request_bill.price_per_time','request_bill.distance_price'
                 ,'request_bill.time_price','request_bill.waiting_price','request_bill.service_tax','request_bill.service_tax_percentage','request_bill.promo_amount','request_bill.referral_amount','request_bill.wallet_amount','request_bill.service_fee'
@@ -76,6 +76,7 @@ class UserRequestInprogressTask
                     "is_trip_start" => $onTrip->is_trip_start,
                     "is_completed" => $onTrip->is_completed,
                     "is_cancelled" => $onTrip->is_cancelled?:0,
+                    "is_user_rated" => $onTrip->is_user_rated,
                     "payment_opt" => $onTrip->payment_opt,
                     "is_paid" => $onTrip->is_paid,
                     "distance" => $onTrip->request_distance,
@@ -116,7 +117,6 @@ class UserRequestInprogressTask
                     )
                 );
         }
-
 
 
 

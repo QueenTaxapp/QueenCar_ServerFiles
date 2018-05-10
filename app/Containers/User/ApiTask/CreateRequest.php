@@ -189,7 +189,7 @@ class CreateRequest
 
 
             $data['response']=$obj;
-            $title = trans('localization::push_message.Dapproved');
+            $title = trans('localization::push_message.new_request');
 
 
             if(!empty($notification_android))

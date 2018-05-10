@@ -176,7 +176,7 @@ class ApiHelper
         }
         else
         {
-            //dispatch(new IosPushNotificationJob($device_token,$message,$title,$user_type));
+            dispatch(new IosPushNotificationJob($device_token,$message,$title,$user_type));
         }
 
     }

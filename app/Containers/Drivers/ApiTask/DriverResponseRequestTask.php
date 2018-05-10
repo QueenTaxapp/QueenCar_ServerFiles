@@ -47,9 +47,11 @@ class DriverResponseRequestTask
 
 
             $data['response']= $this->setResponse($user);
-
             $notification_message = $this->setPushResponse($driver);
-            Configs_Class::helper()->send_push($notification_message,"",$user->device_token,$user->login_by,"user");
+
+            $title = trans('localization::errors.driver_accepted');
+
+            Configs_Class::helper()->send_push($notification_message,$title,$user->device_token,$user->login_by,"user");
 
             $structure = Configs_Class::helper()->php_to_node_structure($this->request->user_id,'user',json_decode($notification_message),'trip_status');
             Configs_Class::helper()->php_to_node('transfer_msg',$structure);
@@ -68,15 +70,16 @@ class DriverResponseRequestTask
             //sms
 
 
-                    //driver
-                    $sms =Configs_Class::helper()->sms(6);
-                    $message = $this->requestAcceptSms($details,$sms->message);
-                    dispatch(new SendSmsJob($driverPhoneNumber,$message,$sms->status));
+            //driver
+            $sms =Configs_Class::helper()->sms(6);
+            $message = $this->requestAcceptSms($details,$sms->message);
+            dispatch(new SendSmsJob($driverPhoneNumber,$message,$sms->status));
 
-                //user
-                    $sms =Configs_Class::helper()->sms(4);
-                    $message = $this->requestAcceptSms($details,$sms->message);
-                    dispatch(new SendSmsJob($userPhoneNumber,$message,$sms->status));
+            //user
+            $sms =Configs_Class::helper()->sms(4);
+            $message = $this->requestAcceptSms($details,$sms->message);
+            dispatch(new SendSmsJob($userPhoneNumber,$message,$sms->status));
+
 
             //email
 
@@ -91,23 +94,16 @@ class DriverResponseRequestTask
 
             $subject = trans('localization::lang_view.request_accepted_successfully');
 
-            if(get_class($data['request']) != "stdClass")
-            {
-                $lang = $data['request']->header('Content-Language');
-            }
-            else{
-                $lang="en";
-            }
 
             $lang = ApiHelper::api_user_language();
 
-                //user
-                    $email =Configs_Class::helper()->email(5,$lang);
-                    dispatch(new SendEmailJob($email->message,$value,$userEmailAddress,$subject,$email->status));
+            //user
+            $email =Configs_Class::helper()->email(5,$lang);
+            dispatch(new SendEmailJob($email->message,$value,$userEmailAddress,$subject,$email->status));
 
-                //driver
-                    $email =Configs_Class::helper()->email(7,$lang);
-                    dispatch(new SendEmailJob($email->message,$value,$driverEmailAddress,$subject,$email->status));
+            //driver
+            $email =Configs_Class::helper()->email(7,$lang);
+            dispatch(new SendEmailJob($email->message,$value,$driverEmailAddress,$subject,$email->status));
 
 
         }
@@ -202,7 +198,7 @@ class DriverResponseRequestTask
 
                 $message = (object)$array;
 
-                $structure = Configs_Class::helper()->php_to_node_structure($data['request']->id,'user', $message,'cancelled_request');
+                $structure = Configs_Class::helper()->php_to_node_structure($this->request->user_id,'user', $message,'cancelled_request');
 
                 Configs_Class::helper()->php_to_node('transfer_msg',$structure);
 
@@ -213,7 +209,7 @@ class DriverResponseRequestTask
 
                 if($user->login_by == 'android')
                 {
-                   // dispatch(new AndroidPushNotificationJob($user->device_token,$message,$title));
+                    // dispatch(new AndroidPushNotificationJob($user->device_token,$message,$title));
                     Configs_Class::helper()->send_push($message,$title,$user->device_token,"android","user");
 
                 }

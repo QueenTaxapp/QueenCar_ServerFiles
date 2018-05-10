@@ -38,6 +38,7 @@ userNode.on('connection',function(socket){
         }
         if(jsonIobj.type == "driver")
         {
+
             if(driver_socket["driver"+jsonIobj.id])
             {
                 driver_socket["driver"+jsonIobj.id].emit(jsonIobj.event,jsonIobj.message);
@@ -207,8 +208,14 @@ nsp.on('connection', function(socket){
                             if(dur_status == true) {
 
                                 if (data.status == "OK" && data.rows[0].elements.length > i) {
+                                    
+                                    if(data.rows[0].elements[i].duration.value >= 900){
 
-                                    return data.rows[0].elements[i].duration.text;
+                                        return "15 mins";
+                                       
+                                    }else{
+                                        return data.rows[0].elements[i].duration.text;
+                                    }
                                 }
                                 else
                                 {
@@ -478,12 +485,12 @@ driverNode.on('connection', function(socket)
 
     socket.on('start_connect', function(message)
         {
-           // console.log("error_msg :"+message);
+            
             var JsonInObj = JSON.parse(message);
             socket.serverId = JsonInObj.id;
 
             driver_socket["driver"+JsonInObj.id]=socket;
-
+            //console.log("error_msg :"+driver_socket["driver"+JsonInObj.id]);
         }
     );
 
@@ -539,6 +546,7 @@ driverNode.on('connection', function(socket)
     });
 
 });
+
 
 
 

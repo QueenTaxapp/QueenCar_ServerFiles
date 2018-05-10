@@ -62,7 +62,7 @@ class UserRequestCancelTask
 
         if($requestModel->driver_id > 0)
         {
-            DriverModel::where('id',$requestModel->driver_id)->update(['is_available'=>1]);
+           // DriverModel::where('id',$requestModel->driver_id)->update(['is_available'=>1]);
 
             $driver = DriverModel::where('id',$requestModel->driver_id)->first();
 
@@ -96,7 +96,7 @@ class UserRequestCancelTask
 
 
             }
-            else if($driver->login_by == 'ios')
+            elseif($driver->login_by == 'ios')
             {
                 // dispatch(new IosPushNotificationJob($driver->device_token,$message,'hero'));
                 Configs_Class::helper()->send_push($message,$title,$driver->device_token,"ios","driver");

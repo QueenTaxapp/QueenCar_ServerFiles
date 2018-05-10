@@ -50,6 +50,7 @@ return [
 
         'notification_send_successfully' => 'Notification Send Successfully',
         'select_any_one' => 'Select Any One',
+        'driver_accepted'=>'Driver Accepted',
         'driver_arrived'=>'Driver Arrived',
         'trip_started'=>'Trip Started',
 
