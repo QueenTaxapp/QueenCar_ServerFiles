@@ -2,6 +2,7 @@
 
 namespace App\Containers\Request\ApiTask;
 
+use App\Containers\Payment\ApiTask\Braintree;
 use Carbon\Carbon;
 use Braintree\Customer;
 use Braintree\Transaction;
@@ -45,16 +46,15 @@ class RequestBillShowTask
 
         $obj = new ApiHelper();
 
+
+        $BObj = new Braintree();
+        $gateway = $BObj->run();
 /*
         echo "<pre>";
         print_r($result);
         die();*/
 
-        //echo "<pre>";print_r($data['request']->request_id);die("wrks");
-        Braintree_Configuration::environment(env('BT_ENVIRONMENT'));//('sandbox');
-        Braintree_Configuration::merchantId(env('BT_MERCHANT_ID'));//('dzyrm5nc7h9jr3nr');
-        Braintree_Configuration::publicKey(env('BT_PUBLIC_KEY'));//('3cxryqwyg9cyq7mq');
-        Braintree_Configuration::privateKey(env('BT_PRIVATE_KEY'));//('ece77cd5774720d9e1b5d758c779af3b');
+
 
         $requestTable = RequestModel::where('id',$data['request']->request_id)->first();
 
@@ -416,7 +416,7 @@ class RequestBillShowTask
             if($companyAccountTable != ""){
                //echo "company card available";die();
                 if(GetConfigs::getConfigs('auto_transfer') == 1){
-                    $result = Transaction::sale([
+                    $result = $gateway->transaction()->sale([
                         'amount' => number_format($converted_amount, 2),
                         'merchantAccountId' => $companyAccountTable->company_acc_id,
                         'customerId' => $paymentTable->customer_id,
@@ -446,7 +446,7 @@ class RequestBillShowTask
                // echo "driver card available";die();
                 if(GetConfigs::getConfigs('auto_transfer') == 1){
 
-                    $result = Transaction::sale([
+                    $result = $gateway->transaction()->sale([
                         'amount' => number_format($converted_amount, 2),
                         'merchantAccountId' => $driverAccountTable->driver_acc_id,
                         'customerId' => $paymentTable->customer_id,
@@ -480,7 +480,7 @@ class RequestBillShowTask
                //die("no cards");
                 merchantPay:
 
-                $result = Transaction::sale([
+                $result = $gateway->transaction()->sale([
                     'amount' => number_format($converted_amount, 2),
                     'customerId' => $paymentTable->customer_id
                 ]);

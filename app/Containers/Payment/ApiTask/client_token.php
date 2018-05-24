@@ -27,17 +27,16 @@ class client_token
     public function run($data, $custom_parameter)
     {
 
-        Braintree_Configuration::environment(env('BT_ENVIRONMENT'));
-        Braintree_Configuration::merchantId(env('BT_MERCHANT_ID'));
-        Braintree_Configuration::publicKey(env('BT_PUBLIC_KEY'));
-        Braintree_Configuration::privateKey(env('BT_PRIVATE_KEY'));
+
+        $BObj = new Braintree();
+        $gateway = $BObj->run();
+
         $object = new \stdClass();
-        $clientToken = Braintree_ClientToken::generate();
+        $clientToken = $gateway->clientToken()->generate();
         $object->message = "Client_token";
         $object->token = $clientToken;
         $data['response']=$object;
         return $data;
-
 
     }
 }

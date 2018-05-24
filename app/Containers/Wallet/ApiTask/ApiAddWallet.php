@@ -2,8 +2,10 @@
 
 
 namespace App\Containers\Wallet\ApiTask;
+use App\Containers\Common\ApiHelper;
 use App\Containers\Common\Configs_Class;
 use App\Containers\Common\GetConfigs;
+use App\Containers\Payment\ApiTask\Braintree;
 use App\Containers\Payment\Models\Payment;
 use App\Containers\Wallet\Models\Wallet;
 use App\Containers\Referral\Models\ReferralModel;
@@ -29,6 +31,7 @@ class ApiAddWallet
      */
     public function run($data, $custom_parameter)
     {
+        $obj = new ApiHelper();
 
         $userTable = UserTableModel::where('id',$data['request']->id)->first();
 
@@ -41,8 +44,17 @@ class ApiAddWallet
 
         }else{
 
-            $converted_amount = $data['request']->amount;
+            $user_amount_in_usd = $obj->CurrencyGet($currency_code);
+
+            if($user_amount_in_usd == null){
+                echo "your currency not present";die();
+            }
+            //    total/user_currency cost
+            $converted_amount = ( $data['request']->amount / $user_amount_in_usd);
+
+            //$converted_amount = $data['request']->amount;
             $converted_type = $currency_code."-USD";
+
         }
 
         $wallet=Wallet::where('user_id',$data['request']->id)->first();
@@ -50,23 +62,23 @@ class ApiAddWallet
         if($wallet)
         {
 
-                $this->checkAmountAdd($converted_amount);
-                $this->CheckWalletAmount($wallet,$converted_amount);
-                $card=$this->findCard($data);
-                $trans = $this->transfer($converted_amount,$card);
+            $this->checkAmountAdd($converted_amount);
+            $this->CheckWalletAmount($wallet,$converted_amount);
+            $card=$this->findCard($data);
+            $trans = $this->transfer($converted_amount,$card);
 
 
         }
         else
         {
 
-                $wallet=new Wallet();
-                $this->checkAmountAdd($converted_amount);
-                $this->CheckWalletAmount($wallet,$converted_amount);
-                $wallet->user_id=$data['request']->id;
-                $card=$this->findCard($data);
-                $trans = $this->transfer($converted_amount,$card);
-                $wallet->amount_spent += 0;
+            $wallet=new Wallet();
+            $this->checkAmountAdd($converted_amount);
+            $this->CheckWalletAmount($wallet,$converted_amount);
+            $wallet->user_id=$data['request']->id;
+            $card=$this->findCard($data);
+            $trans = $this->transfer($converted_amount,$card);
+            $wallet->amount_spent += 0;
 
 
         }
@@ -80,7 +92,7 @@ class ApiAddWallet
         $history->transact_id  = $trans->transaction->id;
         $history->amount   = $data['request']->amount;
         $history->merchant  = $trans->transaction->merchantAccountId;
-        $history->conversion = $converted_type.":".$converted_amount;
+        $history->conversion = $converted_type.":".number_format($converted_amount, 2);
 
         $history->save();
 
@@ -96,12 +108,11 @@ class ApiAddWallet
 
     public function transfer($converted_amount,$card)
     {
-        Braintree_Configuration::environment(env('BT_ENVIRONMENT'));
-        Braintree_Configuration::merchantId(env('BT_MERCHANT_ID'));
-        Braintree_Configuration::publicKey(env('BT_PUBLIC_KEY'));
-        Braintree_Configuration::privateKey(env('BT_PRIVATE_KEY'));
-        $result = Braintree_Transaction::sale([
-            'amount' => $converted_amount,
+        $BObj = new Braintree();
+        $gateway = $BObj->run();
+
+        $result = $gateway->transaction()->sale([
+            'amount' => number_format($converted_amount, 2),
             'paymentMethodToken' => $card->card_token,
             'options' => [
                 'submitForSettlement' => True
@@ -120,7 +131,7 @@ class ApiAddWallet
         $payment = Payment::find($data['request']->card_id);
         if($payment)
         {
-                return $payment;
+            return $payment;
         }
         else
         {

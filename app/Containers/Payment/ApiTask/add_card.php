@@ -31,16 +31,13 @@ class add_card
      */
     public function run($data, $custom_parameter)
     {
-
-        Braintree_Configuration::environment(env('BT_ENVIRONMENT'));
-        Braintree_Configuration::merchantId(env('BT_MERCHANT_ID'));
-        Braintree_Configuration::publicKey(env('BT_PUBLIC_KEY'));
-        Braintree_Configuration::privateKey(env('BT_PRIVATE_KEY'));
+        $BObj = new Braintree();
+        $gateway = $BObj->run();
 
         $user = UserTableModel::find($data['request']->id);
 
         try {
-            $result = Braintree_Customer::create([
+            $result = $gateway->customer()->create([
                 'firstName' => $user->firstname,
                 'lastName' => $user->lastname,
                 'email' => $user->email,
@@ -48,6 +45,7 @@ class add_card
                 'paymentMethodNonce' => $data['request']->payment_id,
                 'id' => "customer_".rand(100,1000)."_".$user->id,
             ]);
+
             $count = Payment::where('user_id',$data['request']->id)->where('is_default',1)->count();
             $payment= new Payment();
             $payment->customer_id = $result->customer->id;
@@ -72,31 +70,7 @@ class add_card
             throw (new CommonException())->setValue('712',trans('localization::errors.712'));
         }
 
-        /*print_r($result->errors);die();
-        if($result)
-        {
-            $count = Payment::where('user_id',$data['request']->id)->where('is_default',1)->count();
-            $payment= new Payment();
-            $payment->customer_id = $result->customer->id;
-            $payment->merchant_id = $result->customer->merchantId;
-            $payment->card_token = 0;
-            $payment->card_token = $result->creditCards[0]->token;
-            $payment->last_number = $data['request']->last_number;
-            $payment->card_type = $data['request']->card_type?:"VISA";
-            $payment->user_id = $data['request']->id;
-            $payment->is_default=$count == 0?1:0;
-            $payment->save();
-            $payment = Payment::where('user_id',$data['request']->id)->get();
-            $payment_data=$this->make_payment_data($payment);
-            $object = new \stdClass();
-            $object->message = "Card_Added_Successfully";
-            $object->payment = $payment_data;
-            $data['response']=$object;
-            return $data;
-        }
-        else{
-            throw (new CommonException())->setValue('712',trans('localization::errors.712'));
-        }*/
+
     }
 
     /**

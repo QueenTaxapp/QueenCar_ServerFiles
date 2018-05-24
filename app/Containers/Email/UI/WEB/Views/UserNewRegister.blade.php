@@ -10,19 +10,19 @@
 						<table border="0" cellpadding="0" cellspacing="0" style="width:100%">
 							<tbody>
 								<tr>
-									<td style="text-align:center"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="font-size:24px"><span style="color:#1abc9c">{{$value->appName}}</span></span></span><span style="color:#000000"><span style="font-size:18px"><span style="font-family:Tahoma,Geneva,sans-serif">    </span></span></span></td>
+									<td style="text-align:center"><span style="font-size:22px"><span style="font-family:Tahoma,Geneva,sans-serif">{{$value->appName}} </span></span></td>
 								</tr>
 								<tr>
 									<td>
 									<div class="contentEditableContainer contentImageEditable">
-									<div class="contentEditable" style="text-align:justify"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="font-size:18px"><span style="color:#000000">  </span></span></span><span style="font-family:Tahoma,Geneva,sans-serif"><span style="font-size:18px"><span style="color:#000000"> </span></span></span></div>
+									<div class="contentEditable" style="text-align:justify"><strong><span style="font-size:24px">Hello {{$value->userName}}</span></strong></div>
 
-									<div class="contentEditable" style="text-align:justify"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="font-size:18px"><span style="color:#000000">             </span></span></span><span style="font-size:18px"><span style="color:#000000">              </span><span style="color:#555555">Your Request (</span> {{$value->requestId}} <span style="color:#555555">) is registered Successfully at   {{$value->appName}}  on </span>{{$value->date}} . The driver will pick you at {{$value->pickupLocation}} and drop you at {{$value->dropLocation}} .</span></div>
+									<div class="contentEditable" style="text-align:justify"><span style="font-size:22px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your ride is Completed </span></div>
 									</div>
 									</td>
 								</tr>
 								<tr>
-									<td> </td>
+									<td>&nbsp;</td>
 								</tr>
 							</tbody>
 						</table>
@@ -31,37 +31,69 @@
 						<table border="0" cellpadding="0" cellspacing="0" style="height:428px; width:595px">
 							<tbody>
 								<tr>
-									<td colspan="3"> </td>
+									<td colspan="3">&nbsp;</td>
 								</tr>
 								<tr>
-									<td> </td>
+									<td>&nbsp;</td>
 									<td>
 									<table border="1" cellpadding="0" cellspacing="0" style="height:378px; width:583px">
 										<tbody>
 											<tr>
 												<td colspan="3">
-												<p style="text-align:center"><span style="font-size:24px"><span style="font-family:Tahoma,Geneva,sans-serif"><strong>Your Request  Details</strong></span></span></p>
+												<p style="text-align:center"><span style="font-size:22px"><span style="font-family:Tahoma,Geneva,sans-serif"><strong>Your Ride Details</strong></span></span></p>
 
-												<p style="text-align:left"><span style="font-size:18px"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="color:#000000"> </span></span></span></p>
+												<p style="text-align:left">&nbsp;</p>
 
-												<p style="text-align:left"><span style="font-size:18px"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="color:#000000"> </span></span></span><span style="font-size:20px"><span style="color:#000000">Request Id  : </span>{{$value->requestId}}<span style="color:#000000"> ,</span></span></p>
+												<p style="text-align:left"><span style="font-size:22px">Request Id : {{$value->requestId}} ,</span></p>
 
-												<p style="text-align:left"><span style="font-size:20px"><span style="color:#000000"> Pick up location  : </span>{{$value->pickupLocation}}<span style="color:#000000"> ,</span></span></p>
+												<p style="text-align:left"><span style="font-size:22px">UserName : {{$value->userName}} ,</span></p>
 
-												<p style="text-align:left"><span style="font-size:20px"><span style="color:#000000"> Drop location  : </span>{{$value->dropLocation}}<span style="color:#000000"> ,</span></span></p>
+												<p style="text-align:left"><span style="font-size:22px">Driver Name : {{$value->driverName}} ,</span></p>
+
+												<p style="text-align:left"><span style="font-size:22px">&nbsp;User&nbsp; Phone Number : {{$value->userPhoneNumber}} ,</span></p>
+
+												<p style="text-align:left"><span style="font-size:22px">&nbsp; Driver Phone Number : {{$value->driverPhoneNumber}}</span></p>
+
+												<p><span style="font-size:22px">&nbsp; User Email Address : {{$value->userPhoneNumber}} ,</span></p>
+
+												<p><span style="font-size:22px">&nbsp; Driver Email Address : {{$value->driverEmailAddress}} ,</span></p>
+
+												<p><span style="font-size:22px">&nbsp;&nbsp; Base Price : {{$value->basePrice}} ,</span></p>
+
+												<p><span style="font-size:22px">&nbsp; Base Distance : {{$value->base_distance}} ,</span></p>
+
+												<p><span style="font-size:22px">&nbsp; Distance Cost : {{$value->distanceCost}} ,</span></p>
+
+												<p><span style="font-size:22px">&nbsp; Time Cost : {{$value->timeCost}} ,</span></p>
+
+												<p><span style="font-size:22px">&nbsp; Waiting Price : {{$value->waitingPrice}}</span></p>
+
+												<p><span style="font-size:22px">&nbsp; Service Tax : &nbsp; {{$value->serviceTax}}</span></p>
+
+												<p><span style="font-size:22px">Service Tax Percentage : {{$value->serviceTaxPercentage}}</span></p>
+
+												<p><span style="font-size:22px">referral_amount : {{$value->referralBonus}}</span></p>
+
+												<p><span style="font-size:22px">Promo Amount : {{$value->promoBonus}}</span></p>
+
+												<p><span style="font-size:22px">Service Fee : {{$value->serviceFee}}</span></p>
+
+												<p><span style="font-size:22px">Total : {{$value->total}}</span></p>
+
+												<p>&nbsp;</p>
 												</td>
 											</tr>
 											<tr>
 												<td colspan="3" style="text-align:center">
-												<p><span style="font-family:Tahoma,Geneva,sans-serif">for further details</span></p>
+												<p><span style="font-size:22px"><span style="font-family:Tahoma,Geneva,sans-serif">for further details</span></span></p>
 
-												<p><span style="font-family:Tahoma,Geneva,sans-serif">email through <span style="font-size:16px"><span style="color:#e74c3c">{{$value->helpEmail}}</span></span></span></p>
+												<p><span style="font-size:22px"><span style="font-family:Tahoma,Geneva,sans-serif">email through {{$value->helpEmail}}</span></span></p>
 												</td>
 											</tr>
 										</tbody>
 									</table>
 									</td>
-									<td> </td>
+									<td>&nbsp;</td>
 								</tr>
 							</tbody>
 						</table>
@@ -74,7 +106,9 @@
 	</tbody>
 </table>
 
-<p><span style="font-family:Tahoma,Geneva,sans-serif"><!--Default Zone
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="font-family:Tahoma,Geneva,sans-serif"><!--Default Zone
 
       <div class="customZone" data-type="image">
           <div class="movableContent">
@@ -593,4 +627,4 @@
 
 
 
-    --><!--Default Zone End--></span></p>
+    --><!--Default Zone End--></span></span></p>

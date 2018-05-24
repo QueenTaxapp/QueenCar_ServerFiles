@@ -48,6 +48,8 @@ class SendEmailJob implements ShouldQueue
     public function handle(Mailer $mail)
     {
 
+
+
         if (is_bool($this->status) === true) {
             if ($this->status) {
                 goto sendMail;
@@ -63,6 +65,7 @@ class SendEmailJob implements ShouldQueue
 
 
                 $to = $this->toEmail;
+              
                 $sub = $this->subject;
 
 
@@ -84,8 +87,10 @@ class SendEmailJob implements ShouldQueue
 
                     $mail->send('email::UserNewRegister', ['value' => $this->array], function ($message) use ($to, $sub) // Mail::send('email::UserNewRegister',['value'=>$this->array],function($message)  use ($to, $sub)
                     {
-
+                       
+                       
                         $message->from(GetConfigs::getConfigs('help_email'), GetConfigs::getConfigs('application_name'));
+                      
                         $message->to($to)->subject($sub);
                     });
 

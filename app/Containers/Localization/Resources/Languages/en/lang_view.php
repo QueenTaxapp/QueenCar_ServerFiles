@@ -549,6 +549,14 @@ return [
     'time_zone' => 'Time Zone',
     'head_office_number' => 'Head Office Number',
     'auto_transfer' => 'Auto Transfer',
+    'braintree_settings' => 'BrainTree Settings',
+    'btree_environment' => 'BrainTree Environment',
+    'btree_merchant_id' => 'BrainTree Merchant_id',
+    'btree_public_key' => 'BrainTree Public_key',
+    'btree_private_key' => 'BrainTree Private_key',
+    'btree_master_merchant' => 'BrainTree Master Merchant',
+    'btree_default_merchant' => 'BrainTree Default Merchant',
+
 
     'Asia/Kolkata' => 'Asia/Kolkata (UTC+05:30)',
     'America/New_York' => 'America/New_York (UTC-05:00)',

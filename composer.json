@@ -33,7 +33,7 @@
     "ext-pdo": "*",
     "ext-tokenizer": "*",
     "aloha/twilio": "^3.0",
-    "braintree/braintree_php": "^3.25",
+    "braintree/braintree_php": "3.31.0",
     "ckeditor/ckeditor": "^4.7",
     "hedii/artisan-log-cleaner": "^1.0",
     "laravel/framework": "5.4.*",

@@ -27,11 +27,7 @@ class Controller extends WebController
 
     public function adminSettingsSave(SettingsRequest $request)
     {
-        echo "<pre>";
-
-        print_r($request->all());
-
-        die('contr');
+  
 
         $array_config_value = json_decode(file_get_contents(public_path().'/config.json'),true);
 

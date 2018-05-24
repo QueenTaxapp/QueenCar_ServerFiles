@@ -2,6 +2,7 @@
 
 
 namespace App\Containers\Common;
+use App\Containers\Payment\ApiTask\Braintree;
 use Exception;
 use Carbon\Carbon;
 use Braintree\Transaction;
@@ -425,16 +426,14 @@ class ApiHelper
 
     public static function brainTree($toAccId,$amount,$service_fee_amount = 0)
     {
-        Braintree_Configuration::environment(env('BT_ENVIRONMENT'));//('sandbox');
-        Braintree_Configuration::merchantId(env('BT_MERCHANT_ID'));//('dzyrm5nc7h9jr3nr');
-        Braintree_Configuration::publicKey(env('BT_PUBLIC_KEY'));//('3cxryqwyg9cyq7mq');
-        Braintree_Configuration::privateKey(env('BT_PRIVATE_KEY'));//('ece77cd5774720d9e1b5d758c779af3b');
+        $BObj = new Braintree();
+        $gateway = $BObj->run();
 
         try {
 
             if (GetConfigs::getConfigs('auto_transfer') == 1)
             {
-                $result = Transaction::sale([
+                $result = $gateway->transaction()->sale([
                     'merchantAccountId' => $toAccId,  //to
                     // 'customerId' => $fromAccId,  // from
                     'amount' => $amount,
